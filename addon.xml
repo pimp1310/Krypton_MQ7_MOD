@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<addon id="skin.aeonmq7" version="0.0.1" name="Aeon MQ 7 Krypton MOD" provider-name="Bumblebee">
+	<addon id="skin.aeonmq7.mod" version="0.0.1" name="Aeon MQ 7 Krypton MOD" provider-name="Bumblebee">
 	<requires>
 	<import addon="xbmc.gui" version="5.12.0"/>
 	<import addon="service.skin.widgets" version="0.0.30"/>
