@@ -2,10 +2,16 @@
 
 ### Dies wird benötigt
 
-Textures.xbt (kopieren nach aeonmq7/media/)
+Textures.xbt (kopieren nach aeonmq7mod/media/)
 ```
 https://drive.google.com/open?id=0B5w5jyUZD4ChRTc0OGRCckxDTHc
 ```
+
+### Oder diese Version installieren dort ist die xbt direkt drin 
+```
+https://drive.google.com/open?id=0B5w5jyUZD4ChZnBtSUtJaWVRMTQ
+```
+
 
 script.getInfo_lastFm
 ```
