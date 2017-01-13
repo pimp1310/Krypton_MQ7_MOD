@@ -1,13 +1,21 @@
 # Krypton_MQ7_MOD
 
+### Dies wird benötigt
 
-Hier die Textures.xbt ohne diese läuft der Skin nicht 
+Textures.xbt
 ```
 https://drive.google.com/open?id=0B5w5jyUZD4ChRTc0OGRCckxDTHc
 ```
 
+script.getInfo_lastFm
+```
+https://github.com/pimp1310/script.getInfo_lastFm
+```
 
-
+script_getInfo_audioDB
+```
+https://github.com/pimp1310/script_getInfo_audioDB
+```
 
 ### Änderungen in dieser Version
 
@@ -36,6 +44,7 @@ Skin
 
 
 ###LiveTV
+[![screenshot000.png](https://s23.postimg.org/tmrgoetcr/screenshot000.png)](https://postimg.org/image/4thwnrac7/)
 [![screenshot002.png](https://s28.postimg.org/r3ivf1wml/screenshot002.png)](https://postimg.org/image/6je1gkgvd/)
 [![screenshot001.png](https://s23.postimg.org/pn9hmuwp7/screenshot001.png)](https://postimg.org/image/534nodgxz/)
 
