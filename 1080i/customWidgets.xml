@@ -1,0 +1,2273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="6641" type="dialog">
+	<!-- Aeon MQ 7 -->
+    <defaultcontrol always="true">5100</defaultcontrol>
+	<onunload>SetFocus(9000)</onunload>
+	<controls>
+	<!-- Seletor dos Widgets -->
+	<control type="group">
+	<animation effect="slide" start="0,0" end="0,578" time="500" tween="sine" easing="inout" condition="true">WindowOpen</animation>
+	<animation effect="slide" start="0,578" end="0,0" time="200" tween="sine" easing="inout" condition="true">WindowClose</animation>
+	<control type="panel" id="5100">
+	<left>0</left>
+	<top>-432</top>
+	<width>1950</width>
+	<height>390</height>
+	<onleft>Dialog.Close(6641)</onleft>
+	<onright>Dialog.Close(6641)</onright>
+	<orientation>horizontal</orientation>
+	<pagecontrol>-</pagecontrol>
+	<itemlayout width="480" height="38">
+	<control type="image">
+	<!-- branco -->
+	<left>0</left>
+	<top>0</top>
+	<height>38</height>
+	<width>477</width>
+	<texture>grey.png</texture>
+	<colordiffuse>E9404040</colordiffuse>
+	</control>
+	<!-- amarelo -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>50DAA520</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),settings)</visible>
+	</control>
+	<!-- branco -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FF404040</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),clear)</visible>
+	</control>
+	<!-- salmao -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>50E9967A</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),custom)</visible>
+	</control>
+	<!-- roxo claro -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>509370DB</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),movies)</visible>
+	</control>
+	<!-- oliva -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>50808000</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),tvshows)</visible>
+	</control>
+	<!-- bege -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>50DEB887</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),concerts)</visible>
+	</control>
+	<!-- vermelho -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>50DC143C</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),music)</visible>
+	</control>
+	<!-- azul escuro -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>505F9EA0</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),pvr)</visible>
+	</control>
+	<!-- ciano -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>5000FFFF</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),mymenu)</visible>
+	</control>
+	<!-- terracotta -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>50D2691E</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),misc)</visible>
+	</control>
+	<!-- dourado -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>50FFD700</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),addons)</visible>
+	</control>
+	<!-- verde -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>50008000</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),extras)</visible>
+	</control>
+	<!-- laranja -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>50FFA500</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),playlist)</visible>
+	</control>
+	<!-- magenta -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>50C71585</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),node)</visible>
+	</control>
+	<control type="label">
+	<left>0</left>
+	<top>0</top>
+	<height>38</height>
+	<width>477</width>
+	<align>center</align>
+	<aligny>center</aligny>
+	<font>Font_button</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>$INFO[ListItem.Label]</label>	
+	</control>
+	</itemlayout>
+	<focusedlayout width="480" height="38">
+	<!-- amarelo -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FFDAA520</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),settings)</visible>
+	</control>
+	<!-- branco -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FF101010</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),clear)</visible>
+	</control>
+	<!-- salmao -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FFE9967A</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),custom)</visible>
+	</control>
+	<!-- roxo claro -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FF9370DB</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),movies)</visible>
+	</control>
+	<!-- oliva -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FF808000</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),tvshows)</visible>
+	</control>
+	<!-- bege -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FFDEB887</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),concerts)</visible>
+	</control>
+	<!-- vermelho -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FFDC143C</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),music)</visible>
+	</control>
+	<!-- azul escuro -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FF5F9EA0</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),pvr)</visible>
+	</control>
+	<!-- ciano -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FF00FFFF</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),mymenu)</visible>
+	</control>
+	<!-- terracotta -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FFD2691E</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),misc)</visible>
+	</control>
+	<!-- dourado -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FFFFD700</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),addons)</visible>
+	</control>
+	<!-- verde -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FF008000</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),extras)</visible>
+	</control>
+	<!-- laranja -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FFFFA500</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),playlist)</visible>
+	</control>
+	<!-- magenta -->
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FFC71585</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),node)</visible>
+	</control>
+	<control type="label">
+	<left>0</left>
+	<top>0</top>
+	<height>38</height>
+	<width>477</width>
+	<align>center</align>
+	<aligny>center</aligny>
+	<font>Font_button</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>$INFO[ListItem.Label]</label>	
+	</control>
+	</focusedlayout>
+	<content>	
+	<item>
+	<!-- Ajustes dos widgets -->
+	<icon>-</icon>
+	<label>31246</label>
+	<property name="id">settings</property>
+	<onclick>Dialog.Close(6641)</onclick>
+	<onclick>ActivateWindowAndFocus(SkinSettings, 9100,1)</onclick>
+	</item>
+	<item>
+	<!-- Nenhum -->
+	<icon>-</icon>
+	<label>31162</label>
+	<property name="id">clear</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,none)</onclick>
+	<onclick>Skin.Reset($INFO[skin.string(menulabel)].widgets)</onclick>
+	</item>
+	<item>
+	<!-- Modo custom 1 -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31343] 1</label>
+	<property name="id">custom</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plugin)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,dualwidget1)</onclick>
+	<onclick>Skin.SetString(duallabel,widget1)</onclick>
+	<onclick>Skin.SetString(dualwidgets,widget1)</onclick>
+	<onclick>SetFocus(5200)</onclick>
+	</item>
+	<item>
+	<!-- Modo custom 2 -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31343] 2</label>
+	<property name="id">custom</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plugin)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,dualwidget2)</onclick>
+	<onclick>Skin.SetString(duallabel,widget2)</onclick>
+	<onclick>Skin.SetString(dualwidgets,widget2)</onclick>
+	<onclick>SetFocus(5200)</onclick>
+	</item>
+	<item>
+	<!-- Filmes recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31583]</label>
+	<property name="id">movies</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,movie.recent)</onclick>
+	<visible>Library.HasContent(Movies)</visible>
+	</item>
+	<item>
+	<!-- Filmes random -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31584]</label>
+	<property name="id">movies</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,movie.random)</onclick>
+	<visible>Library.HasContent(Movies)</visible>
+	</item>
+	<item>
+	<!-- Filmes em progresso -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31585]</label>
+	<property name="id">movies</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,movie.recommended)</onclick>
+	<visible>Library.HasContent(Movies)</visible>
+	</item>
+	<item>
+	<!-- Filmes generos -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31091]</label>
+	<property name="id">movies</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,movie.genre)</onclick>
+	<visible>Library.HasContent(Movies)</visible>
+	</item>
+	<item>
+	<!-- Filmes sets -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31048]</label>
+	<property name="id">movies</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,movie.sets)</onclick>
+	<visible>Library.HasContent(Movies)</visible>
+	</item>
+	<item>
+	<!-- Filmes tags -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[20459]</label>
+	<property name="id">movies</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,movie.tags)</onclick>
+	<visible>Library.HasContent(Movies)</visible>
+	</item>
+	<item>
+	<!-- Filmes atores -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31045]</label>
+	<property name="id">movies</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,movie.actors)</onclick>
+	<visible>Library.HasContent(Movies)</visible>
+	</item>
+	<item>
+	<!-- Filmes diretores -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31090]</label>
+	<property name="id">movies</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,movie.directors)</onclick>
+	<visible>Library.HasContent(Movies)</visible>
+	</item>
+	<item>
+	<!-- Filmes paises -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[20451]</label>
+	<property name="id">movies</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,movie.countries)</onclick>
+	<visible>Library.HasContent(Movies)</visible>
+	</item>
+	<item>
+	<!-- Filmes estudios -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31047]</label>
+	<property name="id">movies</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,movie.studios)</onclick>
+	<visible>Library.HasContent(Movies)</visible>
+	</item>
+	<item>
+	<!-- Filmes anos -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31036]</label>
+	<property name="id">movies</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,movie.years)</onclick>
+	<visible>Library.HasContent(Movies)</visible>
+	</item>
+	<item>
+	<!-- Filmes + episodios recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] + $LOCALIZE[31527] - $LOCALIZE[31583]</label>
+	<property name="id">movies</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,movie.tvshow.recent)</onclick>
+	<visible>Library.HasContent(Movies) + Library.HasContent(TVShows)</visible>
+	</item>
+	<item>
+	<!-- Seriados recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31005] - $LOCALIZE[31583]</label>
+	<property name="id">tvshows</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,tvshow.recent)</onclick>
+	<visible>Library.HasContent(TVShows)</visible>
+	</item>
+	<item>
+	<!-- Seriados random -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31005] - $LOCALIZE[31584]</label>
+	<property name="id">tvshows</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,tvshow.random)</onclick>
+	<visible>Library.HasContent(TVShows)</visible>
+	</item>
+	<item>
+	<!-- Seriados em progresso -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31005] - $LOCALIZE[31585]</label>
+	<property name="id">tvshows</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,tvshow.recommended)</onclick>
+	<visible>Library.HasContent(TVShows)</visible>
+	</item>
+	<item>
+	<!-- Seriados generos -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31005] - $LOCALIZE[31091]</label>
+	<property name="id">tvshows</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,tvshow.genre)</onclick>
+	<visible>Library.HasContent(TVShows)</visible>
+	</item>
+	<item>
+	<!-- Seriados atores -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31005] - $LOCALIZE[31045]</label>
+	<property name="id">tvshows</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,tvshow.actors)</onclick>
+	<visible>Library.HasContent(TVShows)</visible>
+	</item>
+	<item>
+	<!-- Seriados estudios -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31005] - $LOCALIZE[31047]</label>
+	<property name="id">tvshows</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,tvshow.studios)</onclick>
+	<visible>Library.HasContent(TVShows)</visible>
+	</item>
+	<item>
+	<!-- Seriados anos -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31005] - $LOCALIZE[31036]</label>
+	<property name="id">tvshows</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,tvshow.years)</onclick>
+	<visible>Library.HasContent(TVShows)</visible>
+	</item>
+	<item>
+	<!-- Episodios no ar - Next Aired -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31981] (Next Aired)</label>
+	<property name="id">tvshows</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plugin)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,nextaired)</onclick>
+	<visible>System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows)</visible>
+	</item>
+	<item>
+	<!-- Concertos recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31013] - $LOCALIZE[31583]</label>
+	<property name="id">concerts</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,concert.recent)</onclick>
+	<visible>Library.HasContent(MusicVideos)</visible>
+	</item>
+	<item>
+	<!-- Concertos generos -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31013] - $LOCALIZE[31091]</label>
+	<property name="id">concerts</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,video)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,concert.genre)</onclick>
+	<visible>Library.HasContent(MusicVideos)</visible>
+	</item>
+	<item>
+	<!-- Faixas recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[182] - $LOCALIZE[31583]</label>
+	<property name="id">music</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,music)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,music.recentsong)</onclick>
+	<visible>Library.HasContent(Music)</visible>
+	</item>
+	<item>
+	<!-- Faixas random -->
+	<icon>-</icon>
+	<label>$LOCALIZE[182] - $LOCALIZE[31584]</label>
+	<property name="id">music</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,music)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,music.randomsong)</onclick>
+	<visible>Library.HasContent(Music)</visible>
+	</item>
+	<item>
+	<!-- Album recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[132] - $LOCALIZE[31583]</label>
+	<property name="id">music</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,music)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,music.recentalbum)</onclick>
+	<visible>Library.HasContent(Music)</visible>
+	</item>
+	<item>
+	<!-- Album random -->
+	<icon>-</icon>
+	<label>$LOCALIZE[132] - $LOCALIZE[31584]</label>
+	<property name="id">music</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,music)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,music.randomalbum)</onclick>
+	<visible>Library.HasContent(Music)</visible>
+	</item>
+	<item>
+	<!-- Album recem tocado -->
+	<icon>-</icon>
+	<label>$LOCALIZE[132] - $LOCALIZE[31069]</label>
+	<property name="id">music</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,music)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,music.recentplayedalbum)</onclick>
+	<visible>Library.HasContent(Music)</visible>
+	</item>
+	<item>
+	<!-- Musicas genero -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31002] - $LOCALIZE[31091]</label>
+	<property name="id">music</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,music)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,music.genre)</onclick>
+	<visible>Library.HasContent(Music)</visible>
+	</item>
+	<item>
+	<!-- Musicas artistas -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31002] - $LOCALIZE[133]</label>
+	<property name="id">music</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,music)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,music.artist)</onclick>
+	<visible>Library.HasContent(Music)</visible>
+	</item>
+	<item>
+	<!-- Musicas	anos -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31002] - $LOCALIZE[31036]</label>
+	<property name="id">music</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,music)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,music.years)</onclick>
+	<visible>Library.HasContent(Music)</visible>
+	</item>
+	<item>
+	<!-- Tv Aufnamen -->
+	<icon>-</icon>
+	<label>Aufnahmen</label>
+	<property name="id">TVChannelsRecordsKodi</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plus)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,recordings.tv)</onclick>
+	<visible>PVR.HasTVChannels</visible>
+	</item>
+	<item>
+	<!-- Canais de TV -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31333] - $LOCALIZE[31357]</label>
+	<property name="id">TVChannels</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plus)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,channel.tv)</onclick>
+	<visible>PVR.HasTVChannels</visible>
+	</item>
+	<item>
+	<!-- Canais de TV skinhelper -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31333] - $LOCALIZE[31357] SkinHelper</label>
+	<property name="id">TVChannels</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plus)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,plus.pvrhelper)</onclick>
+	<visible>PVR.HasTVChannels</visible>
+	</item>
+	<item>
+	<!-- Canais de TV skinhelper -->
+	<icon>-</icon>
+	<label>Aufnahmen - Skinhelper</label>
+	<property name="id">TvRecordings</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plus)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,plus.recordings)</onclick>
+	<visible>PVR.HasTVChannels</visible>
+	</item>
+	<item>
+	<!-- Serienplaner widget -->
+	<icon>-</icon>
+	<label>Tvshow - SerienPlaner</label>
+	<property name="id">serienplaner</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plus)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,plus.serienplaner)</onclick>
+	<visible>PVR.HasTVChannels</visible>
+	</item>
+	<item>
+	<!-- Canais de radio -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31333] - $LOCALIZE[31120]</label>
+	<property name="id">TVChannels</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plus)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,channel.radio)</onclick>
+	<visible>PVR.HasRadioChannels</visible>
+	</item>
+	<item>
+	<!-- Meu menu 1 -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31075] 1</label>
+	<property name="id">mymenu</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plugin)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,mymenu1)</onclick>
+	<visible>!String.IsEmpty(skin.string(mymenu1.widget))</visible>
+	</item>
+	<item>
+	<!-- Meu menu 2 -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31075] 2</label>
+	<property name="id">mymenu</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plugin)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,mymenu2)</onclick>
+	<visible>!String.IsEmpty(skin.string(mymenu2.widget))</visible>
+	</item>
+	<item>
+	<!-- Meu menu 3 -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31075] 3</label>
+	<property name="id">mymenu</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plugin)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,mymenu3)</onclick>
+	<visible>!String.IsEmpty(skin.string(mymenu3.widget))</visible>
+	</item>
+	<item>
+	<!-- Meu menu 4 -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31075] 4</label>
+	<property name="id">mymenu</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plugin)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,mymenu4)</onclick>
+	<visible>!String.IsEmpty(skin.string(mymenu4.widget))</visible>
+	</item>
+	<item>
+	<!-- Meu menu 5 -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31075] 5</label>
+	<property name="id">mymenu</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plugin)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,mymenu5)</onclick>
+	<visible>!String.IsEmpty(skin.string(mymenu5.widget))</visible>
+	</item>
+	<item>
+	<!-- Clima -->
+	<icon>-</icon>
+	<label>31009</label>
+	<property name="id">misc</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,none)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,weather)</onclick>
+	<visible>!String.IsEmpty(Weather.Plugin)</visible>
+	</item>
+	<item>
+	<!-- Sistema -->
+	<icon>-</icon>
+	<label>31011</label>
+	<property name="id">misc</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,none)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,settings)</onclick>
+	</item>
+	<item>
+	<!-- Favoritos -->
+	<icon>-</icon>
+	<label>31031</label>
+	<property name="id">misc</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plugin)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,favourites)</onclick>
+	<visible>System.HasAddon(script.favourites) + !String.IsEmpty(Window(0).Property(Favourite.1.Name))</visible>
+	</item>
+	<item>
+	<!-- Jogos -->
+	<icon>-</icon>
+	<label>31007</label>
+	<property name="id">misc</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,pluign)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,games)</onclick>
+	<visible>System.HasAddon(script.games.rom.collection.browser) + !String.IsEmpty(Window(0).Property(MostPlayedROM.1.Title))</visible>
+	</item>
+	<item>
+	<!-- Addons programas -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31010] - $LOCALIZE[31030]</label>
+	<property name="id">addons</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plus)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,addons.programs)</onclick>
+	<visible>!System.Platform.Android</visible>
+	</item>
+	<item>
+	<!-- Addons programas android -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31010] - $LOCALIZE[31030]</label>
+	<property name="id">addons</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plus)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,addons.android)</onclick>
+	<visible>System.Platform.Android</visible>
+	</item>
+	<item>
+	<!-- Addons video -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31010] - $LOCALIZE[31353]</label>
+	<property name="id">addons</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plus)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,addons.video)</onclick>
+	<visible>!System.Platform.Android</visible>
+	</item>
+	<item>
+	<!-- Addons audio -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31010] - $LOCALIZE[31355]</label>
+	<property name="id">addons</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plus)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,addons.audio)</onclick>
+	<visible>!System.Platform.Android</visible>
+	</item>
+	<item>
+	<!-- Filmes em alta -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31995] (The MovieDB)</label>
+	<property name="id">extras</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,extras)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,extras.topratedmovies)</onclick>
+	<visible>System.HasAddon(script.extendedinfo)</visible>
+	</item>
+	<item>
+	<!-- Filmes populares -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31958] (The MovieDB)</label>
+	<property name="id">extras</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,extras)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,extras.popularmovies)</onclick>
+	<visible>System.HasAddon(script.extendedinfo)</visible>
+	</item>
+	<item>
+	<!-- Filmes tendencias -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31964] ( Trakt.tv)</label>
+	<property name="id">extras</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,extras)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,extras.trendingmovies)</onclick>
+	<visible>System.HasAddon(script.extendedinfo)</visible>
+	</item>
+	<item>
+	<!-- Seriados em alta TMDB -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31005] - $LOCALIZE[31995] (The MovieDB)</label>
+	<property name="id">extras</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,extras)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,extras.topratedtvshows)</onclick>
+	<visible>System.HasAddon(script.extendedinfo)</visible>
+	</item>
+	<item>
+	<!-- Seriados populares -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31005] - $LOCALIZE[31964] (Trakt.tv)</label>
+	<property name="id">extras</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,extras)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,extras.populartvshows)</onclick>
+	<visible>System.HasAddon(script.extendedinfo)</visible>
+	</item>
+	<item>
+	<!-- Seriados em exibicao -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31962] (The MovieDB)</label>
+	<property name="id">extras</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,extras)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,extras.onairtvshows)</onclick>
+	<visible>System.HasAddon(script.extendedinfo)</visible>
+	</item>
+	<item>
+	<!-- Seriados tendencias -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31005] - $LOCALIZE[31964] ( Trakt.tv)</label>
+	<property name="id">extras</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,extras)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,extras.trendingtvshows)</onclick>
+	<visible>System.HasAddon(script.extendedinfo)</visible>
+	</item>
+	<item>
+	<!-- Episodios no ar - The MovieDB-->
+	<icon>-</icon>
+	<label>$LOCALIZE[31981] (The MovieDB)</label>
+	<property name="id">extras</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,extras)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,extras.airingtodaytvshows)</onclick>
+	<visible>System.HasAddon(script.extendedinfo)</visible>
+	</item>
+	<item>
+	<!-- Concertos em estreia -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31013] - $LOCALIZE[31980] (Trakt.tv)</label>
+	<property name="id">extras</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,extras)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,extras.premiereshows)</onclick>
+	<visible>System.HasAddon(script.extendedinfo)</visible>
+	</item>
+	<item>
+	<!-- Concertos tendencias -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31013] - $LOCALIZE[31964] (Trakt.tv)</label>
+	<property name="id">extras</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,extras)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,extras.trendingshows)</onclick>
+	<visible>System.HasAddon(script.extendedinfo)</visible>
+	</item>
+	<item>
+	<!-- Artistas em alta -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31037] - $LOCALIZE[31995] (LastFM)</label>
+	<property name="id">extras</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,extras)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,extras.topartists)</onclick>
+	<visible>System.HasAddon(script.extendedinfo)</visible>
+	</item>
+	<item>
+	<!-- Artistas polemicos -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31037] - $LOCALIZE[31995] (LastFM)</label>
+	<property name="id">extras</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,extras)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,extras.hypedartists)</onclick>
+	<visible>System.HasAddon(script.extendedinfo)</visible>
+	</item>
+	<item>
+	<!-- Eventos proximos -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31545] (LastFM)</label>
+	<property name="id">extras</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plugin)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,extras.nearevents)</onclick>
+	<visible>System.HasAddon(script.extendedinfo)</visible>
+	</item>
+	<item>
+	<!-- Nos cinemas TMDB -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31997] (The MovieDB)</label>
+	<property name="id">extras</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,extras)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,extras.incinemas)</onclick>
+	<visible>System.HasAddon(script.extendedinfo)</visible>
+	</item>	
+	<item>
+	<!-- Em breve nos cinemas TMDB -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31998] (The MovieDB)</label>
+	<property name="id">extras</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,extras)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,extras.upcoming)</onclick>
+	<visible>System.HasAddon(script.extendedinfo)</visible>
+	</item>	
+	<item>
+	<!--  Jogos em alta -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31953] (YouTube)</label>
+	<property name="id">extras</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,extras)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,extras.mostplayedroms)</onclick>
+	<visible>System.HasAddon(script.extendedinfo)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 1 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu1.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl1.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu1.path)],property=Widget1)</onclick>
+	<visible>String.Contains(skin.string(menu1.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 2 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu2.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl2.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu2.path)],property=Widget2)</onclick>
+	<visible>String.Contains(skin.string(menu2.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 3 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu3.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl3.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu3.path)],property=Widget3)</onclick>
+	<visible>String.Contains(skin.string(menu3.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 4 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu4.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl4.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu4.path)],property=Widget4)</onclick>
+	<visible>String.Contains(skin.string(menu4.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 5 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu5.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl5.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu5.path)],property=Widget5)</onclick>
+	<visible>String.Contains(skin.string(menu5.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 6 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu6.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl6.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu6.path)],property=Widget6)</onclick>
+	<visible>String.Contains(skin.string(menu6.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 7 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu7.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl7.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu7.path)],property=Widget7)</onclick>
+	<visible>String.Contains(skin.string(menu7.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 8 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu8.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl8.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu8.path)],property=Widget8)</onclick>
+	<visible>String.Contains(skin.string(menu8.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 9 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu9.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl9.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu9.path)],property=Widget9)</onclick>
+	<visible>String.Contains(skin.string(menu9.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 10 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu10.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl10.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu10.path)],property=Widget10)</onclick>
+	<visible>String.Contains(skin.string(menu10.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 11 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu11.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl11.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu11.path)],property=Widget11)</onclick>
+	<visible>String.Contains(skin.string(menu11.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 12 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu12.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl12.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu12.path)],property=Widget12)</onclick>
+	<visible>String.Contains(skin.string(menu12.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 13 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu13.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl13.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu13.path)],property=Widget13)</onclick>
+	<visible>String.Contains(skin.string(menu13.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 14 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu14.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl14.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu14.path)],property=Widget14)</onclick>
+	<visible>String.Contains(skin.string(menu14.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 15 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu15.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl15.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu15.path)],property=Widget15)</onclick>
+	<visible>String.Contains(skin.string(menu15.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 16 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu16.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl16.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu16.path)],property=Widget16)</onclick>
+	<visible>String.Contains(skin.string(menu16.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 17 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu17.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl17.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu17.path)],property=Widget17)</onclick>
+	<visible>String.Contains(skin.string(menu17.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 18 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu18.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl18.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu18.path)],property=Widget18)</onclick>
+	<visible>String.Contains(skin.string(menu18.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 19 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu19.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl19.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu19.path)],property=Widget19)</onclick>
+	<visible>String.Contains(skin.string(menu19.master),vpl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de video 20 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31072] ($VAR[value_menu20.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistvideo)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vpl20.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu20.path)],property=Widget20)</onclick>
+	<visible>String.Contains(skin.string(menu20.master),vpl)</visible>
+	</item>
+	<item>	
+	<!-- Playlist de musica 1 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu1.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl1.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu1.path)],property=Widget1)</onclick>
+	<visible>String.Contains(skin.string(menu1.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 2 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu2.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl2.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu2.path)],property=Widget2)</onclick>
+	<visible>String.Contains(skin.string(menu2.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 3 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu3.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl3.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu3.path)],property=Widget3)</onclick>
+	<visible>String.Contains(skin.string(menu3.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 4 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu4.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl4.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu4.path)],property=Widget4)</onclick>
+	<visible>String.Contains(skin.string(menu4.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 5 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu5.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl5.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu5.path)],property=Widget5)</onclick>
+	<visible>String.Contains(skin.string(menu5.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 6 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu6.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl6.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu6.path)],property=Widget6)</onclick>
+	<visible>String.Contains(skin.string(menu6.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 7 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu7.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl7.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu7.path)],property=Widget7)</onclick>
+	<visible>String.Contains(skin.string(menu7.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 8 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu8.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl8.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu8.path)],property=Widget8)</onclick>
+	<visible>String.Contains(skin.string(menu8.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 9 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu9.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl9.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu9.path)],property=Widget9)</onclick>
+	<visible>String.Contains(skin.string(menu9.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 10 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu10.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl10.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu10.path)],property=Widget10)</onclick>
+	<visible>String.Contains(skin.string(menu10.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 11 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu11.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl11.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu11.path)],property=Widget11)</onclick>
+	<visible>String.Contains(skin.string(menu11.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 12 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu12.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl12.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu12.path)],property=Widget12)</onclick>
+	<visible>String.Contains(skin.string(menu12.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 13 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu13.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl13.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu13.path)],property=Widget13)</onclick>
+	<visible>String.Contains(skin.string(menu13.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 14 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu14.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl14.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu14.path)],property=Widget14)</onclick>
+	<visible>String.Contains(skin.string(menu14.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 15 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu15.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl15.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu15.path)],property=Widget15)</onclick>
+	<visible>String.Contains(skin.string(menu15.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 16 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu16.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl16.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu16.path)],property=Widget16)</onclick>
+	<visible>String.Contains(skin.string(menu16.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 17 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu17.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl17.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu17.path)],property=Widget17)</onclick>
+	<visible>String.Contains(skin.string(menu17.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 18 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu18.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl18.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu18.path)],property=Widget18)</onclick>
+	<visible>String.Contains(skin.string(menu18.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 19 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu19.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl19.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu19.path)],property=Widget19)</onclick>
+	<visible>String.Contains(skin.string(menu19.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Playlist de musica 20 - Recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31073] ($VAR[value_menu20.label])</label>
+	<property name="id">playlist</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,playlistmusic)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,apl20.recent)</onclick>
+	<onclick>RunScript(script.randomandlastitems,limit=1,playlist=$INFO[Skin.String(menu20.path)],property=Widget20)</onclick>
+	<visible>String.Contains(skin.string(menu20.master),apl)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 1 -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31074] ($VAR[value_menu1.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes1)</onclick>
+	<visible>String.Contains(skin.string(menu1.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 2 -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31074] ($VAR[value_menu2.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes2)</onclick>
+	<visible>String.Contains(skin.string(menu2.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 3 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu3.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes3)</onclick>
+	<visible>String.Contains(skin.string(menu3.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 4 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu4.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes4)</onclick>
+	<visible>String.Contains(skin.string(menu4.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 5 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu5.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes5)</onclick>
+	<visible>String.Contains(skin.string(menu5.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 6 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu6.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes6)</onclick>
+	<visible>String.Contains(skin.string(menu6.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 7 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu7.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes7)</onclick>
+	<visible>String.Contains(skin.string(menu7.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 8 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu8.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes8)</onclick>
+	<visible>String.Contains(skin.string(menu8.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 9 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu9.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes9)</onclick>
+	<visible>String.Contains(skin.string(menu9.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 10 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu10.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes10)</onclick>
+	<visible>String.Contains(skin.string(menu10.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 11 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu11.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes11)</onclick>
+	<visible>String.Contains(skin.string(menu11.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 12 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu12.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes12)</onclick>
+	<visible>String.Contains(skin.string(menu12.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 13 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu13.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes13)</onclick>
+	<visible>String.Contains(skin.string(menu13.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 14 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu14.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes14)</onclick>
+	<visible>String.Contains(skin.string(menu14.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 15 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu15.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes15)</onclick>
+	<visible>String.Contains(skin.string(menu15.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 16 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu16.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes16)</onclick>
+	<visible>String.Contains(skin.string(menu16.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 17 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu17.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes17)</onclick>
+	<visible>String.Contains(skin.string(menu17.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 18 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu18.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes18)</onclick>
+	<visible>String.Contains(skin.string(menu18.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 19 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu19.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes19)</onclick>
+	<visible>String.Contains(skin.string(menu19.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Video nodes 20 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31074] ($VAR[value_menu20.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,vnodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,vnodes20)</onclick>
+	<visible>String.Contains(skin.string(menu20.master),vnodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 1 -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31082] ($VAR[value_menu1.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes1)</onclick>
+	<visible>String.Contains(skin.string(menu1.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 2 -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31082] ($VAR[value_menu2.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes2)</onclick>
+	<visible>String.Contains(skin.string(menu2.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 3 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu3.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes3)</onclick>
+	<visible>String.Contains(skin.string(menu3.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 4 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu4.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes4)</onclick>
+	<visible>String.Contains(skin.string(menu4.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 5 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu5.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes5)</onclick>
+	<visible>String.Contains(skin.string(menu5.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 6 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu6.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes6)</onclick>
+	<visible>String.Contains(skin.string(menu6.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 7 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu7.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes7)</onclick>
+	<visible>String.Contains(skin.string(menu7.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 8 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu8.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes8)</onclick>
+	<visible>String.Contains(skin.string(menu8.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 9 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu9.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes9)</onclick>
+	<visible>String.Contains(skin.string(menu9.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 10 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu10.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes10)</onclick>
+	<visible>String.Contains(skin.string(menu10.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 11 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu11.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes11)</onclick>
+	<visible>String.Contains(skin.string(menu11.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 12 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu12.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes12)</onclick>
+	<visible>String.Contains(skin.string(menu12.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 13 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu13.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes13)</onclick>
+	<visible>String.Contains(skin.string(menu13.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 14 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu14.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes14)</onclick>
+	<visible>String.Contains(skin.string(menu14.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 15 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu15.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes15)</onclick>
+	<visible>String.Contains(skin.string(menu15.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 16 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu16.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes16)</onclick>
+	<visible>String.Contains(skin.string(menu16.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 17 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu17.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes17)</onclick>
+	<visible>String.Contains(skin.string(menu17.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 18 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu18.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes18)</onclick>
+	<visible>String.Contains(skin.string(menu18.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 19 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu19.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes19)</onclick>
+	<visible>String.Contains(skin.string(menu19.master),anodes)</visible>
+	</item>
+	<item>
+	<!-- Audio nodes 20 -->
+	<icon>-</icon>	
+	<label>$LOCALIZE[31082] ($VAR[value_menu20.label])</label>
+	<property name="id">node</property>	
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,anodes)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,anodes20)</onclick>
+	<visible>String.Contains(skin.string(menu20.master),anodes)</visible>
+	</item>
+	</content>
+	</control>
+	<control type="group">
+	<top>-520</top>
+	<include>Dialogs_Bar2</include>
+	<!-- salmao - custom -->
+	<control type="image">	
+	<left>15</left>
+	<top>10</top>
+	<width>60</width>
+	<height>28</height>
+	<aspectratio>stretch</aspectratio>
+	<texture>grey.png</texture>
+	<colordiffuse>FFE9967A</colordiffuse>
+	</control>
+	<control type="label">
+	<left>90</left>
+	<top>9</top>
+	<width>195</width>
+	<height>28</height>
+	<align>left</align>
+	<font>Font_button</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>31343</label>
+	<scroll>true</scroll>
+	<scrollout>false</scrollout>
+	</control>
+	<!-- roxo claro - filmes -->
+	<control type="image">	
+	<left>339</left>
+	<top>10</top>
+	<width>60</width>
+	<height>28</height>
+	<aspectratio>stretch</aspectratio>
+	<texture>grey.png</texture>
+	<colordiffuse>FF9370DB</colordiffuse>
+	</control>
+	<control type="label">
+	<left>414</left>
+	<top>9</top>
+	<width>190</width>
+	<height>28</height>
+	<align>left</align>
+	<font>Font_button</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>31003</label>
+	<scroll>true</scroll>
+	<scrollout>false</scrollout>
+	</control>
+	<!-- oliva - seriados -->
+	<control type="image">	
+	<left>663</left>
+	<top>10</top>
+	<width>60</width>
+	<height>28</height>
+	<aspectratio>stretch</aspectratio>
+	<texture>grey.png</texture>
+	<colordiffuse>FF808000</colordiffuse>
+	</control>
+	<control type="label">
+	<left>738</left>
+	<top>9</top>
+	<width>190</width>
+	<height>28</height>
+	<align>left</align>
+	<font>Font_button</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>31005</label>
+	<scroll>true</scroll>
+	<scrollout>false</scrollout>
+	</control>
+	<!-- bege - concertos -->
+	<control type="image">	
+	<left>987</left>
+	<top>10</top>
+	<width>60</width>
+	<height>28</height>
+	<aspectratio>stretch</aspectratio>
+	<texture>grey.png</texture>
+	<colordiffuse>FFDEB887</colordiffuse>
+	</control>
+	<control type="label">
+	<left>1062</left>
+	<top>9</top>
+	<width>190</width>
+	<height>28</height>
+	<align>left</align>
+	<font>Font_button</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>31013</label>
+	<scroll>true</scroll>
+	<scrollout>false</scrollout>
+	</control>
+	<!-- vermelho - musica -->
+	<control type="image">	
+	<left>1311</left>
+	<top>10</top>
+	<width>60</width>
+	<height>28</height>
+	<aspectratio>stretch</aspectratio>
+	<texture>grey.png</texture>
+	<colordiffuse>FFDC143C</colordiffuse>
+	</control>
+	<control type="label">
+	<left>1386</left>
+	<top>9</top>
+	<width>190</width>
+	<height>28</height>
+	<align>left</align>
+	<font>Font_button</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>31002</label>
+	<scroll>true</scroll>
+	<scrollout>false</scrollout>	
+	</control>
+	<!-- azul escuro - TV/Radio -->
+	<control type="image">	
+	<left>1635</left>
+	<top>10</top>
+	<width>60</width>
+	<height>28</height>
+	<aspectratio>stretch</aspectratio>
+	<texture>grey.png</texture>
+	<colordiffuse>FF5F9EA0</colordiffuse>
+	</control>
+	<control type="label">
+	<left>1710</left>
+	<top>9</top>
+	<width>190</width>
+	<height>28</height>
+	<align>left</align>
+	<font>Font_button</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>$LOCALIZE[31333] - $LOCALIZE[31357]/$LOCALIZE[31120]</label>
+	<scroll>true</scroll>
+	<scrollout>false</scrollout>
+	</control>
+	<!-- terracotta - varios -->
+	<control type="image">	
+	<left>15</left>
+	<top>46</top>
+	<width>60</width>
+	<height>28</height>
+	<aspectratio>stretch</aspectratio>
+	<texture>grey.png</texture>
+	<colordiffuse>FFD2691E</colordiffuse>
+	</control>
+	<control type="label">
+	<left>90</left>
+	<top>45</top>
+	<width>195</width>
+	<height>28</height>
+	<align>left</align>
+	<font>Font_button</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>31147</label>
+	<scroll>true</scroll>
+	<scrollout>false</scrollout>
+	</control>
+	<!-- ciano - meu menu -->
+	<control type="image">	
+	<left>339</left>
+	<top>46</top>
+	<width>60</width>
+	<height>28</height>
+	<aspectratio>stretch</aspectratio>
+	<texture>grey.png</texture>
+	<colordiffuse>FF00FFFF</colordiffuse>
+	</control>
+	<control type="label">
+	<left>414</left>
+	<top>45</top>
+	<width>190</width>
+	<height>28</height>
+	<align>left</align>
+	<font>Font_button</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>31075</label>
+	<scroll>true</scroll>
+	<scrollout>false</scrollout>
+	</control>
+	<!-- dourado - addons -->
+	<control type="image">	
+	<left>663</left>
+	<top>46</top>
+	<width>60</width>
+	<height>28</height>
+	<aspectratio>stretch</aspectratio>
+	<texture>grey.png</texture>
+	<colordiffuse>FFFFD700</colordiffuse>
+	</control>
+	<control type="label">
+	<left>738</left>
+	<top>45</top>
+	<width>190</width>
+	<height>28</height>
+	<align>left</align>
+	<font>Font_button</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>31010</label>
+	<scroll>true</scroll>
+	<scrollout>false</scrollout>
+	</control>
+	<!-- verde - extras -->
+	<control type="image">	
+	<left>987</left>
+	<top>46</top>
+	<width>60</width>
+	<height>28</height>
+	<aspectratio>stretch</aspectratio>
+	<texture>grey.png</texture>
+	<colordiffuse>FF008000</colordiffuse>
+	</control>
+	<control type="label">
+	<left>1062</left>
+	<top>45</top>
+	<width>190</width>
+	<height>28</height>
+	<align>left</align>
+	<font>Font_button</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>31416</label>
+	<scroll>true</scroll>
+	<scrollout>false</scrollout>
+	</control>
+	<!-- laranja - playlist -->
+	<control type="image">	
+	<left>1311</left>
+	<top>46</top>
+	<width>60</width>
+	<height>28</height>
+	<aspectratio>stretch</aspectratio>
+	<texture>grey.png</texture>
+	<colordiffuse>FFFFA500</colordiffuse>
+	</control>
+	<control type="label">
+	<left>1386</left>
+	<top>45</top>
+	<width>190</width>
+	<height>28</height>
+	<align>left</align>
+	<font>Font_button</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>31035</label>
+	<scroll>true</scroll>
+	<scrollout>false</scrollout>
+	</control>
+	<!-- magenta - nodes -->
+	<control type="image">	
+	<left>1635</left>
+	<top>46</top>
+	<width>60</width>
+	<height>28</height>
+	<aspectratio>stretch</aspectratio>
+	<texture>grey.png</texture>
+	<colordiffuse>FFC71585</colordiffuse>
+	</control>
+	<control type="label">
+	<left>1710</left>
+	<top>45</top>
+	<width>190</width>
+	<height>28</height>
+	<align>left</align>
+	<font>Font_button</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>$LOCALIZE[31074]/$LOCALIZE[31082]</label>
+	<scroll>true</scroll>
+	<scrollout>false</scrollout>
+	</control>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>-526</top>
+	<width>1928</width>
+	<height>45</height>
+	<texture flipy="true">shadow_h.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>-578</top>
+	<height>52</height>
+	<width>1920</width>
+	<aligny>top</aligny>
+	<texture>darkgrey.png</texture>
+	<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+	<animation effect="fade" end="95" condition="true">Conditional</animation>
+	</control>
+	<control type="label">
+	<left>510</left>
+	<top>-572</top>
+	<height>45</height>
+	<width>900</width>
+	<align>center</align>
+	<aligny>center</aligny>
+	<font>Font_header</font>
+	<label>31318</label>
+	<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+	</control>
+	<control type="label">
+	<left>1500</left>
+	<top>-572</top>
+	<height>45</height>
+	<width>390</width>
+	<align>right</align>
+	<aligny>center</aligny>
+	<font>Font_button</font>
+	<label>$INFO[Container(5100).NumItems] $LOCALIZE[31093] - $LOCALIZE[31757] $INFO[Container(5100).CurrentPage]/$INFO[Container(5100).NumPages]</label>
+	<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+	</control>
+	</control>
+	<!-- Seletor dos Widgets Custom -->
+	<control type="group">
+	<control type="image">
+	<left>480</left>
+	<top>-525</top>
+	<height>38</height>
+	<width>477</width>
+	<texture>topmenu_button_nofocus.png</texture>
+	<colordiffuse>FFDAA520</colordiffuse>
+	<aspectratio align="center">stretch</aspectratio>
+	</control>
+	<control type="label">
+	<left>480</left>
+	<top>-525</top>
+	<height>38</height>
+	<width>477</width>
+	<align>center</align>
+	<aligny>center</aligny>
+	<font>Font_button</font>
+	<label>31319</label>
+	<textcolor>FFFFFAF0</textcolor>
+	</control>
+	<control type="image">
+	<left>960</left>
+	<top>-525</top>
+	<height>38</height>
+	<width>477</width>
+	<texture>topmenu_button_nofocus.png</texture>
+	<colordiffuse>FF4169E1</colordiffuse>
+	<aspectratio align="center">stretch</aspectratio>
+	</control>
+	<control type="label">
+	<left>960</left>
+	<top>-525</top>
+	<height>38</height>
+	<width>477</width>
+	<align>center</align>
+	<aligny>center</aligny>
+	<font>Font_button</font>
+	<label>31650</label>
+	<textcolor>FFFFFAF0</textcolor>
+	</control>
+	<animation effect="slide" start="0,0" end="0,578" time="600" tween="sine" easing="inout" condition="Control.HasFocus(5200) | Control.HasFocus(5300)">Conditional</animation>
+	<control type="panel" id="5200">
+	<left>480</left>
+	<top>-488</top>
+	<width>480</width>
+	<height>390</height>
+	<onleft>9000</onleft>
+	<onright>5300</onright>
+	<orientation>horizontal</orientation>
+	<pagecontrol>-</pagecontrol>
+	<itemlayout width="480" height="38">
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<height>38</height>
+	<width>477</width>
+	<texture>topmenu_button_nofocus.png</texture>
+	<aspectratio align="center">stretch</aspectratio>
+	</control>
+	<control type="label">
+	<left>0</left>
+	<top>0</top>
+	<height>38</height>
+	<width>477</width>
+	<align>center</align>
+	<aligny>center</aligny>
+	<font>Font_button</font>
+	<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+	<textcolor>FF101010</textcolor>
+	</control>
+	</itemlayout>
+	<focusedlayout width="480" height="38">
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<height>38</height>
+	<width>477</width>
+	<texture>topmenu_button_focus.png</texture>
+	<aspectratio align="center">stretch</aspectratio>
+	</control>
+	<control type="label">
+	<left>0</left>
+	<top>0</top>
+	<height>38</height>
+	<width>477</width>
+	<align>center</align>
+	<aligny>center</aligny>
+	<font>Font_button</font>
+	<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+	<textcolor>FFFFFAF0</textcolor>
+	</control>
+	</focusedlayout>
+	<content>
+	<item>
+	<!-- Filmes recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31583]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labela,$LOCALIZE[31003] - $LOCALIZE[31583])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]a,recentmovies)</onclick>
+	<visible>Library.HasContent(Movies)</visible>
+	</item>
+	<item>
+	<!-- Filmes random -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31584]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labela,$LOCALIZE[31003] - $LOCALIZE[31584])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]a,randommovies)</onclick>
+	<visible>Library.HasContent(Movies)</visible>
+	</item>
+	<item>
+	<!-- Filmes em progresso -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31585]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labela,$LOCALIZE[31003] - $LOCALIZE[31585])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]a,recommendedmovies)</onclick>
+	<visible>Library.HasContent(Movies)</visible>
+	</item>
+	<item>
+	<!-- Seriados recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31005] - $LOCALIZE[31583]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labela,$LOCALIZE[31005] - $LOCALIZE[31583])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]a,recentepisodes)</onclick>
+	<visible>Library.HasContent(TVShows)</visible>
+	</item>
+	<item>
+	<!-- Seriados random -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31005] - $LOCALIZE[31584]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labela,$LOCALIZE[31005] - $LOCALIZE[31584])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]a,randomepisodes)</onclick>
+	<visible>Library.HasContent(TVShows)</visible>
+	</item>
+	<item>
+	<!-- Seriados em progresso -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31005] - $LOCALIZE[31585]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labela,$LOCALIZE[31005] - $LOCALIZE[31585])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]a,recommendedepisodes)</onclick>
+	<visible>Library.HasContent(TVShows)</visible>
+	</item>
+	<item>
+	<!-- Filmes + seriados recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] + $LOCALIZE[31527] - $LOCALIZE[31583]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labela,$LOCALIZE[31003] + $LOCALIZE[31527] - $LOCALIZE[31583])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]a,recentvideos)</onclick>
+	<visible>Library.HasContent(Movies) + Library.HasContent(TVShows)</visible>
+	</item>
+	<item>
+	<!-- Albuns recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[132] - $LOCALIZE[31583]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labela,$LOCALIZE[132] - $LOCALIZE[31583])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]a,recentalbums)</onclick>
+	<visible>Library.HasContent(Music)</visible>
+	</item>
+	<item>
+	<!-- Albuns random -->
+	<icon>-</icon>
+	<label>$LOCALIZE[132] - $LOCALIZE[31584]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labela,$LOCALIZE[132] - $LOCALIZE[31584])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]a,randomalbums)</onclick>
+	<visible>false</visible>
+	</item>
+	<item>
+	<!-- Faixas random -->
+	<icon>-</icon>
+	<label>$LOCALIZE[182] - $LOCALIZE[31584]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labela,$LOCALIZE[182] - $LOCALIZE[31584])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]a,randomsongs)</onclick>
+	<visible>false</visible>
+	</item>
+	</content>
+	</control>
+	<control type="panel" id="5300">
+	<left>960</left>
+	<top>-488</top>
+	<width>480</width>
+	<height>390</height>
+	<onleft>5200</onleft>
+	<onright>9000</onright>
+	<orientation>horizontal</orientation>
+	<pagecontrol>-</pagecontrol>
+	<itemlayout width="480" height="38">
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<height>38</height>
+	<width>477</width>
+	<texture>topmenu_button_nofocus.png</texture>
+	<aspectratio align="center">stretch</aspectratio>
+	</control>
+	<control type="label">
+	<left>0</left>
+	<top>0</top>
+	<height>38</height>
+	<width>477</width>
+	<align>center</align>
+	<aligny>center</aligny>
+	<font>Font_button</font>
+	<label>$INFO[ListItem.Label]</label>
+	<textcolor>FF101010</textcolor>
+	</control>
+	</itemlayout>
+	<focusedlayout width="480" height="38">
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<height>38</height>
+	<width>477</width>
+	<texture>topmenu_button_focus.png</texture>
+	<aspectratio align="center">stretch</aspectratio>
+	</control>
+	<control type="label">
+	<left>0</left>
+	<top>0</top>
+	<height>38</height>
+	<width>477</width>
+	<align>center</align>
+	<aligny>center</aligny>
+	<font>Font_button</font>
+	<label>$INFO[ListItem.Label]</label>
+	<textcolor>FFFFFAF0</textcolor>
+	</control>
+	</focusedlayout>
+	<content>
+	<item>
+	<!-- Filmes recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31583]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labelb,$LOCALIZE[31003] - $LOCALIZE[31583])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]b,recentmovies)</onclick>
+	<visible>Library.HasContent(Movies)</visible>
+	</item>
+	<item>
+	<!-- Filmes random -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31584]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labelb,$LOCALIZE[31003] - $LOCALIZE[31584])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]b,randommovies)</onclick>
+	<visible>Library.HasContent(Movies)</visible>
+	</item>
+	<item>
+	<!-- Filmes em progresso -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] - $LOCALIZE[31585]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labelb,$LOCALIZE[31003] - $LOCALIZE[31585])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]b,recommendedmovies)</onclick>
+	<visible>Library.HasContent(Movies)</visible>
+	</item>
+	<item>
+	<!-- Seriados recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31005] - $LOCALIZE[31583]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labelb,$LOCALIZE[31005] - $LOCALIZE[31583])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]b,recentepisodes)</onclick>
+	<visible>Library.HasContent(TVShows)</visible>
+	</item>
+	<item>
+	<!-- Seriados random -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31005] - $LOCALIZE[31584]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labelb,$LOCALIZE[31005] - $LOCALIZE[31584])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]b,randomepisodes)</onclick>
+	<visible>Library.HasContent(TVShows)</visible>
+	</item>
+	<item>
+	<!-- Seriados em progresso -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31005] - $LOCALIZE[31585]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labelb,$LOCALIZE[31005] - $LOCALIZE[31585])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]b,recommendedepisodes)</onclick>
+	<visible>Library.HasContent(TVShows)</visible>
+	</item>
+	<item>
+	<!-- Filmes + seriados recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[31003] + $LOCALIZE[31527] - $LOCALIZE[31583]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labelb,$LOCALIZE[31003] + $LOCALIZE[31527] - $LOCALIZE[31583])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]b,recentvideos)</onclick>
+	<visible>Library.HasContent(Movies) + Library.HasContent(TVShows)</visible>
+	</item>
+	<item>
+	<!-- Albuns recentes -->
+	<icon>-</icon>
+	<label>$LOCALIZE[132] - $LOCALIZE[31583]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labelb,$LOCALIZE[132] - $LOCALIZE[31583])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]b,recentalbums)</onclick>
+	<visible>Library.HasContent(Music)</visible>
+	</item>
+	<item>
+	<!-- Albuns random -->
+	<icon>-</icon>
+	<label>$LOCALIZE[132] - $LOCALIZE[31584]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labelb,$LOCALIZE[132] - $LOCALIZE[31584])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]b,randomalbums)</onclick>
+	<visible>false</visible>
+	</item>
+	<item>
+	<!-- Faixas random -->
+	<icon>-</icon>
+	<label>$LOCALIZE[182] - $LOCALIZE[31584]</label>
+	<onclick>Skin.SetString($INFO[Skin.String(duallabel)].labelb,$LOCALIZE[182] - $LOCALIZE[31584])</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(dualwidgets)]b,randomsongs)</onclick>
+	<visible>false</visible>
+	</item>
+	</content>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>-526</top>
+	<width>1928</width>
+	<height>45</height>
+	<texture flipy="true">shadow_h.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>-578</top>
+	<height>52</height>
+	<width>1920</width>
+	<aligny>top</aligny>
+	<texture>darkgrey.png</texture>
+	<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+	<animation effect="fade" end="95" condition="true">Conditional</animation>
+	</control>
+	<control type="label">
+	<left>540</left>
+	<top>-572</top>
+	<height>45</height>
+	<width>900</width>
+	<align>center</align>
+	<aligny>center</aligny>
+	<label>31318</label>
+	<font>Font_header</font>
+	<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+	</control>
+	</control>
+	</controls>
+</window>

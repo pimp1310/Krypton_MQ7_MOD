@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- Aeon MQ 7 -->	
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<include condition="!Skin.String(fix,fix2)">Quickfix</include>
+	<onload condition="!Skin.String(defaultsettings,6)">ActivateWindow(6628)</onload>
+	<onload condition="System.HasAddon(script.artistslideshow) + Player.HasAudio">RunScript(script.artistslideshow)</onload>
+	<onload condition="System.HasAddon(script.favourites)">RunScript(script.favourites)</onload>
+	<onload condition="System.HasAddon(script.skin.helper.service)">SetProperty(SkinHelper.WidgetContainer,510,Home)</onload>
+	<onload condition="Skin.HasSetting(rcbgames)">RunScript(script.games.rom.collection.browser,limit=12)</onload>
+ 	<onload condition="System.HasAddon(script.skin.info.service)">RunScript(script.skin.info.service)</onload>
+	<onload condition="Skin.HasSetting(rcbgames)">Skin.Reset(rcbgames)</onload>
+	<onload condition="Skin.HasSetting(kioskcode)">Skin.Reset(codestep)</onload>
+	<onload>Skin.Reset(playlists)</onload>
+	<onload>Skin.Reset(windowbg)</onload>	
+
+	<onunload condition="String.Contains(Container(9000).ListItem.Property(id),vpl) | String.Contains(Container(9000).ListItem.Property(id),apl)">Skin.SetString(playlists,$INFO[Container(9000).ListItem.Property(id)])</onunload>
+	<onunload>ClearProperty(SkinHelper.WidgetContainer)</onunload>
+	<controls>
+	<control type="button" id="8000">
+	<include>InvisibleButton</include>
+	<onleft>SetFocus(9000)</onleft>
+	<onright>SetFocus(9000)</onright>
+	<onup>SetFocus(9000)</onup>
+	<ondown>SetFocus(9000)</ondown>
+	<onclick>SetFocus(9000)</onclick>
+	<onfocus>$INFO[Skin.String(submenu_action)]</onfocus>
+	</control>
+	<control type="button" id="8001">
+	<include>InvisibleButton</include>
+	<onfocus>SetFocus(9000)</onfocus>
+	<onfocus>Skin.SetString(windowbg,$VAR[value_menubg])</onfocus>
+	<onfocus>Skin.SetString(menulabel,$INFO[Container(9000).ListItem.Property(name)])</onfocus>
+	<onfocus condition="Player.HasMedia">SetFocus(600)</onfocus>
+	<onfocus condition="!Player.HasMedia + ![String.IsEmpty(Container(9000).ListItem.Property(widgets)) | String.IsEmpty(Container(510).ListItem(1).Label)]">SetFocus(510)</onfocus>
+	<onfocus condition="!Player.HasMedia + [String.IsEmpty(Container(9000).ListItem.Property(widgets)) | String.IsEmpty(Container(510).ListItem(1).Label)] + !Skin.HasSetting(kioskcode)">ActivateWindow(6641)</onfocus>
+	<onfocus condition="!Player.HasMedia + [String.IsEmpty(Container(9000).ListItem.Property(widgets)) | String.IsEmpty(Container(510).ListItem(1).Label)] + Skin.HasSetting(kioskcode)">SetFocus(8004)</onfocus>
+	</control>
+	<control type="button" id="8002">
+	<include>InvisibleButton</include>
+	<onfocus>SetFocus(9000)</onfocus>
+	<onfocus>Skin.SetString(windowbg,$VAR[value_menubg])</onfocus>
+	<onfocus>Skin.SetBool(submode)</onfocus>
+	<onfocus>ActivateWindow($VAR[Sub_GoTo])</onfocus>
+	</control>
+	<control type="button" id="8003">
+	<include>InvisibleButton</include>
+	<visible>![Container(9000).OnNext | Container(9000).OnPrevious | Skin.HasSetting(submode) | Window.IsVisible(5099)]</visible>
+	</control>
+	<control type="button" id="8004">
+	<include>InvisibleButton</include>
+	<onfocus condition="!String.IsEqual(skin.string(codestep),step3)">ActivateWindow(6629)</onfocus>
+	<onfocus condition="String.IsEqual(skin.string(codestep),step3)">ActivateWindow(6641)</onfocus>
+	</control>
+	<!-- Esconde colecao para ver fanart -->
+	<control type="button" id="8005">
+	<include>InvisibleButton</include>
+	<onleft>SetFocus(510)</onleft>
+	<onright>SetFocus(510)</onright>
+	<onup>SetFocus(510)</onup>
+	<ondown>SetFocus(510)</ondown>
+	</control>
+	<!--Controle do disco dos wigets -->
+	<control type="button" id="8006">
+	<include>InvisibleButton</include>
+	<animation effect="fade" start="0" end="100" time="150" delay="500" condition="true">Visible</animation>
+	<visible>![Container(510).OnNext | Container(510).OnPrevious]</visible>
+	</control>
+	<!--Controle delay dos wigets -->
+	<control type="button" id="8007">
+	<include>InvisibleButton</include>
+	<animation effect="fade" start="0" end="100" time="150" delay="500" condition="true">Visible</animation>
+	<visible>![Container(9000).OnNext | Container(9000).OnPrevious]</visible>
+	</control>
+	<control type="multiimage" id="5044">
+	<!-- Extra Fanart Artist -->
+	<include>InvisibleButton</include>
+	<imagepath background="true">$INFO[Skin.String(CustomMusicLogoPath)]$INFO[MusicPlayer.Artist,,/extrafanart/]</imagepath>
+	</control>
+	<control type="multiimage" id="5045">
+	<!-- Extra Fanart -->
+	<include>InvisibleButton</include>
+	<imagepath background="true">$INFO[Player.FolderPath]extrafanart/</imagepath>
+	</control>
+	<control type="multiimage" id="5046">
+	<!-- Extra Fanart -->
+	<include>InvisibleButton</include>
+	<imagepath background="true">$INFO[Player.FolderPath,,../extrafanart/]</imagepath>
+	</control>
+	<control type="multiimage">
+	<include>HomeBG</include>
+	<imagepath background="true">$VAR[value_menubg]</imagepath>
+	</control>
+	<control type="multiimage">
+	<include>HomeBG</include>
+	<include>Animation_Fade</include>
+	<imagepath background="true">$VAR[value_videoplayerfanart]</imagepath>
+	<visible>Player.HasVideo + System.IdleTime(8)</visible>
+	</control>
+	<control type="image" id="5043">
+	<!-- Audio Fanart -->
+	<include>HomeBG</include>
+	<include>Animation_Fade</include>
+	<texture background="true">$INFO[MusicPlayer.Property(fanart_image)]</texture>
+	<visible>Player.HasAudio + System.IdleTime(8) + String.IsEmpty(Control.GetLabel(5044))</visible>
+	</control>
+	<control type="multiimage">
+	<include>HomeBG</include>
+	<include>Animation_Fade</include>
+	<imagepath background="true">$INFO[Skin.String(CustomMusicLogoPath)]$INFO[MusicPlayer.Artist,,/extrafanart/]</imagepath>
+	<visible>Player.HasAudio + System.IdleTime(8) + !String.IsEmpty(Control.GetLabel(5044))</visible>
+	</control>
+	<control type="image">
+	<include>HomeBG</include>
+	<include>Animation_Fade</include>
+	<texture background="true">$VAR[value_widgetsfanart]</texture>
+	<visible>[Control.HasFocus(500) | Control.HasFocus(510) | ControlGroup(512).HasFocus | Control.HasFocus(8005)]</visible>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<width>1920</width>
+	<height>1080</height>
+	<texture>special://skin/backgrounds/extras/default.jpg</texture>
+	<animation effect="fade" start="0" end="80" time="200">Visible</animation>
+	<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
+	<visible>Control.HasFocus(500)</visible>
+	</control>
+	<!-- Controle estudio -->
+	<control type="image" id="556">	
+	<include>InvisibleButton</include>
+	<texture>$VAR[value_widgetsstudio]</texture>
+	</control>
+	<!-- Controle mpaa -->
+	<control type="image" id="557">	
+	<include>InvisibleButton</include>
+	<texture>$VAR[value_widgetsmpaa]</texture>
+	</control>
+	<!-- Controle video codec -->		
+	<control type="image" id="558">	
+	<include>InvisibleButton</include>
+	<texture>$VAR[value_widgetsvideocodec]</texture>
+	</control>
+	<!-- Controle music codec -->		
+	<control type="image" id="559">	
+	<include>InvisibleButton</include>
+	<texture>$VAR[value_widgetsmusiccodec]</texture>
+	</control>
+	<!-- Controle resolucao -->
+	<control type="image" id="560">	
+	<include>InvisibleButton</include>
+	<texture>$VAR[value_mediaicons_path]videoresolution/$INFO[Container(510).ListItem.VideoResolution,,.png]</texture>
+	</control>
+	<!-- Controle aspecto -->
+	<control type="image" id="561">	
+	<include>InvisibleButton</include>
+	<texture>$VAR[value_mediaicons_path]aspectratio/$INFO[Container(510).ListItem.VideoAspect,,.png]</texture>
+	</control>
+	<!-- Controle audio codec -->
+	<control type="image" id="562">	
+	<include>InvisibleButton</include>
+	<texture>$VAR[value_widgetsaudiocodec]</texture>
+	</control>
+	<!-- Controle canais de audio -->
+	<control type="image" id="563">	
+	<include>InvisibleButton</include>
+	<texture>$INFO[Container(510).ListItem.Property(AudioLanguage.1)]</texture>
+	</control>
+	<!-- Controle legenda -->
+	<control type="image" id="564">	
+	<include>InvisibleButton</include>
+	<texture>$INFO[Container(510).ListItem.Property(SubtitleLanguage.1)]</texture>
+	</control>
+	<!-- Controle gravadora -->
+	<control type="image" id="565">	
+	<include>InvisibleButton</include>
+	<texture>$VAR[value_mediaicons_path]recordlabel/$INFO[Container(510).ListItem.Property(Album_Label),,.png]</texture>
+	</control>
+	<!-- Widgets modo auto -->
+	<control type="image" id="9931">
+	<include>InvisibleButton</include>
+	<animation effect="fade" start="0" end="100" time="150" delay="1000" condition="String.Contains(skin.string(widgets_seconds),1)">Visible</animation>
+	<animation effect="fade" start="0" end="100" time="150" delay="2000" condition="String.Contains(skin.string(widgets_seconds),2)">Visible</animation>
+	<animation effect="fade" start="0" end="100" time="150" delay="3000" condition="String.Contains(skin.string(widgets_seconds),3)">Visible</animation>
+	<animation effect="fade" start="0" end="100" time="150" delay="4000" condition="String.Contains(skin.string(widgets_seconds),4)">Visible</animation>
+	<animation effect="fade" start="0" end="100" time="150" delay="5000" condition="String.Contains(skin.string(widgets_seconds),5)">Visible</animation>
+	<visible>![Container(9000).OnNext | Container(9000).OnPrevious]</visible>
+	</control>
+	<include>LiveBG</include>
+	<!-- default group -->
+	<control type="group">		
+	<include>Animation_Window</include>
+	
+	<!--<include name="MainMenuHorizontal" condition="!Skin.HasSetting(mainmenuvertical)">
+	<param name="panel-width" value="1920"/>
+	</include>
+	<include name="MainMenuHorizontal" condition="Skin.HasSetting(mainmenuvertical)">
+	<param name="panel-width" value="820"/>
+	</include>-->
+	
+	<include condition="!Skin.HasSetting(mainmenuvertical)">MenuHorizontal</include>
+	<include condition="Skin.HasSetting(mainmenuvertical)">MenuVertical</include>
+	<include condition="system.getbool(lookandfeel.enablerssfeeds)">HomeRSS</include>
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<width>1920</width>
+	<height>1080</height>
+	<texture>black.png</texture>
+	<include>Animation_Fade</include>
+	<visible>!String.IsEqual(skin.string(defaultsettings),6)</visible>
+	</control>
+	<include>BGBlack</include>
+	<include>TrailerWindow</include>
+    <include>TouchScreen</include>
+    </control>
+	<!--*   HOLIDAY MOD ADDITIONS  *-->
+	<control type="group"><!-- New Years -->
+	<visible>Skin.HasSetting(newyears)</visible>
+	<include>NewYears</include>
+	</control>
+	<control type="group"><!-- Valentines -->
+	<visible>Skin.HasSetting(valentinesday)</visible>
+	<include>ValentinesDay</include>
+	</control>
+	<control type="group"><!-- Saint Patricks Day -->
+	<visible>Skin.HasSetting(stpatricksday)</visible>
+	<include>StPatricksDay</include>
+	</control>
+	<control type="group"><!-- Easter -->
+	<visible>Skin.HasSetting(easter)</visible>
+	<include>Easter</include>
+    </control>
+    <control type="group"><!-- Independance Day -->
+	<visible>Skin.HasSetting(julyfourth)</visible>
+	<include>JulyFourth</include>
+	</control>
+	<control type="group"><!-- Halloween -->
+	<visible>Skin.HasSetting(halloween)</visible>
+	<include>Halloween</include>
+	</control>
+	<control type="group"><!-- Thanksgiving -->
+	<visible>Skin.HasSetting(thanksgiving)</visible>
+	<include>Thanksgiving</include>
+	</control>	
+	<control type="group"><!-- Leaves -->
+	<visible>Skin.HasSetting(leaves)</visible>
+	<include>Leaves</include>
+	</control>
+	<control type="group"><!-- Christmas -->
+	<visible>Skin.HasSetting(christmas)</visible>
+	<include>Christmas</include>
+	</control>
+	<control type="group"><!-- Heavy Snow -->
+	<visible>Skin.HasSetting(heavysnow)</visible>
+	<include>HeavySnow</include>
+	</control>
+	<control type="group"><!-- Medium Snow -->
+	<visible>Skin.HasSetting(mediumsnow)</visible>
+	<include>MediumSnow</include>
+	</control>
+	<control type="group"><!-- Falling Snow -->
+	<visible>Skin.HasSetting(snowtop)</visible>
+	<include>snowtop</include>
+	</control>
+	<control type="group"><!-- Floor Snow -->
+	<visible>Skin.HasSetting(snowf)</visible>
+	<include>snowf</include>
+	</control>
+	<control type="group"><!-- Light Snow -->
+	<visible>Skin.HasSetting(lightsnow)</visible>
+	<include>LightSnow</include>
+	</control>
+	<control type="group"><!-- Heavy Confetti -->
+	<visible>Skin.HasSetting(confettih)</visible>
+	<include>ConfettiHeavy</include>
+	</control>
+	<control type="group"><!-- Medium Confetti -->
+	<visible>Skin.HasSetting(confettim)</visible>
+	<include>ConfettiMedium</include>
+	</control>
+	<control type="group"><!-- Light Confetti-->
+	<visible>Skin.HasSetting(confettil)</visible>
+	<include>ConfettiLight</include>
+	</control>
+	<control type="group"><!--Confetti Falling -->
+	<visible>Skin.HasSetting(confettif)</visible>
+	<include>confettif</include>
+	</control>
+	<control type="group"><!-- Confetti Floor -->
+	<visible>Skin.HasSetting(confettifl)</visible>
+	<include>confettifl</include>
+    </control>
+	<control type="group"><!-- Coming Soon-->
+	<visible>Skin.HasSetting(cs)</visible>
+	<include>cs</include>
+	</control>
+	<control type="group"><!-- Coming Soon 1-->
+	<visible>Skin.HasSetting(cs1)</visible>
+	<include>cs1</include>
+	</control>
+	<control type="group"><!-- Coming Soon 2-->
+	<visible>Skin.HasSetting(cs2)</visible>
+	<include>cs2</include>
+	</control>
+	<control type="group"><!-- Coming Soon 3-->
+	<visible>Skin.HasSetting(cs2)</visible>
+	<include>cs3</include>
+	</control>
+	<control type="group"><!-- FireWorks-->
+	<visible>Skin.HasSetting(Fireworks)</visible>
+	<include>Fireworks</include>
+	</control>
+	<control type="group">
+    <visible>Skin.HasSetting(starwars)</visible>
+    <include>StarWars</include>
+    </control>
+	</controls>
+</window>

@@ -1,0 +1,4653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- Aeon MQ 7 -->
+	<defaultcontrol always="true">9100</defaultcontrol>
+	<onload>Skin.Reset(colorpicker)</onload>
+	<onunload condition="String.Contains(Skin.String(customwindow),video)">SetFocus(50)</onunload>
+	<onunload>Skin.Reset(customwindow)</onunload>
+	<onunload>Skin.Reset(resetmode)</onunload>
+	<onunload>Skin.Reset(fonte)</onunload>
+	<controls>
+	<include>SettingsBG</include>
+	<!-- default group -->
+	<control type="group">	
+	<include>Animation_Window</include>
+	<include>SettingsBack</include>
+	<animation effect="slide" start="0,0" end="-450,0" time="300" tween="cubic" easing="inout" condition="Skin.HasSetting(colorpicker) | ControlGroup(460).HasFocus | ControlGroup(461).HasFocus| ControlGroup(470).HasFocus">Conditional</animation>
+	
+	<!--#######################################################################   MENU DA ESQUERDA   #######################################################################-->
+	<include>Date</include>
+	<control type="label">
+	<include>SettingsLeftTitle</include>
+	<label>31202</label>
+	</control>
+	<control type="list" id="9100">
+	<left>0</left>
+	<top>180</top>
+	<width>450</width>
+	<height>990</height>
+	<orientation>vertical</orientation>
+	<itemgap>0</itemgap>
+	<onup>9100</onup>
+	<ondown>9100</ondown>
+	<onleft>Close</onleft>	
+	<!-- Menu principal -->
+	<onright condition="Container(9100).HasFocus(17)">SetFocus(10000)</onright>
+	<!--*   MENU BAR SELECTOR   *-->
+	<onright condition="Container(9100).HasFocus(25)">SetFocus(10028)</onright>
+	<!--*   MENU BAR SELECTOR   *-->
+	<!-- Mobilia -->
+	<onright condition="Container(9100).HasFocus(19)">SetFocus(9016)</onright>	
+	<!-- Estojos -->
+	<onright condition="Container(9100).HasFocus(31)">SetFocus(10023)</onright>
+	<!-- Meu tipo de vista -->
+	<onright condition="Container(9100).HasFocus(24)">SetFocus(1331)</onright>
+	<!-- Estrelas -->
+	<onright condition="Container(9100).HasFocus(37)">SetFocus(1282)</onright>	
+	<!-- Cores titulos e paineis -->
+	<onright condition="Container(9100).HasFocus(20)">SetFocus(1232)</onright>
+	<!-- Temas -->
+	<onright condition="Container(9100).HasFocus(22)">SetFocus(10011)</onright>
+	<!-- Imagens e icones -->
+	<onright condition="Container(9100).HasFocus(36)">SetFocus(10032)</onright>
+	<!-- Disco -->
+	<onright condition="Container(9100).HasFocus(34)">SetFocus(10024)</onright>	
+	<!-- Geral -->
+	<onright condition="Container(9100).HasFocus(16)">SetFocus(10021)</onright>	
+    <!--*   HOLIDAY MOD   *-->
+	<onright condition="Container(9100).HasFocus(18)">SetFocus(10026)</onright>
+	<!--*   HOLIDAY MOD   *-->
+	<!--*   STAR WARS MOD   *-->
+	<onright condition="Container(9100).HasFocus(21)">SetFocus(10027)</onright>
+	<!--*   STAR WARS MOD   *-->
+	<!-- Restaurar ajustes -->
+	<onright condition="Container(9100).HasFocus(32)">SetFocus(10022)</onright>	
+	<viewtype>list</viewtype>
+	<focusposition>1</focusposition>
+	<scrolltime>450</scrolltime>
+	<movement>2</movement>
+	<itemlayout width="450" height="60">
+	<control type="label">
+	<include>SettingsLabel</include>
+	<label>$INFO[ListItem.Label]</label>
+	</control>
+	</itemlayout>
+	<focusedlayout width="450" height="60">
+	<control type="image">
+	<include>SettingsImage</include>
+	<animation effect="fade" start="100" end="50" time="0" condition="!Control.Hasfocus(9100)">conditional</animation>
+	</control>
+	<control type="label">
+	<include>SettingsLabelFocus</include>
+	<label>$INFO[ListItem.Label]</label>
+	</control>
+	</focusedlayout>
+	<content>
+	<!-- Menu principal - 0 -->
+	<item id="17">	
+	<label>31410</label>
+	<icon>noop</icon>
+	<onclick>SetFocus(10000)</onclick>
+	</item>	
+	<!--*   MENU BAR SELECTOR   *-->
+	<item id="25">	
+	<label>32051</label>
+	<icon>-</icon>
+	<onclick>SetFocus(10028)</onclick>
+	</item>	
+	<!-- Estojo - 2 -->
+	<item id="31">	
+	<label>31297</label>
+	<icon>noop</icon>
+	<onclick>SetFocus(10023)</onclick>
+	</item>
+	<!-- Meu tipo de vista - 3 -->
+	<item id="24">
+	<label>31588</label>
+	<icon>-</icon>
+	<onclick>SetFocus(1331)</onclick>
+	</item>
+	<!-- Estrelas - 4 -->
+	<item id="37">	
+	<label>31132</label>
+	<icon>-</icon>
+	<onclick>SetFocus(1282)</onclick>
+	</item>
+	<!-- Cores - 5 -->
+	<item id="20">	
+	<label>31404</label>
+	<icon>-</icon>
+	<onclick>SetFocus(1232)</onclick>
+	</item>
+	<!-- Temas - 7 -->
+	<item id="22">	
+	<label>31887</label>
+	<icon>-</icon>
+	<onclick>SetFocus(10011)</onclick>
+	</item>
+	<!-- Efeitos Visuais - 12 -->
+	<item id="18">	
+	<label>32001</label>
+	<icon>-</icon>
+	<onclick>SetFocus(10026)</onclick>
+	</item>	
+	<!-- Imagens e icones - 8 -->
+	<item id="36">	
+	<label>31402</label>
+	<icon>-</icon>
+	<onclick>SetFocus(10032)</onclick>
+	</item>
+	<!-- Arte de Disco - 9 -->
+	<item id="34">	
+	<label>31096</label>
+	<icon>-</icon>
+	<onclick>SetFocus(10024)</onclick>
+	</item>
+	<!-- Skin Geral - 10 -->
+	<item id="16">	
+	<label>31375</label>
+	<icon>-</icon>
+	<onclick>SetFocus(10021)</onclick>
+	</item>    
+	<!-- Restaurar ajustes - 11 -->
+	<item id="32">	
+	<label>31450</label>
+	<icon>-</icon>
+	<onclick>SetFocus(10022)</onclick>
+	</item>
+	</content>
+	</control>
+	
+	<!--#######################################################################   MENU DA DIREITA   #######################################################################-->
+	<control type="image">
+	<left>454</left>
+	<top>180</top>
+	<width>1466</width>
+	<height>900</height>
+	<aspectratio>stretch</aspectratio>
+	<texture>$VAR[value_menutheme_movies]</texture>
+	<include>Animation_Fade</include>
+	<visible>Container(9100).HasFocus(19)</visible>
+	</control>
+	<!-- Titulo -->
+	<control type="label">	
+	<include>SettingsRightTitle</include>
+	<label>$VAR[value_osdcustomtitle]</label>
+	</control>
+	
+	<!--#######################################################################   MENU PRINCIPAL   #######################################################################-->
+	<control type="group">
+	<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
+	<visible>Container(9100).HasFocus(17)</visible>
+	<control type="grouplist" id="10000">
+	<left>454</left>
+	<top>180</top>
+	<width>1466</width>
+	<height>430</height>
+	<onleft>9100</onleft>
+	<onright>83</onright>
+	<onup>10000</onup>
+	<ondown>10000</ondown>
+	<itemgap>0</itemgap>
+	<pagecontrol>83</pagecontrol>
+	<control type="button" id="1041">
+	<!-- Resetar -->
+	<label>$LOCALIZE[31687] - $LOCALIZE[31599]</label>
+	<colordiffuse>FFDAA520</colordiffuse>
+	<onclick>Skin.SetString(stylefont,font1)</onclick>
+	<onclick>Skin.SetString(colorfont,FFFFFAF0)</onclick>
+	<onclick>Skin.SetString(colormainmenubar,FFFFA500)</onclick>
+	<onclick>Skin.SetString(widgetsnumber,12)</onclick>
+	<onclick>Skin.SetString(widgetsmode,on)</onclick>
+	<onclick>Skin.SetString(widgets_seconds,3)</onclick>
+	<onclick>Skin.Reset(mainmenufixedlist)</onclick>
+	<onclick>Skin.Reset(nodetailspanel)</onclick>
+	<onclick>Skin.Reset(nonowplayingpanel)</onclick>
+	<onclick>Skin.Reset(nohomecdart)</onclick>
+	<onclick>Skin.Reset(nonexttracks)</onclick>
+	<onclick>Skin.Reset(nohomeweather)</onclick>
+	<onclick>Skin.Reset(nohometime)</onclick>
+	<onclick>Skin.Reset(nohometotals)</onclick>
+	<onclick>Skin.Reset(animation_homepanscan)</onclick>
+	<onclick>Skin.SetString(homebg_seconds,5000)</onclick>
+	<onclick>Skin.Reset(homefullscreentrailer)</onclick>
+	<onclick>Skin.Reset(nosmartsub)</onclick>	
+	<onclick>SetFocus(9100)</onclick>
+	<onclick>Notification($LOCALIZE[31656],$LOCALIZE[31237])</onclick>
+	</control>
+	<!-- Ir para customizacao do menu -->
+	<control type="button" id="1061">	
+	<label>31207</label>
+	<onclick>ActivateWindow(6000)</onclick>
+	</control>
+	<!-- Menu em modo vertical -->
+	<control type="radiobutton" id="1062">	
+	<label>31516</label>
+	<onclick>Skin.ToggleSetting(mainmenuvertical)</onclick>
+	<selected>Skin.HasSetting(mainmenuvertical)</selected>
+	</control>
+	<!-- Cores das fontes -->
+	<control type="button" id="1042">
+	<label>31139</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorfont)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorfont)</onright>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<!-- Seletor de fontes -->
+	<control type="button" id="1043">	
+	<label>31137</label>
+	<label2>$VAR[value_status_stylefonts]</label2>
+	<onclick condition="String.IsEqual(Skin.String(stylefont),font1)">Skin.SetString(stylefont,font2)</onclick>	
+	<onclick condition="String.IsEqual(Skin.String(stylefont),font2)">Skin.SetString(stylefont,font3)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(stylefont),font3)">Skin.SetString(stylefont,font4)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(stylefont),font4)">Skin.SetString(stylefont,font5)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(stylefont),font5)">Skin.SetString(stylefont,font6)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(stylefont),font6)">Skin.SetString(stylefont,font7)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(stylefont),font7)">Skin.SetString(stylefont,font8)</onclick>
+    <onclick condition="String.IsEqual(Skin.String(stylefont),font8)">Skin.SetString(stylefont,Font_headersmall)</onclick><!--*   MQ 6 FONT   *-->
+	<onclick condition="String.IsEqual(Skin.String(stylefont),Font_headersmall)">Skin.SetString(stylefont,font9)</onclick><!--*   MQ 6 FONT   *-->	
+	<onclick condition="String.IsEqual(Skin.String(stylefont),font9)">Skin.SetString(stylefont,font10)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(stylefont),font10)">Skin.SetString(stylefont,font11)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(stylefont),font11)">Skin.SetString(stylefont,font1)</onclick>	
+	</control>
+	<!-- Modo dos widgets -->
+	<control type="button" id="1044">
+	<label>$LOCALIZE[31249]</label>
+	<label2>$VAR[value_widgetsmode]</label2>
+	<onclick condition="String.Contains(Skin.String(widgetsmode),on)">Skin.SetString(widgetsmode,manual)</onclick>
+	<onclick condition="String.Contains(Skin.String(widgetsmode),manual)">Skin.SetString(widgetsmode,auto)</onclick>
+	<onclick condition="String.Contains(Skin.String(widgetsmode),auto)">Skin.SetString(widgetsmode,on)</onclick>
+	</control>
+	<!-- Tempo dos widgets -->
+	<control type="button" id="1045">
+	<label>$VAR[value_widgetsseconds]</label>
+	<onclick condition="String.IsEqual(Skin.String(widgets_seconds),1)">Skin.SetString(widgets_seconds,2)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(widgets_seconds),2)">Skin.SetString(widgets_seconds,3)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(widgets_seconds),3)">Skin.SetString(widgets_seconds,4)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(widgets_seconds),4)">Skin.SetString(widgets_seconds,5)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(widgets_seconds),5)">Skin.SetString(widgets_seconds,1)</onclick>
+	<visible>String.Contains(Skin.String(widgetsmode),auto)</visible>
+	</control>
+	<!-- Numero de widgets - menu horizontal -->
+	<control type="button" id="1046">
+	<label>$LOCALIZE[31180]</label>
+	<label2>$INFO[Skin.String(widgetsnumber_h)]</label2>
+	<onclick condition="String.IsEqual(Skin.String(widgetsnumber_h),4)">Skin.SetString(widgetsnumber_h,8)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(widgetsnumber_h),8)">Skin.SetString(widgetsnumber_h,12)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(widgetsnumber_h),12)">Skin.SetString(widgetsnumber_h,4)</onclick>
+	<visible>!Skin.HasSetting(mainmenuvertical)</visible>
+	</control>
+	<!-- Numero de widgets - menu vertical -->
+	<control type="button" id="1047">
+	<label>$LOCALIZE[31180]</label>
+	<label2>$INFO[Skin.String(widgetsnumber_v)]</label2>
+	<onclick condition="String.IsEqual(Skin.String(widgetsnumber_v),4)">Skin.SetString(widgetsnumber_v,7)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(widgetsnumber_v),7)">Skin.SetString(widgetsnumber_v,4)</onclick>
+	<visible>Skin.HasSetting(mainmenuvertical)</visible>
+	</control>
+	<!-- Barra do menu principal -->
+	<control type="button" id="1048">
+	<label>31236</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colormainmenubar)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colormainmenubar)</onright>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>	
+	<!-- Menu em lista fixa -->
+	<control type="radiobutton" id="1049">	
+	<label>31235</label>
+	<onclick>Skin.ToggleSetting(mainmenufixedlist)</onclick>
+	<selected>Skin.HasSetting(mainmenufixedlist)</selected>
+	</control>
+	<!-- Painel de detalhes -->
+	<!--<control type="radiobutton" id="1049">	
+	<label>31076</label>
+	<onclick>Skin.ToggleSetting(nodetailspanel)</onclick>
+	<selected>!Skin.HasSetting(nodetailspanel)</selected>
+	</control>-->
+	<!-- Painel tocando agora -->
+	<!--<control type="radiobutton" id="1050">	
+	<label>31986</label>
+	<onclick>Skin.ToggleSetting(nonowplayingpanel)</onclick>
+	<selected>!Skin.HasSetting(nonowplayingpanel)</selected>
+	</control>-->
+	<!-- CDart -->
+	<!--<control type="radiobutton" id="1051">	
+	<label>31328</label>
+	<onclick>Skin.ToggleSetting(nohomecdart)</onclick>
+	<selected>!Skin.HasSetting(nohomecdart)</selected>
+	</control>-->
+	<!-- Proximas faixas -->
+	<!--<control type="radiobutton" id="1052">	
+	<label>31555</label>
+	<onclick>Skin.ToggleSetting(nonexttracks)</onclick>
+	<selected>!Skin.HasSetting(nonexttracks)</selected>
+	</control>-->
+	<!-- Elenco em modo lista/poster -->
+	<control type="togglebutton" id="1053">
+	<label>$LOCALIZE[31182]</label>
+	<altlabel>$LOCALIZE[31183]</altlabel>
+	<usealttexture>!Skin.HasSetting(noposterscast)</usealttexture>
+	<onclick>Skin.ToggleSetting(noposterscast)</onclick>
+	</control>
+	<!-- Clima -->
+	<control type="radiobutton" id="1054">	
+	<label>31248</label>
+	<onclick>Skin.ToggleSetting(nohomeweather)</onclick>
+	<selected>!Skin.HasSetting(nohomeweather)</selected>
+	</control>
+	<!-- Data -->
+	<control type="radiobutton" id="1055">	
+	<label>31250</label>
+	<onclick>Skin.ToggleSetting(nohometime)</onclick>
+	<selected>!Skin.HasSetting(nohometime)</selected>
+	</control>
+	<!-- Status da biblioteca -->
+	<control type="radiobutton" id="1056">	
+	<label>31672</label>
+	<onclick>Skin.ToggleSetting(nohometotals)</onclick>
+	<selected>!Skin.HasSetting(nohometotals)</selected>
+	</control>
+	<!-- Fundos animados -->
+	<control type="radiobutton" id="1057">	
+	<label>31463</label>
+	<onclick>Skin.ToggleSetting(animation_homepanscan)</onclick>
+	<selected>Skin.HasSetting(animation_homepanscan)</selected>
+	</control>
+	<!-- Tempo do slide -->
+	<control type="button" id="1058">
+	<label>$LOCALIZE[31193]</label>
+	<label2>$VAR[value_homebgseconds]</label2>
+	<onclick condition="String.IsEqual(Skin.String(homebg_seconds),5000)">Skin.SetString(homebg_seconds,10000)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(homebg_seconds),10000)">Skin.SetString(homebg_seconds,30000)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(homebg_seconds),30000)">Skin.SetString(homebg_seconds,60000)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(homebg_seconds),60000)">Skin.SetString(homebg_seconds,600000)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(homebg_seconds),600000)">Skin.SetString(homebg_seconds,3600000)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(homebg_seconds),3600000)">Skin.SetString(homebg_seconds,5000)</onclick>
+	</control>
+	<!-- Trailer em tela cheia -->
+	<control type="radiobutton" id="1059">	
+	<label>31574</label>
+	<onclick>Skin.ToggleSetting(homefullscreentrailer)</onclick>
+	<selected>Skin.HasSetting(homefullscreentrailer)</selected>
+	</control>
+	<!-- Smart Submenu -->
+	<control type="radiobutton" id="1060">	
+	<label>31124</label>
+	<onclick>Skin.ToggleSetting(nosmartsub)</onclick>
+	<selected>!Skin.HasSetting(nosmartsub)</selected>
+	</control>	
+	</control>
+	
+	<!-- Menu virtual Horizontal -->
+	<control type="group">
+	<visible>!Skin.HasSetting(mainmenuvertical)</visible>
+	<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
+	<control type="image">
+	<left>454</left>
+	<top>935</top>
+	<width>1466</width>
+	<height>46</height>
+	<texture>menu_bar.png</texture>
+	<colordiffuse>$INFO[Skin.String(colormainmenubar)]</colordiffuse>
+	<visible>String.IsEqual(Skin.String(mymenubar),mq7menubar)</visible>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>935</top>
+	<width>1466</width>
+	<height>46</height>
+	<texture>starwars/starwars_bar.png</texture>
+	<visible>String.IsEqual(Skin.String(mymenubar),starwarsmenubar)</visible>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>875</top>
+	<width>1466</width>
+	<height>153</height>
+	<texture>holidays/halloween/menu_bar_halloween.png</texture>
+	<visible>String.IsEqual(Skin.String(mymenubar),halloweenmenubar)</visible>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>619</top>
+	<width>1466</width>
+	<height>388</height>
+	<texture>holidays/thanksgiving/menu_bar_thanksgiving.png</texture>
+	<visible>String.IsEqual(Skin.String(mymenubar),thanksgivingmenubar)</visible>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>935</top>
+	<width>1466</width>
+	<height>153</height>
+	<texture>holidays/christmas/menu_bar_christmas.png</texture>
+	<visible>String.IsEqual(Skin.String(mymenubar),christmasmenubar)</visible>
+	</control>
+	<control type="wraplist">
+	<left>454</left>
+	<top>858</top>
+	<width>1466</width>
+	<height>72</height>
+	<orientation>horizontal</orientation>
+	<focusposition>1</focusposition>
+	<itemlayout width="470" height="72">
+	<control type="label">
+	<left>22</left>
+	<top>1</top>
+	<font>Font_virtualmenu1</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font1)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>1</top>
+	<font>Font_virtualmenu2</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font2)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>1</top>
+	<font>Font_virtualmenu3</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font3)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>1</top>
+	<font>Font_virtualmenu4</font>
+	<include>VirtualMenuFont</include>&gt;
+	<visible>String.IsEqual(skin.string(stylefont),font4)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>6</top>
+	<font>Font_virtualmenu5</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font5)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>3</top>
+	<font>Font_virtualmenu6</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font6)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>4</top>
+	<font>Font_virtualmenu7</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font7)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>-2</top>
+	<font>Font_virtualmenu8</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font8)</visible>
+	</control>
+    <control type="label">
+	<left>22</left>
+	<top>-2</top>
+	<font>Font_virtualmenu12</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),Font_headersmall)</visible>
+	</control>
+    <control type="label">
+	<left>22</left>
+	<top>-2</top>
+	<font>Font_virtualmenu9</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font9)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>-2</top>
+	<font>Font_virtualmenu10</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font10)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>-2</top>
+	<font>Font_virtualmenu11</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font11)</visible>
+	</control>
+	</itemlayout>
+	<focusedlayout width="480" height="72">
+	<control type="label">
+	<left>22</left>
+	<top>1</top>
+	<font>Font_virtualmenu1</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font1)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>1</top>
+	<font>Font_virtualmenu2</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font2)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>1</top>
+	<font>Font_virtualmenu3</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font3)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>1</top>
+	<font>Font_virtualmenu4</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font4)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>6</top>
+	<font>Font_virtualmenu5</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font5)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>3</top>
+	<font>Font_virtualmenu6</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font6)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>4</top>
+	<font>Font_virtualmenu7</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font7)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>-2</top>
+	<font>Font_virtualmenu8</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font8)</visible>
+	</control>
+    <control type="label">
+	<left>22</left>
+	<top>-2</top>
+	<font>Font_virtualmenu12</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),Font_headersmall)</visible>
+	</control>
+	<!--*   MQ 6 FONT   *-->
+    <control type="label">
+	<left>22</left>
+	<top>-2</top>
+	<font>Font_virtualmenu9</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font9)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>-2</top>
+	<font>Font_virtualmenu10</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font10)</visible>
+	</control>
+	<control type="label">
+	<left>22</left>
+	<top>-2</top>
+	<font>Font_virtualmenu11</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font11)</visible>
+	</control>
+	</focusedlayout>
+	<content>
+	<item>
+	<label>31003</label>
+	<onclick>noop</onclick>
+	</item>
+	<item>
+	<label>31005</label>
+	<onclick>noop</onclick>
+	</item>
+	<item>
+	<label>31416</label>
+	<onclick>noop</onclick>
+	</item>
+	</content>
+	</control>
+
+	<!-- Miniaturas dos filmes - 4 -->
+	<control type="panel">
+	<left>530</left>
+	<top>650</top>
+	<width>435</width>
+	<height>240</height>
+	<orientation>horizontal</orientation>
+	<include>VirtualWidgetsContent</include>
+	<include>Animation_Fade</include>
+	<visible>String.Contains(Skin.String(widgetsnumber_h),4)</visible>
+	</control>
+	
+	<!-- Miniaturas dos filmes - 8 -->
+	<control type="panel">
+	<left>530</left>
+	<top>650</top>
+	<width>880</width>
+	<height>240</height>
+	<orientation>horizontal</orientation>
+	<include>VirtualWidgetsContent</include>
+	<include>Animation_Fade</include>	
+	<visible>String.Contains(Skin.String(widgetsnumber_h),8)</visible>
+	</control>
+	
+	<!-- Miniaturas dos filmes - 12 -->
+	<control type="panel">
+	<left>530</left>
+	<top>650</top>
+	<width>1320</width>
+	<height>240</height>
+	<orientation>horizontal</orientation>
+	<include>VirtualWidgetsContent</include>
+	<include>Animation_Fade</include>
+	<visible>String.Contains(Skin.String(widgetsnumber_h),12)</visible>
+	</control>
+	
+	<!-- Temperatura e condicao -->
+	<control type="group">
+	<visible>!Skin.HasSetting(nohomeweather)</visible>
+	<include>Animation_Fade</include>
+	<control type="label">
+	<left>530</left>
+	<top>940</top>
+	<width>525</width>
+	<height>30</height>
+	<align>left</align>
+	<aligny>center</aligny>
+	<font>Font_plotsmall</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>$INFO[Window(Weather).Property(Current.Condition)]</label>
+	</control>
+	<control type="image">
+	<left>611</left>
+	<top>975</top>
+	<width>40</width>
+	<height>40</height>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<texture>$VAR[value_weathericonpath]$INFO[Window(Weather).Property(Current.OutlookIcon)]</texture>
+	<visible>![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]</visible>
+	</control>
+	<control type="multiimage">
+	<left>611</left>
+	<top>975</top>
+	<width>40</width>
+	<height>40</height>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<imagepath>$VAR[value_weathericonpath]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+	<timeperimage>75</timeperimage>
+	<randomize>false</randomize>
+	<fadetime>1</fadetime>
+	<visible>Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))</visible>
+	</control>
+	<control type="label">
+	<left>530</left>
+	<top>980</top>
+	<width>100</width>
+	<height>30</height>
+	<align>left</align>
+	<aligny>center</aligny>
+	<font>Font_timesmall</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>[COLOR=$INFO[Skin.String(colorheader)]]$INFO[Weather.Temperature][/COLOR]</label>
+	</control>
+	</control>
+	<!-- Data e hora -->
+	<control type="group">
+	<visible>!Skin.HasSetting(nohometime)</visible>
+	<include>Animation_Fade</include>
+	<control type="label">
+	<left>1500</left>
+	<top>940</top>
+	<width>345</width>
+	<height>30</height>
+	<align>right</align>
+	<aligny>center</aligny>
+	<font>Font_plotsmall</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>$INFO[System.Date]</label>
+	</control>
+	<control type="label">
+	<left>1445</left>
+	<top>980</top>
+	<width>400</width>
+	<height>30</height>
+	<align>right</align>
+	<aligny>center</aligny>
+	<font>Font_timesmall</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>[COLOR=$INFO[Skin.String(colorheader)]]$INFO[System.Time][/COLOR]</label>
+	</control>
+	</control>
+	<!-- Status da biblioteca -->
+	<control type="label">
+	<left>992</left>
+	<top>940</top>
+	<width>396</width>
+	<height>30</height>
+	<align>center</align>
+	<aligny>center</aligny>
+	<font>Font_plotsmall</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>[COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Movies.Count)][/COLOR]$INFO[Window(0).Property(Movies.UnWatched), - $LOCALIZE[16101] ]</label>
+	<include>Animation_Fade</include>
+	<visible>!Skin.HasSetting(nohometotals)</visible>
+	</control>
+	</control>
+	
+	<!-- Menu virtual Vertical -->
+	<control type="group">
+	<visible>Skin.HasSetting(mainmenuvertical)</visible>
+	<animation effect="fade" reversible="true" time="300">VisibleChange</animation>	
+
+	<!--*   MENU BAR SELECTOR   *-->
+	<control type="image">
+	<left>454</left>
+	<top>935</top>
+	<width>1466</width>
+	<height>46</height>
+	<texture>custom/menu_bar_vertical.png</texture>
+	<colordiffuse>$INFO[Skin.String(colormainmenubar)]</colordiffuse>
+	<visible>String.IsEqual(Skin.String(mymenubar),mq7menubarvertical)</visible>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>935</top>
+	<width>1466</width>
+	<height>46</height>
+	<texture>custom/menu_bar_vertical.png</texture>
+	<colordiffuse>$INFO[Skin.String(colormainmenubar)]</colordiffuse>
+	<visible>String.IsEqual(Skin.String(mymenubar),neonmenubarvertical)</visible>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>935</top>
+	<width>1466</width>
+	<height>46</height>
+	<texture>starwars/starwars_bar.png</texture>
+	<visible>String.IsEqual(Skin.String(mymenubar),starwarsmenubarvertical)</visible>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>575</top>
+	<width>1466</width>
+	<height>564</height>
+	<texture>holidays/halloween/menu_bar_halloween_vertical.png</texture>
+	<visible>String.IsEqual(Skin.String(mymenubar),halloweenmenubarvertical)</visible>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>619</top>
+	<width>1466</width>
+	<height>388</height>
+	<texture>holidays/thanksgiving/menu_bar_thanksgiving_vertical.png</texture>
+	<visible>String.IsEqual(Skin.String(mymenubar),thanksgivingmenubarvertical)</visible>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>740</top>
+	<width>1466</width>
+	<height>183</height>
+	<texture>holidays/christmas/menu_bar_christmas_vertical.png</texture>
+	<visible>String.IsEqual(Skin.String(mymenubar),christmasmenubarvertical)</visible>
+	</control>	
+	<!--*   MENU BAR SELECTOR   *-->	
+	
+	<control type="wraplist">
+	<left>527</left>
+	<top>705</top>
+	<width>655</width>
+	<height>320</height>
+	<orientation>vertical</orientation>
+	<focusposition>0</focusposition>
+	<itemlayout width="470" height="83">
+	<control type="label">
+	<left>0</left>
+	<top>1</top>
+	<align>left</align>
+	<font>Font_virtualmenu1</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font1)</visible>
+	</control>
+	<control type="label">
+	<left>0</left>
+	<top>1</top>
+	<align>left</align>
+	<font>Font_virtualmenu2</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font2)</visible>
+	</control>
+	<control type="label">
+	<left>0</left>
+	<top>1</top>
+	<align>left</align>
+	<font>Font_virtualmenu3</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font3)</visible>
+	</control>
+	<control type="label">
+	<left>0</left>
+	<top>1</top>
+	<align>left</align>
+	<font>Font_virtualmenu4</font>
+	<include>VirtualMenuFont</include>&gt;
+	<visible>String.IsEqual(skin.string(stylefont),font4)</visible>
+	</control>
+	<control type="label">
+	<left>0</left>
+	<top>6</top>
+	<align>left</align>
+	<font>Font_virtualmenu5</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font5)</visible>
+	</control>
+	<control type="label">
+	<left>0</left>
+	<top>3</top>
+	<align>left</align>
+	<font>Font_virtualmenu6</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font6)</visible>
+	</control>
+	<control type="label">
+	<left>0</left>
+	<top>4</top>
+	<align>left</align>
+	<font>Font_virtualmenu7</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font7)</visible>
+	</control>
+	<control type="label">
+	<left>0</left>
+	<top>-2</top>
+	<align>left</align>
+	<font>Font_virtualmenu8</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font8)</visible>
+	</control>
+    <!--*   MQ 6 FONT   *-->
+	<control type="label">
+	<left>0</left>
+	<top>-2</top>
+	<align>left</align>
+	<font>Font_virtualmenu12</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),Font_headersmall)</visible>
+	</control>
+	<!--*   MQ 6 FONT   *-->
+	<!--*   HOLIDAY MOD   *-->
+    <control type="label">
+	<left>0</left>
+	<top>-2</top>
+	<align>left</align>
+	<font>Font_virtualmenu9</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font9)</visible>
+	</control>
+	<control type="label">
+	<left>0</left>
+	<top>-2</top>
+	<align>left</align>
+	<font>Font_virtualmenu10</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font10)</visible>
+	</control>
+	<control type="label">
+	<left>0</left>
+	<top>-2</top>
+	<align>left</align>
+	<font>Font_virtualmenu11</font>
+	<include>VirtualMenuFont</include>
+	<visible>String.IsEqual(skin.string(stylefont),font11)</visible>
+	</control>
+	</itemlayout>
+	<focusedlayout width="480" height="160">
+	<control type="label">
+	<left>62</left>
+	<top>1</top>
+	<align>left</align>
+	<font>Font_virtualmenu1</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font1)</visible>
+	</control>
+	<control type="label">
+	<left>62</left>
+	<top>1</top>
+	<align>left</align>
+	<font>Font_virtualmenu2</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font2)</visible>
+	</control>
+	<control type="label">
+	<left>62</left>
+	<top>1</top>
+	<align>left</align>
+	<font>Font_virtualmenu3</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font3)</visible>
+	</control>
+	<control type="label">
+	<left>62</left>
+	<top>1</top>
+	<align>left</align>
+	<font>Font_virtualmenu4</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font4)</visible>
+	</control>
+	<control type="label">
+	<left>62</left>
+	<top>6</top>
+	<align>left</align>
+	<font>Font_virtualmenu5</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font5)</visible>
+	</control>
+	<control type="label">
+	<left>62</left>
+	<top>3</top>
+	<align>left</align>
+	<font>Font_virtualmenu6</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font6)</visible>
+	</control>
+	<control type="label">
+	<left>62</left>
+	<top>4</top>
+	<align>left</align>
+	<font>Font_virtualmenu7</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font7)</visible>
+	</control>
+	<control type="label">
+	<left>62</left>
+	<top>-2</top>
+	<align>left</align>
+	<font>Font_virtualmenu8</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font8)</visible>
+	</control>
+    <!--*   MQ 6 FONT   *-->
+	<control type="label">
+	<left>62</left>
+	<top>-2</top>
+	<align>left</align>
+	<font>Font_virtualmenu12</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),Font_headersmall)</visible>
+	</control>
+	<!--*   MQ 6 FONT   *-->
+    <control type="label">
+	<left>62</left>
+	<top>-2</top>
+	<align>left</align>
+	<font>Font_virtualmenu9</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font9)</visible>
+	</control>
+	<control type="label">
+	<left>62</left>
+	<top>-2</top>
+	<align>left</align>
+	<font>Font_virtualmenu10</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font10)</visible>
+	</control>
+	<control type="label">
+	<left>62</left>
+	<top>-2</top>
+	<align>left</align>
+	<font>Font_virtualmenu11</font>
+	<include>VirtualMenuFontFocus</include>
+	<visible>String.IsEqual(skin.string(stylefont),font11)</visible>
+	</control>
+	</focusedlayout>
+	<content>
+	<item>
+	<label>31003</label>
+	<onclick>noop</onclick>
+	</item>
+	<item>
+	<label>31005</label>
+	<onclick>noop</onclick>
+	</item>
+	<item>
+	<label>31416</label>
+	<onclick>noop</onclick>
+	</item>
+	</content>
+	</control>
+
+	<!-- Miniaturas dos filmes - 4 -->
+	<control type="panel">
+	<left>1080</left>
+	<top>650</top>
+	<width>435</width>
+	<height>240</height>
+	<orientation>horizontal</orientation>
+	<include>VirtualWidgetsContent</include>
+	<include>Animation_Fade</include>
+	<visible>String.Contains(Skin.String(widgetsnumber_v),4)</visible>
+	</control>
+	
+	<!-- Miniaturas dos filmes - 7 -->
+	<control type="panel">
+	<left>1080</left>
+	<top>650</top>
+	<width>765</width>
+	<height>240</height>
+	<orientation>horizontal</orientation>
+	<include>VirtualWidgetsContent</include>
+	<include>Animation_Fade</include>	
+	<visible>String.Contains(Skin.String(widgetsnumber_v),7)</visible>
+	</control>
+	
+	<!-- Temperatura e condicao -->
+	<control type="group">
+	<visible>!Skin.HasSetting(nohomeweather)</visible>
+	<include>Animation_Fade</include>
+	<control type="label">
+	<left>1500</left>
+	<top>865</top>
+	<width>345</width>
+	<height>30</height>
+	<align>right</align>
+	<aligny>center</aligny>
+	<font>Font_plotsmall</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>$INFO[Window(Weather).Property(Current.Condition)]</label>
+	</control>
+	<control type="image">
+	<left>1725</left>
+	<top>896</top>
+	<width>40</width>
+	<height>40</height>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<texture>$VAR[value_weathericonpath]$INFO[Window(Weather).Property(Current.OutlookIcon)]</texture>
+	<visible>![Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))]</visible>
+	</control>
+	<control type="multiimage">
+	<left>1725</left>
+	<top>896</top>
+	<width>40</width>
+	<height>40</height>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<imagepath>$VAR[value_weathericonpath]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+	<timeperimage>75</timeperimage>
+	<randomize>false</randomize>
+	<fadetime>1</fadetime>
+	<visible>Skin.HasSetting(resource.images.weathericons.multi) | IsEmpty(Skin.String(resource.images.weathericons.path))</visible>
+	</control>
+	<control type="label">
+	<left>1500</left>
+	<top>903</top>
+	<width>345</width>
+	<height>30</height>
+	<align>right</align>
+	<aligny>center</aligny>
+	<font>Font_timesmall</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>[COLOR=$INFO[Skin.String(colorheader)]]$INFO[Weather.Temperature][/COLOR]</label>
+	</control>
+	</control>
+	<!-- Data e hora -->
+	<control type="group">
+	<visible>!Skin.HasSetting(nohometime)</visible>
+	<include>Animation_Fade</include>
+	<control type="label">
+	<left>1500</left>
+	<top>940</top>
+	<width>345</width>
+	<height>30</height>
+	<align>right</align>
+	<aligny>center</aligny>
+	<font>Font_plotsmall</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>$INFO[System.Date]</label>
+	</control>
+	<control type="label">
+	<left>1445</left>
+	<top>980</top>
+	<width>400</width>
+	<height>30</height>
+	<align>right</align>
+	<aligny>center</aligny>
+	<font>Font_timesmall</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>[COLOR=$INFO[Skin.String(colorheader)]]$INFO[System.Time][/COLOR]</label>
+	</control>
+	</control>
+	<!-- Status da biblioteca -->
+	<control type="label">
+	<left>527</left>
+	<top>775</top>
+	<width>396</width>
+	<height>30</height>
+	<align>left</align>
+	<aligny>center</aligny>
+	<font>Font_plotsmall</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>[COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Movies.Count)][/COLOR]$INFO[Window(0).Property(Movies.UnWatched), - $LOCALIZE[16101] ]</label>
+	<include>Animation_Fade</include>
+	<visible>!Skin.HasSetting(nohometotals)</visible>
+	</control>
+	</control>
+	</control>
+	
+	<!--*   MENU BAR SELECTOR   *-->
+	<control type="grouplist" id="10028">
+		<visible>Container(9100).HasFocus(25)</visible>
+		<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
+		<left>454</left>
+		<top>180</top>
+		<width>1466</width>
+		<height>840</height>
+		<onleft>9100</onleft>
+		<onright>85</onright>
+		<onup>10028</onup>
+		<ondown>10028</ondown>
+		<itemgap>0</itemgap>
+		<pagecontrol>85</pagecontrol>
+	<!-- Resetar -->
+	<control type="button" id="1081">	
+		<label>$LOCALIZE[31687]</label>
+		<colordiffuse>FFDAA520</colordiffuse>
+		<onclick>Skin.SetString(mymenubar,mq7menubar)</onclick>
+		<onclick>SetFocus(9100)</onclick>
+		<onclick>Notification($LOCALIZE[31656],$LOCALIZE[31237])</onclick>
+	</control>
+	<control type="radiobutton" id="1087">
+    <align>center</align>
+    <label>32187</label>
+    <onclick>Skin.ToggleSetting()</onclick>
+    <selected>Skin.HasSetting()</selected>
+    <enable>Skin.HasSetting()</enable>
+    </control>
+	<control type="radiobutton" id="1078">
+		<label>32021</label>
+		<onclick>Skin.SetString(mymenubar,mq7menubar)</onclick>
+		<selected>String.IsEqual(Skin.String(mymenubar),mq7menubar)</selected>
+	</control>
+	<control type="radiobutton" id="1079">
+		<label>32022</label>
+		<onclick>Skin.SetString(mymenubar,starwarsmenubar)</onclick>
+		<selected>String.IsEqual(Skin.String(mymenubar),starwarsmenubar)</selected>
+	</control>
+    <control type="radiobutton" id="1080">
+		<label>32053</label>
+		<onclick>Skin.SetString(mymenubar,neonmenubar)</onclick>
+		<selected>String.IsEqual(Skin.String(mymenubar),neonmenubar)</selected>
+	</control>
+	<control type="radiobutton" id="1082">
+		<label>32049</label>
+		<onclick>Skin.SetString(mymenubar,halloweenmenubar)</onclick>
+		<selected>String.IsEqual(Skin.String(mymenubar),halloweenmenubar)</selected>
+	</control>
+	<control type="radiobutton" id="1083">
+		<label>32054</label>
+		<onclick>Skin.SetString(mymenubar,thanksgivingmenubar)</onclick>
+		<selected>String.IsEqual(Skin.String(mymenubar),thanksgivingmenubar)</selected>
+	</control>
+	<control type="radiobutton" id="1084">
+		<label>32050</label>
+		<onclick>Skin.SetString(mymenubar,christmasmenubar)</onclick>
+		<selected>String.IsEqual(Skin.String(mymenubar),christmasmenubar)</selected>
+	</control>
+    <control type="radiobutton" id="1088">
+		<align>center</align>
+		<label>32188</label>
+		<onclick>Skin.ToggleSetting()</onclick>
+		<selected>Skin.HasSetting()</selected>
+		<enable>Skin.HasSetting()</enable>
+	</control>
+	<control type="radiobutton" id="1085">
+		<label>32021</label>
+		<onclick>Skin.SetString(mymenubar,mq7menubarvertical)</onclick>
+		<selected>String.IsEqual(Skin.String(mymenubar),mq7menubarvertical)</selected>
+	</control>
+	<control type="radiobutton" id="1092">
+		<label>32022</label>
+		<onclick>Skin.SetString(mymenubar,starwarsmenubarvertical)</onclick>
+		<selected>String.IsEqual(Skin.String(mymenubar),starwarsmenubarvertical)</selected>
+	</control>
+	<control type="radiobutton" id="1091">
+		<label>32053</label>
+		<onclick>Skin.SetString(mymenubar,neonmenubarvertical)</onclick>
+		<selected>String.IsEqual(Skin.String(mymenubar),neonmenubarvertical)</selected>
+	</control>
+	<control type="radiobutton" id="1086">
+		<label>32049</label>
+		<onclick>Skin.SetString(mymenubar,halloweenmenubarvertical)</onclick>
+		<selected>String.IsEqual(Skin.String(mymenubar),halloweenmenubarvertical)</selected>
+	</control>
+	<control type="radiobutton" id="1089">
+		<label>32054</label>
+		<onclick>Skin.SetString(mymenubar,thanksgivingmenubarvertical)</onclick>
+		<selected>String.IsEqual(Skin.String(mymenubar),thanksgivingmenubarvertical)</selected>
+	</control>
+	<control type="radiobutton" id="1090">
+		<label>32050</label>
+		<onclick>Skin.SetString(mymenubar,christmasmenubarvertical)</onclick>
+		<selected>String.IsEqual(Skin.String(mymenubar),christmasmenubarvertical)</selected>
+	</control>	
+	</control>
+	<!--*   MENU BAR SELECTOR   *-->
+	
+	<!-- ########################################################## SELETOR DE ESTOJO ########################################################## -->
+	<control type="group">
+	<visible>Container(9100).HasFocus(31)</visible>
+	<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
+	<control type="grouplist" id="10003">
+	<left>454</left>
+	<top>180</top>
+	<width>1466</width>
+	<height>360</height>
+	<onleft>9100</onleft>
+	<onright>9100</onright>
+	<onup>9100</onup>
+	<ondown>9100</ondown>
+	<itemgap>0</itemgap>
+	<pagecontrol>-</pagecontrol>
+	<!-- Resetar -->
+	<control type="button" id="1301">	
+	<label>$LOCALIZE[31687] - $LOCALIZE[31599]</label>
+	<colordiffuse>FFDAA520</colordiffuse>
+	<onclick>Skin.SetString(colorcasedefault,CC007399)</onclick>
+	<onclick>Skin.SetString(colorcasebluray,CC00AFFF)</onclick>	
+	<onclick>Skin.SetString(colorcase3dbd,CCFFA500)</onclick>	
+	<onclick>Skin.SetString(colorcasewebtv,CCFF0000)</onclick>	
+	<onclick>Skin.SetString(colorcasehdtv,CC8A2BE2)</onclick>	
+	<onclick>Skin.SetString(colorcasedvd,CCADD8E6)</onclick>	
+	<onclick>Skin.SetString(colorcaseset,CCB20000)</onclick>	
+	<onclick>Skin.SetString(colorcase4k,CCA43000)</onclick>	
+	<onclick>Skin.SetString(codeccasedefault,default)</onclick>
+	<onclick>Skin.SetString(codeccasebluray,bluray)</onclick>
+	<onclick>Skin.SetString(codeccase3dbd,3dbd)</onclick>
+	<onclick>Skin.SetString(codeccasewebtv,webtv)</onclick>
+	<onclick>Skin.SetString(codeccasehdtv,hdtv)</onclick>
+	<onclick>Skin.SetString(codeccasedvd,dvd)</onclick>
+	<onclick>Skin.SetString(codeccaseset,set)</onclick>
+	<onclick>Skin.SetString(codeccase4k,4k)</onclick>
+	<onclick>Skin.SetString(colorcodeccase,FFFFFAF0)</onclick>
+	<onclick>Skin.SetString(stylevideocase,default)</onclick>
+	<onclick>SetFocus(10023)</onclick>
+	<onclick>Notification($LOCALIZE[31656],$LOCALIZE[31237])</onclick>
+	</control>
+	<!-- Estilo dos estojos -->
+	<control type="button" id="1304">
+	<label>31279</label>
+	<label2>$VAR[value_status_stylevideocase]</label2>
+	<onclick condition="String.IsEqual(Skin.String(stylevideocase),default)">Skin.SetString(stylevideocase,glass)</onclick>	
+	<onclick condition="String.IsEqual(Skin.String(stylevideocase),glass)">Skin.SetString(stylevideocase,gloss)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(stylevideocase),gloss)">Skin.SetString(stylevideocase,default)</onclick>
+	</control>
+	<!-- Cor das etiquetas -->
+	<control type="button" id="1302">
+	<label>31679</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorcodeccase)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorcodeccase)</onright>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<!-- Estilo da etiqueta de codec -->
+	<control type="group" id="10025">
+	<orientation>horizontal</orientation>
+	<width>1466</width>
+	<height>60</height>
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<height>60</height>
+	<width>1466</width>
+	<texture>grey.png</texture>
+	<visible>Control.HasFocus(1303)</visible>
+	</control>
+	<control type="label">
+	<left>75</left>
+	<height>60</height>
+	<label>- $LOCALIZE[31184]</label>
+	<textcolor>FFFFFAF0</textcolor>
+	<visible>!Control.HasFocus(1303)</visible>
+	</control>
+	<control type="label">
+	<left>75</left>
+	<height>60</height>
+	<label>- $LOCALIZE[31184]</label>
+	<textcolor>FF101010</textcolor>
+	<visible>Control.HasFocus(1303)</visible>
+	</control>	
+	<!-- Seletor de codec -->
+	<control type="list" id="1303">	
+	<left>425</left>
+	<top>0</top>
+	<width>1466</width>
+	<height>60</height>
+	<onup>1302</onup>	
+	<onup>Skin.Reset(custom_codec)</onup>
+	<ondown>10023</ondown>
+	<ondown>Skin.Reset(custom_codec)</ondown>
+	<orientation>horizontal</orientation>
+	<focusposition>0</focusposition>
+	<itemlayout width="105" height="60">
+	<control type="image">
+	<left>22</left>
+	<top>4</top>
+	<height>52</height>
+	<width>105</width>
+	<texture>darkgrey.png</texture>
+	<colordiffuse>85101010</colordiffuse>
+	<visible>Control.HasFocus(1303)</visible>
+	</control>
+	<control type="image">
+	<left>22</left>
+	<top>4</top>
+	<height>52</height>
+	<width>105</width>
+	<texture>$INFO[ListItem.Icon]</texture>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	</control>
+	</itemlayout>
+	<focusedlayout width="105" height="60">
+	<control type="image">
+	<left>22</left>
+	<top>4</top>
+	<height>52</height>
+	<width>105</width>
+	<texture>darkgrey.png</texture>
+	<visible>Control.HasFocus(1303)</visible>
+	</control>
+	<control type="image">
+	<left>22</left>
+	<top>4</top>
+	<height>52</height>
+	<width>105</width>
+	<texture>$INFO[ListItem.Icon]</texture>
+	<colordiffuse>FFFFFAF0</colordiffuse>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<animation effect="zoom" center="auto" start="60" end="100" time="600" tween="back" easing="out" reversible="false">Focus</animation>
+	<visible>!Control.HasFocus(1303)</visible>
+	</control>
+	<control type="image">
+	<left>22</left>
+	<top>4</top>
+	<height>52</height>
+	<width>105</width>
+	<texture>$INFO[ListItem.Icon]</texture>
+	<colordiffuse>$INFO[Skin.String(colorcodeccase)]</colordiffuse>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<animation effect="zoom" center="auto" start="60" end="100" time="600" tween="back" easing="out" reversible="false">Focus</animation>
+	<visible>Control.HasFocus(1303)</visible>
+	</control>
+	</focusedlayout>
+	<content>
+	<item id="1">
+	<label>noop</label>
+	<icon>$VAR[value_mediaicons_path]videocodec/no_codec.png</icon>
+	<onclick>Skin.SetString($INFO[Skin.String(custom_codec)],none)</onclick>
+	<onclick>AlarmClock(casedone,SetFocus(10023),0:01,true)</onclick>
+	</item>
+	<item id="2">
+	<label>noop</label>
+	<icon>$VAR[value_mediaicons_path]videocodec/default.png</icon>
+	<onclick>Skin.SetString($INFO[Skin.String(custom_codec)],default)</onclick>
+	<onclick>AlarmClock(casedone,SetFocus(10023),0:01,true)</onclick>
+	</item>
+	<item id="3">
+	<label>noop</label>
+	<icon>$VAR[value_mediaicons_path]videocodec/bluray.png</icon>
+	<onclick>Skin.SetString($INFO[Skin.String(custom_codec)],bluray)</onclick>
+	<onclick>AlarmClock(casedone,SetFocus(10023),0:01,true)</onclick>
+	</item>
+	<item id="4">
+	<label>noop</label>
+	<icon>$VAR[value_mediaicons_path]videocodec/3dbd.png</icon>
+	<onclick>Skin.SetString($INFO[Skin.String(custom_codec)],3dbd)</onclick>
+	<onclick>AlarmClock(casedone,SetFocus(10023),0:01,true)</onclick>
+	</item>
+	<item id="5">
+	<label>noop</label>
+	<icon>$VAR[value_mediaicons_path]videocodec/webtv.png</icon>
+	<onclick>Skin.SetString($INFO[Skin.String(custom_codec)],webtv)</onclick>
+	<onclick>AlarmClock(casedone,SetFocus(10023),0:01,true)</onclick>
+	</item>
+	<item id="6">
+	<label>noop</label>
+	<icon>$VAR[value_mediaicons_path]videocodec/hdtv.png</icon>
+	<onclick>Skin.SetString($INFO[Skin.String(custom_codec)],hdtv)</onclick>
+	<onclick>AlarmClock(casedone,SetFocus(10023),0:01,true)</onclick>
+	</item>
+	<item id="7">
+	<label>noop</label>
+	<icon>$VAR[value_mediaicons_path]videocodec/dvd.png</icon>
+	<onclick>Skin.SetString($INFO[Skin.String(custom_codec)],dvd)</onclick>
+	<onclick>AlarmClock(casedone,SetFocus(10023),0:01,true)</onclick>
+	</item>
+	<item id="8">
+	<label>noop</label>
+	<icon>$VAR[value_mediaicons_path]videocodec/set.png</icon>
+	<onclick>Skin.SetString($INFO[Skin.String(custom_codec)],set)</onclick>
+	<onclick>AlarmClock(casedone,SetFocus(10023),0:01,true)</onclick>
+	</item>
+	<item id="9">
+	<label>noop</label>
+	<icon>$VAR[value_mediaicons_path]videocodec/4k.png</icon>
+	<onclick>Skin.SetString($INFO[Skin.String(custom_codec)],4k)</onclick>
+	<onclick>AlarmClock(casedone,SetFocus(10023),0:01,true)</onclick>
+	</item>
+	</content>
+	</control>
+	</control>
+	</control>
+	
+	<!-- Setas esquerda/direita -->
+	<control type="image">
+	<left>882</left>
+	<top>570</top>
+	<width>75</width>
+	<height>150</height>
+	<texture flipx="true">arrow_settings.png</texture>
+	<colordiffuse>80FFFAF0</colordiffuse>
+	<animation effect="slide" start="150,0" end="0,0" time="600" tween="back" easing="out" condition="true">Visible</animation>
+	<animation effect="fade" start="20" end="40" time="700" condition="true" pulse="true">Conditional</animation>
+	<visible>ControlGroup(10023).HasFocus</visible>
+	</control>
+	<control type="image">
+	<left>1407</left>
+	<top>570</top>
+	<width>75</width>
+	<height>150</height>
+	<texture>arrow_settings.png</texture>
+	<colordiffuse>80FFFAF0</colordiffuse>
+	<animation effect="slide" start="-150,0" end="0,0" time="600" tween="back" easing="out" condition="true">Visible</animation>
+	<animation effect="fade" start="20" end="40" time="700" condition="true" pulse="true">Conditional</animation>
+	<visible>ControlGroup(10023).HasFocus</visible>
+	</control>
+	
+	<!-- Seletor de estojo -->
+	<control type="grouplist" id="10023">
+	<left>1047</left>
+	<top>440</top>
+	<width>300</width>
+	<height>860</height>
+	<onleft>9100</onleft>
+	<itemgap>0</itemgap>
+	<pagecontrol>-</pagecontrol>
+	<orientation>horizontal</orientation>
+	<scrolltime tween="sine" easing="out">300</scrolltime>
+	<control type="group" id="10040">
+	<orientation>horizontal</orientation>
+	<width>300</width>
+	<height>900</height>
+	<!-- Estojo padrao -->
+	<control type="button" id="1310">
+	<include>InvisibleButton</include>
+	<onleft>1317</onleft>
+	<onright>1311</onright>
+	<onup>10025</onup>
+	<onup>Skin.SetString(custom_codec,codeccasedefault)</onup>
+	<ondown>9100</ondown>	
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorcasedefault)</onclick>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<!-- Estojo -->
+	<control type="image">
+	<include>CaseSelector</include>
+	<colordiffuse>$INFO[Skin.String(colorcasedefault)]</colordiffuse>
+	</control>
+	<!-- Codec -->
+	<control type="image">
+	<include>CaseCodec</include>
+	<texture>$VAR[value_codecdefault]</texture>
+	</control>
+	</control>
+	<!-- Estojo bluray -->
+	<control type="group" id="10041">
+	<orientation>horizontal</orientation>
+	<width>300</width>
+	<height>900</height>
+	<control type="button" id="1311">
+	<include>InvisibleButton</include>
+	<onleft>1310</onleft>
+	<onright>1312</onright>
+	<onup>10025</onup>
+	<onup>Skin.SetString(custom_codec,codeccasebluray)</onup>
+	<ondown>9100</ondown>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorcasebluray)</onclick>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<!-- Estojo -->
+	<control type="image">
+	<include>CaseSelector</include>
+	<colordiffuse>$INFO[Skin.String(colorcasebluray)]</colordiffuse>
+	</control>
+	<!-- Codec -->
+	<control type="image">
+	<include>CaseCodec</include>
+	<texture>$VAR[value_codecbluray]</texture>
+	<colordiffuse>$INFO[Skin.String(colorcodeccase)]</colordiffuse>
+	</control>
+	</control>
+	<!-- Estojo 3D -->
+	<control type="group" id="10042">
+	<orientation>horizontal</orientation>
+	<width>300</width>
+	<height>900</height>
+	<control type="button" id="1312">
+	<include>InvisibleButton</include>
+	<onleft>1311</onleft>
+	<onright>1313</onright>
+	<onup>10025</onup>
+	<onup>Skin.SetString(custom_codec,codeccase3dbd)</onup>
+	<ondown>9100</ondown>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorcase3dbd)</onclick>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<!-- Estojo -->
+	<control type="image">
+	<include>CaseSelector</include>
+	<colordiffuse>$INFO[Skin.String(colorcase3dbd)]</colordiffuse>
+	</control>
+	<!-- Codec -->
+	<control type="image">
+	<include>CaseCodec</include>
+	<texture>$VAR[value_codec3dbd]</texture>
+	<colordiffuse>$INFO[Skin.String(colorcodeccase)]</colordiffuse>
+	</control>
+	</control>
+	<!-- Estojo webtv -->
+	<control type="group" id="10043">
+	<orientation>horizontal</orientation>
+	<width>300</width>
+	<height>900</height>
+	<control type="button" id="1313">
+	<include>InvisibleButton</include>
+	<onleft>1312</onleft>
+	<onright>1314</onright>
+	<onup>10025</onup>
+	<onup>Skin.SetString(custom_codec,codeccasewebtv)</onup>
+	<ondown>9100</ondown>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorcasewebtv)</onclick>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<!-- Estojo -->
+	<control type="image">
+	<include>CaseSelector</include>
+	<colordiffuse>$INFO[Skin.String(colorcasewebtv)]</colordiffuse>
+	</control>
+	<!-- Codec -->
+	<control type="image">
+	<include>CaseCodec</include>
+	<texture>$VAR[value_codecwebtv]</texture>
+	<colordiffuse>$INFO[Skin.String(colorcodeccase)]</colordiffuse>
+	</control>
+	</control>
+	<!-- Estojo hdtv -->
+	<control type="group" id="10044">
+	<orientation>horizontal</orientation>
+	<width>300</width>
+	<height>900</height>
+	<control type="button" id="1314">
+	<include>InvisibleButton</include>
+	<onleft>1313</onleft>
+	<onright>1315</onright>
+	<onup>10025</onup>
+	<onup>Skin.SetString(custom_codec,codeccasehdtv)</onup>
+	<ondown>9100</ondown>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorcasehdtv)</onclick>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<!-- Estojo -->
+	<control type="image">
+	<include>CaseSelector</include>
+	<colordiffuse>$INFO[Skin.String(colorcasehdtv)]</colordiffuse>
+	</control>
+	<!-- Codec -->
+	<control type="image">
+	<include>CaseCodec</include>
+	<texture>$VAR[value_codechdtv]</texture>
+	<colordiffuse>$INFO[Skin.String(colorcodeccase)]</colordiffuse>
+	</control>
+	</control>
+	<!-- Estojo dvd -->
+	<control type="group" id="10045">
+	<orientation>horizontal</orientation>
+	<width>300</width>
+	<height>900</height>
+	<control type="button" id="1315">
+	<include>InvisibleButton</include>
+	<onleft>1314</onleft>
+	<onright>1316</onright>
+	<onup>10025</onup>
+	<onup>Skin.SetString(custom_codec,codeccasedvd)</onup>
+	<ondown>9100</ondown>	
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorcasedvd)</onclick>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<!-- Estojo -->
+	<control type="image">
+	<include>CaseSelector</include>
+	<colordiffuse>$INFO[Skin.String(colorcasedvd)]</colordiffuse>
+	</control>
+	<!-- Codec -->
+	<control type="image">
+	<include>CaseCodec</include>
+	<texture>$VAR[value_codecdvd]</texture>
+	<colordiffuse>$INFO[Skin.String(colorcodeccase)]</colordiffuse>
+	</control>
+	</control>
+	<!-- Estojo conjuntos -->
+	<control type="group" id="10046">
+	<orientation>horizontal</orientation>
+	<width>300</width>
+	<height>900</height>
+	<control type="button" id="1316">
+	<include>InvisibleButton</include>
+	<onleft>1315</onleft>
+	<onright>1317</onright>
+	<onup>10025</onup>
+	<onup>Skin.SetString(custom_codec,codeccaseset)</onup>
+	<ondown>9100</ondown>	
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorcaseset)</onclick>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<!-- Estojo -->
+	<control type="image">
+	<include>CaseSelector</include>
+	<colordiffuse>$INFO[Skin.String(colorcaseset)]</colordiffuse>
+	</control>
+	<!-- Codec -->
+	<control type="image">
+	<include>CaseCodec</include>
+	<texture>$VAR[value_codecset]</texture>
+	<colordiffuse>$INFO[Skin.String(colorcodeccase)]</colordiffuse>
+	</control>
+	</control>
+	<!-- Estojo 4k -->
+	<control type="group" id="10047">
+	<orientation>horizontal</orientation>
+	<width>300</width>
+	<height>900</height>
+	<control type="button" id="1317">
+	<include>InvisibleButton</include>
+	<onleft>1316</onleft>
+	<onright>1310</onright>
+	<onup>10025</onup>
+	<onup>Skin.SetString(custom_codec,codeccase4k)</onup>
+	<ondown>9100</ondown>	
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorcase4k)</onclick>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<!-- Estojo -->
+	<control type="image">
+	<include>CaseSelector</include>
+	<colordiffuse>$INFO[Skin.String(colorcase4k)]</colordiffuse>
+	</control>
+	<!-- Codec -->
+	<control type="image">
+	<include>CaseCodec</include>
+	<texture>$VAR[value_codec4k]</texture>
+	<colordiffuse>$INFO[Skin.String(colorcodeccase)]</colordiffuse>
+	</control>
+	</control>
+	</control>
+	
+	<!-- Painel de info no rodape -->
+	<control type="image">
+	<left>454</left>
+	<top>859</top>
+	<width>1466</width>
+	<height>8</height>
+	<texture>grey.png</texture>
+	<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>867</top>
+	<width>1466</width>
+	<height>160</height>
+	<texture>grey.png</texture>
+	</control>
+	<control type="textbox">
+	<left>520</left>
+	<top>875</top>
+	<width>1330</width>
+	<height>145</height>
+	<font>Font_plot</font>
+	<label>$VAR[value_caseheader]</label>
+	<align>justify</align>
+	<aligny>top</aligny>
+	<textcolor>FF101010</textcolor>
+	<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>867</top>
+	<width>1466</width>
+	<height>160</height>
+	<texture>osd_glass.png</texture>
+	<colordiffuse>90FFFFFF</colordiffuse>
+	</control>	
+	</control>
+	
+	<!--############################################################################   MEU TIPO DE VISTA   ############################################################################-->
+	<control type="group">
+	<visible>Container(9100).HasFocus(24)</visible>
+	<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
+	<control type="grouplist" id="10018">
+	<left>454</left>
+	<top>180</top>
+	<width>1466</width>
+	<height>440</height>
+	<onleft>9100</onleft>
+	<onright>noop</onright>
+	<onup>9100</onup>
+	<itemgap>0</itemgap>
+	<pagecontrol>84</pagecontrol>
+	<!-- Meu tipo de vista 1 -->
+	<control type="button" id="1331">	
+	<label>31586</label>
+	<label2>$VAR[value_myviewtype1label]</label2>
+	<onclick>Skin.SetString(myviewtype,myviewtype1)</onclick>
+	<onclick>SetFocus(460)</onclick>
+	</control>
+	<!-- Renomear -->
+	<control type="button" id="1332">	
+	<label>31211</label>
+	<onclick>Skin.SetString($INFO[Skin.String(myviewtype)].label)</onclick>
+	</control>
+	<!-- Exibir separador -->
+	<control type="group" id="13330">
+	<orientation>horizontal</orientation>
+	<width>1466</width>
+	<height>60</height>
+	<control type="radiobutton" id="1333">
+	<onup>1332</onup>
+	<ondown>1331</ondown>
+	<onleft>9100</onleft>
+	<label>31587</label>
+	<onclick>Skin.ToggleSetting(myviewtype1separator)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colormyviewtype1separator)</onright>
+	<selected>Skin.HasSetting(myviewtype1separator)</selected>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<control type="image">
+	<include>ArrowtoColor</include>
+	</control>
+	</control>
+	</control>
+	
+	<!-- Grupo do seletor de grade e modulo -->
+	<control type="group">
+	<left>1924</left>	
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<width>45</width>
+	<height>1080</height>
+	<texture flipx="true">shadow.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>-4</left>
+	<top>0</top>
+	<width>8</width>
+	<height>1080</height>
+	<texture>grey.png</texture>
+	<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<width>450</width>
+	<height>1080</height>
+	<texture>grey.png</texture>
+	<colordiffuse>FF101010</colordiffuse>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>90</top>
+	<width>450</width>
+	<height>82</height>
+	<texture>black.png</texture>
+	<animation effect="fade" end="50" condition="true">Conditional</animation>
+	</control>
+	<!-- Titulo grade -->
+	<control type="label">
+	<left>30</left>
+	<top>95</top>
+	<width>400</width>
+	<height>74</height>
+	<align>left</align>
+	<aligny>center</aligny>
+	<font>Font_titlesettings</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>31589</label>
+	<visible>ControlGroup(460).HasFocus</visible>
+	</control>
+	<!-- Titulo modulos -->
+	<control type="label">
+	<left>30</left>
+	<top>95</top>
+	<width>400</width>
+	<height>74</height>
+	<align>left</align>
+	<aligny>center</aligny>
+	<font>Font_titlesettings</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>31590</label>
+	<visible>ControlGroup(461).HasFocus</visible>
+	</control>
+	
+	<!-- Definir grade -->
+	<control type="grouplist" id="460">
+	<left>450</left>
+	<top>180</top>
+	<width>450</width>
+	<height>450</height>
+	<onup>9201</onup>
+	<ondown>9201</ondown>
+	<itemgap>0</itemgap>
+	<focusposition>1</focusposition>
+	<scrolltime>450</scrolltime>
+	<animation effect="slide" start="0,0" end="-450,0" time="300" tween="sine" easing="inout" condition="ControlGroup(460).HasFocus">Conditional</animation>	
+	<!-- Grade 1 -->
+	<control type="button" id="1340">
+	<include>MyViewTypeButton</include>
+	<label>$LOCALIZE[31589] 1</label>
+	<onclick>Skin.SetString(viewlayout,grid1)</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(myviewtype)],grid1)</onclick>
+	<onclick>SetFocus(1501)</onclick>	
+	</control>
+	<!-- Grade 2 -->
+	<control type="button" id="1341">
+	<include>MyViewTypeButton</include>
+	<label>$LOCALIZE[31589] 2</label>
+	<onclick>Skin.SetString(viewlayout,grid2)</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(myviewtype)],grid2)</onclick>
+	<onclick>SetFocus(1511)</onclick>
+	</control>
+	<!-- Grade 3 -->
+	<control type="button" id="1342">
+	<include>MyViewTypeButton</include>
+	<label>$LOCALIZE[31589] 3</label>
+	<onclick>Skin.SetString(viewlayout,grid3)</onclick>
+	<onclick>Skin.SetString($INFO[Skin.String(myviewtype)],grid3)</onclick>
+	<onclick>SetFocus(1521)</onclick>
+	</control>
+	</control>
+	
+	<!-- Definir modulos -->
+	<control type="grouplist" id="461">
+	<left>450</left>
+	<top>180</top>
+	<width>450</width>
+	<height>450</height>
+	<itemgap>0</itemgap>
+	<focusposition>1</focusposition>
+	<scrolltime>450</scrolltime>
+	<animation effect="slide" start="0,0" end="-450,0" time="300" tween="sine" easing="inout" condition="ControlGroup(461).HasFocus">Conditional</animation>
+	<!-- Nenhum -->
+	<control type="button" id="1399">	
+	<include>MyViewTypeButton</include>
+	<label>31162</label>
+	<onclick>Skin.SetString($INFO[Skin.String(myviewtype)]$INFO[Skin.String(module)],none)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid1)">SetFocus(1500)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid2)">SetFocus(1510)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid3)">SetFocus(1520)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid4)">SetFocus(1530)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid5)">SetFocus(1540)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid6)">SetFocus(1550)</onclick>
+	</control>	
+	<!-- Grade - Plot -->
+	<control type="button" id="1380">	
+	<include>MyViewTypeButton</include>
+	<label>31530</label>
+	<onclick>Skin.SetString($INFO[Skin.String(myviewtype)]$INFO[Skin.String(module)],plot)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid1)">SetFocus(1500)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid2)">SetFocus(1510)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid3)">SetFocus(1520)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid4)">SetFocus(1530)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid5)">SetFocus(1540)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid6)">SetFocus(1550)</onclick>
+	</control>
+	<!-- Grade - Info -->
+	<control type="button" id="1381">	
+	<include>MyViewTypeButton</include>
+	<label>31226</label>
+	<onclick>Skin.SetString($INFO[Skin.String(myviewtype)]$INFO[Skin.String(module)],info)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid1)">SetFocus(1500)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid2)">SetFocus(1510)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid3)">SetFocus(1520)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid4)">SetFocus(1530)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid5)">SetFocus(1540)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid6)">SetFocus(1550)</onclick>
+	</control>
+	<!-- Grade - Arte -->
+	<control type="button" id="1382">	
+	<include>MyViewTypeButton</include>
+	<label>31409</label>
+	<onclick>Skin.SetString($INFO[Skin.String(myviewtype)]$INFO[Skin.String(module)],art)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid1)">SetFocus(1500)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid2)">SetFocus(1510)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid3)">SetFocus(1520)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid4)">SetFocus(1530)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid5)">SetFocus(1540)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(viewlayout),grid6)">SetFocus(1550)</onclick>
+	</control>
+	</control>
+	</control>	
+	
+	<!-- Painel de info para grid 1, 2 e 3 -->
+	<control type="image">
+	<left>454</left>
+	<top>343</top>
+	<width>1466</width>
+	<height>45</height>
+	<texture>shadow_h.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>388</top>
+	<width>1466</width>
+	<height>480</height>
+	<texture flipy="true" diffuse="shadow_mask.png">darkgrey.png</texture>
+	<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+	<animation effect="fade" end="85" condition="true">Conditional</animation>
+	</control>
+	
+	<!-- Barra do rodape -->
+	<control type="image">	
+	<left>454</left>
+	<top>810</top>
+	<width>1466</width>
+	<height>217</height>
+	<texture>shadow_mask.png</texture>
+	<colordiffuse>$INFO[Skin.String(colorfloor)]</colordiffuse>
+	</control>
+	
+	<!-- Miniaturas dos filmes - Grade 1 -->
+	<control type="wraplist" id="515">
+	<left>529</left>
+	<top>694</top>
+	<width>1316</width>
+	<height>386</height>
+	<onup condition="String.IsEqual(Skin.String(viewlayout),grid1)">SetFocus(1500)</onup>
+	<onup condition="String.IsEqual(Skin.String(viewlayout),grid2)">SetFocus(1510)</onup>
+	<onup condition="String.IsEqual(Skin.String(viewlayout),grid3)">SetFocus(1520)</onup>
+	<onup condition="String.IsEqual(Skin.String(viewlayout),grid4)">SetFocus(1530)</onup>
+	<onup condition="String.IsEqual(Skin.String(viewlayout),grid5)">SetFocus(1540)</onup>
+	<onup condition="String.IsEqual(Skin.String(viewlayout),grid6)">SetFocus(1550)</onup>
+	<focusposition>4</focusposition>
+	<orientation>horizontal</orientation>
+	<include>Animation_Fade</include>
+	<visible>Container(9100).HasFocus(24) | Control.HasFocus(1331) | [ControlGroup(460).HasFocus | ControlGroup(461).HasFocus | ControlGroup(1500).HasFocus] + String.IsEqual(Skin.String(viewlayout),grid1)</visible>
+	<itemlayout width="136.5" height="245">
+	<!-- Reflexo -->
+	<control type="image">	
+	<left>0</left>
+	<top>285</top>
+	<width>136</width>
+	<height>198</height>
+	<aspectratio align="center" aligny="top">stretch</aspectratio>
+	<texture flipy="true" fallback="DefaultPicture.png" diffuse="thumb_poster_reflect.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+	<colordiffuse>97FFFFFF</colordiffuse>	
+	</control>
+	<!-- Poster -->
+	<control type="image">
+	<left>0</left>
+	<top>85</top>
+	<width>136</width>
+	<height>198</height>
+	<aspectratio align="center" aligny="bottom">stretch</aspectratio>
+	<texture fallback="DefaultPicture.png" diffuse="thumb_poster_diffuse.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+	</control>
+	</itemlayout>
+	<focusedlayout width="226" height="386">
+	<!-- Reflexo -->
+	<control type="image">	
+	<left>5</left>
+	<top>322</top>
+	<width>215</width>
+	<height>312</height>
+	<aspectratio align="center" aligny="top">stretch</aspectratio>
+	<texture flipy="true" fallback="DefaultPicture.png" diffuse="thumb_poster_reflect.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+	<colordiffuse>97FFFFFF</colordiffuse>	
+	</control>
+	<!-- Poster -->
+	<control type="image">
+	<left>5</left>
+	<top>8</top>
+	<width>215</width>
+	<height>312</height>
+	<aspectratio align="center" aligny="bottom">stretch</aspectratio>
+	<texture fallback="DefaultPicture.png" diffuse="thumb_poster_diffuse.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+	</control>
+	</focusedlayout>
+	<content target="video">videodb://recentlyaddedmovies/</content>
+	</control>
+	
+	<!-- Separador - Grade 1 -->
+	<control type="image">
+	<left>527</left>
+	<top>692</top>
+	<width>1320</width>
+	<height>4</height>
+	<texture>grid1_separator.png</texture>
+	<colordiffuse>$INFO[Skin.String(colormyviewtype1separator)]</colordiffuse>
+	<visible>Skin.HasSetting(myviewtype1separator) + [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus] + String.IsEqual(Skin.String(myviewtype1),grid1)</visible>
+	</control>
+	
+	<!-- Separador - Grade 2 -->
+	<control type="image">
+	<left>527</left>
+	<top>409</top>
+	<width>1320</width>
+	<height>282</height>
+	<texture>grid2_separator.png</texture>
+	<colordiffuse>$INFO[Skin.String(colormyviewtype1separator)]</colordiffuse>
+	<visible>Skin.HasSetting(myviewtype1separator) + [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus] + String.IsEqual(Skin.String(myviewtype1),grid2)</visible>
+	</control>
+	
+	<!-- Separador - Grade 3 -->
+	<control type="image">
+	<left>527</left>
+	<top>409</top>
+	<width>1320</width>
+	<height>282</height>
+	<texture>grid3_separator.png</texture>
+	<colordiffuse>$INFO[Skin.String(colormyviewtype1separator)]</colordiffuse>
+	<visible>Skin.HasSetting(myviewtype1separator) + [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus] + String.IsEqual(Skin.String(myviewtype1),grid3)</visible>
+	</control>
+
+	<!-- Plot - Grade 1 modulo 1 -->	
+	<control type="textbox">
+	<left>529</left>
+	<top>411</top>	
+	<width>1316</width>
+	<height>257</height>
+	<font>Font_plotsmall</font>
+	<label>$INFO[Container(515).ListItem(0).Plot]</label>
+	<textcolor>FFFFFAF0</textcolor>
+	<autoscroll delay="10000" time="3000" repeat="10000">!Skin.HasSetting(noallowscroll)</autoscroll>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1380) + String.IsEqual(Skin.String(module),grid1module1) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1500).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid1module1),plot) + String.IsEqual(Skin.String(myviewtype1),grid1)</visible>
+	</control>
+		
+	<!-- Plot - Grade 2 modulo 1 -->	
+	<control type="textbox">
+	<left>529</left>
+	<top>411</top>	
+	<width>628</width>
+	<height>257</height>
+	<font>Font_plotsmall</font>
+	<label>$INFO[Container(515).ListItem(0).Plot]</label>
+	<textcolor>FFFFFAF0</textcolor>
+	<autoscroll delay="10000" time="3000" repeat="10000">!Skin.HasSetting(noallowscroll)</autoscroll>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1380) + String.IsEqual(Skin.String(module),grid2module1) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1510).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid2module1),plot) + String.IsEqual(Skin.String(myviewtype1),grid2)</visible>
+	</control>
+	
+	<!-- Plot - Grade 2 modulo 2 -->	
+	<control type="textbox">
+	<left>1209</left>
+	<top>411</top>	
+	<width>636</width>
+	<height>257</height>
+	<font>Font_plotsmall</font>
+	<label>$INFO[Container(515).ListItem(0).Plot]</label>
+	<textcolor>FFFFFAF0</textcolor>
+	<autoscroll delay="10000" time="3000" repeat="10000">!Skin.HasSetting(noallowscroll)</autoscroll>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1380) + String.IsEqual(Skin.String(module),grid2module2) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1510).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid2module2),plot) + String.IsEqual(Skin.String(myviewtype1),grid2)</visible>
+	</control>	
+	
+	<!-- Plot - Grade 3 modulo 1 -->	
+	<control type="textbox">
+	<left>529</left>
+	<top>411</top>	
+	<width>410</width>
+	<height>257</height>
+	<font>Font_plotsmall</font>
+	<label>$INFO[Container(515).ListItem(0).Plot]</label>
+	<textcolor>FFFFFAF0</textcolor>
+	<autoscroll delay="10000" time="3000" repeat="10000">!Skin.HasSetting(noallowscroll)</autoscroll>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1380) + String.IsEqual(Skin.String(module),grid3module1) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1520).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid3module1),plot) + String.IsEqual(Skin.String(myviewtype1),grid3)</visible>
+	</control>
+	
+	<!-- Plot - Grade 3 modulo 2 -->	
+	<control type="textbox">
+	<left>982</left>
+	<top>411</top>	
+	<width>410</width>
+	<height>257</height>
+	<font>Font_plotsmall</font>
+	<label>$INFO[Container(515).ListItem(0).Plot]</label>
+	<textcolor>FFFFFAF0</textcolor>
+	<autoscroll delay="10000" time="3000" repeat="10000">!Skin.HasSetting(noallowscroll)</autoscroll>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1380) + String.IsEqual(Skin.String(module),grid3module2) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1520).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid3module2),plot) + String.IsEqual(Skin.String(myviewtype1),grid3)</visible>
+	</control>
+	
+	<!-- Plot - Grade 3 modulo 3 -->	
+	<control type="textbox">
+	<left>1437</left>
+	<top>411</top>	
+	<width>410</width>
+	<height>257</height>
+	<font>Font_plotsmall</font>
+	<label>$INFO[Container(515).ListItem(0).Plot]</label>
+	<textcolor>FFFFFAF0</textcolor>
+	<autoscroll delay="10000" time="3000" repeat="10000">!Skin.HasSetting(noallowscroll)</autoscroll>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1380) + String.IsEqual(Skin.String(module),grid3module3) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1520).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid3module3),plot) + String.IsEqual(Skin.String(myviewtype1),grid3)</visible>
+	</control>	
+	
+	<!-- Informacoes gerais - Grade 1 modulo 1 -->	
+	<control type="grouplist">
+	<left>529</left>
+	<top>411</top>	
+	<width>1316</width>
+	<height>257</height>
+	<orientation>vertical</orientation>
+	<itemgap>15</itemgap>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1381) + String.IsEqual(Skin.String(module),grid1module1) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1500).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid1module1),info) + String.IsEqual(Skin.String(myviewtype1),grid1)</visible>
+	<control type="label">
+	<include>MyViewTypeLabelGrid1</include>
+	<label>$LOCALIZE[21875]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Country][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid1</include>
+	<label>$LOCALIZE[515]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Genre][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid1</include>
+	<label>$LOCALIZE[20388]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Studio][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid1</include>
+	<label>$LOCALIZE[20339]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Director][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid1</include>
+	<label>$LOCALIZE[20417]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Writer][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid1</include>
+	<label>$LOCALIZE[180]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Duration][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid1</include>
+	<label>$LOCALIZE[31089]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Year][/COLOR]</label>
+	</control>
+	</control>
+	
+	<!-- Informacoes gerais - Grade 2 modulo 1 -->	
+	<control type="grouplist">
+	<left>529</left>
+	<top>411</top>	
+	<width>636</width>
+	<height>257</height>
+	<orientation>vertical</orientation>
+	<itemgap>15</itemgap>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1381) + String.IsEqual(Skin.String(module),grid2module1) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1510).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid2module1),info) + String.IsEqual(Skin.String(myviewtype1),grid2)</visible>
+	<control type="label">
+	<include>MyViewTypeLabelGrid2</include>
+	<label>$LOCALIZE[21875]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Country][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid2</include>
+	<label>$LOCALIZE[515]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Genre][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid2</include>
+	<label>$LOCALIZE[20388]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Studio][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid2</include>
+	<label>$LOCALIZE[20339]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Director][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid2</include>
+	<label>$LOCALIZE[20417]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Writer][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid2</include>
+	<label>$LOCALIZE[180]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Duration][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid2</include>
+	<label>$LOCALIZE[31089]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Year][/COLOR]</label>
+	</control>
+	</control>
+	
+	<!-- Informacoes gerais - Grade 2 modulo 2 -->	
+	<control type="grouplist">
+	<left>1209</left>
+	<top>411</top>	
+	<width>628</width>
+	<height>257</height>
+	<orientation>vertical</orientation>
+	<itemgap>15</itemgap>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1381) + String.IsEqual(Skin.String(module),grid2module2) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1510).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid2module2),info) + String.IsEqual(Skin.String(myviewtype1),grid2)</visible>
+	<control type="label">
+	<include>MyViewTypeLabelGrid2</include>
+	<label>$LOCALIZE[21875]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Country][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid2</include>
+	<label>$LOCALIZE[515]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Genre][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid2</include>
+	<label>$LOCALIZE[20388]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Studio][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid2</include>
+	<label>$LOCALIZE[20339]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Director][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid2</include>
+	<label>$LOCALIZE[20417]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Writer][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid2</include>
+	<label>$LOCALIZE[180]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Duration][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid2</include>
+	<label>$LOCALIZE[31089]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Year][/COLOR]</label>
+	</control>
+	</control>
+	
+	<!-- Informacoes gerais - Grade 3 modulo 1 -->	
+	<control type="grouplist">
+	<left>529</left>
+	<top>411</top>	
+	<width>410</width>
+	<height>257</height>
+	<orientation>vertical</orientation>
+	<itemgap>15</itemgap>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1381) + String.IsEqual(Skin.String(module),grid3module1) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1520).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid3module1),info) + String.IsEqual(Skin.String(myviewtype1),grid3)</visible>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[21875]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Country][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[515]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Genre][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[20388]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Studio][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[20339]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Director][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[20417]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Writer][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[180]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Duration][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[31089]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Year][/COLOR]</label>
+	</control>
+	</control>
+	
+	<!-- Informacoes gerais - Grade 3 modulo 2 -->	
+	<control type="grouplist">
+	<left>982</left>
+	<top>411</top>	
+	<width>410</width>
+	<height>257</height>
+	<orientation>vertical</orientation>
+	<itemgap>15</itemgap>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1381) + String.IsEqual(Skin.String(module),grid3module2) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1520).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid3module2),info) + String.IsEqual(Skin.String(myviewtype1),grid3)</visible>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[21875]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Country][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[515]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Genre][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[20388]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Studio][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[20339]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Director][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[20417]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Writer][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[180]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Duration][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[31089]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Year][/COLOR]</label>
+	</control>
+	</control>
+	
+	<!-- Informacoes gerais - Grade 3 modulo 3 -->	
+	<control type="grouplist">
+	<left>1437</left>
+	<top>411</top>	
+	<width>410</width>
+	<height>257</height>
+	<orientation>vertical</orientation>
+	<itemgap>15</itemgap>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1381) + String.IsEqual(Skin.String(module),grid3module3) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1520).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid3module3),info) + String.IsEqual(Skin.String(myviewtype1),grid3)</visible>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[21875]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Country][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[515]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Genre][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[20388]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Studio][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[20339]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Director][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[20417]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Writer][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[180]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Duration][/COLOR]</label>
+	</control>
+	<control type="label">
+	<include>MyViewTypeLabelGrid3</include>
+	<label>$LOCALIZE[31089]: [COLOR=FFFFFAF0]$INFO[Container(515).ListItem(0).Year][/COLOR]</label>
+	</control>
+	</control>
+	
+	<!-- Arte - Grade 1 modulo 1 -->	
+	<control type="group">
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1382) + String.IsEqual(Skin.String(module),grid1module1) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1500).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid1module1),art) + String.IsEqual(Skin.String(myviewtype1),grid1)</visible>
+	<control type="image">
+	<left>529</left>
+	<top>411</top>	
+	<width>188</width>
+	<height>120</height>
+	<texture background="true">$INFO[Container(515).ListItem(0).Path,,extrathumbs/thumb1.jpg]</texture>
+	</control>
+	<control type="image">
+	<left>529</left>
+	<top>550</top>	
+	<width>188</width>
+	<height>120</height>
+	<texture background="true">$INFO[Container(515).ListItem(0).Path,,extrathumbs/thumb2.jpg]</texture>	
+	</control>
+	<control type="image">
+	<left>1658</left>
+	<top>411</top>	
+	<width>188</width>
+	<height>120</height>
+	<texture background="true">$INFO[Container(515).ListItem(0).Path,,extrathumbs/thumb3.jpg]</texture>
+	</control>
+	<control type="image">
+	<left>1658</left>
+	<top>550</top>	
+	<width>188</width>
+	<height>120</height>
+	<texture background="true">$INFO[Container(515).ListItem(0).Path,,extrathumbs/thumb4.jpg]</texture>	
+	</control>
+	<control type="image">
+	<left>1314</left>
+	<top>411</top>	
+	<width>188</width>
+	<height>120</height>
+	<texture>$INFO[Container(515).ListItem(0).Art(clearlogo)]</texture>	
+	</control>
+	<control type="image">
+	<left>1314</left>
+	<top>550</top>	
+	<width>188</width>
+	<height>120</height>
+	<texture>$INFO[Container(515).ListItem(0).Art(clearart)]</texture>	
+	</control>	
+	<control type="image">
+	<left>966</left>
+	<top>431</top>	
+	<width>231</width>
+	<height>231</height>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<texture diffuse="cdart_diffuse.png" background="true">$INFO[Container(515).ListItem(0).Art(discart)]</texture>
+	<fadetime>FanartCrossFadeTime</fadetime>	
+	<animation effect="rotate" start="0" end="-360" center="auto" time="40000" delay="5000" loop="true" reversible="false" condition="true">Conditional</animation>
+	</control>
+	<control type="image">
+	<left>873</left>
+	<top>577</top>	
+	<width>432</width>
+	<height>93</height>
+	<texture>$INFO[Container(515).ListItem(0).Art(banner)]</texture>	
+	</control>	
+	</control>
+	
+	<!-- Arte - Grade 2 modulo 1 -->	
+	<control type="group">
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1382) + String.IsEqual(Skin.String(module),grid2module1) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1510).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid2module1),art) + String.IsEqual(Skin.String(myviewtype1),grid2)</visible>
+	<control type="image">
+	<left>969</left>
+	<top>411</top>	
+	<width>188</width>
+	<height>120</height>
+	<texture>$INFO[Container(515).ListItem(0).Art(clearlogo)]</texture>	
+	</control>
+	<control type="image">
+	<left>969</left>
+	<top>550</top>	
+	<width>188</width>
+	<height>120</height>
+	<texture>$INFO[Container(515).ListItem(0).Art(clearart)]</texture>	
+	</control>	
+	<control type="image">
+	<left>621</left>
+	<top>431</top>	
+	<width>231</width>
+	<height>231</height>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<texture diffuse="cdart_diffuse.png" background="true">$INFO[Container(515).ListItem(0).Art(discart)]</texture>
+	<fadetime>FanartCrossFadeTime</fadetime>	
+	<animation effect="rotate" start="0" end="-360" center="auto" time="40000" delay="5000" loop="true" reversible="false" condition="true">Conditional</animation>
+	</control>
+	<control type="image">
+	<left>529</left>
+	<top>577</top>	
+	<width>432</width>
+	<height>93</height>
+	<texture>$INFO[Container(515).ListItem(0).Art(banner)]</texture>	
+	</control>	
+	</control>
+	
+	<!-- Arte - Grade 2 modulo 2 -->	
+	<control type="group">
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1382) + String.IsEqual(Skin.String(module),grid2module2) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1510).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid2module2),art) + String.IsEqual(Skin.String(myviewtype1),grid2)</visible>
+	<control type="image">
+	<left>1658</left>
+	<top>411</top>	
+	<width>188</width>
+	<height>120</height>
+	<texture>$INFO[Container(515).ListItem(0).Art(clearlogo)]</texture>	
+	</control>
+	<control type="image">
+	<left>1658</left>
+	<top>550</top>	
+	<width>188</width>
+	<height>120</height>
+	<texture>$INFO[Container(515).ListItem(0).Art(clearart)]</texture>	
+	</control>	
+	<control type="image">
+	<left>1310</left>
+	<top>431</top>	
+	<width>231</width>
+	<height>231</height>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<texture diffuse="cdart_diffuse.png" background="true">$INFO[Container(515).ListItem(0).Art(discart)]</texture>
+	<fadetime>FanartCrossFadeTime</fadetime>	
+	<animation effect="rotate" start="0" end="-360" center="auto" time="40000" delay="5000" loop="true" reversible="false" condition="true">Conditional</animation>
+	</control>
+	<control type="image">
+	<left>1217</left>
+	<top>577</top>	
+	<width>432</width>
+	<height>93</height>
+	<texture>$INFO[Container(515).ListItem(0).Art(banner)]</texture>	
+	</control>	
+	</control>
+	
+	<!-- Arte - Grade 3 modulo 1 -->	
+	<control type="group">
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1382) + String.IsEqual(Skin.String(module),grid3module1) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1520).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid3module1),art) + String.IsEqual(Skin.String(myviewtype1),grid3)</visible>
+	<control type="image">
+	<left>529</left>
+	<top>411</top>	
+	<width>205</width>
+	<height>131</height>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<texture>$INFO[Container(515).ListItem(0).Art(clearart)]</texture>	
+	</control>
+	<control type="image">
+	<left>734</left>
+	<top>421</top>	
+	<width>205</width>
+	<height>131</height>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<texture>$INFO[Container(515).ListItem(0).Art(clearlogo)]</texture>	
+	</control>
+	<control type="image">
+	<left>529</left>
+	<top>581</top>	
+	<width>410</width>
+	<height>88</height>
+	<aspectratio align="center" aligny="center">scale</aspectratio>
+	<texture>$INFO[Container(515).ListItem(0).Art(banner)]</texture>	
+	</control>
+	</control>
+	
+	<!-- Arte - Grade 3 modulo 2 -->	
+	<control type="group">
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1382) + String.IsEqual(Skin.String(module),grid3module2) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1520).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid3module2),art) + String.IsEqual(Skin.String(myviewtype1),grid3)</visible>
+	<control type="image">
+	<left>982</left>
+	<top>411</top>	
+	<width>205</width>
+	<height>131</height>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<texture>$INFO[Container(515).ListItem(0).Art(clearart)]</texture>	
+	</control>
+	<control type="image">
+	<left>1187</left>
+	<top>421</top>	
+	<width>205</width>
+	<height>131</height>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<texture>$INFO[Container(515).ListItem(0).Art(clearlogo)]</texture>	
+	</control>
+	<control type="image">
+	<left>982</left>
+	<top>581</top>	
+	<width>410</width>
+	<height>88</height>
+	<aspectratio align="center" aligny="center">scale</aspectratio>
+	<texture>$INFO[Container(515).ListItem(0).Art(banner)]</texture>	
+	</control>
+	</control>
+	
+	<!-- Arte - Grade 3 modulo 3 -->	
+	<control type="group">
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1382) + String.IsEqual(Skin.String(module),grid3module3) | [Control.HasFocus(9100) + Container(9100).HasFocus(24) | ControlGroup(10018).HasFocus | ControlGroup(1520).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(myviewtype1grid3module3),art) + String.IsEqual(Skin.String(myviewtype1),grid3)</visible>
+	<control type="image">
+	<left>1437</left>
+	<top>411</top>	
+	<width>205</width>
+	<height>131</height>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<texture>$INFO[Container(515).ListItem(0).Art(clearart)]</texture>	
+	</control>
+	<control type="image">
+	<left>1642</left>
+	<top>421</top>	
+	<width>205</width>
+	<height>131</height>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<texture>$INFO[Container(515).ListItem(0).Art(clearlogo)]</texture>	
+	</control>
+	<control type="image">
+	<left>1437</left>
+	<top>581</top>	
+	<width>410</width>
+	<height>88</height>
+	<aspectratio align="center" aligny="center">scale</aspectratio>
+	<texture>$INFO[Container(515).ListItem(0).Art(banner)]</texture>	
+	</control>
+	</control>
+	
+	<!-- Grade 1 - Botao para definir modulo -->
+	<control type="group" id="1500">
+	<control type="image">	
+	<left>505</left>
+	<top>388</top>
+	<width>1364</width>
+	<height>639</height>
+	<texture>grid1.png</texture>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1340) | ControlGroup(1500).HasFocus | [ControlGroup(461).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(viewlayout),grid1)</visible>
+	</control>	
+	<control type="button" id="1501">
+	<left>529</left>
+	<top>411</top>	
+	<width>1316</width>
+	<height>257</height>
+	<onup>1332</onup>
+	<ondown>515</ondown>
+	<onclick>Skin.SetString(module,grid1module1)</onclick>
+	<onclick>SetFocus(461)</onclick>
+	<texturefocus colordiffuse="E6FFFFFF">grey.png</texturefocus>
+	<texturenofocus>-</texturenofocus>
+	<label>noop</label>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1340) | ControlGroup(1500).HasFocus | [ControlGroup(461).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(viewlayout),grid1)</visible>
+	</control>
+	<control type="label">	
+	<left>529</left>
+	<top>411</top>	
+	<width>1316</width>
+	<height>257</height>
+	<align>center</align>
+	<aligny>center</aligny>
+	<font>Font_settings</font>
+	<textcolor>FF101010</textcolor>
+	<label>31591</label>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1501)</visible>
+	</control>
+	</control>
+
+	<!-- Grade 2 - Botao para definir modulo -->
+	<control type="group" id="1510">
+	<control type="image">	
+	<left>505</left>
+	<top>388</top>
+	<width>1364</width>
+	<height>639</height>
+	<texture>grid2.png</texture>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1341) | ControlGroup(1510).HasFocus | [ControlGroup(461).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(viewlayout),grid2)</visible>
+	</control>	
+	<control type="button" id="1511">
+	<left>529</left>
+	<top>411</top>	
+	<width>636</width>
+	<height>257</height>
+	<onleft>1512</onleft>
+	<onright>1512</onright>
+	<onup>1332</onup>
+	<ondown>515</ondown>
+	<onclick>Skin.SetString(module,grid2module1)</onclick>
+	<onclick>SetFocus(461)</onclick>
+	<texturefocus colordiffuse="E6FFFFFF">grey.png</texturefocus>
+	<texturenofocus>-</texturenofocus>
+	<label>noop</label>	
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1341) | ControlGroup(1510).HasFocus | [ControlGroup(461).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(viewlayout),grid2)</visible>
+	</control>
+	<control type="label">	
+	<left>529</left>
+	<top>411</top>	
+	<width>636</width>
+	<height>257</height>
+	<align>center</align>
+	<aligny>center</aligny>
+	<font>Font_settings</font>
+	<textcolor>FF101010</textcolor>
+	<label>31591</label>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1511)</visible>
+	</control>
+	<control type="button" id="1512">
+	<left>1209</left>
+	<top>411</top>	
+	<width>636</width>
+	<height>257</height>
+	<onleft>1511</onleft>
+	<onright>1511</onright>
+	<onup>1332</onup>
+	<ondown>515</ondown>
+	<onclick>Skin.SetString(module,grid2module2)</onclick>
+	<onclick>SetFocus(461)</onclick>
+	<texturefocus colordiffuse="E6FFFFFF">grey.png</texturefocus>
+	<texturenofocus>-</texturenofocus>
+	<label>noop</label>	
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1341) | ControlGroup(1510).HasFocus | [ControlGroup(461).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(viewlayout),grid2)</visible>
+	</control>
+	<control type="label">	
+	<left>1209</left>
+	<top>411</top>	
+	<width>636</width>
+	<height>257</height>
+	<align>center</align>
+	<aligny>center</aligny>
+	<font>Font_settings</font>
+	<textcolor>FF101010</textcolor>
+	<label>31591</label>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1512)</visible>
+	</control>
+	</control>
+
+	<!-- Grade 3 - Botao para definir modulo -->
+	<control type="group" id="1520">
+	<control type="image">	
+	<left>505</left>
+	<top>388</top>
+	<width>1364</width>
+	<height>639</height>
+	<texture>grid3.png</texture>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1342) | ControlGroup(1520).HasFocus | [ControlGroup(461).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(viewlayout),grid3)</visible>
+	</control>	
+	<control type="button" id="1521">
+	<left>529</left>
+	<top>411</top>	
+	<width>410</width>
+	<height>257</height>
+	<onleft>1523</onleft>
+	<onright>1522</onright>
+	<onup>1332</onup>
+	<ondown>515</ondown>
+	<onclick>Skin.SetString(module,grid3module1)</onclick>
+	<onclick>SetFocus(461)</onclick>
+	<texturefocus colordiffuse="E6FFFFFF">grey.png</texturefocus>
+	<texturenofocus>-</texturenofocus>
+	<label>noop</label>	
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1342) | ControlGroup(1520).HasFocus | [ControlGroup(461).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(viewlayout),grid3)</visible>
+	</control>
+	<control type="label">	
+	<left>529</left>
+	<top>411</top>	
+	<width>410</width>
+	<height>257</height>
+	<align>center</align>
+	<aligny>center</aligny>
+	<font>Font_settings</font>
+	<textcolor>FF101010</textcolor>
+	<label>31591</label>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1521)</visible>
+	</control>
+	<control type="button" id="1522">
+	<left>982</left>
+	<top>411</top>	
+	<width>410</width>
+	<height>257</height>
+	<onleft>1521</onleft>
+	<onright>1523</onright>
+	<onup>1332</onup>
+	<ondown>515</ondown>
+	<onclick>Skin.SetString(module,grid3module2)</onclick>
+	<onclick>SetFocus(461)</onclick>
+	<texturefocus colordiffuse="E6FFFFFF">grey.png</texturefocus>
+	<texturenofocus>-</texturenofocus>
+	<label>noop</label>	
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1342) | ControlGroup(1520).HasFocus | [ControlGroup(461).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(viewlayout),grid3)</visible>
+	</control>
+	<control type="label">	
+	<left>982</left>
+	<top>411</top>	
+	<width>410</width>
+	<height>257</height>
+	<align>center</align>
+	<aligny>center</aligny>
+	<font>Font_settings</font>
+	<textcolor>FF101010</textcolor>
+	<label>31591</label>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1522)</visible>
+	</control>
+	<control type="button" id="1523">
+	<left>1437</left>
+	<top>411</top>	
+	<width>410</width>
+	<height>257</height>
+	<onleft>1522</onleft>
+	<onright>1521</onright>
+	<onup>1332</onup>
+	<ondown>515</ondown>
+	<onclick>Skin.SetString(module,grid3module3)</onclick>
+	<onclick>SetFocus(461)</onclick>
+	<texturefocus colordiffuse="E6FFFFFF">grey.png</texturefocus>
+	<texturenofocus>-</texturenofocus>
+	<label>noop</label>	
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1342) | ControlGroup(1520).HasFocus | [ControlGroup(461).HasFocus | Control.HasFocus(515)] + String.IsEqual(Skin.String(viewlayout),grid3)</visible>
+	</control>
+	<control type="label">	
+	<left>1437</left>
+	<top>411</top>	
+	<width>410</width>
+	<height>257</height>
+	<align>center</align>
+	<aligny>center</aligny>
+	<font>Font_settings</font>
+	<textcolor>FF101010</textcolor>
+	<label>31591</label>
+	<include>Animation_Fade</include>
+	<visible>Control.HasFocus(1523)</visible>
+	</control>
+	</control>	
+	</control>		
+	
+	<!-- ########################################################## SELETOR DAS ESTRELAS ########################################################## -->
+	<control type="group">
+	<visible>Container(9100).HasFocus(37)</visible>
+	<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
+	<control type="grouplist" id="10033">
+	<left>454</left>
+	<top>180</top>
+	<width>1466</width>
+	<height>860</height>
+	<onleft>9100</onleft>
+	<itemgap>10</itemgap>
+	<pagecontrol>-</pagecontrol>
+	<!-- Resetar -->
+	<control type="button" id="1280">
+	<label>$LOCALIZE[31687] - $LOCALIZE[31599]</label>
+	<colordiffuse>FFDAA520</colordiffuse>
+	<onup>1291</onup>
+	<onclick>Skin.SetString(colorratingstars09,FFE7FAFF)</onclick>
+	<onclick>Skin.SetString(colorratingstars19,FF33D6FF)</onclick>
+	<onclick>Skin.SetString(colorratingstars29,FF3870FF)</onclick>
+	<onclick>Skin.SetString(colorratingstars39,FFA366FF)</onclick>
+	<onclick>Skin.SetString(colorratingstars49,FFA219FF)</onclick>
+	<onclick>Skin.SetString(colorratingstars59,FFFFE135)</onclick>
+	<onclick>Skin.SetString(colorratingstars69,FFFF751A)</onclick>
+	<onclick>Skin.SetString(colorratingstars79,FFE72E00)</onclick>
+	<onclick>Skin.SetString(colorratingstars89,FF8DB600)</onclick>
+	<onclick>Skin.SetString(colorratingstars100,FF008000)</onclick>
+	<onclick>Skin.SetString(styleratingstars,3D)</onclick>
+	<onclick>Notification($LOCALIZE[31656],$LOCALIZE[31237])</onclick>
+	<onclick>SetFocus(9100)</onclick>
+	</control>
+	<!-- Estilo das estrelas -->
+	<control type="button" id="1281">
+	<label>$LOCALIZE[31130]</label>
+	<label2>$VAR[value_status_styleratingstars]</label2>
+	<onclick condition="String.IsEqual(Skin.String(styleratingstars),santahat)">Skin.SetString(styleratingstars,bar)</onclick><!-- para barra -->    
+    <onclick condition="String.IsEqual(Skin.String(styleratingstars),bar)">Skin.SetString(styleratingstars,flat)</onclick><!-- para plano -->
+    <onclick condition="String.IsEqual(Skin.String(styleratingstars),flat)">Skin.SetString(styleratingstars,italic)</onclick><!-- para italico -->
+    <onclick condition="String.IsEqual(Skin.String(styleratingstars),italic)">Skin.SetString(styleratingstars,sloped)</onclick><!-- para inclinado -->
+    <onclick condition="String.IsEqual(Skin.String(styleratingstars),sloped)">Skin.SetString(styleratingstars,strip)</onclick><!-- para tiras -->
+    <onclick condition="String.IsEqual(Skin.String(styleratingstars),strip)">Skin.SetString(styleratingstars,3D)</onclick><!-- para 3D -->
+    <onclick condition="String.IsEqual(Skin.String(styleratingstars),3D)">Skin.SetString(styleratingstars,pumpkin)</onclick>
+    <onclick condition="String.IsEqual(Skin.String(styleratingstars),pumpkin)">Skin.SetString(styleratingstars,capotain)</onclick>
+    <onclick condition="String.IsEqual(Skin.String(styleratingstars),capotain)">Skin.SetString(styleratingstars,santahat)</onclick>	
+	</control>
+	<!-- 0,0 - 0,9 -->
+	<control type="group" id="1282">
+	<orientation>horizontal</orientation>
+	<width>1466</width>
+	<height>60</height>
+	<control type="button" id="350">
+	<onup>1281</onup>
+	<ondown>1283</ondown>
+	<onleft>9100</onleft>
+	<label>0,0 - 0,9</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars09)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars09)</onright>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,1.0.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars09)]</colordiffuse>	
+	<visible>!Control.HasFocus(350)</visible>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,0.9.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars09)]</colordiffuse>	
+	<visible>Control.HasFocus(350)</visible>
+	</control>	
+	</control>
+	<!-- 1,0 - 1,9 -->
+	<control type="group" id="1283">
+	<orientation>horizontal</orientation>
+	<width>1466</width>
+	<height>60</height>
+	<control type="button" id="351">
+	<onup>1282</onup>
+	<ondown>1284</ondown>
+	<onleft>9100</onleft>
+	<label>1,0 - 1,9</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars19)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars19)</onright>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,1.0.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars19)]</colordiffuse>	
+	<visible>!Control.HasFocus(351)</visible>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,1.5.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars19)]</colordiffuse>	
+	<visible>Control.HasFocus(351)</visible>
+	</control>	
+	</control>	
+	<!-- 2,0 - 2,9 -->
+	<control type="group" id="1284">
+	<orientation>horizontal</orientation>
+	<width>1466</width>
+	<height>60</height>
+	<control type="button" id="352">
+	<onup>1283</onup>
+	<ondown>1285</ondown>
+	<onleft>9100</onleft>
+	<label>2,0 - 2,9</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars29)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars29)</onright>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,1.0.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars29)]</colordiffuse>	
+	<visible>!Control.HasFocus(352)</visible>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,2.5.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars29)]</colordiffuse>	
+	<visible>Control.HasFocus(352)</visible>
+	</control>	
+	</control>
+	<!-- 3,0 - 3,9 -->
+	<control type="group" id="1285">
+	<orientation>horizontal</orientation>
+	<width>1466</width>
+	<height>60</height>
+	<control type="button" id="353">
+	<onup>1284</onup>
+	<ondown>1286</ondown>
+	<onleft>9100</onleft>
+	<label>3,0 - 3,9</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars39)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars39)</onright>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,1.0.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars39)]</colordiffuse>
+	<visible>!Control.HasFocus(353)</visible>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,3.5.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars39)]</colordiffuse>
+	<visible>Control.HasFocus(353)</visible>
+	</control>	
+	</control>
+	<!-- 4,0 - 4,9 -->
+	<control type="group" id="1286">
+	<orientation>horizontal</orientation>
+	<width>1466</width>
+	<height>60</height>
+	<control type="button" id="354">
+	<onup>1285</onup>
+	<ondown>1287</ondown>
+	<onleft>9100</onleft>
+	<label>4,0 - 4,9</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars49)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars49)</onright>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,1.0.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars49)]</colordiffuse>
+	<visible>!Control.HasFocus(354)</visible>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,4.5.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars49)]</colordiffuse>
+	<visible>Control.HasFocus(354)</visible>
+	</control>	
+	</control>
+	<!-- 5,0 - 5,9 -->
+	<control type="group" id="1287">
+	<orientation>horizontal</orientation>
+	<width>1466</width>
+	<height>60</height>
+	<control type="button" id="355">
+	<onup>1286</onup>
+	<ondown>1288</ondown>
+	<onleft>9100</onleft>
+	<label>5,0 - 5,9</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars59)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars59)</onright>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,1.0.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars59)]</colordiffuse>
+	<visible>!Control.HasFocus(355)</visible>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,5.5.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars59)]</colordiffuse>
+	<visible>Control.HasFocus(355)</visible>
+	</control>	
+	</control>
+	<!-- 6,0 - 6,9 -->
+	<control type="group" id="1288">
+	<orientation>horizontal</orientation>
+	<width>1466</width>
+	<height>60</height>
+	<control type="button" id="356">
+	<onup>1287</onup>
+	<ondown>1289</ondown>
+	<onleft>9100</onleft>
+	<label>6,0 - 6,9</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars69)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars69)</onright>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,1.0.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars69)]</colordiffuse>
+	<visible>!Control.HasFocus(356)</visible>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,6.5.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars69)]</colordiffuse>
+	<visible>Control.HasFocus(356)</visible>
+	</control>	
+	</control>
+	<!-- 7,0 - 7,9 -->
+	<control type="group" id="1289">
+	<orientation>horizontal</orientation>
+	<width>1466</width>
+	<height>60</height>
+	<control type="button" id="357">
+	<onup>1288</onup>
+	<ondown>1290</ondown>
+	<onleft>9100</onleft>
+	<label>7,0 - 7,9</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars79)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars79)</onright>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,1.0.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars79)]</colordiffuse>
+	<visible>!Control.HasFocus(357)</visible>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,7.5.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars79)]</colordiffuse>
+	<visible>Control.HasFocus(357)</visible>
+	</control>	
+	</control>
+	<!-- 8,0 - 8,9 -->
+	<control type="group" id="1290">
+	<orientation>horizontal</orientation>
+	<width>1466</width>
+	<height>60</height>
+	<control type="button" id="358">	
+	<onup>1289</onup>
+	<ondown>1291</ondown>
+	<onleft>9100</onleft>
+	<label>8,0 - 8,9</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars89)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars89)</onright>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,1.0.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars89)]</colordiffuse>
+	<visible>!Control.HasFocus(358)</visible>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,8.5.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars89)]</colordiffuse>
+	<visible>Control.HasFocus(358)</visible>
+	</control>	
+	</control>
+	<!-- 9,0 - 10 -->
+	<control type="group" id="1291">
+	<orientation>horizontal</orientation>
+	<width>1466</width>
+	<height>60</height>
+	<control type="button" id="359">
+	<onup>1290</onup>
+	<ondown>1281</ondown>
+	<onleft>9100</onleft>
+	<label>9,0 - 10</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars100)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorratingstars100)</onright>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,1.0.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars100)]</colordiffuse>
+	<visible>!Control.HasFocus(359)</visible>
+	</control>
+	<control type="image">
+	<include>ButtonStars</include>
+	<texture>$VAR[value_styleratingstars,,9.5.png]</texture>
+	<colordiffuse>$INFO[Skin.String(colorratingstars100)]</colordiffuse>
+	<visible>Control.HasFocus(359)</visible>
+	</control>	
+	</control>
+	</control>
+	</control>
+	
+	<!--################################################################   CORES - PAINEIS/TITULOS/ETIQUETAS DE MIDIA   ################################################################-->
+	<control type="group">
+	<!-- Seletor de cores -->
+	<visible>Container(9100).HasFocus(20)</visible>
+	<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
+	<control type="grouplist" id="10028">
+	<left>454</left>
+	<top>180</top>
+	<width>1466</width>
+	<height>440</height>
+	<onleft>9100</onleft>
+	<onright>1232</onright>
+	<onup>9100</onup>
+	<ondown>1232</ondown>
+	<itemgap>0</itemgap>
+	<pagecontrol>-</pagecontrol>
+	<!-- Resetar -->
+	<control type="button" id="1231">	
+	<label>$LOCALIZE[31687] - $LOCALIZE[31599]</label>
+	<colordiffuse>FFDAA520</colordiffuse>
+	<onclick>Skin.SetString(colortexture,FFFFA500)</onclick>
+	<onclick>Skin.SetString(colorheader,FFFFA500)</onclick>
+	<onclick>Skin.SetString(colorfloor,CCA43000)</onclick>
+	<onclick>Skin.SetString(colorflags,FFFFFAF0)</onclick>	
+	<onclick>Skin.SetString(colorwatched,FFFF0000)</onclick>
+	<onfocus>Skin.SetString(stylewatched,0)</onfocus>
+	<onclick>SetFocus(9100)</onclick>
+	<onclick>Notification($LOCALIZE[31656],$LOCALIZE[31237])</onclick>
+	</control>
+	<!-- Cor dos paineis -->
+	<control type="button" id="1232">
+	<label>31684</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colortexture)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colortexture)</onright>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<!-- Cor dos titulos -->
+	<control type="button" id="1233">
+	<label>31690</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorheader)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorheader)</onright>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<!-- Cor da barra de etiquetas -->
+	<control type="button" id="1234">
+	<label>31681</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorfloor)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorfloor)</onright>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>	
+	<!-- Cor das etiquetas -->
+	<control type="button" id="1235">
+	<label>31682</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorflags)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorflags)</onright>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>	
+	<!-- Cor da etiqueta assistido -->
+	<control type="button" id="1236">
+	<label>31680</label>
+	<onclick>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorwatched)</onclick>
+	<onright>RunScript(script.skin.helper.colorpicker,action=colorpicker,skinstring=colorwatched)</onright>
+	<enable>System.HasAddon(script.skin.helper.colorpicker)</enable>
+	</control>
+	<!-- Estilo da etiqueta assistido -->
+	<control type="group" id="1237">
+	<orientation>horizontal</orientation>
+	<width>1466</width>
+	<height>60</height>
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<height>60</height>
+	<width>1466</width>
+	<texture>grey.png</texture>
+	<visible>Control.HasFocus(1238) | Control.HasFocus(1239)</visible>
+	</control>
+	<control type="label">
+	<left>75</left>
+	<height>60</height>
+	<label>- $LOCALIZE[31184]</label>
+	<textcolor>FFFFFAF0</textcolor>
+	<visible>!Control.HasFocus(1238)</visible>
+	</control>
+	<control type="label">
+	<left>75</left>
+	<height>60</height>
+	<label>- $LOCALIZE[31184]</label>
+	<textcolor>FF101010</textcolor>
+	<visible>Control.HasFocus(1238) | Control.HasFocus(1239)</visible>
+	</control>	
+	<!-- Seletor -->
+	<control type="list" id="1238">	
+	<left>635</left>
+	<top>0</top>
+	<width>1466</width>
+	<height>60</height>
+	<onup>1236</onup>
+	<ondown>1232</ondown>
+	<orientation>horizontal</orientation>
+	<focusposition>0</focusposition>
+	<itemlayout width="105" height="60">
+	<control type="image">
+	<left>22</left>
+	<top>4</top>
+	<height>52</height>
+	<width>105</width>
+	<texture>darkgrey.png</texture>
+	<colordiffuse>85101010</colordiffuse>
+	<visible>Control.HasFocus(1238)</visible>
+	</control>
+	<control type="image">
+	<left>22</left>
+	<top>10</top>
+	<height>40</height>
+	<width>105</width>
+	<texture>$INFO[ListItem.Icon]</texture>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	</control>
+	</itemlayout>
+	<focusedlayout width="105" height="60">
+	<control type="image">
+	<left>22</left>
+	<top>4</top>
+	<height>52</height>
+	<width>105</width>
+	<texture>darkgrey.png</texture>
+	<visible>Control.HasFocus(1238)</visible>
+	</control>
+	<control type="image">
+	<left>22</left>
+	<top>10</top>
+	<height>40</height>
+	<width>105</width>
+	<texture>$INFO[ListItem.Icon]</texture>
+	<colordiffuse>FFFFFAF0</colordiffuse>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<animation effect="zoom" center="auto" start="60" end="100" time="600" tween="back" easing="out" reversible="false">Focus</animation>
+	<visible>!Control.HasFocus(1238)</visible>
+	</control>
+	<control type="image">
+	<left>22</left>
+	<top>10</top>
+	<height>40</height>
+	<width>105</width>
+	<texture>$INFO[ListItem.Icon]</texture>
+	<colordiffuse>$INFO[Skin.String(colorwatched)]</colordiffuse>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<animation effect="zoom" center="auto" start="60" end="100" time="600" tween="back" easing="out" reversible="false">Focus</animation>
+	<visible>Control.HasFocus(1238)</visible>
+	</control>
+	</focusedlayout>
+	<content>
+	<item id="1">
+	<label>noop</label>
+	<icon>OverlayWatched.png</icon>
+	<onclick>Skin.SetString(stylewatched,0)</onclick>
+	<onclick>SetFocus(1239)</onclick>
+	</item>
+	<item id="2">
+	<label>noop</label>
+	<icon>OverlayWatched_1.png</icon>
+	<onclick>Skin.SetString(stylewatched,1)</onclick>
+	<onclick>SetFocus(1239)</onclick>
+	</item>
+	<item id="3">
+	<label>noop</label>
+	<icon>OverlayWatched_2.png</icon>
+	<onclick>Skin.SetString(stylewatched,2)</onclick>
+	<onclick>SetFocus(1239)</onclick>
+	</item>
+	<item id="4">
+	<label>noop</label>
+	<icon>OverlayWatched_3.png</icon>
+	<onclick>Skin.SetString(stylewatched,3)</onclick>
+	<onclick>SetFocus(1239)</onclick>
+	</item>
+	<item id="5">
+	<label>noop</label>
+	<icon>OverlayWatched_4.png</icon>
+	<onclick>Skin.SetString(stylewatched,4)</onclick>
+	<onclick>SetFocus(1239)</onclick>
+	</item>
+	<item id="6">
+	<label>noop</label>
+	<icon>OverlayWatched_5.png</icon>
+	<onclick>Skin.SetString(stylewatched,5)</onclick>
+	<onclick>SetFocus(1239)</onclick>
+	</item>
+	<item id="7">
+	<label>noop</label>
+	<icon>OverlayWatched_6.png</icon>
+	<onclick>Skin.SetString(stylewatched,6)</onclick>
+	<onclick>SetFocus(1239)</onclick>
+	</item>
+	</content>
+	</control>
+	</control>
+	</control>	
+	
+	<!-- Painel de textura -->
+	<control type="image">
+	<left>454</left>
+	<top>645</top>
+	<width>1466</width>
+	<height>8</height>
+	<texture>grey.png</texture>
+	<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>653</top>
+	<width>1466</width>
+	<height>374</height>
+	<texture flipy="true" diffuse="shadow_mask.png">darkgrey.png</texture>
+	<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+	<animation effect="fade" end="85" condition="true">Conditional</animation>
+	</control>
+	<!-- Texto da previa -->
+	<control type="label">	
+	<left>530</left>
+	<top>680</top>
+	<width>1391</width>
+	<height>45</height>
+	<align>left</align>
+	<font>Font_settings</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>[COLOR=$INFO[Skin.String(colorheader)]]$LOCALIZE[31443]: [/COLOR]$LOCALIZE[31659] $VAR[SkinVersion]</label>
+	<scroll>true</scroll>
+	<scrollout>false</scrollout>
+	</control>
+	
+	<!-- Grupo das etiquetas de midia -->
+	<control type="group">	
+	<left>454</left>
+	<top>810</top>
+	<animation effect="slide" start="0,0" end="0,-53" time="0" tween="sine" easing="inout" condition="system.getbool(lookandfeel.enablerssfeeds)">Conditional</animation>
+	<!-- Barra do rodape -->
+	<control type="image">	
+	<left>0</left>
+	<top>0</top>
+	<width>1466</width>
+	<height>270</height>
+	<texture>shadow_mask.png</texture>
+	<colordiffuse>$INFO[Skin.String(colorfloor)]</colordiffuse>
+	</control>
+	<!-- Etiquetas -->
+	<control type="grouplist">	
+	<left>52</left>
+	<top>200</top>
+	<orientation>horizontal</orientation>
+	<itemgap>15</itemgap>
+	<!-- Estudio -->
+	<control type="image">	
+	<include>FlagImage</include>
+	<texture>$VAR[value_mediaicons_path]studios/20thcenturyfox.png</texture>
+	</control>
+	<control type="image">
+	<include>FlagSeparator</include>
+	</control>
+	<!-- Mpaa -->
+	<control type="image">	
+	<include>FlagImage</include>
+	<texture>$VAR[value_mediaicons_path]mpaa/MPAA_NR_Certificate_US.png</texture>
+	</control>
+	<control type="image">
+	<include>FlagSeparator</include>
+	</control>
+	<!-- Codec de video -->
+	<control type="image">	
+	<include>FlagImage</include>
+	<texture>$VAR[value_mediaicons_path]videocodec/4k.png</texture>
+	</control>
+	<control type="image">
+	<include>FlagSeparator</include>
+	</control>
+	<!-- Resolucao -->
+	<control type="image">	
+	<include>FlagImage</include>
+	<texture>$VAR[value_mediaicons_path]videoresolution/4k.png</texture>
+	</control>
+	<control type="image">
+	<include>FlagSeparator</include>
+	</control>
+	<!-- Aspecto -->
+	<control type="image">	
+	<include>FlagImage</include>
+	<texture>$VAR[value_mediaicons_path]aspectratio/2.35.png</texture>
+	</control>
+	<control type="image">
+	<include>FlagSeparator</include>
+	</control>
+	<!-- Codec de audio -->
+	<control type="image">	
+	<include>FlagImage</include>
+	<texture>$VAR[value_mediaicons_path]audiocodec/truehd.png</texture>
+	</control>
+	<control type="image">
+	<include>FlagSeparator</include>
+	</control>
+	<!-- Canais -->
+	<control type="group">
+	<width>310</width>
+	<height>50</height>
+	<control type="image">	
+	<top>10</top>
+	<width>50</width>
+	<height>50</height>
+	<include>FlagImage</include>
+	<texture>$VAR[value_mediaicons_path]flag_audio.png</texture>
+	<aspectratio>keep</aspectratio>
+	</control>
+	<control type="label">
+	<left>70</left>
+	<align>left</align>
+	<width>300</width>
+	<include>FlagLabel</include>
+	<label>[B]7.1[/B]-eng/[B]5.1[/B]-por</label>
+	</control>	
+	</control>
+	<control type="image">
+	<include>FlagSeparator</include>
+	</control>
+	<!-- Legenda -->
+	<control type="group">
+	<width>250</width>
+	<height>50</height>
+	<control type="image">	
+	<top>10</top>
+	<width>50</width>
+	<height>50</height>
+	<include>FlagImage</include>
+	<texture>$VAR[value_mediaicons_path]flag_subtitle.png</texture>
+	<aspectratio>keep</aspectratio>
+	</control>
+	<control type="label">
+	<left>70</left>
+	<align>left</align>
+	<width>200</width>
+	<include>FlagLabel</include>
+	<label>por/eng</label>
+	</control>
+	</control>	
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>184</top>
+	<height>86</height>
+	<width>1920</width>
+	<texture>gradient_small.png</texture>
+	</control>
+	</control>
+
+	<!-- Miniaturas dos filmes -->
+	<control type="panel" id="1239"><!-- nao mudar id -->
+	<left>530</left>
+	<top>760</top>
+	<width>1320</width>
+	<height>240</height>
+	<orientation>horizontal</orientation>
+	<onfocus>SetFocus(1238)</onfocus>
+	<itemlayout width="110" height="240">
+	<!-- Reflexo -->
+	<control type="image">	
+	<left>0</left>
+	<top>160</top>
+	<width>105</width>
+	<height>158</height>
+	<texture flipy="true" fallback="DefaultPicture.png" diffuse="thumb_poster_reflect.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+	<colordiffuse>97FFFFFF</colordiffuse>
+	<aspectratio align="center" aligny="top">stretch</aspectratio>
+	</control>
+	<!-- Poster -->
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<width>105</width>
+	<height>158</height>
+	<aspectratio align="center" aligny="bottom">stretch</aspectratio>
+	<texture fallback="DefaultPicture.png" diffuse="thumb_poster_diffuse.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+	</control>
+	<!-- Etiqueta assistido -->
+	<control type="image">
+	<left>76</left>
+	<top>-1</top>
+	<width>30</width>
+	<height>30</height>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$INFO[Skin.String(colorwatched)]</colordiffuse>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	</control>
+	</itemlayout>
+	<focusedlayout width="110" height="240">
+	<!-- Reflexo -->
+	<control type="image">	
+	<left>0</left>
+	<top>160</top>
+	<width>105</width>
+	<height>158</height>
+	<texture flipy="true" fallback="DefaultPicture.png" diffuse="thumb_poster_reflect.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+	<colordiffuse>97FFFFFF</colordiffuse>
+	<aspectratio align="center" aligny="top">stretch</aspectratio>
+	</control>
+	<!-- Poster -->
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<width>105</width>
+	<height>158</height>
+	<aspectratio align="center" aligny="bottom">stretch</aspectratio>
+	<texture fallback="DefaultPicture.png" diffuse="thumb_poster_diffuse.png" background="true">$INFO[ListItem.Art(poster)]</texture>
+	</control>
+	<!-- Etiqueta assistido -->
+	<control type="image">
+	<left>76</left>
+	<top>-1</top>
+	<width>30</width>
+	<height>30</height>
+	<texture>$VAR[value_watchedstyle]</texture>
+	<colordiffuse>$INFO[Skin.String(colorwatched)]</colordiffuse>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	</control>
+	</focusedlayout>
+	<content target="video">videodb://recentlyaddedmovies/</content>
+	</control>	
+	</control>	
+	
+	<!--###############################################################################   TEMAS   ###############################################################################-->
+	<control type="group">
+	<visible>Container(9100).HasFocus(22)</visible>
+	<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
+	<control type="grouplist" id="10011">
+	<!-- Temas -->
+	<left>454</left>
+	<top>180</top>
+	<width>1466</width>
+	<height>420</height>
+	<onleft>9100</onleft>
+	<onright>81</onright>
+	<itemgap>0</itemgap>
+	<pagecontrol>81</pagecontrol>
+	<!-- Resetar -->
+	<control type="button" id="1073">	
+	<label>$LOCALIZE[31687] - $LOCALIZE[31599]</label>
+	<colordiffuse>FFDAA520</colordiffuse>
+	<onclick>Skin.Reset(mytheme)</onclick>
+	<onclick>Skin.Reset(randomthemes)</onclick>
+	<onclick>Skin.SetString(resource.images.skinthemes.aeonmq,resource://resource.images.skinthemes.aeonmq/pumpkin/)</onclick>
+	<onclick>SetFocus(9100)</onclick>
+	<onclick>Notification($LOCALIZE[31656],$LOCALIZE[31237])</onclick>
+	</control>
+	<!-- Baixar os temas -->
+	<control type="button" id="1074">	
+	<label>31970</label>
+	<onclick>RunScript(script.image.resource.select,type=resource.images.skinthemes.aeonmq&amp;property=resource.images.skinthemes.aeonmq)</onclick>
+	</control>
+	<!-- Tema aleatorio -->
+	<control type="radiobutton" id="1075">	
+	<label>31909</label>
+	<onclick>Skin.ToggleSetting(randomthemes)</onclick>	
+	<onclick condition="Skin.HasSetting(mytheme)">Skin.SetString(resource.images.skinthemes.aeonmq,resource://resource.images.skinthemes.aeonmq/pumpkin/)</onclick>
+	<onclick>Skin.Reset(mytheme)</onclick>
+	<selected>Skin.HasSetting(randomthemes) + !String.Contains(Skin.String(theme),mytheme)</selected>
+	<enable>System.HasAddon(resource.images.skinthemes.aeonmq) + !String.Contains(Skin.String(theme),mytheme)</enable>
+	</control>
+	<!-- Tema abobora -->
+	<control type="radiobutton" id="1061">	
+	<label>31897</label>
+	<onclick>Skin.Reset(mytheme)</onclick>
+	<onclick>Skin.SetString(resource.images.skinthemes.aeonmq,resource://resource.images.skinthemes.aeonmq/pumpkin/)</onclick>
+	<selected>String.IsEqual(Skin.String(resource.images.skinthemes.aeonmq),resource://resource.images.skinthemes.aeonmq/pumpkin/)</selected>
+	</control>
+	<!-- Tema cores -->
+	<control type="radiobutton" id="1062">	
+	<label>31893</label>
+	<onclick>Skin.Reset(mytheme)</onclick>
+	<onclick>Skin.SetString(resource.images.skinthemes.aeonmq,resource://resource.images.skinthemes.aeonmq/colours/)</onclick>
+	<selected>String.IsEqual(Skin.String(resource.images.skinthemes.aeonmq),resource://resource.images.skinthemes.aeonmq/colours/)</selected>
+	<enable>System.HasAddon(resource.images.skinthemes.aeonmq)</enable>
+	</control>
+	<!-- Tema rubro -->
+	<control type="radiobutton" id="1063">	
+	<label>31895</label>
+	<onclick>Skin.Reset(mytheme)</onclick>
+	<onclick>Skin.SetString(resource.images.skinthemes.aeonmq,resource://resource.images.skinthemes.aeonmq/reddish/)</onclick>
+	<selected>String.IsEqual(Skin.String(resource.images.skinthemes.aeonmq),resource://resource.images.skinthemes.aeonmq/reddish/)</selected>
+	<enable>System.HasAddon(resource.images.skinthemes.aeonmq)</enable>
+	</control>
+	<!-- Tema moderno -->
+	<control type="radiobutton" id="1064">	
+	<label>31894</label>
+	<onclick>Skin.Reset(mytheme)</onclick>
+	<onclick>Skin.SetString(resource.images.skinthemes.aeonmq,resource://resource.images.skinthemes.aeonmq/modern/)</onclick>
+	<selected>String.IsEqual(Skin.String(resource.images.skinthemes.aeonmq),resource://resource.images.skinthemes.aeonmq/modern/)</selected>
+	<enable>System.HasAddon(resource.images.skinthemes.aeonmq)</enable>
+	</control>
+	<!-- Tema futuro -->
+	<control type="radiobutton" id="1065">	
+	<label>31896</label>
+	<onclick>Skin.Reset(mytheme)</onclick>
+	<onclick>Skin.SetString(resource.images.skinthemes.aeonmq,resource://resource.images.skinthemes.aeonmq/future/)</onclick>
+	<selected>String.IsEqual(Skin.String(resource.images.skinthemes.aeonmq),resource://resource.images.skinthemes.aeonmq/future/)</selected>
+	<enable>System.HasAddon(resource.images.skinthemes.aeonmq)</enable>
+	</control>
+	<!-- Tema frio -->
+	<control type="radiobutton" id="1066">	
+	<label>31889</label>
+	<onclick>Skin.Reset(mytheme)</onclick>
+	<onclick>Skin.SetString(resource.images.skinthemes.aeonmq,resource://resource.images.skinthemes.aeonmq/cold/)</onclick>
+	<selected>String.IsEqual(Skin.String(resource.images.skinthemes.aeonmq),resource://resource.images.skinthemes.aeonmq/cold/)</selected>
+	<enable>System.HasAddon(resource.images.skinthemes.aeonmq)</enable>
+	</control>
+	<!-- Tema quente -->
+	<control type="radiobutton" id="1067">	
+	<label>31890</label>
+	<onclick>Skin.Reset(mytheme)</onclick>
+	<onclick>Skin.SetString(resource.images.skinthemes.aeonmq,resource://resource.images.skinthemes.aeonmq/warm/)</onclick>
+	<selected>String.IsEqual(Skin.String(resource.images.skinthemes.aeonmq),resource://resource.images.skinthemes.aeonmq/warm/)</selected>
+	<enable>System.HasAddon(resource.images.skinthemes.aeonmq)</enable>
+	</control>
+	<!-- Tema sombrio -->
+	<control type="radiobutton" id="1068">	
+	<label>31891</label>
+	<onclick>Skin.Reset(mytheme)</onclick>
+	<onclick>Skin.SetString(resource.images.skinthemes.aeonmq,resource://resource.images.skinthemes.aeonmq/darkness/)</onclick>
+	<selected>String.IsEqual(Skin.String(resource.images.skinthemes.aeonmq),resource://resource.images.skinthemes.aeonmq/darkness/)</selected>
+	<enable>System.HasAddon(resource.images.skinthemes.aeonmq)</enable>
+	</control>
+	<!-- Tema arte digital -->
+	<control type="radiobutton" id="1069">	
+	<label>31892</label>
+	<onclick>Skin.Reset(mytheme)</onclick>
+	<onclick>Skin.SetString(resource.images.skinthemes.aeonmq,resource://resource.images.skinthemes.aeonmq/digitalart/)</onclick>
+	<selected>String.IsEqual(Skin.String(resource.images.skinthemes.aeonmq),resource://resource.images.skinthemes.aeonmq/digitalart/)</selected>
+	<enable>System.HasAddon(resource.images.skinthemes.aeonmq)</enable>
+	</control>
+    <control type="radiobutton" id="1071">	
+	<label>32006</label>
+	<onclick>Skin.Reset(mytheme)</onclick>
+	<onclick>Skin.SetString(resource.images.skinthemes.aeonmq,resource://resource.images.skinthemes.aeonmq/halloween/)</onclick>
+	<selected>String.IsEqual(Skin.String(resource.images.skinthemes.aeonmq),resource://resource.images.skinthemes.aeonmq/halloween/)</selected>
+	<enable>System.HasAddon(resource.images.skinthemes.aeonmq)</enable>
+	</control>
+	<control type="radiobutton" id="1076">	
+	<label>32011</label>
+	<onclick>Skin.Reset(mytheme)</onclick>
+	<onclick>Skin.SetString(resource.images.skinthemes.aeonmq,resource://resource.images.skinthemes.aeonmq/thanksgiving/)</onclick>
+	<selected>String.IsEqual(Skin.String(resource.images.skinthemes.aeonmq),resource://resource.images.skinthemes.aeonmq/thanksgiving/)</selected>
+	<enable>System.HasAddon(resource.images.skinthemes.aeonmq)</enable>
+	</control>
+	<control type="radiobutton" id="1072">	
+	<label>32007</label>
+	<onclick>Skin.Reset(mytheme)</onclick>
+	<onclick>Skin.SetString(resource.images.skinthemes.aeonmq,resource://resource.images.skinthemes.aeonmq/christmas/)</onclick>
+	<selected>String.IsEqual(Skin.String(resource.images.skinthemes.aeonmq),resource://resource.images.skinthemes.aeonmq/christmas/)</selected>
+	<enable>System.HasAddon(resource.images.skinthemes.aeonmq)</enable>
+    </control>		
+	<control type="radiobutton" id="1077">	
+	<label>32018</label>
+	<onclick>Skin.Reset(mytheme)</onclick>
+	<onclick>Skin.SetString(resource.images.skinthemes.aeonmq,resource://resource.images.skinthemes.aeonmq/starwars/)</onclick>
+	<selected>String.IsEqual(Skin.String(resource.images.skinthemes.aeonmq),resource://resource.images.skinthemes.aeonmq/starwars/)</selected>
+	<enable>System.HasAddon(resource.images.skinthemes.aeonmq)</enable>
+	</control>
+    <control type="radiobutton" id="1098">	
+	<label>orange</label>
+	<onclick>Skin.Reset(mytheme)</onclick>
+	<onclick>Skin.SetString(resource.images.skinthemes.aeonmq,resource://resource.images.skinthemes.aeonmq/orange/)</onclick>
+	<selected>String.IsEqual(Skin.String(resource.images.skinthemes.aeonmq),resource://resource.images.skinthemes.aeonmq/orange/)</selected>
+	<enable>System.HasAddon(resource.images.skinthemes.aeonmq)</enable>
+    </control>	    
+	<control type="radiobutton" id="1099">	
+	<label>blue</label>
+	<onclick>Skin.Reset(mytheme)</onclick>
+	<onclick>Skin.SetString(resource.images.skinthemes.aeonmq,resource://resource.images.skinthemes.aeonmq/blue/)</onclick>
+	<selected>String.IsEqual(Skin.String(resource.images.skinthemes.aeonmq),resource://resource.images.skinthemes.aeonmq/blue/)</selected>
+	<enable>System.HasAddon(resource.images.skinthemes.aeonmq)</enable>
+    </control>	
+	<!-- Caminho do meu tema -->
+	<control type="radiobutton" id="1070">
+	<label>$LOCALIZE[31908] - [COLOR=$INFO[Skin.String(colorheader)]]$LOCALIZE[15311][/COLOR] $INFO[Skin.String(CustomMyTheme)]</label>
+	<onclick>Skin.Reset(resource.images.skinthemes.aeonmq)</onclick>
+	<onclick>Skin.SetBool(mytheme)</onclick>
+	<onclick>ActivateWindow(6624)</onclick>
+	<onclick>Skin.SetPath(CustomMyTheme)</onclick>
+	<selected>Skin.HasSetting(mytheme)</selected>
+	</control>
+	</control>
+	<!-- Temas -->
+	<control type="group">	
+	<control type="image">
+	<left>454</left>
+	<top>645</top>
+	<width>1466</width>
+	<height>8</height>
+	<texture>grey.png</texture>
+	<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>653</top>
+	<width>1466</width>
+	<height>374</height>
+	<texture>grey.png</texture>
+	<colordiffuse>80FFFFFF</colordiffuse>
+	</control>
+	<!-- Fundo borda -->
+	<control type="image">	
+	<left>510</left>
+	<top>645</top>
+	<width>663</width>
+	<height>390</height>
+	<texture>fanartframe.png</texture>
+	</control>
+	<control type="multiimage">
+	<left>535</left>
+	<top>668</top>
+	<width>612</width>
+	<height>344</height>
+	<timeperimage>2000</timeperimage>
+	<randomize>true</randomize>
+	<aspectratio>stretch</aspectratio>
+	<fadetime>FanartCrossFadeTime</fadetime>
+	<imagepath fallback="special://skin/backgrounds/extras/default.jpg" background="true">$VAR[value_mainmenubg_preview]</imagepath>
+	</control>
+	<control type="textbox">
+	<left>1200</left>
+	<top>665</top>
+	<width>645</width>
+	<height>300</height>
+	<textcolor>FF101010</textcolor>
+	<font>Font_plot</font>
+	<label>$VAR[value_themedescription]</label>
+	<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>653</top>
+	<width>1466</width>
+	<height>374</height>
+	<texture>osd_glass.png</texture>
+	<colordiffuse>90FFFFFF</colordiffuse>
+	</control>
+	</control>
+	</control>
+	
+	<!--###############################################################################   ICONES E IMAGENS   ###############################################################################-->
+	<control type="group">
+	<visible>Container(9100).HasFocus(36)</visible>
+	<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
+	<control type="grouplist" id="10032">
+	<left>454</left>
+	<top>180</top>
+	<width>1466</width>
+	<height>780</height>
+	<onleft>9100</onleft>
+	<onright>9100</onright>
+	<itemgap>0</itemgap>
+	<pagecontrol>-</pagecontrol>
+	<!-- Etiqueta de midia - icones -->
+	<control type="button" id="1260">	
+	<label>31728</label>
+	<label2>$INFO[Skin.String(resource.images.mediaicons.name)]</label2>
+	<onclick>RunScript(script.image.resource.select,type=resource.images.mediaicons&amp;property=resource.images.mediaicons)</onclick>
+	</control>
+	<!-- Generos video - icones -->
+	<control type="button" id="1261">	
+	<label>31729</label>
+	<label2>$INFO[Skin.String(resource.images.moviegenreicons.name)]</label2>
+	<onclick>RunScript(script.image.resource.select,type=resource.images.moviegenreicons&amp;property=resource.images.moviegenreicons)</onclick>
+	</control>
+	<!-- Generos filmes - fanarts -->
+	<control type="button" id="1262">	
+	<label>31730</label>
+	<label2>$INFO[Skin.String(resource.images.moviegenrefanart.name)]</label2>
+	<onclick>RunScript(script.image.resource.select,type=resource.images.moviegenrefanart&amp;property=resource.images.moviegenrefanart)</onclick>
+	</control>
+	<!-- Generos seriados - fanarts -->
+	<control type="button" id="1263">	
+	<label>31731</label>
+	<label2>$INFO[Skin.String(resource.images.tvshowgenrefanart.name)]</label2>
+	<onclick>RunScript(script.image.resource.select,type=resource.images.tvshowgenrefanart&amp;property=resource.images.tvshowgenrefanart)</onclick>
+	</control>
+	<!-- Generos concertos - fanarts -->
+	<control type="button" id="1264">	
+	<label>31732</label>
+	<label2>$INFO[Skin.String(resource.images.musicvideogenrefanart.name)]</label2>
+	<onclick>RunScript(script.image.resource.select,type=resource.images.musicvideogenrefanart&amp;property=resource.images.musicvideogenrefanart)</onclick>
+	</control>
+	<!-- Genero de musica - icones -->
+	<control type="button" id="1265">	
+	<label>31733</label>
+	<label2>$INFO[Skin.String(resource.images.musicgenreicons.name)]</label2>
+	<onclick>RunScript(script.image.resource.select,type=resource.images.musicgenreicons&amp;property=resource.images.musicgenreicons)</onclick>
+	</control>
+	<!-- Genero de musica - fanarts -->
+	<control type="button" id="1266">	
+	<label>31734</label>
+	<label2>$INFO[Skin.String(resource.images.musicgenrefanart.name)]</label2>
+	<onclick>RunScript(script.image.resource.select,type=resource.images.musicgenrefanart&amp;property=resource.images.musicgenrefanart)</onclick>
+	</control>
+	<!-- Clima - icones -->
+	<control type="button" id="1267">	
+	<label>31735</label>
+	<label2>$INFO[Skin.String(resource.images.weathericons.name)]</label2>
+	<onclick>RunScript(script.image.resource.select,type=resource.images.weathericons&amp;property=resource.images.weathericons)</onclick>
+	</control>
+	<!-- Clima - imagens de fundo -->
+	<control type="button" id="1268">	
+	<label>31736</label>
+	<label2>$INFO[Skin.String(resource.images.weatherfanart.name)]</label2>
+	<onclick>RunScript(script.image.resource.select,type=resource.images.weatherfanart&amp;property=resource.images.weatherfanart)</onclick>
+	</control>
+	<control type="button" id="1269">
+	<label>31620</label>
+	<label2>$INFO[Skin.String(resource.images.languageflags.name)]</label2>
+	<onclick>RunScript(script.image.resource.select,type=resource.images.languageflags&amp;property=resource.images.languageflags)</onclick>
+	</control>
+	</control>
+	</control>
+	
+	<!--#######################################################################   DISCO   #######################################################################-->
+	<control type="group">
+	<visible>Container(9100).HasFocus(34)</visible>
+	<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
+	<control type="grouplist" id="10020">
+	<left>454</left>
+	<top>180</top>
+	<width>1466</width>
+	<height>891</height>
+	<onleft>9100</onleft>
+	<onright>10024</onright>
+	<onup>9100</onup>
+	<ondown>10024</ondown>
+	<itemgap>0</itemgap>
+	<pagecontrol>-</pagecontrol>
+	<!-- Resetar -->
+	<control type="button" id="1252">	
+	<label>$LOCALIZE[31687] - $LOCALIZE[31599]</label>
+	<colordiffuse>FFDAA520</colordiffuse>
+	<onclick>Skin.SetString(discaudio,0)</onclick>
+	<onclick>Skin.SetString(discvideo,0)</onclick>
+	<onclick>Skin.SetString(cdart_seconds,4000)</onclick>
+	<onclick>SetFocus(9100)</onclick>
+	<onclick>Notification($LOCALIZE[31656],$LOCALIZE[31237])</onclick>
+	</control>
+	<!-- Tempo da rotacao -->
+	<control type="button" id="1250">	
+	<label>$LOCALIZE[31116]</label>
+	<label2>$VAR[value_cdartseconds]</label2>
+	<onclick condition="String.IsEqual(Skin.String(cdart_seconds),2000)">Skin.SetString(cdart_seconds,20000)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(cdart_seconds),20000)">Skin.SetString(cdart_seconds,16000)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(cdart_seconds),16000)">Skin.SetString(cdart_seconds,8000)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(cdart_seconds),8000)">Skin.SetString(cdart_seconds,4000)</onclick>
+	<onclick condition="String.IsEqual(Skin.String(cdart_seconds),4000)">Skin.SetString(cdart_seconds,2000)</onclick>
+	</control>	
+	<!-- Caminho do disco audio -->
+	<!-- nao trocar id -->
+	<control type="button" id="1253">	
+	<label>$LOCALIZE[31828] - $LOCALIZE[31355]: [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Skin.String(customaudiodisc)][/COLOR]</label>
+	<onclick>Skin.SetImage(customaudiodisc)</onclick>
+	<visible>Container(10024).HasFocus(1)</visible>
+	</control>
+	<!-- Caminho do disco video -->
+	<!-- nao trocar id -->
+	<control type="button" id="1254">	
+	<label>$LOCALIZE[31828] - $LOCALIZE[31353]: [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Skin.String(customvideodisc)][/COLOR]</label>
+	<onclick>Skin.SetImage(customvideodisc)</onclick>
+	<visible>Container(10024).HasFocus(2)</visible>
+	</control>
+	</control>
+	<control type="group">
+	<control type="image">
+	<left>630</left>
+	<top>510</top>
+	<width>75</width>
+	<height>150</height>
+	<texture flipx="true">arrow_settings.png</texture>
+	<colordiffuse>80FFFAF0</colordiffuse>
+	<animation effect="slide" start="150,0" end="0,0" time="600" tween="back" easing="out" condition="true">Visible</animation>
+	<animation effect="fade" start="20" end="40" time="700" condition="true" pulse="true">Conditional</animation>
+	<visible>Control.HasFocus(10024)</visible>
+	</control>
+	<control type="image">
+	<left>1500</left>
+	<top>510</top>
+	<width>75</width>
+	<height>150</height>
+	<texture>arrow_settings.png</texture>
+	<colordiffuse>80FFFAF0</colordiffuse>
+	<animation effect="slide" start="-150,0" end="0,0" time="600" tween="back" easing="out" condition="true">Visible</animation>
+	<animation effect="fade" start="20" end="40" time="700" condition="true" pulse="true">Conditional</animation>
+	<visible>Control.HasFocus(10024)</visible>
+	</control>
+	<control type="wraplist" id="10024">
+	<left>510</left>
+	<top>360</top>
+	<height>450</height>
+	<width>1200</width>
+	<onup>10020</onup>
+	<ondown condition="Container(10024).HasFocus(1)">Skin.SetString(custom_disc,discaudio)</ondown>
+	<ondown condition="Container(10024).HasFocus(2)">Skin.SetString(custom_disc,discvideo)</ondown>
+	<ondown>10029</ondown>
+	<onleft>10024</onleft>
+	<onright>10024</onright>
+	<viewtype>list</viewtype>
+	<orientation>horizontal</orientation>
+	<scrolltime tween="back" easing="out">500</scrolltime>
+	<focusposition>0</focusposition>
+	<itemlayout width="900" height="450"></itemlayout>
+	<focusedlayout width="900" height="450">
+	<control type="group">
+	<animation effect="slide" start="0,0" end="180,0" time="800" delay="300" tween="sine" easing="inout" condition="Control.Hasfocus(10029)">Conditional</animation>
+	<control type="image">
+	<include>Animation_CDart</include>
+	<left>532</left>
+	<top>56</top>
+	<width>315</width>
+	<height>315</height>
+	<texture>$INFO[ListItem.Icon]</texture>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<fadetime>FanartCrossFadeTime</fadetime>
+	<visible>Container(10024).HasFocus(1)</visible>
+	</control>
+	</control>
+	<control type="image">
+	<!-- reflexo -->
+	<left>454</left>
+	<top>384</top>
+	<width>330</width>
+	<height>330</height>
+	<aspectratio align="center" aligny="top">keep</aspectratio>
+	<texture flipy="true" diffuse="thumb_reflect.png">DefaultAudio.png</texture>
+	<bordertexture flipy="true" diffuse="thumb_reflect.png" border="-2">black.png</bordertexture>
+	<visible>Container(10024).HasFocus(1)</visible>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>48</top>
+	<width>330</width>
+	<height>330</height>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<texture>DefaultAudio.png</texture>
+	<bordertexture border="-2">black.png</bordertexture>
+	<visible>Container(10024).HasFocus(1)</visible>
+	</control>
+	<control type="group">
+	<animation effect="slide" start="0,0" end="150,0" time="800" delay="300" tween="sine" easing="inout" condition="Control.Hasfocus(10029)">Conditional</animation>
+	<control type="image">
+	<include>Animation_CDart</include>
+	<left>525</left>
+	<top>82</top>
+	<width>255</width>
+	<height>255</height>
+	<texture>$INFO[ListItem.Icon]</texture>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<fadetime>FanartCrossFadeTime</fadetime>
+	<visible>Container(10024).HasFocus(2)</visible>
+	</control>
+	</control>
+	<control type="image">
+	<!-- reflexo -->
+	<left>420</left>
+	<top>384</top>
+	<width>234</width>
+	<height>330</height>
+	<aspectratio align="center" aligny="top">stretch</aspectratio>
+	<texture flipy="true" diffuse="thumb_reflect.png" background="true">DefaultVideoPoster.png</texture>
+	<bordertexture flipy="true" diffuse="thumb_reflect.png" border="-2">black.png</bordertexture>
+	<visible>Container(10024).HasFocus(2)</visible>
+	</control>
+	<control type="image">
+	<left>420</left>
+	<top>48</top>
+	<width>234</width>
+	<height>330</height>
+	<aspectratio align="center" aligny="bottom">stretch</aspectratio>
+	<texture>DefaultVideoPoster.png</texture>
+	<bordertexture border="-2">black.png</bordertexture>
+	<visible>Container(10024).HasFocus(2)</visible>
+	</control>
+	</focusedlayout>
+	<content>
+	<item id="1">
+	<!-- disco de audio -->
+	<label>noop</label>
+	<icon>$VAR[value_audiodisc]</icon>
+	<onclick>Skin.SetString(custom_disc,discaudio)</onclick>
+	<onclick>SetFocus(10024)</onclick>
+	</item>
+	<item id="2">
+	<!-- disco de video -->
+	<label>noop</label>
+	<icon>$VAR[value_videodisc]</icon>
+	<onclick>Skin.SetString(custom_disc,discvideo)</onclick>
+	<onclick>SetFocus(10024)</onclick>
+	</item>
+	</content>
+	</control>
+	<control type="group">
+	<!-- Grupo dos discos -->
+	<left>454</left>
+	<top>870</top>
+	<control type="image">
+	<left>0</left>
+	<top>-60</top>
+	<width>1568</width>
+	<height>45</height>
+	<texture>shadow_h.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>152</top>
+	<width>1568</width>
+	<height>45</height>
+	<texture flipy="true">shadow_h.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>-15</top>
+	<width>1466</width>
+	<height>171</height>
+	<texture>grey.png</texture>
+	<colordiffuse>FF101010</colordiffuse>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>-12</top>
+	<width>1466</width>
+	<height>120</height>
+	<texture>grey.png</texture>
+	<colordiffuse>40FFFFFF</colordiffuse>
+	</control>
+	<control type="label">
+	<left>75</left>
+	<top>110</top>
+	<width>1410</width>
+	<height>45</height>
+	<align>left</align>
+	<font>Font_button</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>31624</label>
+	<scroll>true</scroll>
+	<visible>Control.Hasfocus(10029)</visible>
+	</control>
+	<control type="list" id="10029">
+	<left>75</left>
+	<top>-12</top>
+	<width>1500</width>
+	<height>180</height>
+	<onup>10024</onup>
+	<ondown>9100</ondown>
+	<viewtype>list</viewtype>
+	<orientation>horizontal</orientation>
+	<focusposition>0</focusposition>
+	<itemlayout width="218" height="120">
+	<control type="image">
+	<left>60</left>
+	<top>8</top>
+	<height>105</height>
+	<width>105</width>
+	<texture>$INFO[ListItem.Icon]</texture>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	</control>
+	</itemlayout>
+	<focusedlayout width="218" height="120">
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<width>225</width>
+	<height>120</height>
+	<texture>border_focus.png</texture>
+	<animation effect="fade" start="80" end="100" time="400" reversible="false">Focus</animation>
+	<visible>Control.Hasfocus(10029)</visible>
+	</control>
+	<control type="image">
+	<left>60</left>
+	<top>8</top>
+	<height>105</height>
+	<width>105</width>
+	<texture>$INFO[ListItem.Icon]</texture>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<animation effect="rotate" end="-360" center="auto" time="4000" loop="true" reversible="false">Focus</animation>
+	</control>
+	</focusedlayout>
+	<content>
+	<item id="1">
+	<label>noop</label>
+	<icon>cdart.png</icon>
+	<onclick>Skin.SetString($INFO[Skin.String(custom_disc)],0)</onclick>
+	</item>
+	<item id="2">
+	<label>noop</label>
+	<icon>cdart_1.png</icon>
+	<onclick>Skin.SetString($INFO[Skin.String(custom_disc)],1)</onclick>
+	</item>
+	<item id="3">
+	<label>noop</label>
+	<icon>cdart_2.png</icon>
+	<onclick>Skin.SetString($INFO[Skin.String(custom_disc)],2)</onclick>
+	</item>
+	<item id="4">
+	<label>noop</label>
+	<icon>cdart_3.png</icon>
+	<onclick>Skin.SetString($INFO[Skin.String(custom_disc)],3)</onclick>
+	</item>
+	<item id="5">
+	<label>noop</label>
+	<icon>cdart_4.png</icon>
+	<onclick>Skin.SetString($INFO[Skin.String(custom_disc)],4)</onclick>
+	</item>
+	<item id="6">
+	<label>noop</label>
+	<icon fallback="cdart_diffuse.png">$VAR[value_mydisc]</icon>
+	<onclick condition="Container(10024).HasFocus(1) + !IsEmpty(Skin.String(customaudiodisc))">Skin.SetString($INFO[Skin.String(custom_disc)],5)</onclick>
+	<onclick condition="Container(10024).HasFocus(1) + IsEmpty(Skin.String(customaudiodisc))">SetFocus(1253)</onclick>
+	<onclick condition="Container(10024).HasFocus(2) + !IsEmpty(Skin.String(customvideodisc))">Skin.SetString($INFO[Skin.String(custom_disc)],5)</onclick>
+	<onclick condition="Container(10024).HasFocus(2) + IsEmpty(Skin.String(customvideodisc))">SetFocus(1254)</onclick>
+	</item>
+	</content>
+	</control>
+	</control>
+	</control>
+	</control>
+	
+	<!--#######################################################################   AJUSTES GERAIS   #######################################################################-->
+	<control type="grouplist" id="10021">
+	<visible>Container(9100).HasFocus(16)</visible>
+	<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
+	<left>454</left>
+	<top>180</top>
+	<width>1466</width>
+	<height>840</height>
+	<onleft>9100</onleft>
+	<onright>85</onright>
+	<onup>10021</onup>
+	<ondown>10021</ondown>
+	<itemgap>0</itemgap>
+	<pagecontrol>85</pagecontrol>
+	<control type="button" id="1028">
+	<!-- Resetar -->
+	<label>$LOCALIZE[31687] - $LOCALIZE[31599]</label>
+	<colordiffuse>FFDAA520</colordiffuse>
+	<onclick>Skin.Reset(kiosk)</onclick>
+	<onclick>Skin.Reset(kiosksmart)</onclick>
+	<onclick>Skin.Reset(kioskcode)</onclick>
+	<onclick>Skin.Reset(kioskininfo)</onclick>
+	<onclick>Skin.Reset(startplay)</onclick>
+	<onclick>Skin.Reset(livebg)</onclick>
+	<onclick>Skin.Reset(keepaspect)</onclick>
+	<onclick>Skin.Reset(touchscreen)</onclick>
+	<onclick>Skin.SetString(animationwindow,zoom)</onclick>
+	<onclick>SetFocus(9100)</onclick>
+	<onclick>Notification($LOCALIZE[31656],$LOCALIZE[31237])</onclick>
+	</control>
+	<control type="radiobutton" id="1012">
+	<label>31601</label>
+	<onclick>Skin.ToggleSetting(kiosk)</onclick>
+	<onclick>Skin.Reset(kiosksmart)</onclick>
+	<onclick>Skin.Reset(kioskcode)</onclick>
+	<selected>Skin.HasSetting(kiosk)</selected>
+	</control>
+	<control type="radiobutton" id="1013">
+	<label>31604</label>
+	<onclick>Skin.ToggleSetting(kiosksmart)</onclick>
+	<onclick>Skin.Reset(kiosk)</onclick>
+	<onclick>Skin.Reset(kioskcode)</onclick>
+	<selected>Skin.HasSetting(kiosksmart)</selected>
+	</control>
+	<control type="radiobutton" id="1014">
+	<label>31603</label>
+	<onclick>Skin.ToggleSetting(kioskcode)</onclick>
+	<selected>Skin.HasSetting(kioskcode)</selected>
+	<enable>Skin.HasSetting(kiosksmart)</enable>
+	</control>
+	<control type="radiobutton" id="1015">
+	<label>31602</label>
+	<onclick>Skin.ToggleSetting(kioskininfo)</onclick>
+	<selected>Skin.HasSetting(kioskininfo)</selected>
+	</control>
+	<control type="radiobutton" id="1166">
+	<label>31536</label>
+	<onclick condition="!Skin.String(SplashScreen)">Skin.SetFile(SplashScreen)</onclick>
+	<onclick condition="Skin.String(SplashScreen)">Skin.Reset(SplashScreen)</onclick>
+	<selected>Skin.String(SplashScreen)</selected>
+	</control>
+	<control type="radiobutton" id="1016">
+	<label>31531</label>
+	<onclick>Skin.ToggleSetting(startplay)</onclick>
+	<selected>Skin.HasSetting(startplay)</selected>
+	</control>
+	<control type="button" id="1017">
+	<label>31532</label>
+	<label2>$INFO[Skin.String(startupplaylist)]</label2>
+	<onclick>Skin.SetFile(startupplaylist,,special://MusicPlaylists/)</onclick>
+	<enable>Skin.HasSetting(startplay)</enable>
+	</control>
+	<control type="radiobutton" id="1018">
+	<label>31959</label>
+	<onclick>Skin.ToggleSetting(livebg)</onclick>
+	<selected>Skin.HasSetting(livebg)</selected>
+	</control>
+	<control type="radiobutton" id="1019">
+	<label>31050</label>
+	<onclick>Skin.ToggleSetting(gotofullscreen)</onclick>
+	<selected>Skin.HasSetting(gotofullscreen)</selected>
+	</control>
+	<control type="radiobutton" id="1021">
+	<label>31245</label>
+	<onclick>Skin.ToggleSetting(keepaspect)</onclick>
+	<onclick>ReloadSkin</onclick>
+	<selected>Skin.HasSetting(keepaspect)</selected>
+	</control>
+	<control type="radiobutton" id="1022">
+	<label>31693</label>
+	<onclick>Skin.ToggleSetting(touchscreen)</onclick>
+	<selected>Skin.HasSetting(touchscreen)</selected>
+	</control>
+	<control type="radiobutton" id="1023">
+	<label>31174</label>
+	<onclick>Skin.SetString(animationwindow,zoom)</onclick>
+	<selected>String.IsEqual(Skin.String(animationwindow),zoom)</selected>
+	</control>
+	<control type="radiobutton" id="1024">
+	<label>31175</label>
+	<onclick>Skin.SetString(animationwindow,slowzoom)</onclick>
+	<selected>String.IsEqual(Skin.String(animationwindow),slowzoom)</selected>
+	</control>
+	<control type="radiobutton" id="1025">
+	<label>31176</label>
+	<onclick>Skin.SetString(animationwindow,fade)</onclick>
+	<selected>String.IsEqual(Skin.String(animationwindow),fade)</selected>
+	</control>
+	<control type="radiobutton" id="7707">
+	<label>$LOCALIZE[32046]</label>
+	<onclick>Skin.ToggleSetting(info_hours_minutes)</onclick>
+	<selected>Skin.HasSetting(info_hours_minutes)</selected>
+	</control>
+	<control type="radiobutton" id="7708">
+	<label>$LOCALIZE[32047]</label>
+	<onclick>Skin.ToggleSetting(pulse_pause_label)</onclick>
+	<selected>Skin.HasSetting(pulse_pause_label)</selected>
+	</control>
+	<control type="radiobutton" id="7709">
+	<label>$LOCALIZE[31620]</label>
+	<onclick>Skin.ToggleSetting(flags_countries)</onclick>
+	<selected>Skin.HasSetting(flags_countries)</selected>
+	</control>
+	<control type="radiobutton" id="7710">
+	<label>$LOCALIZE[32315]</label>
+	<onclick>Skin.ToggleSetting(original_size_view)</onclick>
+	<selected>!Skin.HasSetting(original_size_view)</selected>
+	</control>
+	<control type="radiobutton" id="7711">	
+	<label>$LOCALIZE[32312]</label>
+	<onclick>Skin.ToggleSetting(progress_info)</onclick>
+	<selected>Skin.HasSetting(progress_info)</selected>
+	</control>
+	<control type="radiobutton" id="7712">
+	<label>$LOCALIZE[32313]</label>
+	<onclick>Skin.ToggleSetting(view_wall_tv)</onclick>
+	<selected>Skin.HasSetting(view_wall_tv)</selected>
+	</control>
+	<control type="button" id="7713">
+	<label>$LOCALIZE[20183]</label>
+	<onclick>ReloadSkin()</onclick>
+	</control>	
+	<control type="button" id="1026">
+	<label>$LOCALIZE[31177] - $LOCALIZE[31143]</label>
+	<onclick>ActivateWindowAndFocus(SystemSettings, -96,0, -78,0)</onclick>
+	</control>
+	<control type="radiobutton" id="7714">
+	<label>$LOCALIZE[15016]</label>
+	<visible>System.GetBool(gamesgeneral.enable)</visible>	
+	<selected>!Skin.HasSetting(HomeMenuNoGamesButton)</selected>
+	<onclick>Skin.ToggleSetting(HomeMenuNoGamesButton)</onclick>
+	</control>
+	</control>
+	<control type="grouplist" id="10026">
+	<visible>Container(9100).HasFocus(18)</visible>
+	<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
+	<left>454</left>
+	<top>180</top>
+	<width>1466</width>
+	<height>840</height>
+	<onleft>9100</onleft>
+	<onright>85</onright>
+	<onup>10026</onup>
+	<ondown>10026</ondown>
+	<itemgap>0</itemgap>
+	<pagecontrol>85</pagecontrol>    
+	<control type="radiobutton" id="1030"><!-- Halloween -->
+	<label>32003</label>
+	<onclick>Skin.ToggleSetting(halloween)</onclick>
+	<selected>Skin.HasSetting(halloween)</selected>
+	</control>
+	<control type="radiobutton" id="1031"><!-- Thanksgiving -->
+	<label>32010</label>
+	<onclick>Skin.ToggleSetting(thanksgiving)</onclick>
+	<selected>Skin.HasSetting(thanksgiving)</selected>
+	</control>
+	<control type="radiobutton" id="1032"><!-- Leaves -->
+	<label>32013</label>
+	<onclick>Skin.ToggleSetting(leaves)</onclick>
+	<selected>Skin.HasSetting(leaves)</selected>
+	</control>
+	<control type="radiobutton" id="1033"><!-- Christmas -->
+	<label>32002</label>
+	<onclick>Skin.ToggleSetting(christmas)</onclick>
+	<selected>Skin.HasSetting(christmas)</selected>
+	</control>
+	<control type="radiobutton" id="1034"><!-- Heavy Snow -->
+	<label>32004</label>
+	<onclick>Skin.ToggleSetting(heavysnow)</onclick>
+	<selected>Skin.HasSetting(heavysnow)</selected>
+	</control>
+	<control type="radiobutton" id="1035"><!-- Medium Snow -->
+	<label>32005</label>
+	<onclick>Skin.ToggleSetting(mediumsnow)</onclick>
+	<selected>Skin.HasSetting(mediumsnow)</selected>
+	</control>
+	<control type="radiobutton" id="1036"><!-- Light Snow -->
+	<label>32014</label>
+	<onclick>Skin.ToggleSetting(lightsnow)</onclick>
+	<selected>Skin.HasSetting(lightsnow)</selected>
+	</control>
+	<control type="radiobutton" id="1038"><!-- Snow Floor-->
+	<label>Snow Floor</label>
+	<onclick>Skin.ToggleSetting(snowf)</onclick>
+	<selected>Skin.HasSetting(snowf)</selected>
+	</control>
+	<control type="radiobutton" id="1039"><!-- Snow Top-->
+	<label>Snow Top</label>
+	<onclick>Skin.ToggleSetting(snowtop)</onclick>
+	<selected>Skin.HasSetting(snowtop)</selected>
+	</control>
+	
+    <control type="radiobutton" id="1037"><!-- Star Wars -->
+	<label>32016</label>
+	<onclick>Skin.ToggleSetting(starwars)</onclick>
+	<selected>Skin.HasSetting(starwars)</selected>
+	</control>
+    <control type="radiobutton" id="6666"><!-- New Year -->
+	<label>32056</label>	
+	<onclick>Skin.ToggleSetting(newyears)</onclick>
+	<selected>Skin.HasSetting(newyears)</selected>
+	</control>
+	<control type="radiobutton" id="6667"><!-- Valentine Day -->
+	<label>32057</label>	
+	<onclick>Skin.ToggleSetting(valentinesday)</onclick>
+	<selected>Skin.HasSetting(valentinesday)</selected>
+	</control>
+	<control type="radiobutton" id="6668">
+	<label>32058</label>	
+	<onclick>Skin.ToggleSetting(cs)</onclick>
+	<selected>Skin.HasSetting(cs)</selected>
+	</control>
+	<control type="radiobutton" id="6669">
+	<label>32059</label>	
+	<onclick>Skin.ToggleSetting(cs1)</onclick>
+	<selected>Skin.HasSetting(cs1)</selected>
+	</control>
+	<control type="radiobutton" id="6670">
+	<label>32060</label>	
+	<onclick>Skin.ToggleSetting(cs2)</onclick>
+	<selected>Skin.HasSetting(cs2)</selected>
+	</control>	
+	<control type="radiobutton" id="7690">
+	<label>32061</label>	
+	<onclick>Skin.ToggleSetting(fireworks)</onclick>
+	<selected>Skin.HasSetting(fireworks)</selected>
+	</control>
+	<control type="radiobutton" id="7691">
+	<label>32062</label>	
+	<onclick>Skin.ToggleSetting(confettih)</onclick>
+	<selected>Skin.HasSetting(confettih)</selected>
+	</control>
+	<control type="radiobutton" id="7692"><!-- Medium Confetti -->
+	<label>32063</label>	
+	<onclick>Skin.ToggleSetting(confettim)</onclick>
+	<selected>Skin.HasSetting(confettim)</selected>
+	</control>
+	<control type="radiobutton" id="7693"><!-- Light Confetti -->
+	<label>32064</label>	
+	<onclick>Skin.ToggleSetting(confettil)</onclick>
+	<selected>Skin.HasSetting(confettil)</selected>
+	</control>
+    <control type="radiobutton" id="7694">
+	<label>Falling Confetti</label>	
+	<onclick>Skin.ToggleSetting(confettif)</onclick>
+	<selected>Skin.HasSetting(confettif)</selected>
+	</control>
+	<control type="radiobutton" id="7695">
+	<label>Confetti Floor</label>	
+	<onclick>Skin.ToggleSetting(confettifl)</onclick>
+	<selected>Skin.HasSetting(confettifl)</selected>
+	</control>    	
+	</control>	
+	<!--#######################################################################   RESTAURAR   #######################################################################-->
+	<control type="grouplist" id="10022">
+	<!-- nao trocar ids -->
+	<visible>Container(9100).HasFocus(32)</visible>
+	<animation effect="fade" reversible="true" time="150">VisibleChange</animation>
+	<left>454</left>
+	<top>180</top>
+	<width>1466</width>
+	<height>741</height>
+	<onleft>9100</onleft>
+	<onright>80</onright>
+	<itemgap>0</itemgap>
+	<pagecontrol>-</pagecontrol>
+	<control type="button" id="1160">
+	<!-- Exportar ajustes -->
+	<label>31622</label>
+	<onclick>RunScript(script.skin.helper.skinbackup,action=backup)</onclick>
+	<enable>System.HasAddon(script.skin.helper.skinbackup)</enable>
+	</control>
+	<control type="button" id="1161">
+	<!-- Importar ajustes -->
+	<label>31623</label>
+	<onclick>RunScript(script.skin.helper.skinbackup,action=restore)</onclick>
+	<enable>System.HasAddon(script.skin.helper.skinbackup)</enable>
+	</control>
+	<control type="button" id="1164">
+	<!-- Reaplicar ajustes -->
+	<label>31187</label>
+	<onclick>Skin.Reset(defaultsettings)</onclick>
+	<onclick>ReplaceWindow(Home)</onclick>
+	</control>
+	<control type="radiobutton" id="1162">
+	<!-- ativar botao do reset -->
+	<label>31447</label>
+	<onleft>9100</onleft>
+	<onup>9100</onup>
+	<ondown>1153</ondown>
+	<onclick>Skin.ToggleSetting(resetmode)</onclick>
+	<selected>Skin.HasSetting(resetmode)</selected>
+	</control>
+	<control type="button" id="1163">
+	<!-- Resetar -->
+	<top>60</top>
+	<label>31421</label>
+	<onleft>9100</onleft>
+	<onleft>Skin.Reset(resetmode)</onleft>
+	<onright>9100</onright>
+	<onright>Skin.Reset(resetmode)</onright>
+	<colordiffuse>FFB20000</colordiffuse>
+	<onclick>ActivateWindow(6628)</onclick>
+	<visible>Skin.HasSetting(resetmode)</visible>
+	</control>	
+	</control>
+	<!-- Alerta -->
+	<control type="group">	
+	<visible>Container(9100).HasFocus(32)</visible>
+	<include>Animation_Fade</include>
+	<control type="image">
+	<left>454</left>
+	<top>645</top>
+	<width>1466</width>
+	<height>8</height>
+	<texture>grey.png</texture>
+	<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>653</top>
+	<width>1466</width>
+	<height>374</height>
+	<texture>grey.png</texture>
+	<colordiffuse>80FFFFFF</colordiffuse>
+	</control>
+	<!-- Fundo borda -->
+	<control type="image">	
+	<left>510</left>
+	<top>645</top>
+	<width>663</width>
+	<height>390</height>
+	<texture>fanartframe.png</texture>
+	</control>
+	<control type="image">
+	<left>535</left>
+	<top>668</top>
+	<width>612</width>
+	<height>344</height>
+	<aspectratio>stretch</aspectratio>
+	<texture>$VAR[value_restoreimage]</texture>
+	<colordiffuse>$VAR[value_resetalertcolor]</colordiffuse>
+	<include>Animation_Fade</include>
+	</control>
+	<control type="textbox">
+	<left>1200</left>
+	<top>665</top>
+	<width>650</width>
+	<height>300</height>
+	<textcolor>FF101010</textcolor>
+	<font>Font_plot</font>
+	<label>$VAR[value_resetdescription]</label>
+	<autoscroll delay="15000" time="2000" repeat="15000">!Skin.HasSetting(noallowscroll)</autoscroll>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>653</top>
+	<width>1466</width>
+	<height>374</height>
+	<texture>osd_glass.png</texture>
+	<colordiffuse>90FFFFFF</colordiffuse>
+	</control>
+	</control>	
+	
+	<!--###############################################################################   BARRAS DE ROLAGEM   ###############################################################################-->
+	<control type="scrollbar" id="80">
+	<include>ScrollBar_Vertical</include>
+	<left>1860</left>
+	<top>180</top>
+	<height>780</height>
+	<onleft>10001</onleft>
+	<onright>9100</onright>
+	<animation effect="fade" time="200">Visible</animation>
+	<animation effect="fade" time="50">Hidden</animation>
+	<visible allowhiddenfocus="true">Container(9100).HasFocus(18)</visible>
+	</control>
+	<control type="scrollbar" id="81">
+	<include>ScrollBar_Vertical</include>
+	<left>1860</left>
+	<top>180</top>
+	<height>420</height>
+	<onleft>10011</onleft>
+	<onright>9100</onright>
+	<animation effect="fade" time="200">Visible</animation>
+	<animation effect="fade" time="50">Hidden</animation>
+	<visible allowhiddenfocus="true">Container(9100).HasFocus(22)</visible>
+	</control>
+	<control type="scrollbar" id="82">
+	<include>ScrollBar_Vertical</include>
+	<left>1860</left>
+	<top>202</top>
+	<height>345</height>
+	<onleft>10015</onleft>
+	<onright>SetFocus($INFO[Skin.String(idcolorstyle)])</onright>
+	<animation effect="fade" time="200">Visible</animation>
+	<animation effect="fade" time="50">Hidden</animation>
+	<visible allowhiddenfocus="true">Container(9100).HasFocus(23)</visible>
+	</control>
+	<control type="scrollbar" id="83">
+	<include>ScrollBar_Vertical</include>
+	<left>1860</left>
+	<top>180</top>
+	<height>430</height>
+	<onleft>10000</onleft>
+	<onright>9100</onright>
+	<animation effect="fade" time="200">Visible</animation>
+	<animation effect="fade" time="50">Hidden</animation>
+	<visible allowhiddenfocus="true">Container(9100).HasFocus(17)</visible>
+	</control>
+	<control type="scrollbar" id="84">
+	<include>ScrollBar_Vertical</include>
+	<left>1860</left>
+	<top>180</top>
+	<height>480</height>
+	<onleft>10018</onleft>
+	<onright>Skin.Reset(fonte)</onright>
+	<onright>9100</onright>
+	<animation effect="fade" time="200">Visible</animation>
+	<animation effect="fade" time="50">Hidden</animation>
+	<visible allowhiddenfocus="true">Container(9100).HasFocus(24)</visible>
+	</control>
+	<control type="scrollbar" id="85">
+	<include>ScrollBar_Vertical</include>
+	<left>1860</left>
+	<top>180</top>
+	<height>840</height>
+	<onleft>10021</onleft>
+	<onright>9100</onright>
+	<animation effect="fade" time="200">Visible</animation>
+	<animation effect="fade" time="50">Hidden</animation>
+	<visible allowhiddenfocus="true">Container(9100).HasFocus(16)</visible>
+	</control>	
+	<control type="scrollbar" id="86">
+	<include>ScrollBar_Vertical</include>
+	<left>1860</left>
+	<top>180</top>
+	<height>780</height>
+	<onleft>10001</onleft>
+	<onright>9100</onright>
+	<animation effect="fade" time="200">Visible</animation>
+	<animation effect="fade" time="50">Hidden</animation>
+	<visible allowhiddenfocus="true">Container(9100).HasFocus(21)</visible>
+	</control>
+	<include>RSS</include>
+	</control>
+	</controls>
+</window>

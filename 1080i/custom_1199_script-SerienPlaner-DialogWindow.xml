@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1199" type="Dialog">
+        <!-- default close button is a trap if mouse support is disabled -->
+        <defaultcontrol always="true">22</defaultcontrol>
+	
+    <onunload>ClearProperty(Widget.Senderlogo,Home)</onunload>
+    <onunload>ClearProperty(Widget.Thumb,Home)</onunload>
+    <onunload>ClearProperty(Widget.Clearlogo,Home)</onunload>
+    <onunload>ClearProperty(Widget.Label,Home)</onunload>
+    <onunload>ClearProperty(Widget.Label2,Home)</onunload>
+    <onunload>ClearProperty(Widget.Season,Home)</onunload>
+    <onunload>ClearProperty(Widget.Episode,Home)</onunload>
+    <onunload>ClearProperty(Widget.Genre,Home)</onunload>
+    <onunload>ClearProperty(Widget.Rating,Home)</onunload>
+    <onunload>ClearProperty(Widget.Plot,Home)</onunload>
+    <onunload>ClearProperty(Widget.Channel,Home)</onunload>
+    <onunload>ClearProperty(Widget.Starttime,Home)</onunload>
+    <onunload>ClearProperty(Widget.Date,Home)</onunload>
+    <onunload>ClearProperty(Widget.Runtime,Home)</onunload>
+	<onunload>ClearProperty(Widget.Rating,Home)</onunload>
+	<controls>
+	
+	
+<!-- default group -->
+		<control type="group">	
+			<include>Animation_Window</include>
+			<top>0</top>
+			<!-- Multi Fanart -->
+			<include>LiveBG</include>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>1920</width>
+				<height>1080</height>
+				<texture>black.png</texture>
+				<colordiffuse>A5FFFFFF</colordiffuse>
+				<include>Animation_Fade</include>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<height>225</height>
+				<width>1920</width>
+				<texture flipy="true">shadow_mask.png</texture>
+				<colordiffuse>75000000</colordiffuse>
+			</control>
+			
+			<control type="image">
+				<left>0</left>
+				<top>120</top>
+				<width>1920</width>
+				<height>600</height>
+				<texture>darkgrey.png</texture>
+				<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+				<include>Animation_DefaultGlass</include>
+			</control>	
+			<control type="image">
+				<left>308</left>
+				<top>120</top>
+				<height>345</height>
+				<width>3</width>
+				<texture>separator_v.png</texture>
+			</control>
+		
+			<control type="image">
+				<left>0</left>
+				<top>204</top>
+				<height>3</height>
+				<width>1080</width>
+				<texture>separator.png</texture>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>465</top>
+				<height>3</height>
+				<width>1080</width>
+				<texture>separator.png</texture>
+				<visible>Container.Content(musicvideos)</visible>
+			</control>
+			
+			
+			<control type="image">
+				<left>0</left>
+				<top>465</top>
+				<height>3</height>
+				<width>1080</width>
+				<texture>separator.png</texture>
+			
+			</control>
+	<control type="label">	
+	<left>35</left>
+	<top>5</top>
+	<width>1380</width>
+	<height>55</height>
+	<include>SettingsLeftTitle</include>
+	<label>$INFO[Window(Home).Property(Widget.TVShowTitle)]</label>
+	</control>
+
+		
+	
+
+
+		
+			<control type="image">
+				<left>1080</left>
+				<top>120</top>
+				<width>3</width>
+				<height>680</height>
+				<texture>separator_v.png</texture>
+			</control>
+			
+			<control type="image">
+					<left>0</left>
+					<top>700</top>
+					<height>400</height>
+					<width>1920</width>
+					<texture>darkgrey.png</texture>
+					<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+					<include>Animation_DefaultGlass2</include>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>1020</top>
+					<height>60</height>
+					<width>1920</width>
+					<texture>gradient_small.png</texture>
+				</control>
+				
+				
+			<control type="label">
+				<!-- Year -->
+				<left>330</left>
+				<top>120</top>
+				<height>60</height>
+				<width>165</width>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font_list</font>
+				<label>$INFO[Window(Home).Property(Widget.Year)]</label>
+				<textcolor>FFFFFAF0</textcolor>
+			</control>
+			<control type="label">
+				<!-- Genre -->
+				<left>330</left>
+				<top>154</top>
+				<height>60</height>
+				<width>735</width>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font_plot</font>
+				<label>$INFO[Window(Home).Property(Widget.Genre)]</label>
+				<textcolor>FFFFFAF0</textcolor>
+				<scroll>true</scroll>
+				<scrollout>false</scrollout>
+			</control>
+			<control type="image">	
+				<left>1575</left>
+				<top>30</top>
+				<width>300</width>
+				<height>30</height>			
+				<texture fallback="$VAR[value_styleratingstars,,0.png]">$VAR[value_styleratingstars]$INFO[Window(Home).Property(Widget.Rating),,.png]</texture>
+				<aspectratio align="left" aligny="center">keep</aspectratio>
+				<colordiffuse>$VAR[value_colorratingstars]</colordiffuse>
+			</control>	
+			<control type="image">
+				<!-- Certification -->
+				<left>45</left>
+				<top>104</top>
+				<height>120</height>
+				<width>237</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<aspectratio>keep</aspectratio>
+				<texture>$INFO[Window(Home).Property(Widget.mpaa),flags/mpaa/colored/,.png]</texture>
+				<visible>!Skin.HasSetting(mpaa_detailed_icon)</visible>
+			</control>
+				<!-- Certification Detailed Icon -->
+			<control type="image">
+				<!-- Certification -->
+				<left>0</left>
+				<top>124</top>
+				<height>80</height>
+				<width>306</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<aspectratio>stretch</aspectratio>
+				<texture>$INFO[Window(Home).Property(Widget.mpaa),flags/mpaa/colored/,.png]</texture>
+				<visible>Skin.HasSetting(media_flag_Images)</visible>
+				<visible>Skin.HasSetting(mpaa_detailed_icon)</visible>
+			</control>
+			<control type="image">
+				<!-- Certification -->
+				<left>0</left>
+				<top>124</top>
+				<height>80</height>
+				<width>306</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<aspectratio>stretch</aspectratio>
+				<texture>$INFO[Window(Home).Property(Widget.mpaa),flags/mpaa/white/,.png]</texture>
+                <colordiffuse>$INFO[Skin.String(colorflags)]</colordiffuse>
+				<visible>!Skin.HasSetting(media_flag_Images)</visible>
+				<visible>Skin.HasSetting(mpaa_detailed_icon)</visible>
+			</control>
+			<control type="image">
+				<!-- POSTER -->
+				<left>1530</left>
+				<top>123</top>
+				<width>784</width>
+				<height>570</height>
+				<aspectratio align="left">keep</aspectratio>
+				<texture background="true">$INFO[Window(Home).Property(Widget.Poster)]</texture>
+				<bordertexture border="-2">black.png</bordertexture>
+			</control>
+			<!--control type="image">
+				<left>1100</left>
+				<top>430</top>
+				<width>405</width>
+				<height>250</height>
+				<aspectratio align="left">stretch</aspectratio>
+				<texture background="true">$INFO[Window(Home).Property(Widget.Thumb)]</texture>
+				<bordertexture border="-2">black.png</bordertexture>
+			</control-->
+			<control type="image">
+				<!-- Fundo do rodape -->
+				<left>0</left>
+				<top>1020</top>
+				<width>1920</width>
+				<height>105</height>
+				<texture>shadow_mask.png</texture>
+				<colordiffuse>$INFO[Skin.String(colorfloor)]</colordiffuse>
+			</control>
+				<control type="image">
+				<left>0</left>
+				<top>755</top>
+				<height>279</height>
+				<width>1920</width>
+				<texture>darkgrey.png</texture>
+				<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+				<include>Animation_DefaultGlass</include>
+			</control>
+			
+			<control type="list" id="50">
+				<viewtype label="List">List Info</viewtype>
+				<left>45</left>
+				<top>750</top>
+				<width>1890</width>
+				<height>330</height>
+				<onup>20</onup>
+				<orientation>horizontal</orientation>
+				<scrolltime>400</scrolltime>
+				<focusposition>3</focusposition>
+				<itemlayout height="255" width="272">
+					<control type="image">
+						<left>2</left>
+						<top>8</top>
+						<width>195</width>
+						<height>270</height>
+						<aligny>center</aligny>
+						<align>center</align>
+						<aspectratio>keep</aspectratio>
+						<texture fallback="defaultactor.png" background="true">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="-2">black.png</bordertexture>
+						<colordiffuse>FF909090</colordiffuse>
+					</control>
+				</itemlayout>
+				<focusedlayout height="255" width="272">
+					<control type="image">
+						<left>2</left>
+						<top>8</top>
+						<width>195</width>
+						<height>270</height>
+						<aligny>center</aligny>
+						<align>center</align>
+						<aspectratio>keep</aspectratio>
+						<texture fallback="DefaultVideoPoster.png" background="true">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="-2">black.png</bordertexture>
+						<colordiffuse>FF909090</colordiffuse>
+						<include>Animation_Fade</include>
+						<visible>!Control.HasFocus(50)</visible>
+					</control>
+					<control type="image">
+						<left>2</left>
+						<top>8</top>
+						<width>195</width>
+						<height>270</height>
+						<aligny>center</aligny>
+						<align>center</align>
+						<aspectratio>keep</aspectratio>
+						<texture fallback="DefaultVideoPoster.png" background="true">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="-2">grey.png</bordertexture>
+						<include>Animation_Fade</include>
+						<visible>Control.HasFocus(50)</visible>
+					</control>
+				</focusedlayout>
+<content>plugin://script.skin.helper.service/?action=getcast&amp;downloadthumbs=true&amp;tvshow=$INFO[Window(Home).Property(Widget.TVShowTitle)]</content>
+			</control>
+				
+		
+			<control type="group">
+				<top>120</top>
+				<visible>Control.HasFocus(50)</visible>
+				<animation effect="slide" start="0,0" end="0,-120" time="600" delay="100" tween="cubic" easing="inout" condition="Control.HasFocus(50)">Conditional</animation>
+			
+				<control type="label">
+					<left>45</left>
+					<top>1040</top>
+					<width>600</width>
+					<height>40</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>Font_plot</font>
+					<label>31703</label>
+					<textcolor>$INFO[Skin.String(colorflags)]</textcolor>
+				</control>
+				<control type="label">
+					<left>0</left>
+					<top>1030</top>
+					<height>60</height>
+					<width>1920</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[Container(50).Listitem.label][COLOR=$INFO[Skin.String(colortexture)]] als [/COLOR]$INFO[Container(50).Listitem.label2]</label>
+					<font>Font_list</font>
+					<textcolor>FFFFFAF0</textcolor>
+					<scroll>true</scroll>
+				</control>
+			
+			</control>	
+			<control type="list" id="47">
+				<!-- Lista de botoes/info no characterart -->
+				<left>30</left>
+				<top>218</top>
+				<width>1110</width>
+				<height>495</height>
+				<onleft>149</onleft>
+				<onright>149</onright>
+				<onup>149</onup>
+				<ondown>149</ondown>
+				<itemgap>0</itemgap>
+				<pagecontrol>-</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<itemlayout height="30">
+					<control type="label">
+						<left>-42</left>
+						<top>0</top>
+						<width>300</width>
+						<height>30</height>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>Font_18A</font>
+						<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+						<selectedcolor>$INFO[Skin.String(colorheader)]</selectedcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<scroll>true</scroll>
+					</control>
+					<control type="label">
+						<left>300</left>
+						<top>0</top>
+						<width>730</width>
+						<height>30</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Font_18A</font>
+						<textcolor>FFFFFAF0</textcolor>
+						<selectedcolor>E4101010</selectedcolor>
+						<label>$INFO[ListItem.Label2]</label>
+						<scroll>true</scroll>
+					</control>
+				</itemlayout>
+				<focusedlayout height="30">
+					<control type="image">
+						<left>285</left>
+						<top>0</top>
+						<width>765</width>
+						<height>30</height>
+						<texture>settings_button_focus.png</texture>
+						<visible>Control.HasFocus(47)</visible>
+					</control>
+					<control type="label">
+						<left>-42</left>
+						<top>0</top>
+						<width>300</width>
+						<height>30</height>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>Font_18A</font>
+						<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+						<selectedcolor>$INFO[Skin.String(colorheader)]</selectedcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<left>300</left>
+						<top>0</top>
+						<width>730</width>
+						<height>30</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Font_18A</font>
+						<textcolor>FFFFFAF0</textcolor>
+						<selectedcolor>$INFO[Skin.String(colorheader)]</selectedcolor>
+						<label>$INFO[ListItem.Label2]</label>
+						<visible>!Control.HasFocus(47)</visible>
+					</control>
+					<control type="label">
+						<left>300</left>
+						<top>0</top>
+						<width>730</width>
+						<height>30</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Font_18A</font>
+						<textcolor>E4101010</textcolor>
+						<selectedcolor>$INFO[Skin.String(colorheader)]</selectedcolor>
+						<label>$INFO[ListItem.Label2]</label>
+						<visible>Control.HasFocus(47)</visible>
+					</control>
+				</focusedlayout>
+				<content>
+					<item>
+						<label>Staffel / Episode</label>
+						<label2>$INFO[Window(Home).Property(Widget.Season),S]$INFO[Window(Home).Property(Widget.Episode),E]</label2>
+						<onclick>noop</onclick>
+					</item>
+					<item>
+						<label>Bewertung</label>
+						<label2>$INFO[Window(Home).Property(Widget.Rating)]</label2>
+						<onclick>noop</onclick>
+					</item>
+					<item>
+						<label>$LOCALIZE[180]</label>
+						<!-- Duration -->
+						<label2>$INFO[Window(Home).Property(Widget.Duration),, Minuten]</label2>
+						<onclick>noop</onclick>
+					</item>
+					<item>
+						<label>Kanal</label>
+						<!-- Duration -->
+						<label2>$INFO[Window(Home).Property(Widget.Channel)]</label2>
+						<onclick>noop</onclick>
+					</item>
+					<item>
+						<label>SendeTermin</label>
+						<!-- Duration -->
+						<label2>$INFO[Window(Home).Property(Widget.Starttime),, Uhr]</label2>
+						<onclick>noop</onclick>
+					</item>
+					<item>
+						<label>Studio</label>
+						<!-- Duration -->
+						<label2>$INFO[Window(Home).Property(Widget.Studio)]</label2>
+						<onclick>noop</onclick>
+					</item>
+					<item>
+						<label>Status</label>
+						<!-- Duration -->
+						<label2>$INFO[Window(Home).Property(Widget.Playstatus)]</label2>
+						<onclick>noop</onclick>
+					</item>
+				
+				</content>
+			</control>
+			<control type="image">
+				<left>1150</left>
+				<top>170</top>
+				<width>300</width>
+				<height>100</height>
+				<aspectratio alignx="center" aligny="top">stretch</aspectratio>
+				<texture background="true">$INFO[Window(Home).Property(Widget.Clearlogo)]</texture>
+			</control>	
+			
+			
+			
+		<control type="group" id="576757">
+			<left>0</left>
+            <top>0</top>
+            <width>1920</width>
+            <height>1080</height>
+           
+           
+          
+                                
+            <control type="textbox">
+                    <description>Plot</description>
+                  	<left>45</left>
+					<top>480</top>
+					<width>1000</width>
+					<height>185</height>
+					<align>justify</align>
+					<font>Font_18A</font>
+                    <autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+                    <label>$INFO[Window(Home).Property(Widget.Plot)]</label>
+            </control>
+		
+			
+			<control type="group">	
+				<left>0</left>
+				<top>700</top>
+				<control type="image">
+					<left>0</left>
+					<top>-45</top>
+					<width>1928</width>
+					<height>45</height>
+					<texture>shadow_h.png</texture>
+					<colordiffuse>C3FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>44</top>
+					<width>1928</width>
+					<height>45</height>
+					<texture flipy="true">shadow_h.png</texture>
+					<colordiffuse>C3FFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>1920</width>
+					<height>45</height>
+					<texture>darkgrey.png</texture>
+					<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+					<include>Animation_DefaultGlass2</include>
+				</control> 
+				
+				
+				<control type="grouplist" id="9000">
+					<left>0</left>
+					<top>0</top>
+					<onup>-</onup>
+					<ondown>50</ondown>
+					<width>1920</width>
+					<orientation>horizontal</orientation>
+					<itemgap>0</itemgap>
+				<control type="button" id="21">
+                        <description>Switch button</description>
+						<include>SettingsBottomButtonpvr</include>
+                        <width>640</width>
+                        <label>$ADDON[plugin.program.serienplaner 30108]</label>
+                        <align>center</align>
+						<onleft>20</onleft>
+                        <onright>22</onright>
+                        <onclick>RunScript(plugin.program.serienplaner,"?methode=switch_channel&amp;pvrid=$INFO[Window(Home).Property(Widget.PVRID)]")</onclick>
+                        <onclick>PreviousMenu</onclick>
+                </control>
+                <control type="button" id="22">
+                        <description>Cancel button</description>
+						<width>640</width>
+                        <label>$ADDON[plugin.program.serienplaner 30119]</label>
+                        <align>center</align>
+						<onleft>21</onleft>
+                        <onright>20</onright>
+						<include>SettingsBottomButtonpvr</include>
+                        <onclick>PreviousMenu</onclick>
+                </control>
+				<control type="button" id="20">
+                        <description>Switchtimer button</description>
+						<include>SettingsBottomButtonpvr</include>
+                        <width>640</width>
+                        <label>$ADDON[plugin.program.serienplaner 30107]</label>
+                        <align>center</align>
+						<onleft>22</onleft>
+                        <onright>21</onright>
+                        <visible>System.HasAddon(service.kn.switchtimer)</visible>
+						<onclick>RunScript(service.kn.switchtimer,action=add,channel=$INFO[Window(Home).Property(Widget.Channel)],icon=$INFO[Window(Home).Property(Widget.Senderlogo)],date=$INFO[Window(Home).Property(Widget.Datum)] $INFO[Window(Home).Property(Widget.Starttime)],title=$INFO[Window(Home).Property(Widget.Label)])</onclick>
+                </control>
+			</control>
+		 </control>		
+				
+           
+        </control>
+	 </control>
+</controls>
+</window>
+
+<!-- plugin.program.tvhighlights - InfoWindow - END -->
