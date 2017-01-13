@@ -13,6 +13,8 @@ https://drive.google.com/open?id=0B5w5jyUZD4ChZnBtSUtJaWVRMTQ
 ```
 
 
+### ADDONS
+
 script.getInfo_lastFm
 ```
 https://github.com/pimp1310/script.getInfo_lastFm
