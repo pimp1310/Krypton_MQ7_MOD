@@ -1,0 +1,222 @@
+[B][COLOR=FFFF8C00]BUILD 1.5.0 - RELEASE DATE 10/25/2016[/COLOR][/B]
+
+Added: Support to ExtendedInfo Script - Open dialog.
+Improved: Small issues in layout/Info Dialog on top.
+Fixed: Home/Extras/Widgets - truncated information to released year and premiered.
+Fixed: Dialog Info-ExtendedInfo - Missing Poster Zoom.
+Fixed: PVR Info - Layout details.
+Fixed: Missing Genre Fanart inside library.
+Fixed: View PosterLite - option to disable media case does not work properly.
+
+
+[B][COLOR=FFFF8C00]BUILD 1.4.0 - RELEASE DATE 8/19/2016[/COLOR][/B]
+
+Added: Touch Screen Navigator.
+Improved: Cleaning in the code - Improved performance.
+Fixed: Small issues in layout.
+
+
+[B][COLOR=FFFF8C00]RC 2 BUILD 1.3.0 - RELEASE DATE 7/11/2016[/COLOR][/B]
+
+Improved: Various issues in PVR - New view type based in Right List.
+Changed: Icons pack - white. Now included in skin folder.
+Fixed: Flags bar/Subtitle indicator - The last and first language are joined together if there are many languages.
+
+
+[B][COLOR=FFFF8C00]RC 2 BUILD 1.2.0 - RELEASE DATE 6/15/2016[/COLOR][/B]
+
+Improved: Home window/Views window - Grid size for imdb rating.
+Improved: Original Title - Available for lists in all view types.
+Changed: Removed auto-scroll in lists.
+Fixed: Flags bar in Home window - Double audio flag.
+Fixed: Popup Progress with text vertical scroll, cannot read the information in some cases.
+Fixed: Various issues in Music Visualization.
+
+
+[B][COLOR=FFFF8C00]RC 1 BUILD 1.1.0 - RELEASE DATE 5/26/2016[/COLOR][/B]
+
+Added: Main Menu Vertical.
+Improved: Dialog select icon. (grateful to Angelinas)
+Fixed: View ShowCase - flat mode - Media Case does not match the defined color.
+Fixed: View Poster Lite - Various issues. (grateful to Angelinas)
+Fixed: Removed old references to Info Script. (grateful to Angelinas)
+Fixed: DSP Dialogs - Layout details.
+
+
+[B][COLOR=FFFF8C00]BETA 1 BUILD 1.0.0 - RELEASE DATE 4/23/2016[/COLOR][/B]
+
+Added: Now Playing in Home screen.
+Added: Animated Posters and Fanarts to view types in List mode, provided by Skin Helper Service script. (grateful to Angelinas) 
+Added: New default Media Case for Video - Based in art by Samu-rai.
+Improved: Widgets Selector - New font color for easy reading.
+Fixed: Missing totals  for albums in informations bar.
+Fixed: Layout details in Music Visualization layout 3.
+Fixed: Media case-sets displays the wrong color in some types of view.
+Fixed: View PosterLite doesn't work well for Music Videos. (grateful to Angelinas)
+Fixed: Menu OSD Music - Next button (and others) doesn't work properly. (grateful to Angelinas)
+Fixed: Music Visualization - If you open the OSD menu there is no information about the track, album or artist.
+Fixed: Missing Music Stars and Note - Various view types.
+Fixed: Music Visualization - Missing logo to Record Label.
+Fixed: Lyrics - Font alignment. (grateful to Joao Girardi)
+Fixed: Alac flag it is not shown - Is necessary install icons pack v 0.0.5.
+
+
+[B][COLOR=FFFF8C00]ALPHA 3 BUILD 0.9.1 - RELEASE DATE 4/6/2016[/COLOR][/B]
+
+Critical fix: The skin remains reset loop in OpenElec.
+
+
+[B][COLOR=FFFF8C00]ALPHA 3 BUILD 0.9.0 - RELEASE DATE 4/6/2016[/COLOR][/B]
+
+Added: Widgets to Video Nodes in Home screen. (grateful to Angelinas)
+Added: Widgets to Audio Nodes in Home screen.
+Added: Support to Alac media flag - Is necessary install icons pack v 0.0.4.
+Improved: Widgets to Movie Sets in Home screen - Support to plot, studio and cast.
+Improved: View Sets - support up to 30 movies per set.
+Improved: Lyrics - Fonts with border, without panel, layout more clear and clean. (grateful to Joao Girardi)
+Changed: Movie Sets - general - Remove support do Skin Info script + Added support do Skin Helper Service script. (grateful to Angelinas)
+Fixed: View Sets - year of the movie with wrong information. Layout details.
+Fixed: Smart Playlist Editor - Missing button Ascending/Descending.
+Fixed: Top Bar - Dialog Progress - The large gap makes the text unreadable.
+Fixed: Removed old references with function XBMC."". (grateful to Angelinas)
+Fixed: PVR - icon (thumb) is missing in Info screen. (grateful to schumi2004)
+Fixed: PVR - EPG search results overlap Search button. (grateful to schumi2004)
+
+Adicionado: Widgets para Video Nodes no Menu Principal. (grato ao Angelinas)
+Adicionado: Widgets para Audio Nodes no Menu Principal.
+Adicionado: Suporte a etiqueta de media Alac - é necessário instalar o pacote de ícones v 0.0.4.
+Melhorado: Widgets para Conjuntos de filmes no Menu Principal - Suporte ao enredo, estúdio e elenco.
+Melhorado: Vista Sets - Suporte para até 30 filmes por conjunto.
+Melhorado: Letras - Fontes com borda, sem painel, layout mais claro e limpo. (grato ao João Girardi)
+Alterado: Conjunto de filmes - geral - Removido o suporte ao script Skin Info + Adicionado suporte ao script Skin Helper Service. (grato ao Angelinas)
+Corrigido: Vista Sets - Ano do filme com informação errada. Detalhes de layout.
+Corrigido: Editor de Playlist - botão ascendente/descendente está ausente.
+Corrigido: Diálogo de Progresso - Grande espaço entre linhas torna o texto ilegível.
+Corrigido: Removidas antigas referências com função XBMC."". (grato ao Angelinas)
+Corrigido: PVR - faltando ícone do programa na tela Info. (grato ao schumi2004)
+Corrigido: PVR - resultados da pesquisa EPG sobrepõem botão pesquisar. (grato ao schumi2004)
+
+
+[B][COLOR=FFFF8C00]ALPHA 3 BUILD 0.8.0 - RELEASE DATE 3/25/2016[/COLOR][/B]
+
+Added: New feature - Main Menu Composition. Choose a static or animated banner to compose each menu.
+Changed: Remove support to Export/Import settings by Toolbox script. Added support to Export/Import settings by Skin Helper Service script. (grateful ao Angelinas)
+Fixed: Widgets selector - Button does not display the status of the option in use. (grateful to Angelinas)
+Fixed: Support to font in Cyrillic. (grateful ao Angelinas)
+Fixed: Support to ExtendedInfo Script - updated code.
+Fixed: Support to Atmos and DTS-X media flags.
+
+Adicionado: Novo recurso - Composição do Menu Principal. Escolha um banner estático ou animado para cada compor cada menu.
+Alterado: Removido suporte ao Exportar/Importar ajustes por Toolbox script. Adicionado suporte Exportar/Importar ajustes Skin Helper Service script. (grato ao Angelinas)
+Corrigido: Botão do seletor de widgets não exibe o estatus da opção em uso. (grato ao Angelinas)
+Corrigido: Suporte a fonte em Cirílico. (grato ao Angelinas)
+Corrigido: Suporte ao ExtendedInfo Script - código atualizado.
+Corrigido: Suporte as etiquetas de mídia Atmos e DTS-X. 
+
+
+[B][COLOR=FFFF8C00]ALPHA 2 BUILD 0.7.0 - RELEASE DATE 3/7/2016[/COLOR][/B]
+
+Added: New feature - My View Type. A view type customizable.
+Added: Option to change the color independently in main menu bar.
+Added: Support to font in Cyrillic. (grateful to Angelinas)
+Improved: Support for special characters in the default font.
+Improved: Tab Main Menu, fonts and customizations have been merged and now use the color picker by Skin Helper Service script.
+Changed: New fonts selector to the main menu.
+Fixed: Layout in Flag Top 250. (grateful to Angelinas)
+Fixed: Button to change background and icons for weather goes to wrong item in the setup menu. (grateful to Angelinas)
+Fixed: Missing Alert information in the weather window. (grateful to Angelinas)
+
+Adicionado: Novo recurso - Meu Tipo de Vista. Um tipo de vista customizável.
+Adicionado: Opção para trocar a cor da barra de menu de maneira independente.
+Adicionado: Suporte a fonte em Cirílico. (grato ao Angelinas)
+Melhorado: Suporte a caracteres especiais na fonte padrão da skin.
+Melhorado: Aba Menu Principal, fontes e customizações foram mesclados e agora usam o seletor do cores do script Skin Helper Service.
+Alterado: Novo seletor de fontes para o menu principal.
+Corrigido: Layout da etiqueta Top 250. (grato ao Angelinas)
+Corrigido: Botão Alterar imagens do clima leva ao item errado na tela de ajustes. (grato ao Angelinas)
+Corrigido: Falta informações de Alertas na janela do clima. (grato ao Angelinas)
+
+
+[B][COLOR=FFFF8C00]ALPHA 2 BUILD 0.6.0 - RELEASE DATE 2/19/2016[/COLOR][/B]
+
+Added: Cache bar to Internet content  - based in Mod by Rjsachse/wencaS
+Added: New color picker to Fonts of the Main Menu.
+Added: New media case selector.
+Improved: Tab to textures, titles and labels were merged and now use the color picker by Skin Helper Service script.
+Improved: Great cleaning in the code - Improved performance.
+
+Adicionado: Barra de cache da internet - baseado no Mod feito por Rjsachse/wencaS
+Adicionado: Novo seletor de cores para as fontes do Menu Principal.
+Adicionado: Novo seletor de estojos.
+Melhorado: Aba texturas, títulos e etiquetas foram mesclados e agora usam o seletor do cores do script Skin Helper Service.
+Melhorado: Grande limpeza no código - Melhoria na performance.
+
+
+[B][COLOR=FFFF8C00]ALPHA 2 BUILD 0.5.0 - RELEASE DATE 2/5/2016[/COLOR][/B]
+
+Added: Customization of the rating stars  - based on Mod made by wencaS
+Added: Main Menu - Thumbnails of actors also for video playlists and more ... (grateful to Angelinas)
+Improved: Layout to View GlassList.
+Fixed: Missing case codec flag.
+Fixed: Missing flags in case codec selector.
+Fixed: Missing audio codec flag on Music Full Screen.
+Fixed: Missing thumbnail actor to TVShows in some cases. (grateful to Angelinas)
+Fixed: Layout in the Media Content window.
+Fixed: Layout on Addons Settings window.
+
+Adicionado: Customização das estrelas da nota - baseado no Mod feito por wencaS
+Adicionado: Menu Principal - Miniaturas dos atores também para playlists de video e mais... (grato ao Angelinas)
+Corrigido: Falta etiqueta de codec de estojo.
+Corrigido: Falta etiquetas no seletor de codec de estojo.
+Corrigido: Falta etiqueta do codec de áudio na janela de Visualização de Música.
+Corrigido: Falta miniatura do ator para Seriados em alguns casos. (grato ao Angelinas)
+Corrigido: Layout na janela de seleção de conteúdo.
+Corrigido: Layout na janela de ajustes do addons.
+
+
+[B][COLOR=FFFF8C00]ALPHA 1 BUILD 0.4.0 - RELEASE DATE 1/28/2016[/COLOR][/B]
+
+Added: Support to Skin Helper Service script.
+Added: Main Menu/Widgets - Cast in poster mode, with direct access to information of each actor. Text mode (cast and role) still available.
+Improved: Layout for main menu customization window.
+Improved: Layout for settings window.
+Improved: Layout for title and star rating - library window.
+Improved: Icons for Years. Support to any year in your library.
+Improved: A skin size is 70% smaller. 
+
+
+[B][COLOR=FFFF8C00]ALPHA 1 BUILD 0.3.0 - RELEASE DATE 1/13/2016[/COLOR][/B]
+
+Added: Support to Image Resource Select Addon - by ronie.
+Added: Option to download icons, images and themes on-line. Go to Skin/Settings/Icons and Images tab. Coloured flags now is available.
+Changed: Remove support to Extrapack script. All downloads now works via addons management, native Kodi feature.
+Changed: Animated icons for Weather is default.
+Improved: Theme 'Colours' - default theme in Aeon MQ 6 - is included on themes pack.
+Improved: Icons Genres for widgets will respect the same choice made for the collection.
+Improved: A skin size is 40% smaller.  
+Fixed: Dialog Video Info - button Increase/Decrease rating doesn't work properly.
+Fixed: Small issues in layout and font size.
+
+
+[B][COLOR=FFFF8C00]ALPHA 1 BUILD 0.2.0 - RELEASE DATE 12/30/2015[/COLOR][/B]
+
+Improved: Size of new font in some areas.
+Fixed: When navigating the main menu or submenu, use arrow up repetitively can make the skin lose focus in widgets.
+Fixed: Widgets list displayed in endless list.
+Fixed: Missing information dashboard of widgets in some cases.
+Fixed: Widgets-My Menu. Showing wrong title.
+
+
+[B][COLOR=FFFF8C00]ALPHA 1 BUILD 0.1.0 - RELEASE DATE 12/17/2015[/COLOR][/B]
+
+Added: Play button in Window Extended Info - Video Info.
+Added: Auto Hide flag bar if it has no flag to show.
+Changed: New font for all areas of the skin.
+Fixed: Text stating the status of widgets on the selector button.
+Fixed: Doesn't possible change Widgets for System menu and Weather menu.
+Fixed: Submenu Music/Files doesn't work properly. (reset is necessary, by user choice)
+
+
+[B][COLOR=FFFF8C00]ALPHA 1 BUILD 0.0.1 - RELEASE DATE 12/12/2015[/COLOR][/B]
+
+First alpha build.
