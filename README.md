@@ -62,5 +62,6 @@ Skin
 [![screenshot008.png](https://s24.postimg.org/b2os4cwyd/screenshot008.png)](https://postimg.org/image/cuhqz9gb5/)
 
 
-
-
+###SerienPlaner Integration
+[![screenshot002.png](https://s24.postimg.org/ywrnfp7n9/screenshot002.png)](https://postimg.org/image/ywrnfp7n5/)
+[![screenshot001.png](https://s24.postimg.org/qxmc0bhd1/screenshot001.png)](https://postimg.org/image/9x3frn4bl/)
