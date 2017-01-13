@@ -22,7 +22,7 @@ https://github.com/pimp1310/script.getInfo_lastFm
 
 script_getInfo_audioDB
 ```
-https://github.com/pimp1310/script_getInfo_audioDB
+https://drive.google.com/open?id=0B5w5jyUZD4ChMFVjeEM2VTl3eTg
 ```
 
 Script SkinHelper (die Beta Version)
