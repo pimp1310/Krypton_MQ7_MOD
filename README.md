@@ -34,12 +34,12 @@ ADDONS
 Skin
 
 - nextUp Notification geändert (Screenshots siehe unten)
-- komplettten Bereich für Musicvideos neu erstellt + erweitert (Screenshots siehe unten)
+- komplettten Bereich für Musicvideos neu erstellt + erweitert (Screenshots siehe unten) (Infos werden nicht mehr vom extendedinfo script geholt)
 - PVR Bereich Neu erstellt bzw komplett erweitert (Screenshots siehe unten)
 - Widgets für PVR erweitert bzw umgebaut (Screenshots siehe unten)
 - Info für aktuell laufende PVR Aufnahmen eingebaut
 - diverse Fehler behoben
-- Musik InfoBereich komplett erweitert (Alle infos in einer Ansicht)
+- Musik InfoBereich komplett erweitert (Alle infos in einer Ansicht) (Infos werden nicht mehr vom extendedinfo script geholt)
 - DialogFullscreen erweitert (um Infos für die Wiedergabe von LivetV) (SKinhelper benötigt)
 
 
