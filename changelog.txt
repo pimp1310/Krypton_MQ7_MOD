@@ -5,3 +5,5 @@ Added: Completly New PVR AREA
 Added: Completly New MusicInfo Functions
 
 Fixed: Many Bugs in Views or Variables
+Fixed: Music - No Artists logo
+Fixed: Skin - no position for discart/clearart/logo is selected he takes fallback
