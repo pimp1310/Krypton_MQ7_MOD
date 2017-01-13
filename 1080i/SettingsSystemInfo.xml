@@ -118,7 +118,7 @@
 	<width>1320</width>
 	<height>945</height>
 	<font>Font_plot</font>
-	<label>[COLOR=$INFO[Skin.String(colorheader)]]$LOCALIZE[31788]:[/COLOR] MarcosQui[CR][COLOR=$INFO[Skin.String(colorheader)]]$LOCALIZE[31706]:[/COLOR] Wanilton[CR][CR][COLOR=$INFO[Skin.String(colorheader)]]$LOCALIZE[31999][/COLOR]</label>
+	<label>[COLOR=$INFO[Skin.String(colorheader)]]$LOCALIZE[31788]:[/COLOR] MarcosQui[CR][COLOR=$INFO[Skin.String(colorheader)]]$LOCALIZE[31706]:[/COLOR] Bumblebee[CR][CR][COLOR=$INFO[Skin.String(colorheader)]]$LOCALIZE[31999][/COLOR]</label>
 	<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 	<autoscroll delay="25000" time="4000" repeat="25000">!Skin.HasSetting(noallowscroll)</autoscroll>
 	<visible>Control.HasFocus(9001)</visible>
