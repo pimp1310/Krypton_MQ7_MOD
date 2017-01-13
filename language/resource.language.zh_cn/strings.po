@@ -1,0 +1,4142 @@
+# KODI Media Center language file
+# Addon Name: Aeon MQ 7
+# Addon id: skin.aeonmq.7
+# Addon version: 1.5.2
+# Addon Provider: MarcosQui
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Translators:
+# Arcko Duan <arcko@qq.com>, 2012
+# Dagong Cheng <chengdagong@gmail.com>, 2013
+# Ryan_gou <gzf9@163.com>, 2013
+# taxigps <taxigps@sina.com>, 2013,2015-2016
+# Wanilton Campos <>, 2016
+# XODI, 2016
+# XODI, 2016
+# XODI, 2016
+# XODI, 2016
+# yvesyang <yvesyang@gmail.com>, 2013
+# 宋辰文 <me@songchenwen.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: KODI Skin Aeon MQ 7 Krypton\n"
+"Report-Msgid-Bugs-To: aeonmq@gmail.com\n"
+"POT-Creation-Date: 2012-12-02 19:08+0000\n"
+"PO-Revision-Date: 2016-12-20 20:30+0000\n"
+"Last-Translator: Wanilton Campos <>\n"
+"Language-Team: Chinese (http://www.transifex.com/waniltoncampos/kodi-skin-aeon-mq-7-krypton/language/zh/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "Addon Summary"
+msgid "Aeon MQ 7, improved, more light and more powerful than ever."
+msgstr "经过改进的Aeon MQ 7，比以往任何版本都更轻便，更强大。"
+
+msgctxt "Addon Description"
+msgid ""
+"The 7th edition of Aeon MQ is here.[CR]Aeon MQ 7 has all the amazing "
+"features found in previous versions, however resource management is further "
+"optimized to provide an even better user experience.[CR]Aeon MQ 7. You have "
+"never seen a skin like this!"
+msgstr "Aeon MQ 的第 七 个版本来了。[CR]Aeon MQ 7 继承了之前版本的所有功能，同时优化了资源管理，提供了更好的用户体验。[CR]Aeon MQ 7，前所未有的皮肤。"
+
+msgctxt "Addon Disclaimer"
+msgid ""
+"The Aeon MQ 7 Skin takes KODI to the next level with an amazing user "
+"interface that many users have come to love."
+msgstr "Aeon MQ 7 皮肤这惊艳的界面受人喜爱，将 KODI 提升到了一个新的高度。"
+
+msgctxt "#31001"
+msgid "VIDEOS"
+msgstr "视频"
+
+msgctxt "#31002"
+msgid "MUSIC"
+msgstr "音乐"
+
+msgctxt "#31003"
+msgid "MOVIES"
+msgstr "电影"
+
+msgctxt "#31004"
+msgid "PLAY DISC"
+msgstr "播放光盘"
+
+msgctxt "#31005"
+msgid "TV SHOWS"
+msgstr "剧集"
+
+msgctxt "#31006"
+msgid "LIVE TV"
+msgstr "直播电视"
+
+msgctxt "#31007"
+msgid "GAMES"
+msgstr "游戏"
+
+msgctxt "#31008"
+msgid "IMAGES"
+msgstr "图片"
+
+msgctxt "#31009"
+msgid "WEATHER"
+msgstr "天气"
+
+msgctxt "#31010"
+msgid "ADD-ONS"
+msgstr "插件"
+
+msgctxt "#31011"
+msgid "SETTINGS"
+msgstr "设置"
+
+msgctxt "#31012"
+msgid "EXIT"
+msgstr "退出"
+
+msgctxt "#31013"
+msgid "CONCERTS"
+msgstr "音乐会"
+
+msgctxt "#31014"
+msgid "EMPTY"
+msgstr "空"
+
+msgctxt "#31015"
+msgid "+ FAVOURITE"
+msgstr "+ 收藏"
+
+msgctxt "#31016"
+msgid "+ VIDEO PLAYLIST"
+msgstr "+ 视频播放列表"
+
+msgctxt "#31017"
+msgid "+ AUDIO PLAYLIST"
+msgstr "+ 音频播放列表"
+
+msgctxt "#31018"
+msgid "+ VIDEO ADD-ON"
+msgstr "+ 视频插件"
+
+msgctxt "#31019"
+msgid "+ AUDIO ADD-ON"
+msgstr "+ 音频插件"
+
+msgctxt "#31020"
+msgid "+ PROGRAMS ADD-ON"
+msgstr "+ 程序插件"
+
+msgctxt "#31021"
+msgid "+ IMAGE ADD-ON"
+msgstr "+ 图片插件"
+
+msgctxt "#31022"
+msgid "+ VIDEO NODES"
+msgstr "+ 视频节点"
+
+msgctxt "#31023"
+msgid "+ AUDIO NODES"
+msgstr "+ 音频节点"
+
+msgctxt "#31024"
+msgid "VIDEO ADD-ONS"
+msgstr "视频插件"
+
+msgctxt "#31025"
+msgid "AUDIO ADD-ONS"
+msgstr "音频插件"
+
+msgctxt "#31026"
+msgid "IMAGE ADD-ONS"
+msgstr "图片插件"
+
+msgctxt "#31027"
+msgid "PROGRAMS ADD-ONS"
+msgstr "程序插件"
+
+msgctxt "#31029"
+msgid "SETS"
+msgstr "影片集"
+
+msgctxt "#31030"
+msgid "PROGRAMS"
+msgstr "程序"
+
+msgctxt "#31031"
+msgid "FAVOURITES"
+msgstr "收藏夹"
+
+msgctxt "#31033"
+msgid "FILES"
+msgstr "文件"
+
+msgctxt "#31035"
+msgid "PLAYLIST"
+msgstr "播放列表"
+
+msgctxt "#31036"
+msgid "Years"
+msgstr "年"
+
+msgctxt "#31037"
+msgid "ARTISTS"
+msgstr "歌手"
+
+msgctxt "#31038"
+msgid "PARTY MODE"
+msgstr "舞会模式"
+
+msgctxt "#31039"
+msgid "PLAY SPEED"
+msgstr "播放速度"
+
+msgctxt "#31040"
+msgid "ALBUMS"
+msgstr "专辑"
+
+msgctxt "#31041"
+msgid "COMPILATIONS"
+msgstr "合辑"
+
+msgctxt "#31042"
+msgid "TOP100"
+msgstr "TOP 100"
+
+msgctxt "#31043"
+msgid "RECENTLY PLAYED"
+msgstr "最近播放"
+
+msgctxt "#31045"
+msgid "ACTORS"
+msgstr "演员"
+
+msgctxt "#31046"
+msgid "SIMILAR"
+msgstr "相似"
+
+msgctxt "#31047"
+msgid "STUDIOS"
+msgstr "制作公司"
+
+msgctxt "#31048"
+msgid "SETS"
+msgstr "影片集"
+
+msgctxt "#31049"
+msgid "RANDOM"
+msgstr "随机"
+
+msgctxt "#31050"
+msgid "GO DIRECTLY TO FULL SCREEN WHEN PLAYING A SONG"
+msgstr "播放歌曲时直接进入全屏模式"
+
+msgctxt "#31051"
+msgid "36 HOURS"
+msgstr "36小时"
+
+msgctxt "#31052"
+msgid "WEEKEND"
+msgstr "周末"
+
+msgctxt "#31053"
+msgid "7 DAYS"
+msgstr "7天"
+
+msgctxt "#31054"
+msgid "ALERTS"
+msgstr "警告"
+
+msgctxt "#31055"
+msgid "TIMER"
+msgstr "定时器"
+
+msgctxt "#31056"
+msgid "CANCEL TIMER"
+msgstr "取消定时"
+
+msgctxt "#31057"
+msgid "SHUTDOWN"
+msgstr "关机"
+
+msgctxt "#31058"
+msgid "TURN OFF"
+msgstr "关闭"
+
+msgctxt "#31059"
+msgid "RESTART"
+msgstr "重启"
+
+msgctxt "#31060"
+msgid "SUSPEND"
+msgstr "挂起"
+
+msgctxt "#31061"
+msgid "HIBERNATE"
+msgstr "休眠"
+
+msgctxt "#31062"
+msgid "CHANGE USER"
+msgstr "切换用户"
+
+msgctxt "#31063"
+msgid "FILES MANAGER"
+msgstr "文件管理"
+
+msgctxt "#31064"
+msgid "SYSTEM INFO"
+msgstr "系统信息"
+
+msgctxt "#31065"
+msgid "TRAILERS"
+msgstr "预告片"
+
+msgctxt "#31066"
+msgid "CINEMAVISION"
+msgstr "影院级"
+
+msgctxt "#31067"
+msgid "TV GUIDE"
+msgstr "电视指南"
+
+msgctxt "#31068"
+msgid "AVAILABLES GROUPS"
+msgstr "可用组"
+
+msgctxt "#31069"
+msgid "RECENTLY PLAYED"
+msgstr "最近播放"
+
+msgctxt "#31070"
+msgid "Titles"
+msgstr "标题"
+
+msgctxt "#31071"
+msgid "FAVOURITE"
+msgstr "收藏"
+
+msgctxt "#31072"
+msgid "VIDEO PLAYLIST"
+msgstr "视频播放列表"
+
+msgctxt "#31073"
+msgid "AUDIO PLAYLIST"
+msgstr "音频播放列表"
+
+msgctxt "#31074"
+msgid "VIDEO NODES"
+msgstr "视频节点"
+
+msgctxt "#31075"
+msgid "MY MENU"
+msgstr "我的菜单"
+
+msgctxt "#31076"
+msgid "SHOW DETAILS PANEL"
+msgstr "显示详细面板"
+
+msgctxt "#31077"
+msgid "LIBRARY STATUS"
+msgstr "资料库状态"
+
+msgctxt "#31078"
+msgid "WEATHER AND TIME"
+msgstr "天气和时间"
+
+msgctxt "#31079"
+msgid "CLICK TO MOVE"
+msgstr "点击移动"
+
+msgctxt "#31080"
+msgid "Item not used"
+msgstr "未用项"
+
+msgctxt "#31081"
+msgid "Item addition"
+msgstr "附加项"
+
+msgctxt "#31082"
+msgid "AUDIO NODES"
+msgstr "音频节点"
+
+msgctxt "#31083"
+msgid "PREVIEW"
+msgstr "预览"
+
+msgctxt "#31084"
+msgid "CLOSE"
+msgstr "关闭"
+
+msgctxt "#31085"
+msgid "Virtual item"
+msgstr "虚拟项"
+
+msgctxt "#31086"
+msgid "Concerts"
+msgstr "音乐会"
+
+msgctxt "#31087"
+msgid "Trailers"
+msgstr "预告片"
+
+msgctxt "#31088"
+msgid "Games"
+msgstr "游戏"
+
+msgctxt "#31089"
+msgid "Year"
+msgstr "年"
+
+msgctxt "#31090"
+msgid "DIRECTORS"
+msgstr "导演"
+
+msgctxt "#31091"
+msgid "GENRES"
+msgstr "类型"
+
+msgctxt "#31092"
+msgid "PLAYLISTS"
+msgstr "播放列表"
+
+msgctxt "#31093"
+msgid "ITEMS"
+msgstr "项"
+
+msgctxt "#31095"
+msgid "PATH"
+msgstr "路径"
+
+msgctxt "#31096"
+msgid "DISC"
+msgstr "光盘"
+
+msgctxt "#31097"
+msgid "ITALIC"
+msgstr "斜体"
+
+msgctxt "#31098"
+msgid "BAR"
+msgstr "条"
+
+msgctxt "#31099"
+msgid "STRIP"
+msgstr "带"
+
+msgctxt "#31100"
+msgid "FLAT"
+msgstr "面"
+
+msgctxt "#31101"
+msgid "Watch tv"
+msgstr "观看电视"
+
+msgctxt "#31102"
+msgid "Executables and emulators"
+msgstr "可执行文件和模拟器"
+
+msgctxt "#31103"
+msgid "Highlights to remember"
+msgstr "高亮记录"
+
+msgctxt "#31104"
+msgid "Forecast for up to 16 DAYS"
+msgstr "多至16天的天气预报"
+
+msgctxt "#31105"
+msgid "My favourites items"
+msgstr "我的收藏夹项"
+
+msgctxt "#31106"
+msgid "Favourite item"
+msgstr "收藏夹项"
+
+msgctxt "#31107"
+msgid "Playlist"
+msgstr "播放列表"
+
+msgctxt "#31108"
+msgid "Add-on"
+msgstr "插件"
+
+msgctxt "#31109"
+msgid "Shutdown"
+msgstr "关机"
+
+msgctxt "#31110"
+msgid "CD, DVD, Bluray"
+msgstr "CD、DVD、蓝光"
+
+msgctxt "#31111"
+msgid "DISC ART (IF AVAILABLE)"
+msgstr "光盘封面（如果可用）"
+
+msgctxt "#31112"
+msgid "PLOT ALWAYS VISIBLE"
+msgstr "剧情始终可见"
+
+msgctxt "#31113"
+msgid "BIOGRAPHY ALWAYS VISIBLE"
+msgstr "传记始终可见"
+
+msgctxt "#31114"
+msgid "BANNER (IF AVAILABLE)"
+msgstr "横幅（如果可用）"
+
+msgctxt "#31115"
+msgid "VIDEO NODE"
+msgstr "视频节点"
+
+msgctxt "#31116"
+msgid "DISC SPIN SPEED"
+msgstr "光盘转速"
+
+msgctxt "#31117"
+msgid "CUSTOMIZING NOW"
+msgstr "立即自定义"
+
+msgctxt "#31118"
+msgid "DISC SELECTOR"
+msgstr "光盘选择器"
+
+msgctxt "#31119"
+msgid "LAYOUT"
+msgstr "布局"
+
+msgctxt "#31120"
+msgid "RADIO"
+msgstr "电台"
+
+msgctxt "#31121"
+msgid "KARAOKE"
+msgstr "卡拉OK"
+
+msgctxt "#31122"
+msgid "BACKGROUND SET BY USER"
+msgstr "用户设置背景"
+
+msgctxt "#31123"
+msgid "3D"
+msgstr "3D"
+
+msgctxt "#31124"
+msgid "SHOW SMART SUBMENU"
+msgstr "显示智能子菜单"
+
+msgctxt "#31125"
+msgid "SHOW VIDEO IN BACKGROUND"
+msgstr "在背景显示视频"
+
+msgctxt "#31126"
+msgid "remaining"
+msgstr "剩余"
+
+msgctxt "#31127"
+msgid "SELECTING TRACKS"
+msgstr "选择曲目"
+
+msgctxt "#31128"
+msgid "White"
+msgstr "白色"
+
+msgctxt "#31129"
+msgid "SLOPED"
+msgstr "已停止"
+
+msgctxt "#31130"
+msgid "STYLE FOR THE STARS"
+msgstr "影星类型"
+
+msgctxt "#31131"
+msgid "DEFAULT STYLE"
+msgstr "默认风格"
+
+msgctxt "#31132"
+msgid "STARS"
+msgstr "影星"
+
+msgctxt "#31133"
+msgid "STARS SELECTOR"
+msgstr "影星选择"
+
+msgctxt "#31134"
+msgid "VIEW OPTIONS"
+msgstr "视图选项"
+
+msgctxt "#31135"
+msgid "CHANGE VIEW"
+msgstr "改变视图"
+
+msgctxt "#31136"
+msgid "Fonts"
+msgstr "字体"
+
+msgctxt "#31137"
+msgid "FONTS SELECTOR"
+msgstr "字体选择"
+
+msgctxt "#31138"
+msgid "STYLE"
+msgstr "风格"
+
+msgctxt "#31139"
+msgid "CHANGE THE FONT COLOUR"
+msgstr "改变字体颜色"
+
+msgctxt "#31140"
+msgid ""
+"Activate only the views you need, this optimizes the collection loading."
+msgstr "仅激活你需要的视图，它会优化加载速度。"
+
+msgctxt "#31141"
+msgid "+ views"
+msgstr "+ 视图"
+
+msgctxt "#31142"
+msgid "LOGO AS TITLE (ON TOP IF AVAILABLE)"
+msgstr "LOGO 作标题（在顶部如可用）"
+
+msgctxt "#31143"
+msgid "SHUTDOWN OPTIONS"
+msgstr "关机选项"
+
+msgctxt "#31144"
+msgid "SHUTDOWN"
+msgstr "关机"
+
+msgctxt "#31145"
+msgid "Shutdown"
+msgstr "关机"
+
+msgctxt "#31146"
+msgid "Live tv"
+msgstr "直播电视"
+
+msgctxt "#31147"
+msgid "Various"
+msgstr "多种"
+
+msgctxt "#31148"
+msgid "Video"
+msgstr "视频"
+
+msgctxt "#31149"
+msgid "Timer Set"
+msgstr "定时器设置"
+
+msgctxt "#31150"
+msgid ""
+"REPLACE FUNCTION[CR]The simplest way to rearrange the menu. Simply choose a "
+"new item that will occupy the position of the previous item. This option "
+"will always replace the item for a standard menu. The title and custom "
+"background image will be lost."
+msgstr "替换功能[CR]重新排列菜单的最简单方法，只需选择将占据前一个项目位置的新项目。此选项总是将项目替换为标准菜单，标题和自定义背景图片都将丢失。"
+
+msgctxt "#31151"
+msgid ""
+"CLONE FUNCTION Submenu[CR]Use this function to clone a submenu from a "
+"standard menu item of the same type. For example, if you create a Video "
+"Playlist menu item, clone the submenu from the Movies menu item. Changes "
+"made to a cloned submenu affects all submenus in the cloned set, original "
+"and cloned.[CR]A menu that is using a cloned submenu will not appear in the "
+"list."
+msgstr "克隆功能子菜单[CR]用这个选项来从一个同类型的标准菜单项中克隆子菜单。举个例子，假设你创建了一个视频播放列表的菜单，那么就可以从电影菜单克隆子菜单。对同一个克隆系列中的子菜单做修改，无论是克隆源还是克隆目标，此克隆系列中的所有子菜单都将受到改变。[CR]正在使用克隆子菜单的菜单将不会出现在列表中。"
+
+msgctxt "#31152"
+msgid ""
+"FUNCTION COPY PROPERTIES[CR]The advanced technique to rearrange the menu "
+"without losing previous customizations. Instead of using the REPLACE "
+"function, copy the menu to the storage. All the menu properties will be "
+"saved for later use. You can store up to 20 presets."
+msgstr "属性复制功能[CR]不丢失之前定制内容的重新排列菜单高级模式。不同于替换功能，你可以复制菜单到存储器。所有的属性菜单将被保存以备后用。最多可以存储20个预设。"
+
+msgctxt "#31153"
+msgid ""
+"FUNCTION APPLY PROPERTIES[CR]Use to apply all saved properties to the "
+"selected item."
+msgstr "属性应用功能[CR]用于对所选项目应用所有已保存的属性。"
+
+msgctxt "#31154"
+msgid ""
+"Welcome to Aeon MQ 7 skin customization.[CR][CR]READ CAREFULLY! THIS IS "
+"IMPORTANT.[CR][CR]Before making any changes, it's necessary to define the "
+"language used in the skin.[CR][CR]If you have already set the language, "
+"select option 2, otherwise choose option 1.[CR][CR]After choosing option 2, "
+"this warning will not appear again.[CR][CR]Enjoy!"
+msgstr "欢迎来到 Aeon MQ 7 皮肤定制。[CR] [CR]这很重要，请仔细阅读！[CR] [CR]进行任何调整之前必须先设置皮肤所使用的语言。[CR][CR]如果你已经设置了语言选择选项 2，否则选择选项 1，[CR] [CR]选择选项2后，该警告不会再次出现。[CR] [CR]尽情享受吧！"
+
+msgctxt "#31155"
+msgid "1. SELECT THE LANGUAGE NOW"
+msgstr "1. 现在设置语言"
+
+msgctxt "#31156"
+msgid "2. LANGUAGE ALREADY SELECTED - CONTINUE"
+msgstr "2. 语言已设置 - 继续"
+
+msgctxt "#31157"
+msgid "SET LANGUAGE"
+msgstr "设置语言"
+
+msgctxt "#31158"
+msgid "REPLACE THIS MENU WITH ..."
+msgstr "将此菜单替换为..."
+
+msgctxt "#31159"
+msgid "CLONING SUB-MENU FROM ..."
+msgstr "克隆子菜单来自..."
+
+msgctxt "#31160"
+msgid "COPY PROPERTIES TO THE STORAGE"
+msgstr "复制属性到存储器"
+
+msgctxt "#31161"
+msgid "APPLY PROPERTIES FROM THE STORAGE"
+msgstr "从存储器应用属性"
+
+msgctxt "#31162"
+msgid "NONE - CLEAR"
+msgstr "无 - 清除"
+
+msgctxt "#31163"
+msgid "NONE - KEEP ORIGINAL"
+msgstr "无 - 保持原始"
+
+msgctxt "#31165"
+msgid "MAIN MENU PRESETS"
+msgstr "主菜单预置"
+
+msgctxt "#31166"
+msgid "CREATE PRESET"
+msgstr "创建预置"
+
+msgctxt "#31167"
+msgid "APPLY NEW PRESET"
+msgstr "应用新预置"
+
+msgctxt "#31168"
+msgid "NO PRESETS AVAILABLE"
+msgstr "无可用预置"
+
+msgctxt "#31169"
+msgid "PRESETS"
+msgstr "预置"
+
+msgctxt "#31170"
+msgid ""
+"CREATE A PRESET FUNCTION[CR]Use it to save the actual main menu. All "
+"settings will be saved. You can save up to 10 individual presets."
+msgstr "创建预置功能[CR]用来保存实际的主菜单。所有设置都将被保存。最多可以保存10个单独的预置。"
+
+msgctxt "#31171"
+msgid ""
+"APPLY A PRESET FUNCTION.[CR]Use it to change between saved presets. All the "
+"settings will be reapplied. You can also call this function on the main menu"
+" using the system menu 'S' or you can also insert that item in any menu "
+"using the Replace function."
+msgstr "应用预设功能[CR]用于在保存的预置之间变换。所有的设置将被重新应用。你也可以在主菜单使用的系统菜单'S'调用这个功能，或者也可以使用替换功能将项目插入任何菜单。"
+
+msgctxt "#31172"
+msgid "NO ITEMS IN THE STORAGE"
+msgstr "存储器中无项目"
+
+msgctxt "#31173"
+msgid "MOSAIC SLIDESHOW"
+msgstr "马赛克幻灯片"
+
+msgctxt "#31174"
+msgid "USE ZOOM EFFECT TO OPEN AND CLOSE WINDOWS"
+msgstr "使用缩放效果打开和关闭窗口"
+
+msgctxt "#31175"
+msgid "USE SMOOTHER ZOOM EFFECT TO OPEN AND CLOSE WINDOWS"
+msgstr "使用平滑缩放效果打开和关闭窗口"
+
+msgctxt "#31176"
+msgid ""
+"USE FADE EFFECT TO OPEN AND CLOSE WINDOWS (RECOMMENDED FOR WEAKER GPUS)"
+msgstr "使用淡入淡出效果打开和关闭窗口（推荐用于弱GPU）"
+
+msgctxt "#31177"
+msgid "SYSTEM MENU"
+msgstr "系统菜单"
+
+msgctxt "#31178"
+msgid "CONTEXT MENU"
+msgstr "上下文菜单"
+
+msgctxt "#31179"
+msgid "Audio language"
+msgstr "音频语言"
+
+msgctxt "#31180"
+msgid "NUMBER OF WIDGETS TO BE EXHIBITED AT THE SAME TIME"
+msgstr "同时展示的小部件数"
+
+msgctxt "#31181"
+msgid "CLICK FOR CHANGE"
+msgstr "点击更改"
+
+msgctxt "#31182"
+msgid "SHOW CAST IN LIST NAMES MODE"
+msgstr "以姓名列表模式显示演员"
+
+msgctxt "#31183"
+msgid "SHOW CAST IN POSTER MODE"
+msgstr "以海报模式显示演员"
+
+msgctxt "#31184"
+msgid "FLAG STYLE"
+msgstr "标志类型"
+
+msgctxt "#31185"
+msgid "CUSTOMISE FLAG"
+msgstr "自定义标志"
+
+msgctxt "#31186"
+msgid "4K content label will be shown."
+msgstr "将显示4K内容标签。"
+
+msgctxt "#31187"
+msgid "REAPPLY SETTINGS"
+msgstr "重应用设置"
+
+msgctxt "#31188"
+msgid "REAPPLY THE MOST IMPORTANT SETTINGS"
+msgstr "重应用重要设置"
+
+msgctxt "#31189"
+msgid "COMPLETE MODE"
+msgstr "完整模式"
+
+msgctxt "#31190"
+msgid "PARTIAL MODE"
+msgstr "部分模式"
+
+msgctxt "#31191"
+msgid "HIDDEN MODE"
+msgstr "隐藏模式"
+
+msgctxt "#31192"
+msgid "PERSONALISE MEDIA FLAGS BAR"
+msgstr "个性化媒体标志条"
+
+msgctxt "#31193"
+msgid "TRANSITION TIME FOR MULTIPLE IMAGES"
+msgstr "多张图片转换时间"
+
+msgctxt "#31194"
+msgid "5 SECONDS"
+msgstr "5秒"
+
+msgctxt "#31195"
+msgid "10 SECONDS"
+msgstr "10秒"
+
+msgctxt "#31196"
+msgid "30 SECONDS"
+msgstr "30秒"
+
+msgctxt "#31197"
+msgid "1 MINUTE"
+msgstr "1分"
+
+msgctxt "#31198"
+msgid "10 MINUTES"
+msgstr "10分"
+
+msgctxt "#31199"
+msgid "1 HOUR"
+msgstr "1小时"
+
+msgctxt "#31200"
+msgid "MENU"
+msgstr "菜单"
+
+msgctxt "#31201"
+msgid "SUBMENU"
+msgstr "子菜单"
+
+msgctxt "#31202"
+msgid "OPTIONS"
+msgstr "选项"
+
+msgctxt "#31203"
+msgid "SKIN"
+msgstr "皮肤"
+
+msgctxt "#31204"
+msgid "UPDATE"
+msgstr "更新"
+
+msgctxt "#31205"
+msgid "DELETE ITEM - REMOVE ITEM THAT YOU CREATED"
+msgstr "删除项 - 删除你创建的项"
+
+msgctxt "#31206"
+msgid "* Use image with dimensions 1920 x 90 pixels in PNG format"
+msgstr "* 使用 1920x90 像素的 PNG 格式图片"
+
+msgctxt "#31207"
+msgid "CUSTOMISE MAIN MENU"
+msgstr "自定义主菜单"
+
+msgctxt "#31208"
+msgid "PASTE HERE"
+msgstr "在这里粘贴"
+
+msgctxt "#31209"
+msgid "Item"
+msgstr "项"
+
+msgctxt "#31210"
+msgid "Items"
+msgstr "项"
+
+msgctxt "#31211"
+msgid "RENAME"
+msgstr "重命名"
+
+msgctxt "#31212"
+msgid "DISABLE"
+msgstr "禁用"
+
+msgctxt "#31213"
+msgid "ENABLE"
+msgstr "启用"
+
+msgctxt "#31214"
+msgid "DISABLE/REORDER"
+msgstr "禁用/重新排序"
+
+msgctxt "#31215"
+msgid "Page"
+msgstr "页"
+
+msgctxt "#31216"
+msgid "THUMBNAIL SET"
+msgstr "缩略图设置"
+
+msgctxt "#31217"
+msgid "CHANGE BACKDROP - ONE IMAGE"
+msgstr "更改背景 - 单图片"
+
+msgctxt "#31218"
+msgid "CHANGE BACKDROP - MULTIPLE IMAGES"
+msgstr "更改背景 - 多图片"
+
+msgctxt "#31219"
+msgid "RESTORE DEFAULT THUMBNAIL"
+msgstr "恢复默认缩略图"
+
+msgctxt "#31220"
+msgid "RESTORE DEFAULT BACKDROP"
+msgstr "恢复默认背景"
+
+msgctxt "#31221"
+msgid "NO FAVOURITES TO SHOW"
+msgstr "无收藏可显示"
+
+msgctxt "#31223"
+msgid "CINEMAGRAPH ARTS - POSTER"
+msgstr "微动图片艺术 - 海报"
+
+msgctxt "#31224"
+msgid "CINEMAGRAPH ARTS - FANART"
+msgstr "微动图片艺术 - 同人画"
+
+msgctxt "#31222"
+msgid "END"
+msgstr "结束"
+
+msgctxt "#31226"
+msgid "GENERAL INFORMATION"
+msgstr "常规信息"
+
+msgctxt "#31227"
+msgid "INFORMATION BAR"
+msgstr "信息条"
+
+msgctxt "#31231"
+msgid "CLEAN LIBRARY"
+msgstr "清理资料库"
+
+msgctxt "#31233"
+msgid "Premiered"
+msgstr "首播"
+
+msgctxt "#31234"
+msgid "MENU IN WRAP LIST MODE"
+msgstr "卷动列表模式菜单"
+
+msgctxt "#31235"
+msgid "MENU IN FIXED LIST MODE"
+msgstr "混合列表模式菜单"
+
+msgctxt "#31236"
+msgid "CHANGE THE MENU BAR COLOUR"
+msgstr "改变菜单条颜色"
+
+msgctxt "#31237"
+msgid "Done"
+msgstr "完成"
+
+msgctxt "#31238"
+msgid "OSD MENU"
+msgstr "OSD 菜单"
+
+msgctxt "#31239"
+msgid "DIALOGUE TOP ART"
+msgstr "上层封面对话框"
+
+msgctxt "#31240"
+msgid "DIALOGUE MIDDLE ART"
+msgstr "中层封面对话框"
+
+msgctxt "#31241"
+msgid "DIALOGUE DISCART ANIMATION"
+msgstr "光盘封面动画对话框"
+
+msgctxt "#31242"
+msgid "SHOW"
+msgstr "显示"
+
+msgctxt "#31243"
+msgid "SYSTEM MENU (MENU 'S')"
+msgstr "系统菜单（菜单“S”）"
+
+msgctxt "#31245"
+msgid "KEEP BACKGROUND'S ASPECT RATIO"
+msgstr "保持背景宽高比"
+
+msgctxt "#31246"
+msgid "WIDGETS MANAGEMENT"
+msgstr "窗口小部件管理"
+
+msgctxt "#31247"
+msgid "WIDGET SETTINGS"
+msgstr "设置窗口小部件"
+
+msgctxt "#31248"
+msgid "SHOW WEATHER"
+msgstr "显示天气"
+
+msgctxt "#31249"
+msgid "WIDGETS"
+msgstr "小部件"
+
+msgctxt "#31250"
+msgid "SHOW DATE"
+msgstr "显示日期"
+
+msgctxt "#31251"
+msgid "3D MODE"
+msgstr "3D 模式"
+
+msgctxt "#31252"
+msgid "CHANGE TRANSPARENCY"
+msgstr "改变透明度"
+
+msgctxt "#31253"
+msgid ""
+"Play your personal games or download one of the many game add-ons from the "
+"official repository."
+msgstr "播放你已有的游戏或者从官方仓库众多游戏插件下载一个"
+
+msgctxt "#31254"
+msgid ""
+"With EXTRAPACK you have available:[CR]Themes.[CR]Thematic Styles.[CR]Genre "
+"fanart for music and video.[CR]Animated Icons for weather.[CR]Background "
+"images based on weather conditions.[CR][CR]The complete download can take a "
+"while depending on the connection speed."
+msgstr "使用外部包你可以有：[CR]主题。[CR]主题风格。[CR]音乐和视频类型同人画。[CR]动态天气图标。[CR]基于天气变化的背景图像。[CR][CR]完整下载可能需要一段时间，取决于网络速度。"
+
+msgctxt "#31257"
+msgid ""
+"1. Create a root folder with any name, for example MY THEME.[CR][CR]2.Inside"
+" the root folder create 23 folders by these names:[CR]addons, "
+"aplaylist,autumn, concerts, disc, favourites, games, livetv, radio, movies, "
+"music, mymenu, pictures, programs, settings, shutdown, spring, summer, "
+"tvshows, vnodes, vplaylist, winter, extras.[CR][CR]3. Place within each of "
+"these folders the images you chose, MY THEME supports multiple files, you "
+"can include as many pictures as you want per folder.[CR][CR]4. After the "
+"theme ready enter the path of the root.[CR][CR]The default image for AEON MQ"
+" 7 has pixels 72dpi 1920x1080 JPG format and I would suggest using the "
+"program FastStone Photo Resize to obtain good quality images and low size."
+msgstr "1. 以任意名称创建一个根文件夹，如：MY THEME。[CR][CR]2. 在根文件夹中以下述名称创建 23 个文件夹：[CR]addons、aplaylist、autumn、concerts、disc、favourites、games、livetv、radio、movies、music、mymenu、pictures、programs、settings、shutdown、spring、summer、tvshows、vnodes、vplaylist、winter、extras。[CR][CR]3. 将你选好的图片保存到每个文件夹中，MY THEME 支持多文件，每个文件夹可包含许多图片。[CR][CR]4. 主题就绪后输入根目录路径。[CR][CR]AEON MQ 7 默认图片为 72dpi 1920x1080 的 JPG 格式，建议使用 FastStone Photo Resize 程序生成质量好体积小的图片文件。"
+
+msgctxt "#31258"
+msgid ""
+"This option recreates only the most important adjustments like colours, "
+"panel definitions and etc...[CR]It's recommended for instance when there is "
+"a non functional menu.[CR]When using this option some adjustments may be "
+"necessary."
+msgstr "此选项仅重建最重要的调整项，如色彩、面板定义等...[CR]推荐在如有非功能菜单时使用。[CR]使用此选项时，可能需要做一些调整。"
+
+msgctxt "#31261"
+msgid "CONFIGURE"
+msgstr "配置"
+
+msgctxt "#31263"
+msgid "ENABLE AUTOMATIC UPDATE OF ADD-ONS"
+msgstr "启用插件自动更新"
+
+msgctxt "#31264"
+msgid "DISPLAY UPDATE NOTIFICATION OF ADD-ONS"
+msgstr "显示插件更新消息"
+
+msgctxt "#31265"
+msgid "SHOW ADD-ON FANART"
+msgstr "显示插件同人画"
+
+msgctxt "#31266"
+msgid "BLURAY"
+msgstr "蓝光"
+
+msgctxt "#31267"
+msgid "3DBD"
+msgstr "3D蓝光"
+
+msgctxt "#31269"
+msgid "HDTV"
+msgstr "高清电视"
+
+msgctxt "#31271"
+msgid "WEBTV"
+msgstr "网络电视"
+
+msgctxt "#31272"
+msgid "DVD"
+msgstr "DVD"
+
+msgctxt "#31274"
+msgid "SETS"
+msgstr "影片集"
+
+msgctxt "#31275"
+msgid "4K"
+msgstr "4K"
+
+msgctxt "#31276"
+msgid "CASE FOR CONTENT"
+msgstr "包装的碟片盒"
+
+msgctxt "#31277"
+msgid "STANDARD"
+msgstr "标准"
+
+msgctxt "#31278"
+msgid "PERSONALISE THE BOXES FOR YOUR COLLECTION"
+msgstr "个性化盒子边框"
+
+msgctxt "#31279"
+msgid "MEDIA CASE"
+msgstr "媒体碟片盒"
+
+msgctxt "#31280"
+msgid ""
+"If no compatible tag is used in the filename or folder, this case will be "
+"used."
+msgstr "如果文件名或文件夹中没有兼容的标签，将使用此碟片盒。"
+
+msgctxt "#31281"
+msgid ""
+"Choose a case and press enter to customise.[CR]Use up arrow for change codec"
+" flag."
+msgstr "选择一个碟片盒按回车自定义。[CR]用上键改变编码标志。"
+
+msgctxt "#31282"
+msgid ""
+"If there is a 'bluray', 'blu-ray' or 'bdrip' tag in the filename or folder, "
+"this case will be used."
+msgstr "如果文件名或文件夹中有“bluray”、“Blu-ray”或“bdrip”标签，将使用此碟片盒。"
+
+msgctxt "#31283"
+msgid ""
+"If there is a '3d' or '3dbd' tag in the filename or folder, this case will "
+"be used."
+msgstr "如果文件名或文件夹中有“3d”或“3dbd”标签，将使用此碟片盒。"
+
+msgctxt "#31284"
+msgid ""
+"If there is a 'web' tag in the filename or folder, this case will be used."
+msgstr "如果文件名或文件夹中有“web”标签，将使用此碟片盒。"
+
+msgctxt "#31285"
+msgid ""
+"If there is a 'hdtv' tag in the filename or folder, this case will be used."
+msgstr "如果文件名或文件夹中有“hdtv”标签，将使用此碟片盒。"
+
+msgctxt "#31286"
+msgid ""
+"If there is a 'DVD' tag in the filename or folder, this case will used."
+msgstr "如果文件名或文件夹中有“DVD”标签，将使用此碟片盒。"
+
+msgctxt "#31287"
+msgid "If there are sets of movies, this case will be used."
+msgstr "如果是影片集，将使用此碟片盒。"
+
+msgctxt "#31288"
+msgid ""
+"If there is a '4K' tag in the filename or folder, this case will be used."
+msgstr "如果文件名或文件夹中有“4K”标签，将使用此碟片盒。"
+
+msgctxt "#31289"
+msgid "No label will be used for this case."
+msgstr "无标签用于此碟片盒。"
+
+msgctxt "#31290"
+msgid "A sticker will be shown based on the media codec."
+msgstr "将根据媒体编码显示一个贴纸。"
+
+msgctxt "#31291"
+msgid "Bluray content label will be shown."
+msgstr "将显示蓝光内容标签。"
+
+msgctxt "#31292"
+msgid "Bluray 3D content label will be shown."
+msgstr "将显示蓝光3D内容标签。"
+
+msgctxt "#31293"
+msgid "Webtv content label will be shown."
+msgstr "将显示网络电视内容标签。"
+
+msgctxt "#31294"
+msgid "Hdtv content label will be shown."
+msgstr "将显示高清电视内容标签。"
+
+msgctxt "#31295"
+msgid "Dvd content label will be shown."
+msgstr "将显示DVD内容标签。"
+
+msgctxt "#31296"
+msgid "Movie sets label will be shown."
+msgstr "将显示影片集内容标签。"
+
+msgctxt "#31297"
+msgid "MEDIA CASE"
+msgstr "媒体碟片盒"
+
+msgctxt "#31298"
+msgid "CUSTOMISE CASE"
+msgstr "自定义碟片盒"
+
+msgctxt "#31299"
+msgid "BOOKMARK"
+msgstr "书签"
+
+msgctxt "#31300"
+msgid "SUBTITLES"
+msgstr "字幕"
+
+msgctxt "#31301"
+msgid "BACK"
+msgstr "后退"
+
+msgctxt "#31302"
+msgid "FORWARD"
+msgstr "前进"
+
+msgctxt "#31303"
+msgid "PLAY"
+msgstr "播放"
+
+msgctxt "#31304"
+msgid "PAUSE"
+msgstr "暂停"
+
+msgctxt "#31305"
+msgid "STOP"
+msgstr "停止"
+
+msgctxt "#31306"
+msgid "NEXT"
+msgstr "下一个"
+
+msgctxt "#31307"
+msgid "OSD"
+msgstr "OSD"
+
+msgctxt "#31308"
+msgid "PAUSED"
+msgstr "已暂停"
+
+msgctxt "#31309"
+msgid "CURRENT POSITION"
+msgstr "当前位置"
+
+msgctxt "#31310"
+msgid "CURRENT TIME"
+msgstr "当前时间"
+
+msgctxt "#31311"
+msgid "ENDS AT"
+msgstr "结束于"
+
+msgctxt "#31312"
+msgid "IMAGE OPTIONS"
+msgstr "图片选项"
+
+msgctxt "#31313"
+msgid "AUDIO OPTIONS"
+msgstr "音频选项"
+
+msgctxt "#31314"
+msgid "PROGRAMS OPTIONS"
+msgstr "程序选项"
+
+msgctxt "#31315"
+msgid "RANDOM ORDER"
+msgstr "随机排序"
+
+msgctxt "#31317"
+msgid "POSTER"
+msgstr "海报"
+
+msgctxt "#31318"
+msgid "FLEXIBLE WIDGETS"
+msgstr "活动小部件"
+
+msgctxt "#31319"
+msgid "CHOOSE THE LEFT ITEM"
+msgstr "选择左边的项目"
+
+msgctxt "#31320"
+msgid "THUMBNAIL"
+msgstr "缩略图"
+
+msgctxt "#31322"
+msgid "PANEL"
+msgstr "面板"
+
+msgctxt "#31325"
+msgid "NEXT TRACKS"
+msgstr "下一个"
+
+msgctxt "#31327"
+msgid "BACKGROUND IMAGE"
+msgstr "背景图片"
+
+msgctxt "#31328"
+msgid "SHOW CDART"
+msgstr "显示光碟图片"
+
+msgctxt "#31329"
+msgid "PVR info"
+msgstr "PVR信息"
+
+msgctxt "#31330"
+msgid "Player process info"
+msgstr "播放器处理信息"
+
+msgctxt "#31331"
+msgid "Video decoder"
+msgstr "视频解码器"
+
+msgctxt "#31332"
+msgid "Pixel format"
+msgstr "像素格式"
+
+msgctxt "#31333"
+msgid "CHANNELS"
+msgstr "频道"
+
+msgctxt "#31334"
+msgid "ROOT FOLDER COLLECTION"
+msgstr "根目录集"
+
+msgctxt "#31337"
+msgid "Memory used"
+msgstr "使用的内存"
+
+msgctxt "#31339"
+msgid "Training"
+msgstr "练习"
+
+msgctxt "#31340"
+msgid "TRACKS"
+msgstr "音轨"
+
+msgctxt "#31341"
+msgid "GUI MODE"
+msgstr "GUI 模式"
+
+msgctxt "#31342"
+msgid "AUTO MODE"
+msgstr "自动模式"
+
+msgctxt "#31343"
+msgid "CUSTOM MODE"
+msgstr "自定义模式"
+
+msgctxt "#31344"
+msgid "ADD-ON OPTIONS"
+msgstr "插件选项"
+
+msgctxt "#31345"
+msgid "Hard disk usage"
+msgstr "硬盘使用"
+
+msgctxt "#31346"
+msgid "System memory usage"
+msgstr "系统内存使用"
+
+msgctxt "#31347"
+msgid "Next Episode"
+msgstr "下一集"
+
+msgctxt "#31448"
+msgid "TV Shows at this day"
+msgstr "今日剧集"
+
+msgctxt "#31349"
+msgid "CHOOSE A NAME FOR THIS FOLDER"
+msgstr "为此文件夹选一个名称"
+
+msgctxt "#31350"
+msgid "MODIFIED"
+msgstr "已修改"
+
+msgctxt "#31351"
+msgid "APPEARANCE"
+msgstr "外观"
+
+msgctxt "#31352"
+msgid "DISPLAY AND INTERFACE"
+msgstr "显示和界面"
+
+msgctxt "#31353"
+msgid "PLAYER SETTINGS"
+msgstr "播放器设置"
+
+msgctxt "#31354"
+msgid "VIDEO AND AUDIO"
+msgstr "视频和音频"
+
+msgctxt "#31355"
+msgid "AUDIO"
+msgstr "音频"
+
+msgctxt "#31356"
+msgid "LIBRARY AND PLAYBACK"
+msgstr "资料库和播放"
+
+msgctxt "#31357"
+msgid "TV"
+msgstr "电视 "
+
+msgctxt "#31358"
+msgid "SETTINGS AND PLAYBACK"
+msgstr "设置和播放"
+
+msgctxt "#31359"
+msgid "SYSTEM"
+msgstr "系统"
+
+msgctxt "#31360"
+msgid "CACHE AND HARDWARE"
+msgstr "缓存及硬件"
+
+msgctxt "#31361"
+msgid "SERVICES"
+msgstr "服务"
+
+msgctxt "#31362"
+msgid "INTERNET AND WEATHER"
+msgstr "互联网和天气"
+
+msgctxt "#31363"
+msgid "ADD-ONS"
+msgstr "插件"
+
+msgctxt "#31364"
+msgid "MANAGE ADD-ONS"
+msgstr "管理插件"
+
+msgctxt "#31365"
+msgid "IMAGE"
+msgstr "图片"
+
+msgctxt "#31366"
+msgid "NAVIGATION AND PRESENTATIONS"
+msgstr "浏览及展示"
+
+msgctxt "#31367"
+msgid "WEATHER"
+msgstr "天气"
+
+msgctxt "#31368"
+msgid "LOCATION AND APPEARANCE"
+msgstr "地点及外观"
+
+msgctxt "#31369"
+msgid "PROFILE"
+msgstr "配置文件"
+
+msgctxt "#31370"
+msgid "USER ACCOUNTS"
+msgstr "用户账户"
+
+msgctxt "#31371"
+msgid "SKIN SETTINGS"
+msgstr "皮肤设置"
+
+msgctxt "#31372"
+msgid "ACTIVATE LOGIN SCREEN"
+msgstr "激活登陆界面"
+
+msgctxt "#31373"
+msgid "USERS"
+msgstr "用户"
+
+msgctxt "#31375"
+msgid "General settings"
+msgstr "常规设置"
+
+msgctxt "#31376"
+msgid "A HIGH DEFINITION MEDIA ENVIRONMENT"
+msgstr "一个高清媒体环境"
+
+msgctxt "#31377"
+msgid ""
+"A MODERN AND ELEGANT MEDIA CENTER.[CR]AEON MQ 7 IS PART OF A NEW GENERATION "
+"OF SKINS."
+msgstr "现代而优雅的媒体中心。[CR] AEON MQ 7 是新一代皮肤的一员。"
+
+msgctxt "#31378"
+msgid "MOVIES, TV SHOWS AND CONCERTS"
+msgstr "电影、剧集及音乐会"
+
+msgctxt "#31379"
+msgid ""
+"ADJUST YOUR SYSTEM IN ORDER TO GET THE BEST PICTURE QUALITY.[CR]SELECT "
+"COLOUR OR POSITION OF SUBTITLES."
+msgstr "调整系统，以获得最好的画质。[CR]选择字幕的颜色和位置"
+
+msgctxt "#31380"
+msgid "KODI LISTS AND PLAYS YOUR MUSIC"
+msgstr "KODI 列出并播放你的音乐"
+
+msgctxt "#31381"
+msgid "ADJUST MEDIA SOURCES AND MEDIA SETTINGS SIMPLE AND EASY"
+msgstr "调整媒体源和媒体设置简单且容易上手"
+
+msgctxt "#31382"
+msgid "WATCH YOUR FAVOURITE TV SHOW"
+msgstr "观看你喜欢的剧集"
+
+msgctxt "#31383"
+msgid "LIVE TV RECEPTION.[CR]TUNE TO AND RECORD A TV SHOW."
+msgstr "直播电视接收。[CR]调台和录制电视节目。"
+
+msgctxt "#31384"
+msgid "ORGANIZE YOUR PICTURES"
+msgstr "组织你的图片"
+
+msgctxt "#31385"
+msgid ""
+"CREATE SLIDESHOW PRESENTATIONS.[CR]SHOW YOUR LIBRARY DIRECTLY FROM A HARD "
+"DISK OR FLASH DRIVE."
+msgstr "制作幻灯片演示。[CR]直接从硬盘或闪存盘显示你的资料库。"
+
+msgctxt "#31386"
+msgid "WEATHER FORECAST"
+msgstr "天气预报"
+
+msgctxt "#31387"
+msgid ""
+"SUNNY OR RAINY? CHOOSE THREE CITIES AND VIEW LIVE FORECASTS.[CR]YOU CAN ALSO"
+" CHOOSE BETWEEN THE IMPERIAL OR METRIC SYSTEMS."
+msgstr "晴还是雨？选择三个城市并获取实时预报。[CR]除了选择城市，你还可以选择英制或公制单位。"
+
+msgctxt "#31388"
+msgid "ADD-ONS FOR KODI"
+msgstr "KODI插件"
+
+msgctxt "#31389"
+msgid ""
+"INSTALL AND MANAGE ADD-ONS TO GET THE MOST OUT OF KODI.[CR]GET FILM AND "
+"MUSIC SCRAPERS OR PLUGINS, ALL WITH AUTOMATIC UPDATES."
+msgstr "安装和管理增强 KODI 功能的插件。[CR]安装媒体信息刮削器及插件，全都可以自动更新。"
+
+msgctxt "#31390"
+msgid "PLAYBACK SETTINGS"
+msgstr "播放设置"
+
+msgctxt "#31391"
+msgid ""
+"IMAGE CALIBRATION AND AUDIO SELECTION.[CR]KODI PROVIDES MAXIMUM QUALITY FOR "
+"AUDIO AND VIDEO."
+msgstr "图像调校和音频选择。[CR]KODI 提供最高质量的音频和视频。"
+
+msgctxt "#31392"
+msgid "DATA MANAGEMENT"
+msgstr "资料管理"
+
+msgctxt "#31393"
+msgid ""
+"HIGH CAPACITY REMOVABLE HARD DRIVES ARE IDEAL FOR COLLECTION "
+"STORAGE.[CR]KODI CAN MANAGE THOUSANDS OF FILES IN DIFFERENT SOURCES."
+msgstr "高性能移动硬盘是保存收藏的理想存储器。[CR]KODI 能够管理不同来源的成千上万的文件。"
+
+msgctxt "#31394"
+msgid "YOUR FAMILY MEMBERS WILL LOVE IT"
+msgstr "你的家庭成员都会喜爱上它的"
+
+msgctxt "#31395"
+msgid ""
+"MULTIPLE USER SUPPORT WITH CUSTOM LOGINS ALLOWING YOU TO KEEP YOUR "
+"CONFIGURATIONS.[CR]RSS FEEDS, VISUALS AND LIBRARIES OPTIONS CAN BE USED "
+"SEPARATELY."
+msgstr "自定义登录的多用户支持使你能保留个人配置。[CR]RSS 订阅、视觉效果及资料库选项都能分用户设定。"
+
+msgctxt "#31396"
+msgid "IMPROVE YOUR EXPERIENCE WITH THE AEON MQ 7 SKIN"
+msgstr "增强使用 AEON MQ 7 皮肤的良好体验"
+
+msgctxt "#31397"
+msgid ""
+"FINE ADJUSTMENTS THAT ALLOW UNIQUE LOOKS.[CR]ABILITY TO CHANGE THE SMALLEST "
+"DETAILS THAT ONLY AEON MQ7 CAN OFFER."
+msgstr "良好的调校会带来独特的观感。[CR]只有 AEON MQ 7 皮肤可以支持极致细节的调整。"
+
+msgctxt "#31398"
+msgid "FURNITURE"
+msgstr "部件"
+
+msgctxt "#31400"
+msgid "STYLES"
+msgstr "风格"
+
+msgctxt "#31401"
+msgid "CHOOSE A TYPE"
+msgstr "选择类型"
+
+msgctxt "#31402"
+msgid "ICONS AND IMAGES"
+msgstr "图标和图像"
+
+msgctxt "#31403"
+msgid "THEMES AND IMAGES"
+msgstr "主题及图片"
+
+msgctxt "#31404"
+msgid "COLOURS"
+msgstr "颜色"
+
+msgctxt "#31405"
+msgid "CHANGING SKIN TONE"
+msgstr "更改皮肤提示音"
+
+msgctxt "#31406"
+msgid "MEDIA INFO"
+msgstr "媒体信息"
+
+msgctxt "#31407"
+msgid "COLLECTION"
+msgstr "系列"
+
+msgctxt "#31408"
+msgid "ART"
+msgstr "艺术"
+
+msgctxt "#31409"
+msgid "CONTEXTUAL ART"
+msgstr "上下文相关艺术图片"
+
+msgctxt "#31410"
+msgid "MAIN MENU"
+msgstr "主菜单"
+
+msgctxt "#31411"
+msgid "VISUAL OPTIONS"
+msgstr "可视化选项"
+
+msgctxt "#31412"
+msgid "REMINDERS"
+msgstr "注意事项"
+
+msgctxt "#31413"
+msgid "TIME, RSS AND TOP MENU"
+msgstr "时间、RSS及顶部菜单"
+
+msgctxt "#31414"
+msgid "PLAYBACK"
+msgstr "播放"
+
+msgctxt "#31415"
+msgid "PLAY OPTIONS"
+msgstr "播放选项"
+
+msgctxt "#31416"
+msgid "EXTRAS"
+msgstr "扩展"
+
+msgctxt "#31417"
+msgid "SPECIAL PARTICIPATION"
+msgstr "特别参与"
+
+msgctxt "#31421"
+msgid "RESET SKIN"
+msgstr "重置皮肤"
+
+msgctxt "#31422"
+msgid "MPAA DETAILED ICON COLOR"
+msgstr "MPAA详细图标颜色"
+
+msgctxt "#31423"
+msgid "MPAA ICON"
+msgstr "MPAA图标"
+
+msgctxt "#31424"
+msgid "CUSTOMIZATION"
+msgstr "自定义"
+
+msgctxt "#31425"
+msgid "Restoring settings..."
+msgstr "恢复设置..."
+
+msgctxt "#31426"
+msgid "Activated item"
+msgstr "已激活项"
+
+msgctxt "#31427"
+msgid "Deactivated item"
+msgstr "已停用项"
+
+msgctxt "#31428"
+msgid "Also known as"
+msgstr "别名"
+
+msgctxt "#31429"
+msgid "Birth day"
+msgstr "生日"
+
+msgctxt "#31430"
+msgid "Age"
+msgstr "年龄"
+
+msgctxt "#31431"
+msgid "Death day"
+msgstr "逝世"
+
+msgctxt "#31432"
+msgid "Place of birth"
+msgstr "出生地"
+
+msgctxt "#31433"
+msgid "Filmography"
+msgstr "作品"
+
+msgctxt "#31435"
+msgid "Add-on Required"
+msgstr "插件依赖"
+
+msgctxt "#31436"
+msgid "SMART SHORTCUTS"
+msgstr "智能快捷方式"
+
+msgctxt "#31437"
+msgid "ROOT"
+msgstr "根"
+
+msgctxt "#31438"
+msgid "GET LOGO/CLEARART"
+msgstr "获取 LOGO/CLEARART"
+
+msgctxt "#31440"
+msgid "TURN ON TV TUNES"
+msgstr "打开电视频道"
+
+msgctxt "#31442"
+msgid "GET ARTWORK ARTIST/ALBUM"
+msgstr "获取艺术图片 歌手/专辑"
+
+msgctxt "#31443"
+msgid "SKIN AEON MQ 7"
+msgstr "AEON MQ 7 皮肤"
+
+msgctxt "#31444"
+msgid "COLOURS FOR THE TITLES, PANELS AND FLAGS"
+msgstr "标题、面板和标识颜色"
+
+msgctxt "#31445"
+msgid "Settings"
+msgstr "设置"
+
+msgctxt "#31446"
+msgid "HIDE THE THUMBNAILS BORDERS"
+msgstr "隐藏缩略图边框"
+
+msgctxt "#31447"
+msgid "SHOW SKIN RESET BUTTON (TEMPORARY)"
+msgstr "显示重置皮肤按钮（临时）"
+
+msgctxt "#31449"
+msgid "SOLO MODE"
+msgstr "SOLO 模式"
+
+msgctxt "#31450"
+msgid "RESTORE SETTINGS"
+msgstr "恢复设置"
+
+msgctxt "#31451"
+msgid "EXPORT/IMPORT OR RESTART SETTINGS"
+msgstr "导出/导入或重启设置"
+
+msgctxt "#31452"
+msgid "SAVE A COPY OF SETTINGS"
+msgstr "保存设置的一个副本"
+
+msgctxt "#31453"
+msgid "APPLY SAVED SETTINGS"
+msgstr "应用已保存的设置"
+
+msgctxt "#31458"
+msgid "LIBRARY ITEMS"
+msgstr "资料库项"
+
+msgctxt "#31460"
+msgid "CHANGE WIDGETS"
+msgstr "改变小部件"
+
+msgctxt "#31461"
+msgid "PLEASE WAIT"
+msgstr "请稍候"
+
+msgctxt "#31463"
+msgid "ANIMATED FANART (PAN AND SCAN)"
+msgstr "动态同人画（平铺和扫描）"
+
+msgctxt "#31465"
+msgid "1 SECOND DELAY"
+msgstr "1秒延迟"
+
+msgctxt "#31466"
+msgid "2 SECONDS DELAY"
+msgstr "2秒延迟"
+
+msgctxt "#31467"
+msgid "3 SECONDS DELAY"
+msgstr "3秒延迟"
+
+msgctxt "#31468"
+msgid "4 SECONDS DELAY"
+msgstr "4秒延迟"
+
+msgctxt "#31469"
+msgid "5 SECONDS DELAY"
+msgstr "5秒延迟"
+
+msgctxt "#31470"
+msgid "AUTOMATIC PANEL"
+msgstr "自动面板"
+
+msgctxt "#31471"
+msgid "MANUAL PANEL"
+msgstr "手动面板"
+
+msgctxt "#31472"
+msgid "PANEL ALWAYS VISIBLE"
+msgstr "面板始终可见"
+
+msgctxt "#31473"
+msgid "PANEL OFF"
+msgstr "面板关闭"
+
+msgctxt "#31474"
+msgid "FANART STYLE"
+msgstr "同人画风格"
+
+msgctxt "#31477"
+msgid "EXTRA THUMBNAIL STYLE"
+msgstr "扩展缩略图风格"
+
+msgctxt "#31479"
+msgid "(DE)ACTIVATE VIEWS"
+msgstr "（不）激活视图"
+
+msgctxt "#31480"
+msgid "SORT BY: ASCENDING"
+msgstr "排序：升序"
+
+msgctxt "#31481"
+msgid "SORT BY: DESCENDING"
+msgstr "排序：降序"
+
+msgctxt "#31482"
+msgid "MEDIA LABELS"
+msgstr "媒体标签"
+
+msgctxt "#31485"
+msgid "WATCHED LABEL"
+msgstr "已观看标签"
+
+msgctxt "#31486"
+msgid "USE MEDIA CASE"
+msgstr "使用媒体碟片盒"
+
+msgctxt "#31488"
+msgid "VIDEO OPTIONS"
+msgstr "视频选项"
+
+msgctxt "#31490"
+msgid "SLIM LIST"
+msgstr "简单列表"
+
+msgctxt "#31491"
+msgid "HIDE WATCHED"
+msgstr "隐藏已观看"
+
+msgctxt "#31492"
+msgid "STACKED"
+msgstr "堆叠"
+
+msgctxt "#31493"
+msgid "FIXED LIST"
+msgstr "固定列表"
+
+msgctxt "#31494"
+msgid "PREFER: CLEARART"
+msgstr "偏好：CLEARART"
+
+msgctxt "#31495"
+msgid "PREFER: LOGO"
+msgstr "偏好：LOGO"
+
+msgctxt "#31496"
+msgid "ENABLE 'CLICK & ACTIVATE' MODE TO VIEW SELECTED"
+msgstr "启用“点击并激活”模式查看所选"
+
+msgctxt "#31497"
+msgid "DEFAULT FANART"
+msgstr "默认同人画"
+
+msgctxt "#31498"
+msgid "EXTRA FANART"
+msgstr "扩展同人画"
+
+msgctxt "#31499"
+msgid "GENRE FANART"
+msgstr "类型同人画"
+
+msgctxt "#31500"
+msgid "RESERVE FANART"
+msgstr "备用同人画"
+
+msgctxt "#31501"
+msgid "CURTAINS"
+msgstr "帷幕"
+
+msgctxt "#31502"
+msgid "SEASON FANART"
+msgstr "季同人画"
+
+msgctxt "#31503"
+msgid "SELECT IMAGES PATH"
+msgstr "选择图片路径"
+
+msgctxt "#31504"
+msgid "CHOOSE A SINGLE IMAGE"
+msgstr "选择单一图片"
+
+msgctxt "#31505"
+msgid "CHOOSE MULTIPLE IMAGES"
+msgstr "选择多张图片"
+
+msgctxt "#31506"
+msgid "USE POSTER.JPG"
+msgstr "使用 POSTER.JPG"
+
+msgctxt "#31507"
+msgid "USE LANDSCAPE.JPG"
+msgstr "使用 LANDSCAPE.JPG"
+
+msgctxt "#31508"
+msgid "SHOW CLEARLOGO AND CLEARART"
+msgstr "显示 CLEARLOGO 和 CLEARART"
+
+msgctxt "#31509"
+msgid "ALTERNATIVE GENRE ICONS"
+msgstr "替换类型图标"
+
+msgctxt "#31510"
+msgid "ALTERNATIVE STUDIO ICONS"
+msgstr "替换制片人图标"
+
+msgctxt "#31511"
+msgid "GRID SIZE"
+msgstr "网格尺寸"
+
+msgctxt "#31512"
+msgid "MEDIUM"
+msgstr "中"
+
+msgctxt "#31513"
+msgid "NORMAL"
+msgstr "标准"
+
+msgctxt "#31514"
+msgid "LARGE"
+msgstr "大"
+
+msgctxt "#31515"
+msgid "HORIZONTAL"
+msgstr "水平"
+
+msgctxt "#31516"
+msgid "MENU IN VERTICAL MODE"
+msgstr "纵向模式菜单"
+
+msgctxt "#31517"
+msgid "LANDSCAPE"
+msgstr "横向"
+
+msgctxt "#31518"
+msgid "USE ZOOM EFFECT"
+msgstr "使用缩放特效"
+
+msgctxt "#31519"
+msgid "BANNER"
+msgstr "横幅"
+
+msgctxt "#31524"
+msgid "PREVIOUS"
+msgstr "向前"
+
+msgctxt "#31525"
+msgid "NEXT"
+msgstr "向后"
+
+msgctxt "#31527"
+msgid "EPISODES"
+msgstr "集"
+
+msgctxt "#31528"
+msgid "EPISODE"
+msgstr "集"
+
+msgctxt "#31530"
+msgid "PLOT"
+msgstr "剧情"
+
+msgctxt "#31531"
+msgid "ACTIVATE PLAYBACK LIST AT SKIN STARTUP"
+msgstr "皮肤启动时激活播放列表"
+
+msgctxt "#31532"
+msgid "CHOOSE PLAYLIST"
+msgstr "选择播放列表"
+
+msgctxt "#31533"
+msgid "PERSONALISE THE BAR AND MEDIA FLAGS"
+msgstr "个性化标志条"
+
+msgctxt "#31534"
+msgid "SHOW FIRST LETTERS DURING SCROLL"
+msgstr "滚动时显示首字母"
+
+msgctxt "#31535"
+msgid "ACTIVATE PLOT ROLLING"
+msgstr "激活剧情滚动"
+
+msgctxt "#31536"
+msgid "Enable splash screen (photo, video or music)"
+msgstr "使用启动画面（照片、视频或者音乐）"
+
+msgctxt "#31537"
+msgid "BACKGROUND IMAGE - USE COLLECTION FANARTS"
+msgstr "背景图片 - 使用系列同人画"
+
+msgctxt "#31538"
+msgid "SET VIEW"
+msgstr "设置视图"
+
+msgctxt "#31539"
+msgid "BASED ON PRESENT CONDITIONS"
+msgstr "基于当前环境"
+
+msgctxt "#31540"
+msgid "BACKDROP IMAGE BASED ON ACTUAL CONDITIONS"
+msgstr "基于实际环境的背景图片"
+
+msgctxt "#31541"
+msgid "BACKDROP IMAGE BASED IN SEASONS OF NORTH AMERICA"
+msgstr "基于北美季节的背景图片"
+
+msgctxt "#31542"
+msgid "BACKDROP IMAGE BASED IN SEASONS OF SOUTH AMERICA"
+msgstr "基于南美季节的背景图片"
+
+msgctxt "#31543"
+msgid "BACKGROUND IMAGES BASED ON ACTUAL WEATHER CONDITIONS, AND MORE..."
+msgstr "根据实际天气情况显示更多的背景图片..."
+
+msgctxt "#31545"
+msgid "NEAR EVENTS"
+msgstr "靠近事件"
+
+msgctxt "#31547"
+msgid "FANART COLLECTION"
+msgstr "同人画系列"
+
+msgctxt "#31548"
+msgid "CREATE OR UPDATE DATABASE"
+msgstr "创建或更新数据库"
+
+msgctxt "#31555"
+msgid "SHOW NEXT TRACKS"
+msgstr "显示下一首"
+
+msgctxt "#31556"
+msgid "HIDE NEXT TRACKS"
+msgstr "隐藏下一首"
+
+msgctxt "#31557"
+msgid "SHOW ARTIST/ALBUM ART"
+msgstr "显示歌手/专辑艺术"
+
+msgctxt "#31559"
+msgid "SLIDESHOW"
+msgstr "幻灯片"
+
+msgctxt "#31561"
+msgid "ARTIST FANART"
+msgstr "歌手同人画"
+
+msgctxt "#31562"
+msgid "Continue Watching?"
+msgstr "继续观看？"
+
+msgctxt "#31563"
+msgid "Press Continue Watching to watch the next episode"
+msgstr "按“继续观看”观看下一集"
+
+msgctxt "#31574"
+msgid "SHOW TRAILER IN FULLSCREEN MODE"
+msgstr "全屏模式显示预告片"
+
+msgctxt "#31575"
+msgid "SET COLOR COMPOSITION"
+msgstr "设置色彩方案"
+
+msgctxt "#31576"
+msgid "REMOVE COMPOSITION"
+msgstr "删除方案"
+
+msgctxt "#31577"
+msgid "COMPOSITION"
+msgstr "方案"
+
+msgctxt "#31582"
+msgid "Now playing"
+msgstr "当前播放"
+
+msgctxt "#31583"
+msgid "RECENTLY ADDED"
+msgstr "最近加入"
+
+msgctxt "#31584"
+msgid "RANDOM"
+msgstr "随机"
+
+msgctxt "#31585"
+msgid "IN PROGRESS"
+msgstr "进行中"
+
+msgctxt "#31586"
+msgid "LAYOUT CUSTOMIZATION"
+msgstr "布局自定义"
+
+msgctxt "#31587"
+msgid "VIEW SEPARATOR"
+msgstr "视图分离器"
+
+msgctxt "#31588"
+msgid "MY VIEW TYPE"
+msgstr "我的视图类型"
+
+msgctxt "#31589"
+msgid "GRID"
+msgstr "网格"
+
+msgctxt "#31590"
+msgid "MODULES"
+msgstr "模块"
+
+msgctxt "#31591"
+msgid "CLICK TO DEFINE A MODULE"
+msgstr "点击定义模块"
+
+msgctxt "#31592"
+msgid "PERSONALISE A VIEW TYPE FOR YOUR COLLECTION"
+msgstr "个性化视图类型"
+
+msgctxt "#31593"
+msgid "ENABLE GLOBAL COMPOSITION"
+msgstr "启用全局方案"
+
+msgctxt "#31594"
+msgid "CHOOSE COMPOSITION - ONE IMAGE (INTERNAL)"
+msgstr "选择方案 - 单图片（内部）"
+
+msgctxt "#31595"
+msgid "CHOOSE COMPOSITION - ONE IMAGE (EXTERNAL)"
+msgstr "选择方案 - 单图片（外部）"
+
+msgctxt "#31596"
+msgid "CHOOSE COMPOSITION - MULTIPLE IMAGES (EXTERNAL)"
+msgstr "选择方案 - 多图片（外部）"
+
+msgctxt "#31597"
+msgid "RESTORE ALL OPTIONS FOR DEFAULT SKIN"
+msgstr "恢复默认皮肤的所有选项"
+
+msgctxt "#31598"
+msgid ""
+"Solve most persistent problems here.[CR]Press Enter to access the button "
+"that will reset all skin settings to their defaults."
+msgstr "在这里解决最顽固的问题。[CR]按回车键使用“重置皮肤默认设置”按钮。"
+
+msgctxt "#31599"
+msgid "CAREFUL: THIS PROCESS IS IRREVERSIBLE !"
+msgstr "小心：这个处理是不可逆的！"
+
+msgctxt "#31600"
+msgid ""
+"Move in any direction to cancel.[CR]Press Enter to proceed.[CR]This option "
+"will reset the skin entirely and you will lose all your customizations."
+msgstr "任意方向键取消。[CR]按回车键执行。[CR]此选项将重置皮肤，所有自定义设置将丢失。"
+
+msgctxt "#31601"
+msgid "KIOSK MODE - PREVENTS MENU ACCESS IN COLLECTIONS"
+msgstr "自助终端模式 - 禁止访问菜单"
+
+msgctxt "#31602"
+msgid "INFO KIOSK MODE- PREVENTS CHANGE SETTINGS IN INFORMATION WINDOW"
+msgstr "信息终端模式 - 禁止修改信息窗口设置"
+
+msgctxt "#31603"
+msgid ""
+"KIOSK CODE - TEMPORARILY DISABLES THE KIOSK MODE USING ARROWS - "
+"LEFT/RIGHT/UP"
+msgstr "终端解锁码 - 使用方向键临时解锁终端模式 - 左/右/上"
+
+msgctxt "#31604"
+msgid "SMART KIOSK - PREVENTS ACCESS ONLY TO ITEMS SETTINGS"
+msgstr "智能终端 - 仅禁止访问项目设置"
+
+msgctxt "#31605"
+msgid "SHOW OPTIMIZED POPUP FOR VOXCOMMANDO"
+msgstr "显示 VOXCOMMANDO 的优化弹出窗口"
+
+msgctxt "#31606"
+msgid "Want a different visual for your skin?[CR]Choose a new image theme"
+msgstr "想要不同的皮肤效果？[CR]选择一个新的图像主题"
+
+msgctxt "#31607"
+msgid "IMAGE THEMES"
+msgstr "图像主题"
+
+msgctxt "#31608"
+msgid "USE EXTRAPACK DOWNLOADED MANUALLY"
+msgstr "使用手工下载的外部包"
+
+msgctxt "#31609"
+msgid "KIOSK CODE"
+msgstr "终端解锁码"
+
+msgctxt "#31610"
+msgid "REACTIVATE KIOSK CODE"
+msgstr "重激活终端解锁码"
+
+msgctxt "#31611"
+msgid "KIOSK CODE BLOCKED"
+msgstr "终端解锁码停用"
+
+msgctxt "#31612"
+msgid "KIOSK CODE ACCEPTED"
+msgstr "终端解锁码启用"
+
+msgctxt "#31613"
+msgid "AN INCORRECT SEQUENCE CANCELS THE PROCESS."
+msgstr "一个错误序列终止此进程。"
+
+msgctxt "#31614"
+msgid "STYLES BY EXTRAPACK"
+msgstr "扩展包风格"
+
+msgctxt "#31615"
+msgid "MY STYLE"
+msgstr "我的风格"
+
+msgctxt "#31617"
+msgid "MODERN"
+msgstr "现代"
+
+msgctxt "#31620"
+msgid "SHOW AUDIO LANGUAGE AND SUBTITLE FLAGS"
+msgstr "显示音频语言和字幕标签"
+
+msgctxt "#31621"
+msgid "PANEL DELAY"
+msgstr "面板延迟"
+
+msgctxt "#31622"
+msgid "EXPORT SKIN SETTINGS"
+msgstr "导出皮肤设置"
+
+msgctxt "#31623"
+msgid "IMPORT SKIN SETTINGS"
+msgstr "导入皮肤设置"
+
+msgctxt "#31624"
+msgid "PRESS ENTER TO SELECT"
+msgstr "按回车键选择"
+
+msgctxt "#31625"
+msgid "Aqua"
+msgstr "水色"
+
+msgctxt "#31626"
+msgid "Blood"
+msgstr "血红"
+
+msgctxt "#31627"
+msgid "Brown"
+msgstr "棕色"
+
+msgctxt "#31628"
+msgid "Dark sky"
+msgstr "天空暗色"
+
+msgctxt "#31629"
+msgid "Golden yellow"
+msgstr "金黄色"
+
+msgctxt "#31630"
+msgid "Digital"
+msgstr "数字"
+
+msgctxt "#31631"
+msgid "Forest"
+msgstr "森林"
+
+msgctxt "#31632"
+msgid "Blue"
+msgstr "蓝色"
+
+msgctxt "#31633"
+msgid "Bright yellow"
+msgstr "明黄"
+
+msgctxt "#31634"
+msgid "Olive"
+msgstr "橄榄色"
+
+msgctxt "#31635"
+msgid "Orange"
+msgstr "橙色"
+
+msgctxt "#31636"
+msgid "Purple"
+msgstr "紫色"
+
+msgctxt "#31637"
+msgid "Red"
+msgstr "红色"
+
+msgctxt "#31638"
+msgid "Royal blue"
+msgstr "宝蓝色"
+
+msgctxt "#31639"
+msgid "Silver"
+msgstr "银色"
+
+msgctxt "#31640"
+msgid "Sky blue"
+msgstr "天蓝色"
+
+msgctxt "#31641"
+msgid "Spring"
+msgstr "春天"
+
+msgctxt "#31642"
+msgid "Turquoise"
+msgstr "绿松石"
+
+msgctxt "#31643"
+msgid "Violet"
+msgstr "紫色"
+
+msgctxt "#31644"
+msgid "Gray"
+msgstr "灰色"
+
+msgctxt "#31645"
+msgid "Graphite"
+msgstr "石墨"
+
+msgctxt "#31646"
+msgid "Terracotta"
+msgstr "红陶"
+
+msgctxt "#31647"
+msgid "Ocean"
+msgstr "海洋"
+
+msgctxt "#31648"
+msgid "No colour"
+msgstr "无颜色"
+
+msgctxt "#31649"
+msgid "COLOUR"
+msgstr "颜色"
+
+msgctxt "#31650"
+msgid "CHOOSE THE RIGHT LIST"
+msgstr "选择合适的列表"
+
+msgctxt "#31655"
+msgid ""
+"Wouldn't it be great to get all the themes and genres backdrops with just "
+"one click?[CR]You can with Aeon MQ 7. You can download a single package and "
+"have access to all the extra content."
+msgstr "轻轻一点就能得到所有的主题和类型背景是不是很强大？[CR]Aeon MQ 7 可以做到，下载单个包就能取得所有的扩展内容。"
+
+msgctxt "#31656"
+msgid "Applying settings..."
+msgstr "应用设置..."
+
+msgctxt "#31657"
+msgid "Finalizing Settings"
+msgstr "完成设置"
+
+msgctxt "#31658"
+msgid "CREATE VIDEO SMART PLAYLIST"
+msgstr "创建视频智能播放列表"
+
+msgctxt "#31659"
+msgid "BUILD"
+msgstr "构建"
+
+msgctxt "#31660"
+msgid "TO SELECT THE STYLE YOU WANT,[CR]USE THE UP OR DOWN ARROW"
+msgstr "要选择您想要的风格，[CR]请使用上下箭头"
+
+msgctxt "#31661"
+msgid "SHOW 'PAUSE'"
+msgstr "显示“暂停”"
+
+msgctxt "#31662"
+msgid "HIDE 'PAUSE'"
+msgstr "隐藏“暂停”"
+
+msgctxt "#31667"
+msgid "MAIN MENU"
+msgstr "主菜单"
+
+msgctxt "#31668"
+msgid "GLASS EFFECT"
+msgstr "玻璃特效"
+
+msgctxt "#31671"
+msgid "EDIT DATA"
+msgstr "编辑数据"
+
+msgctxt "#31672"
+msgid "SHOW LIBRARY STATUS"
+msgstr "显示资料库状态"
+
+msgctxt "#31674"
+msgid "ALTERNATIVE GENRE FANART"
+msgstr "替换类型同人图"
+
+msgctxt "#31678"
+msgid "SHOW FURNITURE"
+msgstr "显示部件"
+
+msgctxt "#31679"
+msgid "CHANGE THE CODEC FLAGS COLOUR"
+msgstr "改变编码标志颜色"
+
+msgctxt "#31680"
+msgid "CHANGE THE WATCHED FLAG COLOUR"
+msgstr "改变已观看标志颜色"
+
+msgctxt "#31681"
+msgid "CHANGE THE COLOUR OF THE MEDIA FLAGS BAR"
+msgstr "改变媒体标志栏颜色"
+
+msgctxt "#31682"
+msgid "CHANGE THE COLOUR OF THE MEDIA FLAGS"
+msgstr "改变媒体标志颜色"
+
+msgctxt "#31683"
+msgid "CUSTOMISE FURNITURES"
+msgstr "自定义部件"
+
+msgctxt "#31684"
+msgid "CHANGE THE PANEL COLOUR"
+msgstr "改变面板颜色"
+
+msgctxt "#31685"
+msgid "GLASS"
+msgstr "玻璃"
+
+msgctxt "#31686"
+msgid "FLAGS BAR"
+msgstr "标志栏"
+
+msgctxt "#31687"
+msgid "RESTORE SETTINGS (ONLY FOR THIS AREA)"
+msgstr "恢复设置（仅当前区域）"
+
+msgctxt "#31688"
+msgid "GLOSS"
+msgstr "光泽"
+
+msgctxt "#31689"
+msgid "PANELS AND MAIN MENU"
+msgstr "面板和主菜单"
+
+msgctxt "#31690"
+msgid "CHANGE THE TITLES COLOUR"
+msgstr "改变标题颜色"
+
+msgctxt "#31691"
+msgid "Current transparency level"
+msgstr "当前透明度级别"
+
+msgctxt "#31692"
+msgid "IMMEDIATE - WITHOUT DELAY"
+msgstr "立即 - 无延迟"
+
+msgctxt "#31693"
+msgid "SHOW NAVIGATOR FOR TOUCH SCREENS"
+msgstr "为触摸屏显示导航"
+
+msgctxt "#31695"
+msgid "RELOAD"
+msgstr "重载"
+
+msgctxt "#31696"
+msgid "SHOW ORIGINAL TITLE"
+msgstr "显示原标题"
+
+msgctxt "#31700"
+msgid "PLAY"
+msgstr "播放"
+
+msgctxt "#31701"
+msgid "TRAILER"
+msgstr "预告片"
+
+msgctxt "#31702"
+msgid "GET ARTWORK"
+msgstr "获取艺术图片"
+
+msgctxt "#31703"
+msgid "STARRING"
+msgstr "主演"
+
+msgctxt "#31704"
+msgid "International relationships and assistance"
+msgstr "国际化及相关"
+
+msgctxt "#31705"
+msgid "Translators"
+msgstr "翻译"
+
+msgctxt "#31706"
+msgid "Translation and support coordinator"
+msgstr "翻译及支持协调人"
+
+msgctxt "#31707"
+msgid ""
+"To all the people who believed in my work and collaborated in some way to "
+"make this project possible, thank you from my heart."
+msgstr "衷心感谢给予支持和协助，使此项目得以成功的所有朋友们。"
+
+msgctxt "#31708"
+msgid "Special thanks"
+msgstr "特别致谢"
+
+msgctxt "#31709"
+msgid "ALWAYS VISIBLE"
+msgstr "始终可见"
+
+msgctxt "#31710"
+msgid "MANUAL"
+msgstr "手动"
+
+msgctxt "#31711"
+msgid "OFF"
+msgstr "关"
+
+msgctxt "#31712"
+msgid "ITEMS LIST"
+msgstr "项目列表"
+
+msgctxt "#31713"
+msgid "NOT AVAILABLE"
+msgstr "不可用"
+
+msgctxt "#31714"
+msgid "CREATED"
+msgstr "已创建"
+
+msgctxt "#31715"
+msgid "RESOLUTION"
+msgstr "分辨率"
+
+msgctxt "#31716"
+msgid "SPRING"
+msgstr "春"
+
+msgctxt "#31717"
+msgid "SUMMER"
+msgstr "夏"
+
+msgctxt "#31718"
+msgid "AUTUMN"
+msgstr "秋"
+
+msgctxt "#31719"
+msgid "WINTER"
+msgstr "冬"
+
+msgctxt "#31720"
+msgid "BASED ON NORTHERN HEMISPHERE CONDITIONS"
+msgstr "基于北半球环境"
+
+msgctxt "#31721"
+msgid "BASED ON SOUTHERN HEMISPHERE CONDITIONS"
+msgstr "基于南半球环境"
+
+msgctxt "#31722"
+msgid "SHOW LYRICS"
+msgstr "显示歌词"
+
+msgctxt "#31723"
+msgid "LYRICS"
+msgstr "歌词"
+
+msgctxt "#31724"
+msgid "HIDE LYRICS"
+msgstr "隐藏歌词"
+
+msgctxt "#31725"
+msgid "SET SCRIPT"
+msgstr "设置脚本"
+
+msgctxt "#31726"
+msgid "SEEKING"
+msgstr "寻找"
+
+msgctxt "#31727"
+msgid "VIEWING"
+msgstr "察看"
+
+msgctxt "#31728"
+msgid "MEDIA FLAGS - ICONS"
+msgstr "媒体标志 - 图标"
+
+msgctxt "#31729"
+msgid "VIDEO GENRES - ICONS"
+msgstr "视频类型 - 图标"
+
+msgctxt "#31730"
+msgid "MOVIES GENRES - FANARTS"
+msgstr "电影类型 - 同人画"
+
+msgctxt "#31731"
+msgid "TV SHOWS GENRES - FANARTS"
+msgstr "剧集类型 - 同人画"
+
+msgctxt "#31732"
+msgid "CONCERTS GENRES - FANARTS"
+msgstr "音乐会类型 - 同人画"
+
+msgctxt "#31733"
+msgid "MUSIC GENRES - ICONS"
+msgstr "音乐流派 - 图标"
+
+msgctxt "#31734"
+msgid "MUSIC GENRES - FANARTS"
+msgstr "音乐流派 - 同人画"
+
+msgctxt "#31735"
+msgid "WEATHER - ICONS"
+msgstr "天气 - 图标"
+
+msgctxt "#31736"
+msgid "WEATHER - BACKGROUND IMAGES"
+msgstr "天气 - 背景图片"
+
+msgctxt "#31737"
+msgid "PAUSE"
+msgstr "暂停"
+
+msgctxt "#31739"
+msgid "CLOSE THIS DIALOGUE BOX"
+msgstr "关闭此对话框"
+
+msgctxt "#31740"
+msgid "VIS(VIDEO)"
+msgstr "VIS（视频）"
+
+msgctxt "#31741"
+msgid "VIS(AUDIO)"
+msgstr "VIS（音频）"
+
+msgctxt "#31742"
+msgid "OPEN TRAY"
+msgstr "打开托盘"
+
+msgctxt "#31743"
+msgid "ON"
+msgstr "开"
+
+msgctxt "#31744"
+msgid "PAUSE"
+msgstr "暂停"
+
+msgctxt "#31745"
+msgid "FILTERS"
+msgstr "筛选"
+
+msgctxt "#31746"
+msgid "SEARCH"
+msgstr "搜索"
+
+msgctxt "#31747"
+msgid "UPDATE LIBRARY"
+msgstr "更新资料库"
+
+msgctxt "#31748"
+msgid "Theme in use"
+msgstr "使用的主题"
+
+msgctxt "#31749"
+msgid "Style in use"
+msgstr "使用的风格"
+
+msgctxt "#31750"
+msgid "Panels"
+msgstr "面板"
+
+msgctxt "#31751"
+msgid "Current colour"
+msgstr "当前颜色"
+
+msgctxt "#31754"
+msgid "VOLUME"
+msgstr "音量"
+
+msgctxt "#31755"
+msgid "MUTE"
+msgstr "静音"
+
+msgctxt "#31757"
+msgid "PAGE"
+msgstr "页"
+
+msgctxt "#31763"
+msgid "CHANNEL"
+msgstr "频道"
+
+msgctxt "#31770"
+msgid "Platform"
+msgstr "平台"
+
+msgctxt "#31771"
+msgid "Publisher"
+msgstr "发行人"
+
+msgctxt "#31772"
+msgid "PREMIERED"
+msgstr "首播"
+
+msgctxt "#31773"
+msgid "Players"
+msgstr "播放"
+
+msgctxt "#31776"
+msgid "PERSPECTIVE"
+msgstr "视角"
+
+msgctxt "#31777"
+msgid "IMPORT GAMES"
+msgstr "导入游戏"
+
+msgctxt "#31778"
+msgid "ADD ROM COLLECTION"
+msgstr "增加 ROM 集"
+
+msgctxt "#31779"
+msgid "EDIT ROM COLLECTION"
+msgstr "编辑 ROM 集"
+
+msgctxt "#31780"
+msgid "EDIT OFFLINE SCRAPERS"
+msgstr "编辑离线刮削器"
+
+msgctxt "#31781"
+msgid "EDIT GAME COMMAND"
+msgstr "编辑游戏命令"
+
+msgctxt "#31782"
+msgid "ADD GAME TO FAVOURITES"
+msgstr "将游戏加入收藏夹"
+
+msgctxt "#31783"
+msgid "ADD SELECTION TO FAVOURITES"
+msgstr "将所选加入收藏夹"
+
+msgctxt "#31784"
+msgid "DELETE GAME"
+msgstr "删除游戏"
+
+msgctxt "#31785"
+msgid "DELETE ROM COLLECTIONS"
+msgstr "删除 ROM 集"
+
+msgctxt "#31786"
+msgid "CLEAN DATABASE"
+msgstr "清除数据库"
+
+msgctxt "#31788"
+msgid "Developer"
+msgstr "开发者"
+
+msgctxt "#31789"
+msgid "MEDIA TYPE"
+msgstr "媒体类型"
+
+msgctxt "#31792"
+msgid "A-Z"
+msgstr "A-Z"
+
+msgctxt "#31794"
+msgid "CUSTOMISE THIS MENU"
+msgstr "自定义此菜单"
+
+msgctxt "#31795"
+msgid "ADD GROUP"
+msgstr "添加组"
+
+msgctxt "#31796"
+msgid "RENAME GROUP"
+msgstr "重命名组"
+
+msgctxt "#31797"
+msgid "DELETE GROUP"
+msgstr "删除组"
+
+msgctxt "#31798"
+msgid "GET ARTIST INFO"
+msgstr "获取歌手信息"
+
+msgctxt "#31801"
+msgid "LIST"
+msgstr "列表"
+
+msgctxt "#31802"
+msgid "SHOWCASE"
+msgstr "陈列"
+
+msgctxt "#31803"
+msgid "MULTIPLEX"
+msgstr "复合"
+
+msgctxt "#31804"
+msgid "LANDSCAPEX"
+msgstr "横向"
+
+msgctxt "#31805"
+msgid "WALL"
+msgstr "墙"
+
+msgctxt "#31806"
+msgid "WALL 3D"
+msgstr "3D 墙"
+
+msgctxt "#31807"
+msgid "LOW LIST"
+msgstr "低列表"
+
+msgctxt "#31808"
+msgid "POSTER"
+msgstr "海报"
+
+msgctxt "#31809"
+msgid "SHELF"
+msgstr "格架"
+
+msgctxt "#31810"
+msgid "COVERFLOW"
+msgstr "封面流"
+
+msgctxt "#31811"
+msgid "BANNER"
+msgstr "横幅"
+
+msgctxt "#31812"
+msgid "BANNER INFO"
+msgstr "横幅信息"
+
+msgctxt "#31813"
+msgid "WIDE"
+msgstr "宽"
+
+msgctxt "#31814"
+msgid "POSTER LIST"
+msgstr "海报列表"
+
+msgctxt "#31815"
+msgid "POSTERLITE"
+msgstr "海报简"
+
+msgctxt "#31816"
+msgid "TOTAL ART"
+msgstr "全艺术"
+
+msgctxt "#31817"
+msgid "PHOTOSHOW"
+msgstr "照片秀"
+
+msgctxt "#31818"
+msgid "PANEL"
+msgstr "面板"
+
+msgctxt "#31819"
+msgid "SHOWART"
+msgstr "艺术展"
+
+msgctxt "#31820"
+msgid "SETS"
+msgstr "影片集"
+
+msgctxt "#31821"
+msgid "GLASS LIST"
+msgstr "玻璃列表"
+
+msgctxt "#31822"
+msgid "RIGHT LIST"
+msgstr "右列表"
+
+msgctxt "#31828"
+msgid "PATH FOR CUSTOM DISC ART"
+msgstr "自定义光盘封面路径"
+
+msgctxt "#31829"
+msgid "OPEN CASE"
+msgstr "开启碟片盒"
+
+msgctxt "#31830"
+msgid "...Defining fonts, colours and styles"
+msgstr "...定义字体，颜色和样式"
+
+msgctxt "#31831"
+msgid "...Writing Main Menu Items"
+msgstr "...定入主菜单项"
+
+msgctxt "#31832"
+msgid "...Defining sub menus for movies"
+msgstr "...定义电影子菜单"
+
+msgctxt "#31833"
+msgid "...Defining sub menus for tv shows"
+msgstr "...定义剧集子菜单"
+
+msgctxt "#31834"
+msgid "...Defining sub menus for concerts"
+msgstr "...定义音乐会子菜单"
+
+msgctxt "#31835"
+msgid "...Defining sub menus for live tv"
+msgstr "...定义直播电视子菜单"
+
+msgctxt "#31836"
+msgid "...Defining sub menus for musics"
+msgstr "...定义音乐子菜单"
+
+msgctxt "#31837"
+msgid "...Defining sub menus for weather"
+msgstr "...定义天气子菜单"
+
+msgctxt "#31838"
+msgid "...Defining sub menus for settings"
+msgstr "...定义系统设置子菜单"
+
+msgctxt "#31839"
+msgid "...Defining sub menus for shutdown"
+msgstr "...定义关机子菜单"
+
+msgctxt "#31840"
+msgid "EVERY ONE HOUR"
+msgstr "每小时"
+
+msgctxt "#31841"
+msgid "WEEKEND"
+msgstr "周末"
+
+msgctxt "#31842"
+msgid "16 DAYS"
+msgstr "16 天"
+
+msgctxt "#31843"
+msgid "CURRENT"
+msgstr "当前"
+
+msgctxt "#31844"
+msgid "MAPS"
+msgstr "地图"
+
+msgctxt "#31846"
+msgid ""
+"Added: Support to ExtendedInfo Script - Open dialog.[CR]Improved: Small "
+"issues in layout/Info Dialog on top.[CR]Fixed: Home/Extras/Widgets - "
+"truncated information to released year and premiered.[CR]Fixed: Dialog Info-"
+"ExtendedInfo - Missing Poster Expanded.[CR]Fixed: PVR Info - Layout details."
+msgstr "新增：支持ExtendedInfo Script - Open dialog。[CR]改进：顶部布局/信息对话框的小问题。[CR]修复：首页/扩展/小部件中发行时间和首映信息被截断。[CR]修复：ExtendedInfo对话框海报丢失。[CR]修复：PVR信息-布局细节。"
+
+msgctxt "#31862"
+msgid "PRECIPITATION"
+msgstr "降水"
+
+msgctxt "#31863"
+msgid "SEARCHING FOR FORECAST INFO"
+msgstr "搜索预报信息"
+
+msgctxt "#31865"
+msgid "NO AIRING EPISODES"
+msgstr "未播出集"
+
+msgctxt "#31866"
+msgid "ENABLE CHRISTMAS EFFECT"
+msgstr "开启圣诞节效果"
+
+msgctxt "#31867"
+msgid "ENABLE HALLOWEEN EFFECT"
+msgstr "开启万圣节效果"
+
+msgctxt "#31873"
+msgid "WEATHER SETTINGS"
+msgstr "天气设置"
+
+msgctxt "#31874"
+msgid "Precipitation"
+msgstr "降雨量"
+
+msgctxt "#31876"
+msgid "SEASON"
+msgstr "季节"
+
+msgctxt "#31877"
+msgid "HOUR"
+msgstr "小时"
+
+msgctxt "#31878"
+msgid "COLOURS IMAGE THEME"
+msgstr "彩色图像主题"
+
+msgctxt "#31879"
+msgid "Hour"
+msgstr "小时"
+
+msgctxt "#31880"
+msgid "Box Office"
+msgstr "票房"
+
+msgctxt "#31882"
+msgid "Directed by"
+msgstr "导演"
+
+msgctxt "#31883"
+msgid "GET DIRECTOR INFO"
+msgstr "获取导演信息"
+
+msgctxt "#31884"
+msgid "GET WRITER INFO"
+msgstr "获取编剧信息"
+
+msgctxt "#31885"
+msgid "GET FILMOGRAPHY ARTIST"
+msgstr "获取电影作品艺人"
+
+msgctxt "#31886"
+msgid "THEME"
+msgstr "主题"
+
+msgctxt "#31887"
+msgid "THEMES"
+msgstr "主题"
+
+msgctxt "#31888"
+msgid "GET OR UPDATE EXTRAPACK"
+msgstr "获取或更新扩展包"
+
+msgctxt "#31889"
+msgid "Cold"
+msgstr "冷"
+
+msgctxt "#31890"
+msgid "Warm"
+msgstr "暖"
+
+msgctxt "#31891"
+msgid "Darkness"
+msgstr "黑暗"
+
+msgctxt "#31892"
+msgid "Digital Art"
+msgstr "数字艺术"
+
+msgctxt "#31893"
+msgid "Colours"
+msgstr "颜色"
+
+msgctxt "#31894"
+msgid "Modern"
+msgstr "现代"
+
+msgctxt "#31895"
+msgid "Reddish"
+msgstr "偏红"
+
+msgctxt "#31896"
+msgid "Future"
+msgstr "未来"
+
+msgctxt "#31897"
+msgid "Pumpkin"
+msgstr "南瓜"
+
+msgctxt "#31900"
+msgid "Rating"
+msgstr "评分"
+
+msgctxt "#31901"
+msgid "USE EXTERNAL PACKAGE IMAGES (USER DEFINED)"
+msgstr "使用外部包图像（用户定义）"
+
+msgctxt "#31902"
+msgid "USE INTERNAL PACKAGE ICONS (EXTRAPACK PROVIDED BY SKIN)"
+msgstr "使用内部包图标（皮肤提供的扩展包）"
+
+msgctxt "#31903"
+msgid "USE EXTERNAL PACKAGE ICONS (USER DEFINED)"
+msgstr "使用外部包图标（由用户定义）"
+
+msgctxt "#31904"
+msgid "EXTRAPACK NECESSARY"
+msgstr "扩展包可用"
+
+msgctxt "#31905"
+msgid ""
+"A new theme is loaded each time you start KODI. Your skin will never be the "
+"same."
+msgstr "每次启动皮肤时载入一新主题，你的皮肤总不同。"
+
+msgctxt "#31906"
+msgid "DIRECTOR'S MOVIES"
+msgstr "导演电影"
+
+msgctxt "#31907"
+msgid "FULLSCREEN"
+msgstr "全屏"
+
+msgctxt "#31908"
+msgid "My Theme"
+msgstr "我的主题"
+
+msgctxt "#31909"
+msgid "Random"
+msgstr "随机"
+
+msgctxt "#31910"
+msgid ""
+"Create your own theme with the images you want.[CR]Press enter to learn more"
+" or to define your theme."
+msgstr "使用你喜欢的图片创建自己的主题。[CR]按回车键了解更多或进入制作。"
+
+msgctxt "#31911"
+msgid "CREATING MY THEME"
+msgstr "创建我的主题"
+
+msgctxt "#31912"
+msgid "MOVE IN ANY DIRECTION TO CANCEL OR PRESS ENTER TO SET THE PATH"
+msgstr "按任意方向取消，按确定指定路径"
+
+msgctxt "#31913"
+msgid "Clear colour images for a smooth visual."
+msgstr "清除彩色图像以增加流畅度"
+
+msgctxt "#31914"
+msgid "Hot colour image tones for people who prefer more contrast."
+msgstr "高色彩对比度图像"
+
+msgctxt "#31915"
+msgid "Computer generated graphics highlighting the work of many web artists."
+msgstr "电脑生成的图像，突出许多 Web 艺术家的作品。"
+
+msgctxt "#31916"
+msgid "Dark tone images mixed with neon. A nice combination."
+msgstr "混合荧光的暗色调图像，一个好混搭。"
+
+msgctxt "#31917"
+msgid "Images in reddish tones combined with graphite tones."
+msgstr "泛红的石墨画质感的图像"
+
+msgctxt "#31918"
+msgid "Media Release"
+msgstr "媒体发行"
+
+msgctxt "#31919"
+msgid "Awards"
+msgstr "奖项"
+
+msgctxt "#31920"
+msgid "Audience Rating"
+msgstr "观众评分"
+
+msgctxt "#31921"
+msgid "Reviews"
+msgstr "评价"
+
+msgctxt "#31922"
+msgid "Budget"
+msgstr "预算"
+
+msgctxt "#31923"
+msgid "DELETE DATABASE AND DOWNLOAD THE PACKAGE AGAIN"
+msgstr "删除数据库并重新下载包"
+
+msgctxt "#31924"
+msgid "BOX FRONT"
+msgstr "盒子正面"
+
+msgctxt "#31925"
+msgid "BOX BACK"
+msgstr "盒子背面"
+
+msgctxt "#31926"
+msgid "CARTRIDGE"
+msgstr "盒"
+
+msgctxt "#31927"
+msgid "SCREENSHOT"
+msgstr "屏幕截图"
+
+msgctxt "#31928"
+msgid "CRITICS"
+msgstr "批评者"
+
+msgctxt "#31929"
+msgid "Critics Consensus"
+msgstr "批评者的意见"
+
+msgctxt "#31930"
+msgid "RESCRAPE GAME"
+msgstr "重刮削游戏"
+
+msgctxt "#31931"
+msgid "RESCRAPE SELECTION"
+msgstr "重刮削选择"
+
+msgctxt "#31932"
+msgid "EXPORT GAME DATABASE (NFO FILES)"
+msgstr "导出游戏数据库（NFO 文件）"
+
+msgctxt "#31933"
+msgid "OPEN ADDON SETTINGS"
+msgstr "打开插件设置"
+
+msgctxt "#31934"
+msgid "Fresh Count"
+msgstr "新鲜数"
+
+msgctxt "#31935"
+msgid "Rotten Count"
+msgstr "腐烂数"
+
+msgctxt "#31936"
+msgid "CHANGE RATING"
+msgstr "修改评分"
+
+msgctxt "#31938"
+msgid "AUTO"
+msgstr "自动"
+
+msgctxt "#31939"
+msgid "SEARCHING FOR DISCOGRAPHY INFORMATION..."
+msgstr "搜索作品集信息..."
+
+msgctxt "#31940"
+msgid "Similar artists"
+msgstr "类似歌手"
+
+msgctxt "#31941"
+msgid "LIMIT"
+msgstr "限制"
+
+msgctxt "#31942"
+msgid "Metadata"
+msgstr "元数据"
+
+msgctxt "#31944"
+msgid "IMAGE ZOOM"
+msgstr "图片缩放"
+
+msgctxt "#31945"
+msgid "PLAY TRAILER"
+msgstr "播放预告片"
+
+msgctxt "#31946"
+msgid "PLAY MOVIE"
+msgstr "播放电影"
+
+msgctxt "#31947"
+msgid "SHOW FANART"
+msgstr "显示同人画"
+
+msgctxt "#31948"
+msgid "Release notes"
+msgstr "发行说明"
+
+msgctxt "#31949"
+msgid "VIDEO CLIPS"
+msgstr "视频剪辑"
+
+msgctxt "#31950"
+msgid "ARTIST VIDEO CLIPS"
+msgstr "歌手视频剪辑"
+
+msgctxt "#31951"
+msgid "SONG VIDEO CLIP"
+msgstr "歌曲视频剪辑"
+
+msgctxt "#31952"
+msgid "HYPED"
+msgstr "炒作"
+
+msgctxt "#31953"
+msgid "MOST PLAYED ROMS"
+msgstr "热门游戏 ROMS"
+
+msgctxt "#31956"
+msgid "DISC MENU"
+msgstr "光盘菜单"
+
+msgctxt "#31957"
+msgid "UPCOMING DVDS"
+msgstr "即将发行的 DVD"
+
+msgctxt "#31958"
+msgid "POPULAR"
+msgstr "流行"
+
+msgctxt "#31959"
+msgid "SHOW AUDIO AND VIDEO VISUALIZATIONS AS BACKGROUND (GLOBAL)"
+msgstr "音视频可视化效果显示为背景（全局）"
+
+msgctxt "#31960"
+msgid "CURRENT DVD RELEASES"
+msgstr "正在发售的 DVD"
+
+msgctxt "#31961"
+msgid "minutes"
+msgstr "分"
+
+msgctxt "#31962"
+msgid "TV SHOWS ON AIR"
+msgstr "在播出剧集"
+
+msgctxt "#31963"
+msgid "RELEASE IN DVD/BLURAY"
+msgstr "以 DVD/蓝光形式发行"
+
+msgctxt "#31964"
+msgid "TRENDING"
+msgstr "倾向"
+
+msgctxt "#31965"
+msgid "Images that mix digital art and futurist style."
+msgstr "混合数字艺术和未来学风格的图像。"
+
+msgctxt "#31966"
+msgid "Images that transmit a visual look fresh and modern."
+msgstr "视觉表现清新而现代的图像"
+
+msgctxt "#31967"
+msgid ""
+"This function erases all the pictures that were downloaded and performs a "
+"full download again. Used to correct any problems in downloading."
+msgstr "此功能删除所有下载图片并重新下载。用于解决各类下载问题。"
+
+msgctxt "#31968"
+msgid "FUTURE"
+msgstr "未来"
+
+msgctxt "#31970"
+msgid "GET THEMES"
+msgstr "获取主题"
+
+msgctxt "#31971"
+msgid "Update finished"
+msgstr "更新完成"
+
+msgctxt "#31972"
+msgid "Update failed"
+msgstr "更新失败"
+
+msgctxt "#31973"
+msgid "No update required"
+msgstr "无需更新"
+
+msgctxt "#31974"
+msgid "Images with bright and cheerful colours."
+msgstr "色彩明亮和欢快的图像。"
+
+msgctxt "#31975"
+msgid ""
+"Images that mix yellow, pumpkin, black and white tones.[CR]Pumpkin theme, "
+"default theme for Aeon MQ 7."
+msgstr "混合黄色、南瓜色、黑色和白色调的图像。[CR]南瓜主题，Aeon MQ 7 的默认主题。"
+
+msgctxt "#31976"
+msgid "SHOW TAGLINE"
+msgstr "显示标语"
+
+msgctxt "#31977"
+msgid "CUSTOMISE DEFAULT DISC"
+msgstr "自定义默认光盘"
+
+msgctxt "#31978"
+msgid "AUDIO DISC"
+msgstr "音乐光盘"
+
+msgctxt "#31979"
+msgid "VIDEO DISC"
+msgstr "视频光盘"
+
+msgctxt "#31980"
+msgid "OPENING"
+msgstr "打开"
+
+msgctxt "#31981"
+msgid "EPISODES AIRED TODAY"
+msgstr "今日播出集"
+
+msgctxt "#31982"
+msgid "BOXOFFICE"
+msgstr "票房"
+
+msgctxt "#31983"
+msgid "Rating"
+msgstr "评分"
+
+msgctxt "#31985"
+msgid "CREDITS"
+msgstr "演职人员"
+
+msgctxt "#31986"
+msgid "SHOW NOW PLAYING PANEL"
+msgstr "显示当前播放面板"
+
+msgctxt "#31987"
+msgid ""
+"You can save all settings made in the skin.[CR]You also transfer the "
+"settings to another computer"
+msgstr "你可以保存皮肤的所有设置。[CR]还能将设置传输到另一台电脑"
+
+msgctxt "#31988"
+msgid ""
+"Here, you can reapply all previously saved settings.[CR]You can also do a "
+"fresh install and apply the saved settings.[CR]This option will override all"
+" current settings."
+msgstr "在这里，你可以导入之前保存的设置。[CR]你可以重新安装并导入保存的设置。[CR]此选项将覆盖当前所有设置。"
+
+msgctxt "#31989"
+msgid ""
+"Export settings as backup.[CR]Import settings to configure the skin in a "
+"simple way.[CR]Restore all settings to skin defaults."
+msgstr "导出设置以备份。[CR]导入设置以快速设置皮肤。[CR]恢复所有设置到皮肤默认。"
+
+msgctxt "#31990"
+msgid "TV Show Status"
+msgstr "剧集状态"
+
+msgctxt "#31991"
+msgid "REMAINING TIME"
+msgstr "剩余时间"
+
+msgctxt "#31992"
+msgid "Local subtitle available"
+msgstr "本地字幕可用"
+
+msgctxt "#31993"
+msgid "SMART V-PLAYLIST"
+msgstr "视频智能播放列表"
+
+msgctxt "#31994"
+msgid "TOP 250"
+msgstr "TOP 250"
+
+msgctxt "#31995"
+msgid "TOP RATED"
+msgstr "热评榜"
+
+msgctxt "#31996"
+msgid "TOP RENTALS"
+msgstr "热租榜"
+
+msgctxt "#31997"
+msgid "IN CINEMAS"
+msgstr "在影院"
+
+msgctxt "#31998"
+msgid "UP COMING MOVIES"
+msgstr "将上映电影"
+
+msgctxt "#31999"
+msgid ""
+"The original Aeon skin and its name are the intellectual property of djh_. "
+"Aeon MQ 7 however has independent code and does not use any textures from "
+"the original Aeon skin. A big thanks to djh_ for creating the masterpiece "
+"that is the original Aeon."
+msgstr "原 Aeon 皮肤及其名称的知识产权归djh_所有。Aeon MQ 7拥有独立的代码并且未使用原 Aeon皮肤的任何资源。非常感谢djh_当初创造的杰作──Aeon 皮肤。"
+
+msgctxt "#32000"
+msgid "HOLIDAY EFFECTS"
+msgstr "节日效果"
+
+msgctxt "#32001"
+msgid "VISUAL EFFECTS"
+msgstr "可视化效果"
+
+msgctxt "#32002"
+msgid "SHOW CHRISTMAS"
+msgstr "显示圣诞节"
+
+msgctxt "#32003"
+msgid "SHOW HALLOWEEN"
+msgstr "显示万圣节"
+
+msgctxt "#32004"
+msgid "SHOW HEAVY"
+msgstr "加重显示"
+
+msgctxt "#32005"
+msgid "SHOW MEDIUM"
+msgstr "一般显示"
+
+msgctxt "#32014"
+msgid "SHOW LIGHT"
+msgstr "轻量显示"
+
+msgctxt "#32006"
+msgid "HALLOWEEN"
+msgstr "万圣节"
+
+msgctxt "#32007"
+msgid "CHRISTMAS"
+msgstr "圣诞节"
+
+msgctxt "#32008"
+msgid "Halloween images."
+msgstr "万圣节图片"
+
+msgctxt "#32009"
+msgid "Christmas images."
+msgstr "圣诞节图片"
+
+msgctxt "#32010"
+msgid "SHOW THANKSGIVING"
+msgstr "显示感恩节"
+
+msgctxt "#32011"
+msgid "THANKSGIVING"
+msgstr "感恩节"
+
+msgctxt "#32012"
+msgid "Thanksgiving images."
+msgstr "感恩节图片"
+
+msgctxt "#32013"
+msgid "SHOW LEAVES"
+msgstr "显示树叶"
+
+msgctxt "#32015"
+msgid "CANDY CANE"
+msgstr "拐杖糖"
+
+msgctxt "#32016"
+msgid "SHOW STAR WARS"
+msgstr "显示星球大战"
+
+msgctxt "#32017"
+msgid "Star Wars backgrounds"
+msgstr "星球大战背景"
+
+msgctxt "#32018"
+msgid "STAR WARS"
+msgstr "星球大战"
+
+msgctxt "#32019"
+msgid "STAR WARS EFFECTS"
+msgstr "星球大战效果"
+
+msgctxt "#32020"
+msgid "STAR WARS SETTINGS"
+msgstr "星球大战设置"
+
+msgctxt "#32021"
+msgid "MQ7 MENU BAR"
+msgstr "MQ7菜单栏"
+
+msgctxt "#32022"
+msgid "STAR WARS MENU BAR"
+msgstr "星球大战菜单栏"
+
+msgctxt "#32023"
+msgid "AUDIO AND SUBTITLE FLAGS"
+msgstr "音频和字幕标志"
+
+msgctxt "#32024"
+msgid "LANGUAGE FLAGS STYLE"
+msgstr "语言标志风格"
+
+msgctxt "#32025"
+msgid "FULLSCREEN TOP ART"
+msgstr "全屏顶部插图"
+
+msgctxt "#32026"
+msgid "FULLSCREEN MIDDLE ART"
+msgstr "全屏中部插图"
+
+msgctxt "#32027"
+msgid "LOGO"
+msgstr "标识"
+
+msgctxt "#32028"
+msgid "TEXT"
+msgstr "文本"
+
+msgctxt "#32029"
+msgid "SQUARE"
+msgstr "正方形"
+
+msgctxt "#32030"
+msgid "RECTANGULAR"
+msgstr "长方形"
+
+msgctxt "#32031"
+msgid "ROUND"
+msgstr "圆形"
+
+msgctxt "#32032"
+msgid "DETAILED"
+msgstr "详细"
+
+msgctxt "#32033"
+msgid "REGULAR"
+msgstr "一般"
+
+msgctxt "#32034"
+msgid "WHITE"
+msgstr "白色"
+
+msgctxt "#32035"
+msgid "COLORED"
+msgstr "彩色的"
+
+msgctxt "#32036"
+msgid "LEFT"
+msgstr "左"
+
+msgctxt "#32037"
+msgid "RIGHT"
+msgstr "右"
+
+msgctxt "#32038"
+msgid "STATIC"
+msgstr "静态"
+
+msgctxt "#32039"
+msgid "SPINNING"
+msgstr "自旋"
+
+msgctxt "#32040"
+msgid "DETAIL INFO"
+msgstr "详细信息"
+
+msgctxt "#32041"
+msgid "CLEARART"
+msgstr "CLEARART"
+
+msgctxt "#32042"
+msgid "DISCART"
+msgstr "光盘封面"
+
+msgctxt "#32043"
+msgid "NO ICON"
+msgstr "无图标"
+
+msgctxt "#32044"
+msgid "CHARACTER ART"
+msgstr "角色封面"
+
+msgctxt "#32045"
+msgid "BASIC INFO"
+msgstr "基本信息"
+
+msgctxt "#32046"
+msgid "Time in Hours and Minutes (default in minutes)"
+msgstr "时间的小时分钟数（默认为分钟）"
+
+msgctxt "#32047"
+msgid "Pulse Pause Label "
+msgstr "脉冲暂停标签"
+
+msgctxt "#32048"
+msgid "Hyped Artists"
+msgstr "炒作艺人"
+
+msgctxt "#32049"
+msgid "HALLOWEEN MENU BAR"
+msgstr "万圣节菜单栏"
+
+msgctxt "#32050"
+msgid "CHRISTMAS MENU BAR"
+msgstr "圣诞节菜单栏"
+
+msgctxt "#32051"
+msgid "MENU BAR"
+msgstr "菜单栏"
+
+msgctxt "#32052"
+msgid "MENU BAR STYLE SELECTOR"
+msgstr "菜单栏风格选择"
+
+msgctxt "#32053"
+msgid "NEON MENU BAR"
+msgstr "霓虹菜单栏"
+
+msgctxt "#32054"
+msgid "THANKSGIVING MENU BAR"
+msgstr "感恩节菜单栏"
+
+msgctxt "#32055"
+msgid "LABELS PALETTE"
+msgstr "标签调色板"
+
+msgctxt "#32056"
+msgid "SHOW NEW YEAR"
+msgstr "显示新年"
+
+msgctxt "#32057"
+msgid "SHOW VALENTINE´S DAY"
+msgstr "显示情人节"
+
+msgctxt "#32058"
+msgid "SHOW ST. PATRICK DAY"
+msgstr "显示圣帕特里克节"
+
+msgctxt "#32059"
+msgid "SHOW EASTER"
+msgstr "显示复活节"
+
+msgctxt "#32060"
+msgid "SHOW INDEPENDENCE DAY"
+msgstr "显示独立日"
+
+msgctxt "#32061"
+msgid "SHOW FIREWORKS"
+msgstr "显示烟火"
+
+msgctxt "#32062"
+msgid "SHOW HEAVY CONFETTI"
+msgstr "显示大量五彩纸屑"
+
+msgctxt "#32063"
+msgid "SHOW MEDIUM CONFETTI"
+msgstr "显示中量五彩纸屑"
+
+msgctxt "#32064"
+msgid "SHOW LIGHT CONFETTI"
+msgstr "显示少量五彩纸屑"
+
+msgctxt "#32065"
+msgid "COMING SOON"
+msgstr "马上就来"
+
+msgctxt "#32180"
+msgid "Minutes Left"
+msgstr "剩余分钟数"
+
+msgctxt "#32181"
+msgid "Hour"
+msgstr "小时"
+
+msgctxt "#32182"
+msgid "Minute left"
+msgstr "剩余分钟"
+
+msgctxt "#32183"
+msgid "Hour left"
+msgstr "剩余小时"
+
+msgctxt "#32184"
+msgid "Seconds left"
+msgstr "剩余秒数"
+
+msgctxt "#32185"
+msgid "Hours left"
+msgstr "剩余小时数"
+
+msgctxt "#32186"
+msgid "Hours"
+msgstr "小时"
+
+msgctxt "#32187"
+msgid "HORIZONTAL MENU BARS"
+msgstr "水平菜单栏"
+
+msgctxt "#32188"
+msgid "VERTICAL MENU BARS"
+msgstr "竖直菜单栏"
+
+msgctxt "#32189"
+msgid "MostLoved Track"
+msgstr "最喜爱的曲目"
+
+msgctxt "#32190"
+msgid "Title"
+msgstr "标题"
+
+msgctxt "#32191"
+msgid "Duration"
+msgstr "时长"
+
+msgctxt "#32192"
+msgid "Number of discs"
+msgstr "磁盘数"
+
+msgctxt "#32193"
+msgid "Listeners"
+msgstr ""
+
+msgctxt "#32194"
+msgid "times played"
+msgstr ""
+
+msgctxt "#32195"
+msgid "Voices"
+msgstr ""
+
+msgctxt "#32196"
+msgid "First broadcast"
+msgstr ""
+
+msgctxt "#32197"
+msgid "Runtime"
+msgstr ""
+
+msgctxt "#32198"
+msgid "After That"
+msgstr ""
+
+msgctxt "#32199"
+msgid "TV Channels"
+msgstr ""
+
+msgctxt "#32200"
+msgid "No action available"
+msgstr ""
+
+msgctxt "#32301"
+msgid "Custom Music Logo Path :"
+msgstr "自定义音乐Logo路径"
+
+msgctxt "#32310"
+msgid "Show Case in Pause Screen"
+msgstr "在暂停屏幕显示碟片盒"
+
+msgctxt "#32311"
+msgid "Show Case in Video Info Screen"
+msgstr "在信息屏幕显示碟片盒"
+
+msgctxt "#32312"
+msgid "Show progress watching in view"
+msgstr "在视图中显示观看进度"
+
+msgctxt "#32313"
+msgid "View Wall TV"
+msgstr "显示电视墙"
+
+msgctxt "#32315"
+msgid "Original font in views"
+msgstr "视图原始字体"
+
+msgctxt "#32316"
+msgid "GLASS VIEW 2"
+msgstr "玻璃视图2"
+
+msgctxt "#32317"
+msgid "SHELF 3D"
+msgstr "3D物品架"
+
+msgctxt "#32318"
+msgid "LIST 3D"
+msgstr "3D列表"
