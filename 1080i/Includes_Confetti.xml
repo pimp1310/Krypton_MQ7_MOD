@@ -1,0 +1,1777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+	<include name="confettifl">	<!--Confetti Floor-->
+		<control type="image">
+			<posy>910</posy>
+			<posx>-150</posx>
+			<width>2160</width>
+			<height>440</height>	
+			<texture>holiday_additions/confetti/confetti_floorfull.png</texture>
+			<aspectratio scalediffuse="false">sketch</aspectratio>
+			<animation effect="fade" start="0" time="300" delay="60000" >WindowOpen</animation>
+		</control>
+		<control type="image">
+			<posy>950</posy>
+			<posx>150</posx>
+			<width>2160</width>
+			<height>440</height>	
+			<texture>holiday_additions/confetti/confetti_floor.png</texture>
+			<aspectratio scalediffuse="false">sketch</aspectratio>
+			<animation effect="fade" start="0" time="300" delay="45000" >WindowOpen</animation>
+		</control>
+		<control type="image">
+			<posy>950</posy>
+			<posx>-250</posx>
+			<width>2160</width>
+			<height>440</height>	
+			<texture>holiday_additions/confetti/confetti_floor.png</texture>
+			<aspectratio scalediffuse="false">sketch</aspectratio>
+			<animation effect="fade" start="0" time="300" delay="30000" >WindowOpen</animation>
+		</control>
+		<control type="image">
+			<posy>950</posy>
+			<posx>-250</posx>
+			<width>2160</width>
+			<height>440</height>	
+			<texture>holiday_additions/confetti/confetti_floorhalf.png</texture>
+			<aspectratio scalediffuse="false">sketch</aspectratio>
+			<animation effect="fade" start="0" time="300" delay="38000" >WindowOpen</animation>
+		</control>
+		<control type="group">  <!--#################################   Floor   ############################-->
+			<posx></posx>
+			<control type="image">
+				<posx>165</posx>
+				<posy>910</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/11.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="165,-200" end="165,950" time="30000" delay="6000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="34000" >WindowOpen</animation>
+				</control>
+			<control type="image">
+				<posx>495</posx>
+				<posy>1000</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/42.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="495,0" end="495,950" time="30000" delay="3000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="31000" >WindowOpen</animation>
+				</control>
+			<control type="image">
+				<posx>825</posx>
+				<posy>950</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/23.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="825,-200" end="825,950" time="30000" delay="5000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="33000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1155</posx>
+				<posy>1080</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/4.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1155,-200" end="1155,950" time="30000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="28000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1485</posx>
+				<posy>949</posy>
+				<width>1020</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/35.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1485,-200" end="1485,950" time="30000" delay="2000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="30000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1815</posx>
+				<posy>999</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/16.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1815,-200" end="1815,950" time="30000" delay="4000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="32000" >WindowOpen</animation>
+			</control>
+		</control>
+		<control type="group">
+			<control type="image">
+				<posx>83</posx>
+				<posy>905</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/47.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="83,-200" end="83,950" time="30000" delay="9000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="37000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>413</posx>
+				<posy>989</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/26.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="413,-200" end="413,950" time="30000" delay="10000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="29000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>743</posx>
+				<posy>1025</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/15.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="743,-200" end="743,950" time="30000" delay="7000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="35000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1073</posx>
+				<posy>1030</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/24.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1073,-200" end="1073,950" time="30000" delay="12000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="40000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1403</posx>
+				<posy>951</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/33.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1403,-200" end="1403,950" time="30000" delay="11000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="39000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1733</posx>
+				<posy>925</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/41.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1733,-200" end="1733,950" time="30000" delay="8000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="36000" >WindowOpen</animation>
+			</control>
+		</control>
+		<control type="group">
+			<control type="image">
+				<posx>42</posx>
+				<posy>949</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/12.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="42,-200" end="42,950" time="30000" delay="14000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="32000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>372</posx>
+				<posy>952</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/43.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="372,-200" end="372,950" time="30000" delay="18000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="36000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>702</posx>
+				<posy>951</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/24.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="702,-200" end="702,950" time="30000" delay="16000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="34000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1032</posx>
+				<posy>950</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/15.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1032,-200" end="1032,950" time="30000" delay="17000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="35000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1362</posx>
+				<posy>949</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/7.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1362,-200" end="1362,950" time="30000" delay="13000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="41000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1692</posx>
+				<posy>950</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/34.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1692,-200" end="1692,950" time="30000" delay="15000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="43000" >WindowOpen</animation>
+			</control>
+		</control>
+		<control type="group">
+			<control type="image">
+				<posx>22</posx>
+				<posy>948</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/1.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="22,-200" end="22,950" time="30000" delay="23000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="51000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>352</posx>
+				<posy>950</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/40.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="352,-200" end="352,950" time="30000" delay="24000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="52000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>682</posx>
+				<posy>951</posy>
+				<width>682</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/26.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="682,-200" end="682,950" time="30000" delay="22000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="50000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1012</posx>
+				<posy>950</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/45.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1012,-200" end="1012,950" time="30000" delay="19000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="47000" >WindowOpen</animation>>
+			</control>
+			<control type="image">
+				<posx>1342</posx>
+				<posy>949</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/31.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1342,-200" end="1342,950" time="30000" delay="21000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="49000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1672</posx>
+				<posy>952</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/10.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1672,-200" end="1672,950" time="30000" delay="20000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="43000" >WindowOpen</animation>
+			</control>
+		</control>
+		<control type="group"><!--#################################   Floor pt2   ############################-->
+			<posx>-900</posx>
+			<width>75</width>
+			<height>75</height>
+			<aspectratio scalediffuse="false">keep</aspectratio>
+		<control type="group">
+			<control type="image">
+				<posx>165</posx>
+				<posy>947</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/31.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="165,-200" end="165,950" time="30000" delay="6000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="34000" >WindowOpen</animation>
+				</control>
+			<control type="image">
+				<posx>495</posx>
+				<posy>948</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/12.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="495,0" end="495,950" time="30000" delay="3000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="31000" >WindowOpen</animation>
+				</control>
+			<control type="image">
+				<posx>825</posx>
+				<posy>949</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/43.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="825,-200" end="825,950" time="30000" delay="5000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="33000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1155</posx>
+				<posy>950</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/24.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1155,-200" end="1155,950" time="30000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="28000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1485</posx>
+				<posy>949</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/5.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1485,-200" end="1485,950" time="30000" delay="2000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="30000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1815</posx>
+				<posy>948</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/36.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1815,-200" end="1815,950" time="30000" delay="4000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="32000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>83</posx>
+				<posy>947</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/17.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="83,-200" end="83,950" time="30000" delay="9000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="37000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>413</posx>
+				<posy>946</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/26.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="413,-200" end="413,950" time="30000" delay="10000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="29000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>743</posx>
+				<posy>945</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/35.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="743,-200" end="743,950" time="30000" delay="7000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="35000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1073</posx>
+				<posy>944</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/44.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1073,-200" end="1073,950" time="30000" delay="12000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="40000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1403</posx>
+				<posy>943</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/3.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1403,-200" end="1403,950" time="30000" delay="11000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="39000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1733</posx>
+				<posy>942</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/11.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1733,-200" end="1733,950" time="30000" delay="8000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="36000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>42</posx>
+				<posy>941</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/2.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="42,-200" end="42,950" time="30000" delay="14000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="32000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>372</posx>
+				<posy>940</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/23.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="372,-200" end="372,950" time="30000" delay="18000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="36000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>702</posx>
+				<posy>938</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/4.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="702,-200" end="702,950" time="30000" delay="16000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="34000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1032</posx>
+				<posy>938</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/45.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1032,-200" end="1032,950" time="30000" delay="17000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="35000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1362</posx>
+				<posy>937</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/37.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1362,-200" end="1362,950" time="30000" delay="13000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="41000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1692</posx>
+				<posy>936</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/14.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1692,-200" end="1692,950" time="30000" delay="15000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="43000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>22</posx>
+				<posy>935</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/21.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="22,-200" end="22,950" time="30000" delay="23000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="51000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>352</posx>
+				<posy>934</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/10.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="352,-200" end="352,950" time="30000" delay="24000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="52000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>682</posx>
+				<posy>933</posy>
+				<width>682</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/46.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="682,-200" end="682,950" time="30000" delay="22000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="50000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1012</posx>
+				<posy>932</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/15.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1012,-200" end="1012,950" time="30000" delay="19000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="47000" >WindowOpen</animation>>
+			</control>
+			<control type="image">
+				<posx>1342</posx>
+				<posy>931</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/1.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1342,-200" end="1342,950" time="30000" delay="21000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="49000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1672</posx>
+				<posy>930</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/30.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1672,-200" end="1672,950" time="30000" delay="20000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="43000" >WindowOpen</animation>
+			</control>
+		</control>
+	</control>
+		<control type="group"><!--################################  Floor pt 3  ##########################-->
+			<posx>500</posx>
+			<width>75</width>
+			<height>75</height>
+			<aspectratio scalediffuse="false">keep</aspectratio>
+		<control type="group">
+			<control type="image">
+				<posx>165</posx>
+				<posy>957</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/21.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="165,-200" end="165,950" time="30000" delay="6000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="34000" >WindowOpen</animation>
+				</control>
+			<control type="image">
+				<posx>495</posx>
+				<posy>958</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/2.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="495,0" end="495,950" time="30000" delay="3000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="31000" >WindowOpen</animation>
+				</control>
+			<control type="image">
+				<posx>825</posx>
+				<posy>959</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/33.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="825,-200" end="825,950" time="30000" delay="5000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="33000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1155</posx>
+				<posy>960</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/14.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1155,-200" end="1155,950" time="30000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="28000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1485</posx>
+				<posy>959</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/45.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1485,-200" end="1485,950" time="30000" delay="2000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="30000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1815</posx>
+				<posy>958</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/26.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1815,-200" end="1815,950" time="30000" delay="4000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="32000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>83</posx>
+				<posy>957</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/7.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="83,-200" end="83,950" time="30000" delay="9000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="37000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>413</posx>
+				<posy>956</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/16.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="413,-200" end="413,950" time="30000" delay="10000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="29000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>743</posx>
+				<posy>955</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/25.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="743,-200" end="743,950" time="30000" delay="7000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="35000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1073</posx>
+				<posy>954</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/34.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1073,-200" end="1073,950" time="30000" delay="12000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="40000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1403</posx>
+				<posy>953</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/43.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1403,-200" end="1403,950" time="30000" delay="11000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="39000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1733</posx>
+				<posy>952</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/1.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1733,-200" end="1733,950" time="30000" delay="8000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="36000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>42</posx>
+				<posy>951</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/32.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="42,-200" end="42,950" time="30000" delay="14000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="32000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>372</posx>
+				<posy>950</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/13.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="372,-200" end="372,950" time="30000" delay="18000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="36000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>702</posx>
+				<posy>949</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/44.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="702,-200" end="702,950" time="30000" delay="16000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="34000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1032</posx>
+				<posy>948</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/35.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1032,-200" end="1032,950" time="30000" delay="17000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="35000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1362</posx>
+				<posy>947</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/27.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1362,-200" end="1362,950" time="30000" delay="13000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="41000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1692</posx>
+				<posy>946</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/4.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1692,-200" end="1692,950" time="30000" delay="15000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="43000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>22</posx>
+				<posy>945</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/11.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="22,-200" end="22,950" time="30000" delay="23000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="51000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>352</posx>
+				<posy>944</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/0.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="352,-200" end="352,950" time="30000" delay="24000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="52000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>682</posx>
+				<posy>943</posy>
+				<width>682</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/36.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="682,-200" end="682,950" time="30000" delay="22000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="50000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1012</posx>
+				<posy>942</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/5.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1012,-200" end="1012,950" time="30000" delay="19000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="47000" >WindowOpen</animation>>
+			</control>
+			<control type="image">
+				<posx>1342</posx>
+				<posy>941</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/41.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1342,-200" end="1342,950" time="30000" delay="21000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="49000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1672</posx>
+				<posy>940</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/20.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1672,-200" end="1672,950" time="30000" delay="20000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="43000" >WindowOpen</animation>
+			</control>
+		</control>
+	</control>
+		<control type="group"><!--################################  Floor pt 4  ##########################-->
+			<posx>1200</posx>
+			<width>75</width>
+			<height>75</height>
+			<aspectratio scalediffuse="false">keep</aspectratio>
+		<control type="group">
+			<control type="image">
+				<posx>165</posx>
+				<posy>1080</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/31.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="165,-200" end="165,950" time="30000" delay="6000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="44000" >WindowOpen</animation>
+				</control>
+			<control type="image">
+				<posx>495</posx>
+				<posy>979</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/12.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="495,0" end="495,950" time="30000" delay="3000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="41000" >WindowOpen</animation>
+				</control>
+			<control type="image">
+				<posx>825</posx>
+				<posy>910</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/43.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="825,-200" end="825,950" time="30000" delay="5000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="43000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1155</posx>
+				<posy>910</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/34.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1155,-200" end="1155,950" time="30000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="38000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1485</posx>
+				<posy>980</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/25.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1485,-200" end="1485,950" time="30000" delay="2000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="40000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1815</posx>
+				<posy>1080</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/36.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1815,-200" end="1815,950" time="30000" delay="4000" reversible="false" loop="true" condition="true">Conditional</animation-->
+				<animation effect="fade" start="100" delay="42000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>83</posx>
+				<posy>1030</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/37.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="83,-200" end="83,950" time="30000" delay="9000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="47000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>413</posx>
+				<posy>930</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/46.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="413,-200" end="413,950" time="30000" delay="10000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="39000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>743</posx>
+				<posy>930</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/5.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="743,-200" end="743,950" time="30000" delay="7000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="45000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1073</posx>
+				<posy>1030</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/4.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1073,-200" end="1073,950" time="30000" delay="12000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="50000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1403</posx>
+				<posy>1050</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/23.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1403,-200" end="1403,950" time="30000" delay="11000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="49000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1733</posx>
+				<posy>950</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/11.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1733,-200" end="1733,950" time="30000" delay="8000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="46000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>42</posx>
+				<posy>910</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/42.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="42,-200" end="42,950" time="30000" delay="14000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="42000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>365</posx>
+				<posy>980</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/23.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="372,-200" end="372,950" time="30000" delay="18000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="46000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>702</posx>
+				<posy>1080</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/34.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="702,-200" end="702,950" time="30000" delay="16000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="44000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1032</posx>
+				<posy>1100</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/15.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1032,-200" end="1032,950" time="30000" delay="17000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="45000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1362</posx>
+				<posy>1090</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/37.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1362,-200" end="1362,950" time="30000" delay="13000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="51000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1692</posx>
+				<posy>1080</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/44.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1692,-200" end="1692,950" time="30000" delay="15000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="53000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>22</posx>
+				<posy>960</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/1.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="22,-200" end="22,950" time="30000" delay="23000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="61000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>352</posx>
+				<posy>999</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/30.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="352,-200" end="352,950" time="30000" delay="24000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="62000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>682</posx>
+				<posy>1020</posy>
+				<width>682</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/46.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="682,-200" end="682,950" time="30000" delay="22000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="60000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1012</posx>
+				<posy>910</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/15.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1012,-200" end="1012,950" time="30000" delay="19000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="57000" >WindowOpen</animation>>
+			</control>
+			<control type="image">
+				<posx>1342</posx>
+				<posy>980</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/31.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1342,-200" end="1342,950" time="30000" delay="21000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="59000" >WindowOpen</animation>
+			</control>
+			<control type="image">
+				<posx>1672</posx>
+				<posy>1070</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/10.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<!--animation effect="slide" start="1672,-200" end="1672,950" time="30000" delay="20000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation-->
+				<animation effect="fade" start="100" delay="53000" >WindowOpen</animation>
+			</control>
+		</control>
+	</control>	
+	</include>
+	<include name="confettif"><!--Falling Confetti-->
+		<control type="group">	<!--#################################  Falling  ############################-->
+			<animation effect="slide" start="550,0" end="-550,0" time="30000" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/21.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="165,-200" end="165,950" time="30000" delay="6000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/42.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="495,-200" end="495,950" time="30000" delay="3000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+				
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/23.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="825,-200" end="825,950" time="30000" delay="5000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/4.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1155,-200" end="1155,950" time="30000" reversible="false" loop="true"   condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true"   condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/35.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1485,-200" end="1485,950" time="30000" delay="2000" reversible="false" loop="true"  condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true"  condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/16.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1815,-200" end="1815,950" time="30000" delay="4000" reversible="false" loop="true"  condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true"  condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/47.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="83,-200" end="83,950" time="30000" delay="9000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/6.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="413,-200" end="413,950" time="30000" delay="10000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/15.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="743,-200" end="743,950" time="30000" delay="7000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/24.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1073,-200" end="1073,950" time="30000" delay="12000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/33.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1403,-200" end="1403,950" time="30000" delay="11000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/41.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1733,-200" end="1733,950" time="30000" delay="8000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/22.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="42,-200" end="42,950" time="30000" delay="14000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/23.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="372,-200" end="372,950" time="30000" delay="18000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/34.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="702,-200" end="702,950" time="30000" delay="16000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/25.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1032,-200" end="1032,950" time="30000" delay="17000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/17.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1362,-200" end="1362,950" time="30000" delay="13000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/44.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1692,-200" end="1692,950" time="30000" delay="15000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/1.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="22,-200" end="22,950" time="30000" delay="23000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/40.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="352,-200" end="352,950" time="30000" delay="24000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/26.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="682,-200" end="682,950" time="30000" delay="22000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/45.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1012,-200" end="1012,950" time="30000" delay="19000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/31.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1342,-200" end="1342,950" time="30000" delay="21000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/10.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1672,-200" end="1672,950" time="30000" delay="20000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+		</control>
+		<control type="group"> <!--####################   Falling pt2 ###################-->
+			<animation effect="slide" start="600,0" end="-200,0" time="20000" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			<animation effect="rotate" end="5" time="35000" delay="400" pulse="true" condition="true">Conditional</animation>
+			<posx>400</posx>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/21.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="165,-200" end="165,950" time="30000" delay="6000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/2.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="495,-200" end="495,950" time="30000" delay="3000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+				
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/33.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="825,-200" end="825,950" time="30000" delay="5000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/14.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1155,-200" end="1155,950" time="30000" reversible="false" loop="true"   condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true"   condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/45.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1485,-200" end="1485,950" time="30000" delay="2000" reversible="false" loop="true"  condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true"  condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/26.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1815,-200" end="1815,950" time="30000" delay="4000" reversible="false" loop="true"  condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true"  condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/7.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="83,-200" end="83,950" time="30000" delay="9000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/16.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="413,-200" end="413,950" time="30000" delay="10000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/25.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="743,-200" end="743,950" time="30000" delay="7000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/34.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1073,-200" end="1073,950" time="30000" delay="12000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/43.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1403,-200" end="1403,950" time="30000" delay="11000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/1.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1733,-200" end="1733,950" time="30000" delay="8000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/32.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="42,-200" end="42,950" time="30000" delay="14000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/13.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="372,-200" end="372,950" time="30000" delay="18000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/44.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="702,-200" end="702,950" time="30000" delay="16000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/35.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1032,-200" end="1032,950" time="30000" delay="17000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/27.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1362,-200" end="1362,950" time="30000" delay="13000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/4.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1692,-200" end="1692,950" time="30000" delay="15000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/11.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="22,-200" end="22,950" time="30000" delay="23000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/0.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="352,-200" end="352,950" time="30000" delay="24000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/36.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="682,-200" end="682,950" time="30000" delay="22000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/5.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1012,-200" end="1012,950" time="30000" delay="19000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/41.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1342,-200" end="1342,950" time="30000" delay="21000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/20.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1672,-200" end="1672,950" time="30000" delay="20000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+		</control>
+		<control type="group"> <!--####################   Falling pt3 ###################-->
+			<animation effect="slide" start="-600,0" end="0,0" time="8000" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			<animation effect="rotate" end="-1" time="5000" delay="1000" pulse="true" condition="true">Conditional</animation>
+			<posx>-400</posx>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/31.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="165,-200" end="165,950" time="30000" delay="6000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/20.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="495,-200" end="495,950" time="30000" delay="3000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+				
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/43.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="825,-200" end="825,950" time="30000" delay="5000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/24.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1155,-200" end="1155,950" time="30000" reversible="false" loop="true"   condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true"   condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/5.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1485,-200" end="1485,950" time="30000" delay="2000" reversible="false" loop="true"  condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true"  condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/36.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1815,-200" end="1815,950" time="30000" delay="4000" reversible="false" loop="true"  condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true"  condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/17.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="83,-200" end="83,950" time="30000" delay="9000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/26.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="413,-200" end="413,950" time="30000" delay="10000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/35.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="743,-200" end="743,950" time="30000" delay="7000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/44.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1073,-200" end="1073,950" time="30000" delay="12000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/3.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1403,-200" end="1403,950" time="30000" delay="11000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/10.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1733,-200" end="1733,950" time="30000" delay="8000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/42.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="42,-200" end="42,950" time="30000" delay="14000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/23.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="372,-200" end="372,950" time="30000" delay="18000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/4.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="702,-200" end="702,950" time="30000" delay="16000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/45.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1032,-200" end="1032,950" time="30000" delay="17000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/37.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1362,-200" end="1362,950" time="30000" delay="13000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/14.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1692,-200" end="1692,950" time="30000" delay="15000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/21.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="22,-200" end="22,950" time="30000" delay="23000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/10.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="352,-200" end="352,950" time="30000" delay="24000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/46.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="682,-200" end="682,950" time="30000" delay="22000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/15.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1012,-200" end="1012,950" time="30000" delay="19000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/1.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1342,-200" end="1342,950" time="30000" delay="21000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/30.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1672,-200" end="1672,950" time="30000" delay="20000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+		</control>
+		<!--control type="group">
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/31.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1200,-200" end="1200,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/12.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1250,-200" end="1250,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/23.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1300,-200" end="1300,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/0.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1350,-200" end="1350,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/30.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1400,-200" end="1400,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/40.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1450,-200" end="1450,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+		</control>
+		<control type="group">
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/6.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1500,-200" end="1500,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/24.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1550,-200" end="1550,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/37.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1600,-200" end="1600,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/10.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1650,-200" end="1650,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/22.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1700,-200" end="1700,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/3.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1750,-200" end="1750,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+		</control>
+		<control type="group">
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/42.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1800,-200" end="1800,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control><control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/10.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1850,-200" end="1850,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control><control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/47.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1900,-200" end="1900,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/17.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1950,-200" end="1950,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/46.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="2000,-200" end="2000,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>100</width>
+				<height>100</height>
+				<texture>holiday_additions/confettifloor/15.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="2050,-200" end="2050,950" time="30000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+		</control-->
+	</include>		
+</includes>

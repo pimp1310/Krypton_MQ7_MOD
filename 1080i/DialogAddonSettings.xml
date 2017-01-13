@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- Aeon MQ 7 -->
+	<defaultcontrol always="true">9</defaultcontrol>
+	<controls>
+	<include>SettingsBG</include>
+	<control type="group">
+	<!-- default group -->
+	<include>Animation_Window</include>
+	<include>SettingsBack</include>
+	
+	<!--#######################################################################   MENU DA ESQUERDA   #######################################################################-->
+	<include>Date</include>
+	<control type="label">
+	<include>SettingsLeftTitle</include>
+	<label>31202</label>
+	</control>
+	<control type="grouplist" id="9">
+	<left>0</left>
+	<top>180</top>
+	<width>450</width>
+	<height>990</height>
+	<orientation>vertical</orientation>
+	<itemgap>0</itemgap>
+	<onup>9</onup>
+	<ondown>9</ondown>
+	<onleft>10</onleft>
+	<onright>2</onright>
+	</control>	
+	<control type="button" id="13">	
+	<include>SettingsButton</include>
+	</control>
+
+	<!--#######################################################################   MENU DA DIREITA   #######################################################################-->
+	<control type="label" id="20">
+	<include>SettingsRightTitle</include>
+	<label>-</label>
+	</control>
+	<control type="grouplist" id="2">
+	<left>454</left>
+	<top>180</top>
+	<width>1466</width>
+	<height>741</height>
+	<itemgap>0</itemgap>
+	<pagecontrol>30</pagecontrol>
+	<onup>10</onup>
+	<ondown>10</ondown>
+	<onleft>9</onleft>
+	<onright>30</onright>
+	</control>
+	<control type="button" id="3"></control>
+	<control type="radiobutton" id="4"></control>
+	<control type="spincontrolex" id="5">
+	<subtype>text</subtype>
+	</control>
+	<control type="image" id="6">
+	<height>3</height>
+	<texture>-</texture>
+	</control>
+	<control type="label" id="7">
+	<textoffsetx>75</textoffsetx>
+	<height>60</height>
+	<font>Font_header</font>
+	<label>-</label>
+	<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+	<align>left</align>
+	<aligny>center</aligny>
+	</control>
+	<control type="sliderex" id="8">
+	<textoffsetx>75</textoffsetx>
+	</control>
+	<control type="scrollbar" id="30">
+	<include>ScrollBar_Vertical</include>
+	<left>1860</left>
+	<top>180</top>
+	<height>741</height>
+	<onleft>2</onleft>
+	<onright>10</onright>
+	</control>
+	<include>RSS</include>	
+	</control>
+	
+	<!-- botoes do rodape -->
+	<control type="image">
+	<left>454</left>
+	<top>959</top>
+	<width>1466</width>
+	<height>8</height>
+	<texture>grey.png</texture>
+	<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+	</control>
+	<control type="image">
+	<left>454</left>
+	<top>967</top>
+	<width>1466</width>
+	<height>60</height>
+	<texture>darkgrey.png</texture>
+	<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+	<animation effect="fade" end="65" condition="true">Conditional</animation>
+	</control>
+	<control type="grouplist" id="9001">
+	<left>454</left>
+	<top>967</top>
+	<itemgap>0</itemgap>
+	<onup>2</onup>
+	<ondown>2</ondown>
+	<orientation>horizontal</orientation>
+	<!-- OK -->
+	<control type="button" id="10">	
+	<include>SettingsBottomButton</include>
+	<label>186</label>
+	</control>
+	<!-- Cancel -->
+	<control type="button" id="11">	
+	<include>SettingsBottomButton</include>
+	<label>222</label>
+	</control>
+	<!-- Defaults -->
+	<control type="button" id="12">	
+	<include>SettingsBottomButton</include>
+	<label>409</label>
+	</control>
+	</control>
+	</controls>
+</window>

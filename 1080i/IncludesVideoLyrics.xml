@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<!-- Aeon MQ 7 -->
+	<!-- ######################################################################### MOD.SPIN #########################################################################-->
+	<include name="line1">
+		<width>900</width>
+		<height>600</height>
+		<font>lyr1</font>
+		<align>center</align>
+		<aligny>center</aligny>
+	</include>
+	<include name="Dem_lyr2">
+		<param name="colorlyr1" default="black"/>
+		<param name="colorlyr2" default="black"/>
+		<param name="colorlyr3" default="black"/>
+		<definition>
+			<control type="label">
+				<visible>SubString(Container(110).Currentitem,2,Right)</visible>
+				<animation type="Visible">
+					 	<effect type="slide" start="-200,0" end="0,0" tween="back" easing="out" time="300" reversible="false"/>
+					<effect type="zoom" start="25" end="100" tween="back" easing="out" time="500" reversible="false"/>
+				</animation>
+				<width>auto</width>
+				<height>100</height>
+				<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+				<font>dem1</font>
+				<shadowcolor>black</shadowcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>$PARAM[colorlyr1]</textcolor>
+			</control>
+			<control type="label">
+				<animation type="Visible">
+					 	<effect type="slide" start="-200,0" end="0,0" tween="back" easing="out" time="600" reversible="false"/>
+					<effect type="zoom" start="25" end="100" tween="back" easing="out" time="800" reversible="false"/>
+				</animation>
+				<visible>SubString(Container(110).Currentitem,2,Right)</visible>
+				<width>auto</width>
+				<height>100</height>
+				<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+				<font>dem1b</font>
+				<shadowcolor>black</shadowcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>$PARAM[colorlyr2]</textcolor>
+			</control>
+			<control type="label">
+				<visible>SubString(Container(110).Currentitem,2,Right)</visible>
+				<animation type="Visible">
+					 	<effect type="slide" start="-200,0" end="0,0" tween="back" easing="out" time="900" reversible="false"/>
+					<effect type="zoom" start="25" end="100" tween="back" easing="out" time="1100" reversible="false"/>
+				</animation>
+				<width>auto</width>
+				<height>100</height>
+				<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+				<font>dem1</font>
+				<shadowcolor>black</shadowcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>$PARAM[colorlyr3]</textcolor>
+			</control>
+		</definition>
+	</include>
+	<include name="Dem_lyr2b">
+		<param name="colorlyr1b" default="black"/>
+		<param name="left2b" default="510"/>
+		<param name="top2b" default="230"/>
+		<definition>
+			<control type="group">
+				<left>$PARAM[left2b]</left>
+				<top>$PARAM[top2b]</top>
+				<visible>SubString(Container(110).Currentitem,2,Right)</visible>
+				<animation type="Visible">
+					 	<effect type="slide" delay="300" start="-200,0" end="0,0" tween="back" easing="out" time="900" reversible="false"/>
+					<effect type="zoom" center="450,370" delay="300" start="25" end="100" tween="sine" easing="out" time="900" reversible="false"/>
+				</animation>
+				<animation effect="rotate" center="960,0" start="-2" end="2" time="1500" pulse="true" tween="sine" easing="inout" condition="true">Conditional</animation>
+				<control type="textbox">
+					<left>0</left>
+					<top>76</top>
+					<width>900</width>
+					<height>600</height>
+					<label>$INFO[Container(110).ListItem.Property(part4)]</label>
+					<font>dem2</font>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>top</aligny>
+					<textcolor>$PARAM[colorlyr1b]</textcolor>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<include name="line3">
+		<left>-100</left>
+		<top>0</top>
+		<width>950</width>
+		<height>600</height>
+		<label>[CAPITALIZE]$INFO[Container(110).ListItem.Property(part1)][/CAPITALIZE] $INFO[Container(110).ListItem.Property(part2)] $INFO[Container(110).ListItem.Property(part3)] $INFO[Container(110).ListItem.Property(part4)]</label>
+		<shadowcolor>black</shadowcolor>
+		<font>lyr3</font>
+		<align>center</align>
+		<aligny>center</aligny>
+	</include>
+	<include name="Dem_lyr4">
+		<param name="colorlyr41" default="black"/>
+		<param name="colorlyr42" default="black"/>
+		<param name="colorlyr43" default="black"/>
+		<param name="colorlyr44" default="black"/>
+		<param name="left4" default="170"/>
+		<param name="top4" default="0"/>
+		<definition>
+			<control type="group">
+				<top>$PARAM[top4]</top>
+				<left>$PARAM[left4]</left>
+				<control type="label">
+					<visible>SubString(Container(110).Currentitem,4,Right)</visible>
+					<animation type="Visible">
+						<effect type="slide" start="1000,0" end="0,0" time="350" tween="back" easing="out" reversible="false"/>
+						<effect type="slide" delay="900" start="0,0" end="-200,0" time="350" tween="back" easing="out" reversible="false"/>
+					</animation>
+					<left>50</left>
+					<top>145</top>
+					<width>925</width>
+					<height>125</height>
+					<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+					<font>dem10a</font>
+					<shadowcolor>black</shadowcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>$PARAM[colorlyr41]</textcolor>
+				</control>
+				<control type="label">
+					<left>50</left>
+					<visible>SubString(Container(110).Currentitem,4,Right)</visible>
+					<animation type="Visible">
+						<effect type="slide" delay="150" start="1000,0" end="0,0" time="350" tween="back" easing="out" reversible="false"/>
+						<effect type="slide" delay="900" start="0,0" end="-200,0" time="350" tween="back" easing="out" reversible="false"/>
+					</animation>
+					<top>270</top>
+					<width>925</width>
+					<height>125</height>
+					<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+					<font>dem10b</font>
+					<shadowcolor>black</shadowcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>$PARAM[colorlyr42]</textcolor>
+				</control>
+				<control type="label">
+					<visible>SubString(Container(110).Currentitem,4,Right)</visible>
+					<animation type="Visible">
+						<effect type="slide" delay="300" start="1000,0" end="0,0" time="350" tween="back" easing="out" reversible="false"/>
+						<effect type="slide" delay="900" start="0,0" end="-200,0" time="350" tween="back" easing="out" reversible="false"/>
+					</animation>
+					<left>50</left>
+					<top>395</top>
+					<width>925</width>
+					<height>125</height>
+					<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+					<font>dem10a</font>
+					<shadowcolor>black</shadowcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>$PARAM[colorlyr43]</textcolor>
+				</control>
+				<control type="textbox">
+					<left>800</left>
+					<top>30</top>
+					<width>700</width>
+					<height>600</height>
+					<visible>SubString(Container(110).Currentitem,4,Right)</visible>
+					<animation type="Visible">
+						<effect type="slide" delay="900" start="0,-400" end="0,0" time="350" tween="back" easing="out" reversible="false"/>
+					</animation>
+					<label>$INFO[Container(110).ListItem.Property(part4)]</label>
+					<font>dem20</font>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>$PARAM[colorlyr44]</textcolor>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<include name="line5">
+		<left>0</left>
+		<top>0</top>
+		<width>900</width>
+		<height>600</height>
+		<font>dem5</font>
+		<shadowcolor>black</shadowcolor>
+		<align>center</align>
+		<aligny>center</aligny>
+	</include>
+	<include name="Dem_lyr6">
+		<param name="colorlyr61" default="black"/>
+		<param name="colorlyr62" default="black"/>
+		<param name="colorlyr63" default="black"/>
+		<definition>
+			<control type="label">
+				<visible>SubString(Container(110).Currentitem,6,Right)</visible>
+				<animation type="Visible">
+					 	<effect type="slide" start="0,-200" end="0,0" tween="back" easing="out" time="300" reversible="false"/>
+					<effect type="zoom" start="350" end="100" tween="back" easing="out" time="300" reversible="false"/>
+				</animation>
+				<width>auto</width>
+				<height>100</height>
+				<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+				<font>dem1</font>
+				<shadowcolor>black</shadowcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>$PARAM[colorlyr61]</textcolor>
+			</control>
+			<control type="label">
+				<animation type="Visible">
+					 	<effect type="slide" start="0,-200" end="0,0" tween="back" easing="out" time="600" reversible="false"/>
+					<effect type="zoom" start="350" end="100" tween="back" easing="out" time="600" reversible="false"/>
+				</animation>
+				<visible>SubString(Container(110).Currentitem,6,Right)</visible>
+				<width>auto</width>
+				<height>100</height>
+				<label> $INFO[Container(110).ListItem.Property(part2)]  </label>
+				<font>dem1b</font>
+				<shadowcolor>black</shadowcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>$PARAM[colorlyr62]</textcolor>
+			</control>
+			<control type="label">
+				<visible>SubString(Container(110).Currentitem,6,Right)</visible>
+				<animation type="Visible">
+					 	<effect type="slide" start="0,-200" end="0,0" tween="back" easing="out" time="900" reversible="false"/>
+					<effect type="zoom" start="350" end="100" tween="back" easing="out" time="900" reversible="false"/>
+				</animation>
+				<width>auto</width>
+				<height>100</height>
+				<label>$INFO[Container(110).ListItem.Property(part3)]</label>
+				<font>dem1</font>
+				<shadowcolor>black</shadowcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>$PARAM[colorlyr63]</textcolor>
+			</control>
+		</definition>
+	</include>
+	<include name="Dem_lyr6b">
+		<param name="colorlyr6b" default="black"/>
+		<param name="left6b" default="510"/>
+		<param name="top6b" default="230"/>
+		<definition>
+			<control type="group">
+				<left>$PARAM[left6b]</left>
+				<top>$PARAM[top6b]</top>
+				<visible>SubString(Container(110).Currentitem,6,Right)</visible>
+				<animation type="Visible">
+					 	<effect type="slide" delay="600" start="-600,0" end="0,0" tween="back" easing="out" time="500" reversible="false"/>
+				</animation>
+				<animation effect="rotatey" center="960,0" start="-10" end="10" time="1500" pulse="true" tween="sine" easing="inout" condition="true">Conditional</animation>
+				<control type="textbox">
+					<left>0</left>
+					<top>76</top>
+					<width>900</width>
+					<height>600</height>
+					<label>$INFO[Container(110).ListItem.Property(part4)]</label>
+					<font>dem2</font>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>top</aligny>
+					<textcolor>$PARAM[colorlyr6b]</textcolor>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<include name="line7">
+		<width>970</width>
+		<height>600</height>
+		<label>$INFO[Container(110).ListItem.Label]</label>
+		<align>center</align>
+		<aligny>center</aligny>
+	</include>
+	<include name="Dem_lyr8">
+		<param name="colorlyr81" default="black"/>
+		<param name="colorlyr82" default="black"/>
+		<param name="colorlyr83" default="black"/>
+		<param name="colorlyr84" default="black"/>
+		<param name="left8" default="20"/>
+		<param name="top8" default="-20"/>
+		<definition>
+			<control type="group">
+				<top>$PARAM[top8]</top>
+				<left>$PARAM[left8]</left>
+				<control type="label">
+					<visible>SubString(Container(110).Currentitem,8,Right)</visible>
+					<animation type="Visible">
+						 	<effect type="slide" start="-700,0" end="0,0" time="350" tween="back" easing="out" reversible="false"/>
+					</animation>
+					<left>0</left>
+					<top>145</top>
+					<width>880</width>
+					<height>125</height>
+					<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+					<font>dem8</font>
+					<shadowcolor>black</shadowcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>$PARAM[colorlyr81]</textcolor>
+				</control>
+				<control type="label">
+					<left>0</left>
+					<visible>SubString(Container(110).Currentitem,8,Right)</visible>
+					<animation type="Visible">
+						 	<effect type="slide" delay="150" start="-700,0" end="0,0" time="350" tween="back" easing="out" reversible="false"/>
+					</animation>
+					<top>270</top>
+					<width>880</width>
+					<height>125</height>
+					<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+					<font>dem8</font>
+					<shadowcolor>black</shadowcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>$PARAM[colorlyr82]</textcolor>
+				</control>
+				<control type="label">
+					<visible>SubString(Container(110).Currentitem,8,Right)</visible>
+					<animation type="Visible">
+						 	<effect type="slide" delay="300" start="-700,0" end="0,0" time="350" tween="back" easing="out" reversible="false"/>
+					</animation>
+					<left>0</left>
+					<top>395</top>
+					<width>880</width>
+					<height>125</height>
+					<label> $INFO[Container(110).ListItem.Property(part3)]</label>
+					<font>dem8</font>
+					<shadowcolor>black</shadowcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<textcolor>$PARAM[colorlyr83]</textcolor>
+				</control>
+				<control type="textbox">
+					<left>910</left>
+					<top>30</top>
+					<width>700</width>
+					<height>600</height>
+					<visible>SubString(Container(110).Currentitem,8,Right)</visible>
+					<animation type="Visible">
+						<effect type="slide" delay="900" start="0,-400" end="0,0" time="350" tween="back" easing="out" reversible="false"/>
+					</animation>
+					<animation effect="rotatex" center="110,0" start="-15" end="15" time="1500" pulse="true" tween="sine" easing="inout" condition="true">Conditional</animation>
+					<label> $INFO[Container(110).ListItem.Property(part4)]</label>
+					<font>dem8b</font>
+					<shadowcolor>black</shadowcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>$PARAM[colorlyr84]</textcolor>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<include name="line9">
+		<width>900</width>
+		<height>600</height>
+		<font>lyr9</font>
+		<align>center</align>
+		<aligny>center</aligny>
+	</include>
+	<include name="Dem_lyr0">
+		<param name="colorlyr01" default="black"/>
+		<param name="colorlyr02" default="black"/>
+		<param name="colorlyr03" default="black"/>
+		<param name="colorlyr04" default="black"/>
+		<param name="left0" default="0"/>
+		<param name="top0" default="200"/>
+		<definition>
+			<control type="group">
+				<top>$PARAM[top0]</top>
+				<left>$PARAM[left0]</left>
+				<animation effect="rotate" center="960,0" start="4" end="4" condition="true">Conditional</animation>
+				<control type="label">
+					<visible>SubString(Container(110).Currentitem,0,Right)</visible>
+					<animation type="Visible">
+						<effect type="zoom" center="auto" start="400" end="100" tween="back" easing="out" time="350" reversible="false"/>
+						<effect type="slide" delay="800" start="0,0" end="0,-200" time="350" tween="back" easing="out" reversible="false"/>
+					</animation>
+					<left>0</left>
+					<top>145</top>
+					<width>1920</width>
+					<height>115</height>
+					<label> $INFO[Container(110).ListItem.Property(part1)]</label>
+					<font>dem0</font>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>$PARAM[colorlyr01]</textcolor>
+				</control>
+				<control type="grouplist">
+					<left>0</left>
+					      <top>260</top>
+					      <width>1920</width>
+					      <height>125</height>
+					      <itemgap>25</itemgap>
+					      <scrolltime>0</scrolltime>
+					      <orientation>horizontal</orientation>
+					      <visible>true</visible>
+					      <align>center</align>
+					<control type="label">
+						<visible>SubString(Container(110).Currentitem,0,Right)</visible>
+						<animation type="Visible">
+							<effect type="zoom" center="auto" start="400" end="100" tween="back" easing="out" time="550" reversible="false"/>
+							<effect type="slide" delay="800" start="0,0" end="0,-200" time="350" tween="back" easing="out" reversible="false"/>
+						</animation>
+						<width>auto</width>
+						<height>125</height>
+						<label> $INFO[Container(110).ListItem.Property(part2)]</label>
+						<font>dem0</font>
+						<shadowcolor>black</shadowcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<textcolor>$PARAM[colorlyr02]</textcolor>
+					</control>
+					<control type="label">
+						<visible>SubString(Container(110).Currentitem,0,Right)</visible>
+						<animation type="Visible">
+							<effect type="zoom" center="auto" start="400" end="100" tween="back" easing="out" time="750" reversible="false"/>
+							<effect type="slide" delay="800" start="0,0" end="0,-200" time="350" tween="back" easing="out" reversible="false"/>
+						</animation>
+						<width>auto</width>
+						<height>125</height>
+						<label>$INFO[Container(110).ListItem.Property(part3)]</label>
+						<font>dem0</font>
+						<shadowcolor>black</shadowcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<textcolor>$PARAM[colorlyr03]</textcolor>
+					</control>
+				</control>
+				<control type="textbox">
+					<left>610</left>
+					<top>192</top>
+					<width>700</width>
+					<height>600</height>
+					<visible>SubString(Container(110).Currentitem,0,Right)</visible>
+					<animation type="Visible">
+						<effect type="zoom" center="960,540" delay="800" start="0" end="100" time="350" tween="sine" easing="out" reversible="false"/>
+					</animation>
+					<label> $INFO[Container(110).ListItem.Property(part4)]</label>
+					<font>dem0b</font>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>top</aligny>
+					<textcolor>$PARAM[colorlyr04]</textcolor>
+				</control>
+			</control>
+		</definition>
+	</include>
+</includes>

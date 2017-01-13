@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- Aeon MQ 7 -->
+	<defaultcontrol>5</defaultcontrol>
+	<controls>
+	<control type="group">
+	<include>Animation_DialogPopup</include>
+	<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(Addon)">conditional</animation>
+	<control type="image">
+	<left>165</left>
+	<top>0</top>
+	<width>45</width>
+	<height>1080</height>
+	<texture flipx="true">shadow.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>1710</left>
+	<top>0</top>
+	<width>45</width>
+	<height>1080</height>
+	<texture>shadow.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>210</left>
+	<top>0</top>
+	<width>1500</width>
+	<height>1080</height>
+	<texture>darkgrey.png</texture>
+	<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+	<include>Animation_DefaultGlass</include>
+	</control>
+	<control type="image">
+	<left>210</left>
+	<top>0</top>
+	<width>1500</width>
+	<height>120</height>
+	<texture>black.png</texture>
+	<colordiffuse>90FFFFFF</colordiffuse>
+	</control>
+	<control type="label" id="2">
+	<left>322</left>
+	<top>34</top>
+	<width>1278</width>
+	<height>45</height>
+	<align>center</align>
+	<aligny>center</aligny>
+	<label>-</label>
+	<font>Font_titlesettings</font>
+	<textcolor>FFFFFAF0</textcolor>	
+	<include>Animation_Fade</include>
+	</control>
+	<control type="grouplist" id="5">
+	<left>210</left>
+	<top>150</top>
+	<width>1500</width>
+	<height>900</height>
+	<itemgap>0</itemgap>
+	<onup>5</onup>
+	<ondown>5</ondown>
+	<onleft>5</onleft>
+	<onright>60</onright>
+	<pagecontrol>60</pagecontrol>
+	</control>
+	<control type="button" id="7">
+	</control>
+	<control type="radiobutton" id="8">
+	<radioposx>1341</radioposx>
+	</control>
+	<control type="spincontrolex" id="9">
+	<spinposx>26</spinposx>
+	</control>
+	<control type="image" id="11">
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="edit" id="12">
+	</control>
+	<control type="sliderex" id="13">
+	</control>
+	<control type="label" id="14">
+	<textoffsetx>75</textoffsetx>
+	<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+	</control>
+	</control>
+	<control type="scrollbar" id="60">
+	<left>840</left>
+	<top>98</top>
+	<width>38</width>
+	<height>705</height>
+	<onleft>5</onleft>
+	<onright>5</onright>
+	<ondown>61</ondown>
+	<onup>61</onup>
+	<showonepage>false</showonepage>
+	<orientation>vertical</orientation>
+	</control>
+	</controls>
+</window>

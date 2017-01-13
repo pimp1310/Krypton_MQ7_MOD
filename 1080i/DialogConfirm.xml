@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="100">
+    <!-- Aeon MQ 7 -->
+    <defaultcontrol>10</defaultcontrol>
+    <controls>
+        <control type="group">
+            <include>Animation_TopDialogPopup</include>
+            <include>Dialogs_Bar</include>
+            <control type="label" id="1">
+                <include>Dialogs_Label1</include>
+                <label>$LOCALIZE[13406]</label>
+            </control>
+            <control type="label" id="2">
+                <include>Dialogs_Label2</include>
+            </control>
+            <control type="label" id="3">
+                <include>Dialogs_Label4</include>
+            </control>
+            <control type="label" id="4">
+                <include>Dialogs_Label3</include>
+            </control>
+            <control type="button" id="10">			    
+                <!-- no -->
+                <left>735</left>
+                <top>120</top>
+                <height>44</height>
+                <width>225</width>
+                <align>center</align>
+                <textcolor>FFFFFAF0</textcolor>
+                <focusedcolor>FF101010</focusedcolor>
+                <font>Font_plot</font>
+                <label>106</label>
+                <textoffsetx>0</textoffsetx>
+                <textwidth>270</textwidth>
+                <texturefocus>grey.png</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <onleft>11</onleft>
+                <onright>11</onright>
+                <onup>11</onup>
+                <ondown>11</ondown>
+            </control>
+            <control type="button" id="11">
+                <!-- yes -->
+                <left>960</left>
+                <top>120</top>
+                <height>44</height>
+                <width>225</width>
+                <align>center</align>
+                <textcolor>FFFFFAF0</textcolor>
+                <focusedcolor>FF101010</focusedcolor>
+                <font>Font_plot</font>
+                <label>107</label>
+                <textoffsetx>0</textoffsetx>
+                <textwidth>270</textwidth>
+                <texturefocus>grey.png</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <onleft>10</onleft>
+                <onright>10</onright>
+                <onup>10</onup>
+                <ondown>10</ondown>                
+				<onclick condition="!String.IsEqual(skin.string(defaultsettings),6)">AlarmClock(firstfocus,ActivateWindow(6628),0:01,true)</onclick>
+            </control>
+        </control>
+		<!-- Barra de cache -->
+	            <control type="progress">
+	            <top>42</top>
+	            <include>Dialogs_Progress</include>
+	            <info>Player.ProgressCache</info>
+	            <midtexture>progress_mid.png</midtexture>
+	            <colordiffuse>$INFO[Skin.String(colorheader)]</colordiffuse>
+	            </control>
+		<!-- Barra de progresso -->
+	        <control type="progress">
+	            <top>42</top>
+	            <include>Dialogs_Progress</include>
+	            <info>System.Progressbar</info>
+	        </control>
+	        <control type="label" id="1">
+	            <left>0</left>
+	            <top>0</top>
+	            <width>0</width>
+	            <height>0</height>	            
+				<label></label>
+	            <font>Font_plot</font>
+	            <visible>false</visible>
+	        </control>
+	        <control type="label">
+	            <left>660</left>
+	            <top>6</top>
+	            <width>600</width>
+	            <height>30</height>
+	            <align>center</align>
+	            <textcolor>$VAR[value_headercolor]</textcolor>
+	            <font>Font_plot</font>
+	            <scroll>true</scroll>	            
+				<label>$INFO[Control.GetLabel(1)] [COLOR=FFFFFAF0]$INFO[System.Progressbar,- ,%][/COLOR]</label>
+	        </control>
+	        <control type="textbox" id="9">
+	            <left>15</left>
+	            <top>51</top>
+	            <width>1890</width>
+	            <height>35</height>
+	            <align>left</align>
+                <aligny>top</aligny>
+	            <textcolor>FFFFFAF0</textcolor>
+                <label>noop</label>
+	            <font>Font_plot</font>	            
+				<autoscroll time="300" delay="500" repeat="5000">true</autoscroll>
+	        </control>            
+    </controls>
+</window>

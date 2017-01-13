@@ -1,0 +1,636 @@
+<!-- Aeon MQ 7 + JB -->
+
+<includes>
+<!-- ######################################################################### Includes JB ######################################################################### -->
+	<include name="ZEGAR">
+		<content>
+			<item id="1">
+				<label>1.</label>
+				<onclick>noop</onclick>
+			</item>
+			<item id="2">
+				<label>2.</label>
+				<onclick>noop</onclick>
+			</item>
+		</content>
+	</include>
+
+	<!--Podobni artysci z AS-->
+	<include name="PodobniArtysci">
+		<!-- Wczytywanie podobnych artystow do listy -->
+		<content>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.1.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.1.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.1.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.2.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.2.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.2.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.3.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.3.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.3.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.4.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.4.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.4.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.5.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.5.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.5.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.6.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.6.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.6.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.7.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.7.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.7.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.8.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.8.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.8.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.9.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.9.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.9.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.10.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.10.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.10.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.11.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.11.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.11.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.12.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.12.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.12.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.13.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.13.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.13.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.14.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.14.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.14.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.15.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.15.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.15.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.16.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.16.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.16.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.17.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.17.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.17.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.18.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.18.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.18.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.19.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.19.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.19.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.20.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.20.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.20.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.21.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.21.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.21.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.22.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.22.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.22.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.23.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.23.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.23.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.24.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.24.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.24.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.25.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.25.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.25.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.26.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.26.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.26.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.27.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.27.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.27.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.28.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.28.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.28.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.29.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.29.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.29.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.30.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.30.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.30.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.31.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.31.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.31.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.32.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.32.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.32.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.33.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.33.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.33.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.34.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.34.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.34.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.35.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.35.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.35.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.36.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.36.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.36.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.37.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.37.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.37.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.38.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.38.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.38.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.39.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.39.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.39.SimilarThumb))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.40.SimilarName)]</label>
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.40.SimilarThumb)]</icon>
+				<onclick>-</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.40.SimilarThumb))</visible>
+			</item>
+		</content>
+	</include>
+
+	<!--CD artysty z AS-->
+	<include name="CDArtist">
+		<content>
+			<item id="1">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.1.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.1.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.1.AlbumThumb))</visible>
+			</item>
+			<item id="2">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.2.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.2.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.2.AlbumThumb))</visible>
+			</item>
+			<item id="3">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.3.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.3.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.3.AlbumThumb))</visible>
+			</item>
+			<item id="4">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.4.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.4.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.4.AlbumThumb))</visible>
+			</item>
+			<item id="5">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.5.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.5.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.5.AlbumThumb))</visible>
+			</item>
+			<item id="6">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.6.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.6.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.6.AlbumThumb))</visible>
+			</item>
+			<item id="7">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.7.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.7.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.7.AlbumThumb))</visible>
+			</item>
+			<item id="8">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.8.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.8.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.8.AlbumThumb))</visible>
+			</item>
+			<item id="9">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.9.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.9.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.9.AlbumThumb))</visible>
+			</item>
+			<item id="10">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.10.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.10.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.10.AlbumThumb))</visible>
+			</item>
+			<item id="11">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.11.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.11.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.11.AlbumThumb))</visible>
+			</item>
+			<item id="12">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.12.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.12.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.12.AlbumThumb))</visible>
+			</item>
+			<item id="13">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.13.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.13.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.13.AlbumThumb))</visible>
+			</item>
+			<item id="14">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.14.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.14.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.14.AlbumThumb))</visible>
+			</item>
+			<item id="15">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.15.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.15.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.15.AlbumThumb))</visible>
+			</item>
+			<item id="16">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.16.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.16.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.16.AlbumThumb))</visible>
+			</item>
+			<item id="17">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.17.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.17.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.17.AlbumThumb))</visible>
+			</item>
+			<item id="18">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.18.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.18.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.18.AlbumThumb))</visible>
+			</item>
+			<item id="19">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.19.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.19.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.19.AlbumThumb))</visible>
+			</item>
+			<item id="20">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.20.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.20.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.20.AlbumThumb))</visible>
+			</item>
+			<item id="21">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.21.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.21.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.21.AlbumThumb))</visible>
+			</item>
+			<item id="22">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.22.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.22.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.22.AlbumThumb))</visible>
+			</item>
+			<item id="23">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.23.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.23.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.23.AlbumThumb))</visible>
+			</item>
+			<item id="24">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.24.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.24.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.24.AlbumThumb))</visible>
+			</item>
+			<item id="25">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.25.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.25.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.25.AlbumThumb))</visible>
+			</item>
+			<item id="26">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.26.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.26.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.26.AlbumThumb))</visible>
+			</item>
+			<item id="27">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.27.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.27.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.27.AlbumThumb))</visible>
+			</item>
+			<item id="28">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.28.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.28.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.28.AlbumThumb))</visible>
+			</item>
+			<item id="29">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.29.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.29.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.29.AlbumThumb))</visible>
+			</item>
+			<item id="30">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.30.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.30.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.30.AlbumThumb))</visible>
+			</item>
+			<item id="31">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.31.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.31.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.31.AlbumThumb))</visible>
+			</item>
+			<item id="32">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.32.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.32.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.32.AlbumThumb))</visible>
+			</item>
+			<item id="33">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.33.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.33.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.33.AlbumThumb))</visible>
+			</item>
+			<item id="34">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.34.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.34.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.34.AlbumThumb))</visible>
+			</item>
+			<item id="35">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.35.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.35.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.35.AlbumThumb))</visible>
+			</item>
+			<item id="36">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.36.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.36.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.36.AlbumThumb))</visible>
+			</item>
+			<item id="37">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.37.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.37.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.37.AlbumThumb))</visible>
+			</item>
+			<item id="38">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.38.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.38.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.38.AlbumThumb))</visible>
+			</item>
+			<item id="39">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.39.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.39.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.39.AlbumThumb))</visible>
+			</item>
+			<item id="40">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.40.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.40.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.40.AlbumThumb))</visible>
+			</item>
+			<item id="41">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.41.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.41.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.41.AlbumThumb))</visible>
+			</item>
+			<item id="42">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.42.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.42.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.42.AlbumThumb))</visible>
+			</item>
+			<item id="43">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.43.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.43.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.43.AlbumThumb))</visible>
+			</item>
+			<item id="44">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.44.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.44.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.44.AlbumThumb))</visible>
+			</item>
+			<item id="45">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.45.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.45.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.45.AlbumThumb))</visible>
+			</item>
+			<item id="46">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.46.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.46.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.46.AlbumThumb))</visible>
+			</item>
+			<item id="47">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.47.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.47.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.47.AlbumThumb))</visible>
+			</item>
+			<item id="48">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.48.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.48.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.48.AlbumThumb))</visible>
+			</item>
+			<item id="49">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.49.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.49.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.49.AlbumThumb))</visible>
+			</item>
+			<item id="50">
+				<icon>$INFO[Window(Visualisation).Property(ArtistSlideshow.50.AlbumThumb)]</icon>
+				<label>$INFO[Window(Visualisation).Property(ArtistSlideshow.50.AlbumName)]</label>
+				<onclick>noop</onclick>
+				<visible>!String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.50.AlbumThumb))</visible>
+			</item>
+		</content>
+	</include>
+
+	<!--Czyszczenia wlasnosci pobranych z Ext i helpera-->
+	<include name="ClearArtist">
+		<onload>Skin.SetString(pathMultiBanner, )</onload>
+		<onload>Skin.SetString(pathMultiLogo, )</onload>
+		<onload>Skin.SetString(pathExtrafanart, )</onload>
+
+		<onunload>Skin.SetString(pathMultiBanner, )</onunload>
+		<onunload>Skin.SetString(pathMultiLogo, )</onunload>
+		<onunload>Skin.SetString(pathExtrafanart, )</onunload>
+
+		<onload>ClearProperty(artist,home)</onload>
+		<onload>ClearProperty(thumb,home)</onload>
+		<onload>ClearProperty(Fanart,home)</onload>
+
+		<onload>ClearProperty(Banner,home)</onload>
+		<onload>ClearProperty(Logo,home)</onload>
+
+
+		<onload>ClearProperty(Plot,home)</onload>
+	</include>
+
+	<!--Knif do animacji-->
+	<include name="KnifDoAnimacji">
+		<control type="image" id="9923078">
+            <include>InvisibleButton</include>
+        	<animation effect="fade" start="0" end="100" time="150" delay="1000">Visible</animation>
+            <visible>![Container(6010).OnNext | Container(6010).OnPrevious] + Control.HasFocus(6010)</visible>
+        </control>
+	</include>
+
+	<!--Animacja CD na liscie-->
+	<include name="AnimacjaCD">
+		<animation type="conditional" reversible="false" condition="true">
+				<effect type="slide"  delay="2000" end="120,0" time="1000" easing="out"/>
+				<effect type="rotate" delay="2000" start="0"   end="-57"   time="1000" center="auto"  loop="true" easing="out"/>
+
+				<effect type="rotate" delay="3000" end="-303"     time="4000" center="auto"  loop="true" easing="out"/>
+
+				<effect type="slide"  delay="12000" end="-120,0" time="1000" easing="out"/>
+				<effect type="rotate" delay="12000" end="57"     time="1000" center="auto"  loop="true" easing="out"/>
+
+				<effect type="rotate" delay="13000" end="303"     time="1000" center="auto"  loop="true" easing="out"/>
+        </animation>
+	</include>
+
+	<!--Animacja CD muzyka -->
+	<include name="AnimacjaCD_Play">
+		<animation effect="rotate" start="0" end="-360" center="auto" time="40000" delay="6000" loop="true" reversible="false" condition="!Player.Playing">Conditional</animation>
+		<animation effect="rotate" start="0" end="-360" center="auto" time="4000" loop="true" reversible="false" condition="Player.Playing">Conditional</animation>
+	</include>
+
+	<include name="EfektCD">
+		<effect type="slide"  delay="2000" end="320,0" time="1000" easing="out"/>
+		<effect type="rotate" delay="2000" start="0"   end="-57"   time="1000" center="auto"  loop="true" easing="out"/>
+
+		<effect type="rotate" delay="3000" end="-303"     time="4000" center="auto"  loop="true" easing="out"/>
+
+		<effect type="slide"  delay="12000" end="-320,0" time="1000" easing="out"/>
+		<effect type="rotate" delay="12000" end="57"     time="1000" center="auto"  loop="true" easing="out"/>
+
+		<effect type="rotate" delay="13000" end="303"     time="1000" center="auto"  loop="true" easing="out"/>
+
+		<effect type="rotate" delay="15000" end="-360"     time="40000" center="auto"  loop="true" easing="out"/>
+	</include>
+
+</includes>

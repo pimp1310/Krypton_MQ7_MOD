@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+	<include name="snowtop">
+	<control type="image">
+			<posy>0</posy>
+			<posx>-150</posx>
+			<width>2160</width>
+			<height>40</height>	
+			<texture>holiday_additions/snow/snow_top.png</texture>
+			<aspectratio scalediffuse="false">sketch</aspectratio>
+	<animation effect="fade" start="0" time="300" delay="3000" >WindowOpen</animation>
+	</control>
+	<control type="image">
+			<posy>1070</posy>
+			<posx>-150</posx>
+			<width>2160</width>
+			<height>10</height>	
+			<texture>holiday_additions/snow/snow_floorfull.png</texture>
+			<aspectratio scalediffuse="false">sketch</aspectratio>
+			<!--animation effect="fade" start="0" time="300" delay="3000" >WindowOpen</animation-->
+		</control>
+	</include>	
+	<include name="snowf"><!--Falling Snow-->
+		<control type="group">	<!--#################################  Falling  ############################-->
+			<animation effect="slide" start="550,0" end="-550,0" time="30000" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/21.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="165,-200" end="165,950" time="30000" delay="6000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/42.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="495,-200" end="495,950" time="30000" delay="3000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+				
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/23.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="825,-200" end="825,950" time="30000" delay="5000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/4.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1155,-200" end="1155,950" time="30000" reversible="false" loop="true"   condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true"   condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/35.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1485,-200" end="1485,950" time="30000" delay="2000" reversible="false" loop="true"  condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true"  condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/16.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1815,-200" end="1815,950" time="30000" delay="4000" reversible="false" loop="true"  condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true"  condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/47.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="83,-200" end="83,950" time="30000" delay="9000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/6.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="413,-200" end="413,950" time="30000" delay="10000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/15.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="743,-200" end="743,950" time="30000" delay="7000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/24.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1073,-200" end="1073,950" time="30000" delay="12000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/33.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1403,-200" end="1403,950" time="30000" delay="11000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/41.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1733,-200" end="1733,950" time="30000" delay="8000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/22.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="42,-200" end="42,950" time="30000" delay="14000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/23.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="372,-200" end="372,950" time="30000" delay="18000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/34.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="702,-200" end="702,950" time="30000" delay="16000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/25.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1032,-200" end="1032,950" time="30000" delay="17000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/17.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1362,-200" end="1362,950" time="30000" delay="13000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/44.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1692,-200" end="1692,950" time="30000" delay="15000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/1.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="22,-200" end="22,950" time="30000" delay="23000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/40.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="352,-200" end="352,950" time="30000" delay="24000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/26.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="682,-200" end="682,950" time="30000" delay="22000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/45.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1012,-200" end="1012,950" time="30000" delay="19000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/31.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1342,-200" end="1342,950" time="30000" delay="21000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/10.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1672,-200" end="1672,950" time="30000" delay="20000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+		</control>
+		<control type="group"> <!--####################   Falling pt2 ###################-->
+			<animation effect="slide" start="600,0" end="-200,0" time="20000" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			<animation effect="rotate" end="5" time="35000" delay="400" pulse="true" condition="true">Conditional</animation>
+			<posx>400</posx>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/21.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="165,-200" end="165,950" time="30000" delay="6000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/2.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="495,-200" end="495,950" time="30000" delay="3000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+				
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/33.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="825,-200" end="825,950" time="30000" delay="5000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/14.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1155,-200" end="1155,950" time="30000" reversible="false" loop="true"   condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true"   condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/45.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1485,-200" end="1485,950" time="30000" delay="2000" reversible="false" loop="true"  condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true"  condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/26.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1815,-200" end="1815,950" time="30000" delay="4000" reversible="false" loop="true"  condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true"  condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/7.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="83,-200" end="83,950" time="30000" delay="9000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/16.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="413,-200" end="413,950" time="30000" delay="10000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/25.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="743,-200" end="743,950" time="30000" delay="7000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/34.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1073,-200" end="1073,950" time="30000" delay="12000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/43.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1403,-200" end="1403,950" time="30000" delay="11000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/1.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1733,-200" end="1733,950" time="30000" delay="8000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/32.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="42,-200" end="42,950" time="30000" delay="14000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/13.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="372,-200" end="372,950" time="30000" delay="18000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/44.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="702,-200" end="702,950" time="30000" delay="16000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/35.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1032,-200" end="1032,950" time="30000" delay="17000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/27.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1362,-200" end="1362,950" time="30000" delay="13000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/4.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1692,-200" end="1692,950" time="30000" delay="15000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/11.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="22,-200" end="22,950" time="30000" delay="23000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/0.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="352,-200" end="352,950" time="30000" delay="24000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/36.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="682,-200" end="682,950" time="30000" delay="22000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/5.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1012,-200" end="1012,950" time="30000" delay="19000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/41.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1342,-200" end="1342,950" time="30000" delay="21000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/20.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1672,-200" end="1672,950" time="30000" delay="20000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+		</control>
+		<control type="group"> <!--####################   Falling pt3 ###################-->
+			<animation effect="slide" start="-600,0" end="0,0" time="8000" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			<animation effect="rotate" end="-1" time="5000" delay="1000" pulse="true" condition="true">Conditional</animation>
+			<posx>-400</posx>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/31.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="165,-200" end="165,950" time="30000" delay="6000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/20.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="495,-200" end="495,950" time="30000" delay="3000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+				
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/43.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="825,-200" end="825,950" time="30000" delay="5000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/24.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1155,-200" end="1155,950" time="30000" reversible="false" loop="true"   condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true"   condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/5.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1485,-200" end="1485,950" time="30000" delay="2000" reversible="false" loop="true"  condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true"  condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/36.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1815,-200" end="1815,950" time="30000" delay="4000" reversible="false" loop="true"  condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true"  condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/17.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="83,-200" end="83,950" time="30000" delay="9000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/26.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="413,-200" end="413,950" time="30000" delay="10000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/35.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="743,-200" end="743,950" time="30000" delay="7000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/44.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1073,-200" end="1073,950" time="30000" delay="12000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/3.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1403,-200" end="1403,950" time="30000" delay="11000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/10.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1733,-200" end="1733,950" time="30000" delay="8000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/42.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="42,-200" end="42,950" time="30000" delay="14000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/23.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="372,-200" end="372,950" time="30000" delay="18000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/4.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="702,-200" end="702,950" time="30000" delay="16000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/45.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1032,-200" end="1032,950" time="30000" delay="17000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/37.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1362,-200" end="1362,950" time="30000" delay="13000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/14.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1692,-200" end="1692,950" time="30000" delay="15000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/21.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="22,-200" end="22,950" time="30000" delay="23000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="400" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/10.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="352,-200" end="352,950" time="30000" delay="24000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="600" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/46.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="682,-200" end="682,950" time="30000" delay="22000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="500" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/15.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1012,-200" end="1012,950" time="30000" delay="19000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="300" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/1.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1342,-200" end="1342,950" time="30000" delay="21000"reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="100" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+			<control type="image">
+				<width>25</width>
+				<height>25</height>
+				<texture>holiday_additions/snow/30.png</texture>
+				<aspectratio scalediffuse="false">keep</aspectratio>
+				<animation effect="slide" start="1672,-200" end="1672,950" time="30000" delay="20000" reversible="false" loop="true" condition="Window.IsActive(home)">Conditional</animation>
+				<animation effect="slide" start="20,0" end="-60,0" time="5300" delay="200" reversible="false" pulse="true" condition="Window.IsActive(home)">Conditional</animation>
+			</control>
+		</control>
+	</include>		
+</includes>

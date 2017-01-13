@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- Aeon MQ 7 -->
+	<defaultcontrol always="true">8000</defaultcontrol>
+	<controls>
+	<include>SettingsBG</include>
+	<!-- default group -->
+	<control type="group">
+	<include>Animation_Window</include>
+	<control type="image">
+	<left>165</left>
+	<top>0</top>
+	<width>45</width>
+	<height>1080</height>
+	<texture flipx="true">shadow.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>1710</left>
+	<top>0</top>
+	<width>45</width>
+	<height>1080</height>
+	<texture>shadow.png</texture>
+	<colordiffuse>C3FFFFFF</colordiffuse>
+	</control>
+	<control type="image">
+	<left>210</left>
+	<top>120</top>
+	<width>220</width>
+	<height>862</height>
+	<texture>darkgrey.png</texture>
+	<animation effect="fade" end="85" condition="true">Conditional</animation>
+	</control>
+	<control type="image">
+	<left>1490</left>
+	<top>120</top>
+	<width>220</width>
+	<height>862</height>
+	<texture>darkgrey.png</texture>
+	<animation effect="fade" end="85" condition="true">Conditional</animation>
+	</control>	
+	<control type="image">
+	<left>430</left>
+	<top>120</top>
+	<width>1055</width>
+	<height>862</height>
+	<texture>black.png</texture>
+	<animation effect="fade" end="65" condition="true">Conditional</animation>
+	</control>
+	<control type="image">
+	<left>210</left>
+	<top>0</top>
+	<width>1500</width>
+	<height>120</height>
+	<texture>black.png</texture>
+	<colordiffuse>90FFFFFF</colordiffuse>
+	</control>
+	<control type="label">
+	<left>322</left>
+	<top>34</top>
+	<width>1278</width>
+	<height>45</height>
+	<align>center</align>
+	<aligny>center</aligny>
+	<label>$ADDON[adsp.biquad.filters 30100]</label>
+	<font>Font_titlesettings</font>
+	<textcolor>FFFFFAF0</textcolor>	
+	<include>Animation_Fade</include>
+	</control>
+	<control type="image">
+	<left>426</left>
+	<top>120</top>
+	<width>4</width>
+	<height>862</height>
+	<texture>grey.png</texture>
+	<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+	</control>
+	<control type="image">
+	<left>1490</left>
+	<top>120</top>
+	<width>4</width>
+	<height>862</height>
+	<texture>grey.png</texture>
+	<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+	</control>
+	<control type="image">
+	<posx>450</posx>
+	<posy>160</posy>
+	<width>1020</width>
+	<height>792</height>
+	<texture>eq_back.png</texture>
+	</control>	
+	
+	<!-- PreAmp -->
+	<control type="group">
+	<left>210</left>
+	<top>188</top>
+	<width>1500</width>
+	<height>46</height>
+	<control type="image">
+	<posx>220</posx>
+	<posy>0</posy>
+	<width>1059</width>
+	<height>46</height>
+	<texture>grey.png</texture>
+	<visible>Control.HasFocus(8000)</visible>
+	</control>		
+	<control type="slider" id="8000">
+	<posx>205</posx>
+	<posy>-17</posy>
+	<width>1090</width>
+	<height>80</height>
+	<onup>10000</onup>
+	<ondown>8001</ondown>
+	<texturesliderbar>eq_sliderback.png</texturesliderbar>
+	</control>
+	<control type="image">
+	<posx>0</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8100">
+	<posx>20</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>
+	<align>center</align>
+	<aligny>center</aligny>	
+	<label>$ADDON[adsp.parametric.eq 30150]</label>
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	<control type="image">
+	<posx>1284</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8200">
+	<posx>1304</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>			
+	<align>center</align>
+	<aligny>center</aligny>			
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	</control>
+	
+	<!-- 32Hz -->
+	<control type="group">
+	<left>210</left>
+	<top>257</top>
+	<width>1500</width>
+	<height>46</height>
+	<control type="image">
+	<posx>220</posx>
+	<posy>0</posy>
+	<width>1059</width>
+	<height>46</height>
+	<texture>grey.png</texture>
+	<visible>Control.HasFocus(8001)</visible>
+	</control>		
+	<control type="slider" id="8001">
+	<posx>205</posx>
+	<posy>-17</posy>
+	<width>1090</width>
+	<height>80</height>
+	<onup>8000</onup>
+	<ondown>8002</ondown>
+	<texturesliderbar>eq_sliderback.png</texturesliderbar>
+	</control>
+	<control type="image">
+	<posx>0</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8101">
+	<posx>20</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>
+	<align>center</align>
+	<aligny>center</aligny>	
+	<label>$ADDON[adsp.parametric.eq 30151]</label>
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	<control type="image">
+	<posx>1284</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8201">
+	<posx>1304</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>			
+	<align>center</align>
+	<aligny>center</aligny>			
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	</control>
+	
+	<!-- 64Hz -->
+	<control type="group">
+	<left>210</left>
+	<top>325</top>
+	<width>1500</width>
+	<height>46</height>
+	<control type="image">
+	<posx>220</posx>
+	<posy>0</posy>
+	<width>1059</width>
+	<height>46</height>
+	<texture>grey.png</texture>
+	<visible>Control.HasFocus(8002)</visible>
+	</control>		
+	<control type="slider" id="8002">
+	<posx>205</posx>
+	<posy>-17</posy>
+	<width>1090</width>
+	<height>80</height>
+	<onup>8001</onup>
+	<ondown>8003</ondown>
+	<texturesliderbar>eq_sliderback.png</texturesliderbar>
+	</control>
+	<control type="image">
+	<posx>0</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8102">
+	<posx>20</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>
+	<align>center</align>
+	<aligny>center</aligny>	
+	<label>$ADDON[adsp.parametric.eq 30152]</label>
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	<control type="image">
+	<posx>1284</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8202">
+	<posx>1304</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>			
+	<align>center</align>
+	<aligny>center</aligny>			
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	</control>
+	
+	<!-- 128Hz -->
+	<control type="group">
+	<left>210</left>
+	<top>394</top>
+	<width>1500</width>
+	<height>46</height>
+	<control type="image">
+	<posx>220</posx>
+	<posy>0</posy>
+	<width>1059</width>
+	<height>46</height>
+	<texture>grey.png</texture>
+	<visible>Control.HasFocus(8003)</visible>
+	</control>		
+	<control type="slider" id="8003">
+	<posx>205</posx>
+	<posy>-17</posy>
+	<width>1090</width>
+	<height>80</height>
+	<onup>8002</onup>
+	<ondown>8004</ondown>
+	<texturesliderbar>eq_sliderback.png</texturesliderbar>
+	</control>
+	<control type="image">
+	<posx>0</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8103">
+	<posx>20</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>
+	<align>center</align>
+	<aligny>center</aligny>	
+	<label>$ADDON[adsp.parametric.eq 30153]</label>
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	<control type="image">
+	<posx>1284</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8203">
+	<posx>1304</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>			
+	<align>center</align>
+	<aligny>center</aligny>			
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	</control>
+	
+	<!-- 250Hz -->
+	<control type="group">
+	<left>210</left>
+	<top>463</top>
+	<width>1500</width>
+	<height>46</height>
+	<control type="image">
+	<posx>220</posx>
+	<posy>0</posy>
+	<width>1059</width>
+	<height>46</height>
+	<texture>grey.png</texture>
+	<visible>Control.HasFocus(8004)</visible>
+	</control>		
+	<control type="slider" id="8004">
+	<posx>205</posx>
+	<posy>-17</posy>
+	<width>1090</width>
+	<height>80</height>
+	<onup>8003</onup>
+	<ondown>8005</ondown>
+	<texturesliderbar>eq_sliderback.png</texturesliderbar>
+	</control>
+	<control type="image">
+	<posx>0</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8104">
+	<posx>20</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>
+	<align>center</align>
+	<aligny>center</aligny>	
+	<label>$ADDON[adsp.parametric.eq 30154]</label>
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	<control type="image">
+	<posx>1284</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8204">
+	<posx>1304</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>			
+	<align>center</align>
+	<aligny>center</aligny>			
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	</control>
+	
+	<!-- 500Hz -->
+	<control type="group">
+	<left>210</left>
+	<top>532</top>
+	<width>1500</width>
+	<height>46</height>
+	<control type="image">
+	<posx>220</posx>
+	<posy>0</posy>
+	<width>1059</width>
+	<height>46</height>
+	<texture>grey.png</texture>
+	<visible>Control.HasFocus(8005)</visible>
+	</control>		
+	<control type="slider" id="8005">
+	<posx>205</posx>
+	<posy>-17</posy>
+	<width>1090</width>
+	<height>80</height>
+	<onup>8004</onup>
+	<ondown>8006</ondown>
+	<texturesliderbar>eq_sliderback.png</texturesliderbar>
+	</control>
+	<control type="image">
+	<posx>0</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8105">
+	<posx>20</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>
+	<align>center</align>
+	<aligny>center</aligny>	
+	<label>$ADDON[adsp.parametric.eq 30155]</label>
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	<control type="image">
+	<posx>1284</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8205">
+	<posx>1304</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>			
+	<align>center</align>
+	<aligny>center</aligny>			
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	</control>
+	
+	<!-- 1kHz -->
+	<control type="group">
+	<left>210</left>
+	<top>601</top>
+	<width>1500</width>
+	<height>46</height>
+	<control type="image">
+	<posx>220</posx>
+	<posy>0</posy>
+	<width>1059</width>
+	<height>46</height>
+	<texture>grey.png</texture>
+	<visible>Control.HasFocus(8006)</visible>
+	</control>		
+	<control type="slider" id="8006">
+	<posx>205</posx>
+	<posy>-17</posy>
+	<width>1090</width>
+	<height>80</height>
+	<onup>8005</onup>
+	<ondown>8007</ondown>
+	<texturesliderbar>eq_sliderback.png</texturesliderbar>
+	</control>
+	<control type="image">
+	<posx>0</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8106">
+	<posx>20</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>
+	<align>center</align>
+	<aligny>center</aligny>	
+	<label>$ADDON[adsp.parametric.eq 30156]</label>
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	<control type="image">
+	<posx>1284</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8206">
+	<posx>1304</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>			
+	<align>center</align>
+	<aligny>center</aligny>			
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	</control>
+	
+	<!-- 2kHz -->
+	<control type="group">
+	<left>210</left>
+	<top>670</top>
+	<width>1500</width>
+	<height>46</height>
+	<control type="image">
+	<posx>220</posx>
+	<posy>0</posy>
+	<width>1059</width>
+	<height>46</height>
+	<texture>grey.png</texture>
+	<visible>Control.HasFocus(8007)</visible>
+	</control>		
+	<control type="slider" id="8007">
+	<posx>205</posx>
+	<posy>-17</posy>
+	<width>1090</width>
+	<height>80</height>
+	<onup>8006</onup>
+	<ondown>8008</ondown>
+	<texturesliderbar>eq_sliderback.png</texturesliderbar>
+	</control>
+	<control type="image">
+	<posx>0</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8107">
+	<posx>20</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>
+	<align>center</align>
+	<aligny>center</aligny>	
+	<label>$ADDON[adsp.parametric.eq 30157]</label>
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	<control type="image">
+	<posx>1284</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8207">
+	<posx>1304</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>			
+	<align>center</align>
+	<aligny>center</aligny>			
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	</control>
+	
+	<!-- 4kHz -->
+	<control type="group">
+	<left>210</left>
+	<top>739</top>
+	<width>1500</width>
+	<height>46</height>
+	<control type="image">
+	<posx>220</posx>
+	<posy>0</posy>
+	<width>1059</width>
+	<height>46</height>
+	<texture>grey.png</texture>
+	<visible>Control.HasFocus(8008)</visible>
+	</control>		
+	<control type="slider" id="8008">
+	<posx>205</posx>
+	<posy>-17</posy>
+	<width>1090</width>
+	<height>80</height>
+	<onup>8007</onup>
+	<ondown>8009</ondown>
+	<texturesliderbar>eq_sliderback.png</texturesliderbar>
+	</control>
+	<control type="image">
+	<posx>0</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8108">
+	<posx>20</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>
+	<align>center</align>
+	<aligny>center</aligny>	
+	<label>$ADDON[adsp.parametric.eq 30158]</label>
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	<control type="image">
+	<posx>1284</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8208">
+	<posx>1304</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>			
+	<align>center</align>
+	<aligny>center</aligny>			
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	</control>
+	
+	<!-- 8kHz -->
+	<control type="group">
+	<left>210</left>
+	<top>808</top>
+	<width>1500</width>
+	<height>46</height>
+	<control type="image">
+	<posx>220</posx>
+	<posy>0</posy>
+	<width>1059</width>
+	<height>46</height>
+	<texture>grey.png</texture>
+	<visible>Control.HasFocus(8009)</visible>
+	</control>		
+	<control type="slider" id="8009">
+	<posx>205</posx>
+	<posy>-17</posy>
+	<width>1090</width>
+	<height>80</height>
+	<onup>8008</onup>
+	<ondown>8010</ondown>
+	<texturesliderbar>eq_sliderback.png</texturesliderbar>
+	</control>
+	<control type="image">
+	<posx>0</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8109">
+	<posx>20</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>
+	<align>center</align>
+	<aligny>center</aligny>	
+	<label>$ADDON[adsp.parametric.eq 30159]</label>
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	<control type="image">
+	<posx>1284</posx>
+	<posy>56</posy>
+	<width>216</width>
+	<height>3</height>
+	<texture>separator.png</texture>
+	</control>
+	<control type="label" id="8209">
+	<posx>1304</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>			
+	<align>center</align>
+	<aligny>center</aligny>			
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	</control>
+	
+	<!-- 16kHz -->
+	<control type="group">
+	<left>210</left>
+	<top>876</top>
+	<width>1500</width>
+	<height>46</height>
+	<control type="image">
+	<posx>220</posx>
+	<posy>0</posy>
+	<width>1059</width>
+	<height>46</height>
+	<texture>grey.png</texture>
+	<visible>Control.HasFocus(8010)</visible>
+	</control>		
+	<control type="slider" id="8010">
+	<posx>205</posx>
+	<posy>-17</posy>
+	<width>1090</width>
+	<height>80</height>
+	<onup>8009</onup>
+	<ondown>10000</ondown>
+	<texturesliderbar>eq_sliderback.png</texturesliderbar>
+	</control>
+	<control type="label" id="8110">
+	<posx>20</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>
+	<align>center</align>
+	<aligny>center</aligny>	
+	<label>$ADDON[adsp.parametric.eq 30160]</label>
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	<control type="label" id="8210">
+	<posx>1304</posx>
+	<posy>0</posy>
+	<width>176</width>
+	<height>46</height>			
+	<align>center</align>
+	<aligny>center</aligny>			
+	<haspath>false</haspath>
+	<scroll>false</scroll>
+	</control>
+	</control>
+	
+	<!-- botoes do rodape -->
+	<control type="image">
+	<left>210</left>
+	<top>983</top>
+	<width>1500</width>
+	<height>8</height>
+	<texture>grey.png</texture>
+	<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+	</control>
+	<control type="image">
+	<left>210</left>
+	<top>991</top>
+	<width>1500</width>
+	<height>60</height>
+	<aligny>top</aligny>
+	<texture>black.png</texture>
+	<colordiffuse>C0FFFFF</colordiffuse>
+	</control>
+	<control type="grouplist" id="10000">
+	<posx>210</posx>
+	<posy>991</posy>
+	<onup>8010</onup>
+	<ondown>8000</ondown>
+	<onleft>10000</onleft>
+	<onright>10000</onright>
+	<itemgap>0</itemgap>	
+	<orientation>horizontal</orientation>
+	<!-- OK -->
+	<control type="button" id="10050">
+	<width>500</width>
+	<include>SettingsBottomButton</include>
+	<label>186</label>
+	</control>
+	<!-- Cancelar -->
+	<control type="button" id="10051">
+	<width>500</width>
+	<include>SettingsBottomButton</include>
+	<label>222</label>
+	</control>
+	<!-- Restaurar -->
+	<control type="button" id="10052">
+	<width>500</width>
+	<include>SettingsBottomButton</include>
+	<label>409</label>
+	</control>
+	</control>
+	</control>
+	</controls>
+</window>

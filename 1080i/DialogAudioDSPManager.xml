@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- Aeon MQ 7 -->
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<controls>
+		<include>SettingsBG</include>
+		<!-- default group -->
+		<control type="group">	
+			<include>Animation_Window</include>
+			<include>SettingsBack</include>
+
+			<!--#######################################################################   MENU DA ESQUERDA   #######################################################################-->
+			<include>Date</include>
+			<control type="label">
+				<include>SettingsLeftTitle</include>
+				<label>31202</label>
+			</control>
+			<control type="list" id="9000">
+				<left>0</left>
+				<top>180</top>
+				<width>450</width>
+				<height>990</height>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<onleft>9000</onleft>
+				<onright>200</onright>
+				<orientation>vertical</orientation>
+				<scrolltime>450</scrolltime>
+				<itemlayout width="448" height="60">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>450</width>
+						<height>4</height>
+						<texture>divider.png</texture>
+						<colordiffuse>90FFFFFF</colordiffuse>
+					</control>
+					<control type="label">
+						<left>30</left>
+						<top>0</top>
+						<width>418</width>
+						<height>60</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Font_settings</font>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>FFFFFAF0</textcolor>
+					</control>
+				</itemlayout>
+				<focusedlayout width="448" height="60">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>1400</width>
+						<height>60</height>
+						<texture>grey.png</texture>
+						<animation effect="fade" start="100" end="50" time="0" condition="!Control.HasFocus(9000)">conditional</animation>
+					</control>
+					<control type="label">
+						<left>30</left>
+						<top>0</top>
+						<width>418</width>
+						<height>60</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Font_settings</font>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>FF101010</textcolor>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="91">
+						<label>$LOCALIZE[15057]</label>
+						<label2>$LOCALIZE[15114]</label2>
+						<property name="currentMode">InputResampling</property>	
+						<onclick>noop</onclick>
+						<visible>true</visible>
+					</item>
+					<item id="92">
+						<label>$LOCALIZE[15058]</label>
+						<label2>$LOCALIZE[15113]</label2>
+						<property name="currentMode">Preprocessing</property>	
+						<onclick>noop</onclick>
+						<visible>true</visible>
+					</item>
+					<item id="93">
+						<label>$LOCALIZE[15059]</label>
+						<label2>$LOCALIZE[15115]</label2>
+						<property name="currentMode">Masterprocessing</property>	
+						<onclick>noop</onclick>
+						<visible>true</visible>
+					</item>
+					<item id="94">
+						<label>$LOCALIZE[15060]</label>
+						<label2>$LOCALIZE[15117]</label2>
+						<property name="currentMode">Postprocessing</property>	
+						<onclick>noop</onclick>
+						<visible>true</visible>
+					</item>
+					<item id="95">
+						<label>$LOCALIZE[15061]</label>
+						<label2>$LOCALIZE[15116]</label2>
+						<property name="currentMode">OutputResampling</property>	
+						<onclick>noop</onclick>
+						<visible>true</visible>
+					</item>
+				</content>
+			</control>
+
+			<!--#######################################################################   MENU DA DIREITA   #######################################################################-->
+			<control type="label">
+				<include>SettingsRightTitle</include>
+				<label>$LOCALIZE[15020]</label>
+			</control>
+			<!-- Painel de info no rodape -->
+			<control type="image">
+				<left>454</left>
+				<top>859</top>
+				<width>1466</width>
+				<height>8</height>
+				<texture>grey.png</texture>
+				<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+			</control>
+			<control type="image">
+				<left>454</left>
+				<top>867</top>
+				<width>1466</width>
+				<height>160</height>
+				<texture>grey.png</texture>
+			</control>
+			<control type="textbox">
+				<left>520</left>
+				<top>875</top>
+				<width>1330</width>
+				<height>145</height>
+				<font>Font_plot</font>
+				<label>$INFO[Container(9000).ListItem.Label2]</label>
+				<textcolor>FF101010</textcolor>
+				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+			</control>
+			<control type="image">
+				<left>454</left>
+				<top>867</top>
+				<width>1466</width>
+				<height>160</height>
+				<texture>osd_glass.png</texture>
+				<colordiffuse>90FFFFFF</colordiffuse>
+			</control>
+
+			<control type="group" id="200">
+				<left>454</left>
+				<top>180</top>
+				<width>1466</width>
+				<height>750</height>
+				<ondown>9001</ondown>
+				<onup>9000</onup>
+
+				<!-- Modos disponiveis -->
+				<control type="group">
+					<left>0</left>
+					<top>0</top>
+					<width>733</width>
+					<height>540</height>
+					<!-- Header -->
+					<control type="label">
+						<left>75</left>
+						<top>3</top>
+						<width>1316</width>
+						<height>45</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Font_settings</font>
+						<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+						<label>$LOCALIZE[15050] ($INFO[Container(20).NumItems])</label>	
+					</control>
+					<control type="scrollbar" id="60">
+						<left>1860</left>
+						<top>8</top>
+						<height>184</height>
+						<onleft>20</onleft>
+						<onright>9001</onright>
+						<showonepage>false</showonepage>
+						<orientation>vertical</orientation>
+					</control>
+					<!-- Lista dos modos disponiveis -->
+					<control type="list" id="20">
+						<left>0</left>
+						<top>52</top>
+						<width>1466</width>
+						<height>200</height>
+						<ondown>21</ondown>
+						<onleft>9000</onleft>
+						<onright>9001</onright>
+						<pagecontrol>60</pagecontrol>
+						<scrolltime>200</scrolltime>
+						<itemlayout height="99" width="1466">
+							<control type="image">
+								<left>75</left>
+								<top>12</top>
+								<width>75</width>
+								<height>75</height>
+								<texture>$INFO[ListItem.Icon]</texture>
+								<aspectratio aligny="center" align="left">keep</aspectratio>
+								<visible>!String.IsEqual(ListItem.Icon,"")</visible>
+							</control>
+							<control type="image">
+								<left>75</left>
+								<top>12</top>
+								<width>75</width>
+								<height>75</height>
+								<texture>DefaultAudio.png</texture>
+								<aspectratio aligny="center" align="left">keep</aspectratio>
+								<visible>String.IsEqual(ListItem.Icon,"")</visible>
+							</control>
+							<control type="label">
+								<left>160</left>
+								<top>0</top>
+								<width>1156</width>
+								<height>60</height>
+								<align>left</align>
+								<aligny>center</aligny>	
+								<font>Font_settings</font>
+								<textcolor>FFFFFAF0</textcolor>
+								<selectedcolor>FFFFFAF0</selectedcolor>
+								<label>$INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
+							</control>
+						</itemlayout>
+						<focusedlayout height="99" width="1466">
+							<control type="image">
+								<left>0</left>
+								<top>4</top>
+								<width>1466</width>
+								<height>90</height>
+								<texture>grey.png</texture>
+								<visible>Control.HasFocus(20)</visible>
+							</control>
+							<control type="image">
+								<left>75</left>
+								<top>12</top>
+								<width>75</width>
+								<height>75</height>
+								<texture>$INFO[ListItem.Icon]</texture>
+								<aspectratio aligny="center" align="left">keep</aspectratio>
+								<visible>!String.IsEqual(ListItem.Icon,"")</visible>
+							</control>
+							<control type="image">
+								<left>75</left>
+								<top>12</top>
+								<height>75</height>
+								<width>75</width>
+								<texture>DefaultAudio.png</texture>
+								<aspectratio aligny="center" align="left">keep</aspectratio>
+								<visible>String.IsEqual(ListItem.Icon,"")</visible>
+							</control>
+							<control type="label">
+								<left>160</left>
+								<top>0</top>
+								<width>1156</width>
+								<height>60</height>
+								<align>left</align>
+								<aligny>center</aligny>	
+								<font>Font_settings</font>
+								<textcolor>FFFFFAF0</textcolor>
+								<selectedcolor>FFFFFAF0</selectedcolor>
+								<label>$INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
+								<visible>!Control.HasFocus(20)</visible>
+							</control>
+							<control type="label">
+								<left>160</left>
+								<top>0</top>
+								<width>1156</width>
+								<height>60</height>
+								<align>left</align>
+								<aligny>center</aligny>	
+								<font>Font_settings</font>
+								<textcolor>FF101010</textcolor>
+								<selectedcolor>FFFFFAF0</selectedcolor>
+								<label>$INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
+								<visible>Control.HasFocus(20)</visible>
+							</control>
+							<control type="label">
+								<left>160</left>
+								<top>45</top>
+								<width>1156</width>
+								<height>45</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>Font_plot</font>
+								<textcolor>FFFFFAF0</textcolor>
+								<selectedcolor>FFFFFAF0</selectedcolor>
+								<label>$INFO[ListItem.Property(Description)]</label>
+								<visible>!Control.HasFocus(20)</visible>
+							</control>
+							<control type="label">
+								<left>160</left>
+								<top>45</top>
+								<width>1156</width>
+								<height>45</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>Font_plot</font>	
+								<textcolor>FF101010</textcolor>
+								<scrollsuffix>&gt;   &lt;</scrollsuffix>
+								<selectedcolor>FFFFFAF0</selectedcolor>
+								<label>$INFO[ListItem.Property(Description)]</label>
+								<scroll>true</scroll>
+								<visible>Control.HasFocus(20)</visible>
+							</control>
+						</focusedlayout>
+					</control>
+				</control>
+
+				<!-- Modos ativados -->
+				<control type="group">
+					<left>0</left>
+					<top>300</top>
+					<width>1466</width>
+					<height>540</height>
+					<!-- Header -->
+					<control type="label">
+						<left>75</left>
+						<top>3</top>
+						<width>1316</width>
+						<height>45</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Font_settings</font>
+						<textcolor>$INFO[Skin.String(colorheader)]</textcolor>	
+						<label>$LOCALIZE[15051] ($INFO[Container(21).NumItems])</label>	
+					</control>
+					<control type="scrollbar" id="61">
+						<left>1860</left>
+						<top>8</top>
+						<height>184</height>
+						<onleft>21</onleft>
+						<onright>9001</onright>
+						<showonepage>false</showonepage>
+						<orientation>vertical</orientation>
+					</control>
+					<!-- Lista dos modos ativos -->
+					<control type="list" id="21">
+						<left>0</left>
+						<top>52</top>
+						<width>1466</width>
+						<height>200</height>
+						<onup>20</onup>
+						<onleft>9000</onleft>
+						<onright>61</onright>
+						<pagecontrol>61</pagecontrol>
+						<scrolltime>200</scrolltime>
+						<itemlayout height="99" width="1466">
+							<control type="image">
+								<left>75</left>
+								<top>12</top>
+								<width>75</width>
+								<height>75</height>
+								<texture>$INFO[ListItem.Icon]</texture>
+								<aspectratio aligny="center" align="left">keep</aspectratio>
+								<visible>!String.IsEqual(ListItem.Icon,"")</visible>
+							</control>
+							<control type="image">
+								<left>75</left>
+								<top>12</top>
+								<width>75</width>
+								<height>75</height>
+								<texture>DefaultAudio.png</texture>
+								<aspectratio aligny="center" align="left">keep</aspectratio>
+								<visible>String.IsEqual(ListItem.Icon,"")</visible>
+							</control>
+							<control type="label">
+								<left>160</left>
+								<top>0</top>
+								<width>1156</width>
+								<height>60</height>	
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>Font_settings</font>
+								<textcolor>FFFFFAF0</textcolor>
+								<selectedcolor>FFFFFAF0</selectedcolor>
+								<label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
+							</control>
+						</itemlayout>
+						<focusedlayout height="99" width="1466">
+							<control type="image">
+								<left>0</left>
+								<top>4</top>
+								<width>1466</width>
+								<height>90</height>
+								<texture>grey.png</texture>
+								<visible>Control.HasFocus(21)</visible>
+							</control>
+							<control type="image">
+								<left>75</left>
+								<top>12</top>
+								<width>75</width>
+								<height>75</height>
+								<texture>$INFO[ListItem.Icon]</texture>
+								<aspectratio aligny="center" align="left">keep</aspectratio>
+								<visible>!String.IsEqual(ListItem.Icon,"")</visible>
+							</control>
+							<control type="image">
+								<left>75</left>
+								<top>12</top>
+								<width>75</width>
+								<height>75</height>
+								<texture>DefaultAudio.png</texture>
+								<aspectratio aligny="center" align="left">keep</aspectratio>
+								<visible>String.IsEqual(ListItem.Icon,"")</visible>
+							</control>
+							<control type="label">
+								<left>160</left>
+								<top>0</top>
+								<width>1156</width>
+								<height>60</height>	
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>Font_settings</font>
+								<textcolor>FFFFFAF0</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
+								<visible>!Control.HasFocus(21)</visible>
+							</control>
+							<control type="label">
+								<left>160</left>
+								<top>0</top>
+								<width>1156</width>
+								<height>60</height>	
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>Font_settings</font>
+								<textcolor>FF101010</textcolor>
+								<selectedcolor>selected</selectedcolor>
+								<label>$INFO[ListItem.Property(Number)].  $INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
+								<visible>Control.HasFocus(21)</visible>
+							</control>
+							<control type="label">
+								<left>160</left>
+								<top>45</top>
+								<width>1156</width>
+								<height>45</height>	
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>Font_plot</font>
+								<textcolor>FFFFFAF0</textcolor>
+								<selectedcolor>FFFFFAF0</selectedcolor>
+								<label>$INFO[ListItem.Property(Description)]</label>
+								<visible>!Control.HasFocus(21)</visible>
+							</control>
+							<control type="label">
+								<left>160</left>
+								<top>45</top>
+								<width>1156</width>
+								<height>45</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>Font_plot</font>
+								<textcolor>FF101010</textcolor>	
+								<scrollsuffix>&gt;   &lt;</scrollsuffix>
+								<selectedcolor>FFFFFAF0</selectedcolor>
+								<label>$INFO[ListItem.Property(Description)]</label>
+								<scroll>true</scroll>
+								<visible>Control.HasFocus(21)</visible>
+							</control>
+						</focusedlayout>
+					</control>
+				</control>
+			</control>
+			<control type="grouplist" id="9001">
+				<left>454</left>
+				<top>790</top>
+				<onup>200</onup>
+				<ondown>9000</ondown>
+				<orientation>horizontal</orientation>
+				<itemgap>0</itemgap>
+				<control type="radiobutton" id="22">
+					<width>488</width>
+					<textwidth>300</textwidth>
+					<include>SettingsBottomButton</include>
+					<radioposx>380</radioposx>
+					<label>15064</label>
+				</control>
+				<control type="button" id="23">
+					<!-- Aplicar -->
+					<width>488</width>
+					<include>SettingsBottomButton</include>
+					<label>14070</label>
+				</control>
+				<control type="button" id="24">
+					<!-- Cancelar -->
+					<width>488</width>
+					<include>SettingsBottomButton</include>
+					<label>15066</label>
+				</control>
+			</control>
+			<include>RSS</include>
+			<include>BGBlack</include>
+		</control>
+	</controls>
+</window>
