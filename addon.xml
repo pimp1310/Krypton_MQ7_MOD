@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<addon id="skin.aeonmq7" version="1.6.2" name="Aeon MQ 7 Krypton" provider-name="MarcosQui">
+	<addon id="skin.aeonmq7" version="1.6.2" name="Aeon MQ 7 Krypton MOD" provider-name="Bumblebee">
 	<requires>
 	<import addon="xbmc.gui" version="5.12.0"/>
 	<import addon="service.skin.widgets" version="0.0.30"/>
@@ -21,19 +21,17 @@
 	<import addon="resource.images.musicgenreicons.text" version="0.0.5"/>
 	<import addon="resource.images.weathericons.animated" version="0.0.4"/>
 	</requires>
-	<extension point="xbmc.gui.skin" effectslowdown="0.75" debugging="true">
+	<extension point="xbmc.gui.skin" effectslowdown="0.75" debugging="false">
 	<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-	<summary lang="en">Aeon MQ 7. Improved, lighter, and more powerful than ever.</summary>
-	<summary lang="pt_br">Aeon MQ 7, melhorada, mais leve e mais poderosa do que nunca.</summary>
-	<description lang="en">The traditional Aeon MQ reaches its seventh edition.[CR]Aeon MQ 7 has all the features present in the previous version, however these resources are optimized in order to provide an even better user experience.[CR]Aeon MQ 7, you have never seen a skin like it.</description>
-	<description lang="pt_br">A tradicional Aeon MQ chega a sua sétima edição.[CR]Aeon MQ 7 conta com todos os recursos presentes na versão anterior, no entanto, esses recursos foram otimizados afim de proporcionar uma experiência ainda melhor ao usuário.[CR]Aeon MQ 7, você nunca viu uma skin assim.</description>
+	<summary lang="en">Aeon MQ 7 MOD </summary>
+	<description lang="en">MOD of the Loved MQ7 from Marcos, with Full PVR and more extras</description>
 	<platform>all</platform>
 	<assets>
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
     </assets>
-    <news>Added: Support to ExtendedInfo Script - Open dialog. Improved: Small issues in layout/Info Dialog on top. Fixed: Home/Extras/Widgets - truncated information to released year and premiered. Fixed: Dialog Info-ExtendedInfo - Missing Poster Zoom. Fixed: PVR Info - Layout details. Fixed: Missing Genre Fanart inside library. Fixed: View PosterLite - option to disable media case does not work properly.</news>	
+    <news>ADDED Support for Serienplaner(German) | REDESIGN of PVR AREA | And a lot more</news>	
 	</extension>
 </addon>
