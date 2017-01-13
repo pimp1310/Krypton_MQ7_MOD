@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<!-- Aeon MQ 7 -->
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<controls>
+	<include>SettingsBG</include>
+	<!-- default group -->
+	<control type="group">
+	<visible>!Window.IsActive(PVRChannelManager)</visible>
+	<include>Animation_Window</include>
+	<include>SettingsBack</include>
+	
+	<!--#######################################################################   MENU DA ESQUERDA   #######################################################################-->
+	<include>Date</include>
+	<control type="label">
+	<include>SettingsLeftTitle</include>
+	<label>31202</label>
+	</control>
+	<control type="grouplist" id="9000">
+	<left>0</left>
+	<top>180</top>
+	<width>450</width>
+	<height>900</height>
+	<orientation>vertical</orientation>
+	<itemgap>0</itemgap>
+	<onup>9000</onup>
+	<ondown>9000</ondown>
+	<!-- Default Values -->
+	<control type="button" id="95">	
+	<include>SettingsButton</include>
+	<label>20037</label>
+	</control>
+	<!-- Storage -->
+	<control type="button" id="94">	
+	<include>SettingsButton</include>
+	<label>13277</label>
+	</control>
+	<!-- Network -->
+	<control type="button" id="96">	
+	<include>SettingsButton</include>
+	<label>13279</label>
+	</control>
+	<!-- Video -->
+	<control type="button" id="97">	
+	<include>SettingsButton</include>
+	<label>13280</label>
+	</control>
+	<!-- Hardware -->
+	<control type="button" id="98">	
+	<include>SettingsButton</include>
+	<label>13281</label>
+	</control>
+	<!-- PVR -->
+	<control type="button" id="99">	
+	<include>SettingsButton</include>
+	<label>19191</label>
+	</control>
+	<!-- PRIVACIDADE -->
+	<control type="button" id="100">	
+	<include>SettingsButton</include>
+	<label>12389</label>
+	</control>
+	<!-- Creditos -->
+	<control type="button" id="9001">	
+	<include>SettingsButton</include>
+	<label>31985</label>
+	</control>
+	</control>
+	
+	<!--#######################################################################   MENU DA DIREITA   #######################################################################-->
+	<control type="label" id="40">
+	<include>SettingsRightTitle</include>
+	<label>-</label>
+	<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
+	<visible>!Control.HasFocus(9001)</visible>
+	</control>
+	<control type="label">
+	<include>SettingsRightTitle</include>
+	<label>31443</label>
+	<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
+	<visible>Control.HasFocus(9001)</visible>
+	</control>
+	<control type="grouplist">
+	<left>525</left>
+	<top>180</top>
+	<width>1320</width>
+	<height>741</height>
+	<itemgap>15</itemgap>
+	<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
+	<visible>!Control.HasFocus(9001)</visible>
+	<control type="label" id="2">
+	</control>
+	<control type="label" id="3">
+	</control>
+	<control type="label" id="4">
+	</control>
+	<control type="label" id="5">
+	</control>
+	<control type="label" id="6">
+	</control>
+	<control type="label" id="7">
+	</control>
+	<control type="label" id="8">
+	</control>
+	<control type="label" id="9">
+	</control>
+	<control type="label" id="10">
+	</control>
+	<control type="label" id="11">
+	</control>
+    <control type="label" id="12">
+	</control>		
+	</control>
+	<!-- Creditos -->
+	<control type="textbox">	
+	<left>525</left>
+	<top>180</top>
+	<width>1320</width>
+	<height>945</height>
+	<font>Font_plot</font>
+	<label>[COLOR=$INFO[Skin.String(colorheader)]]$LOCALIZE[31788]:[/COLOR] MarcosQui[CR][COLOR=$INFO[Skin.String(colorheader)]]$LOCALIZE[31706]:[/COLOR] Wanilton[CR][CR][COLOR=$INFO[Skin.String(colorheader)]]$LOCALIZE[31999][/COLOR]</label>
+	<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
+	<autoscroll delay="25000" time="4000" repeat="25000">!Skin.HasSetting(noallowscroll)</autoscroll>
+	<visible>Control.HasFocus(9001)</visible>
+	</control>
+	<control type="group">
+	<visible>!Control.HasFocus(9001)</visible>
+	<!-- Privacidade -->
+	<control type="textbox" id="30">
+	<left>525</left>
+	<top>180</top>
+	<width>1320</width>
+	<height>430</height>
+	<font>Font_plot</font>
+	<pagecontrol>60</pagecontrol>
+	<autoscroll delay="5000" repeat="7500" time="5000">true</autoscroll>
+	</control>
+	<control type="scrollbar" id="60">
+	<left>1705</left>
+	<top>180</top>
+	<width>12</width>
+	<height>430</height>
+	<onleft>9000</onleft>
+	<orientation>vertical</orientation>
+	<visible>Control.IsVisible(30)</visible>
+	</control>	
+	<!-- Titulo Sistema -->
+	<control type="label">	
+	<left>525</left>
+	<top>600</top>
+	<height>74</height>
+	<width>1320</width>
+	<font>Font_titlesettings</font>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>130</label>
+	<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
+	</control>
+	<!-- Kodi Version -->
+	<control type="label" id="52">	
+	<left>525</left>
+	<top>675</top>
+	<height>38</height>
+	<width>1320</width>
+	<label></label>
+	<font>Font_settings</font>
+	<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+	<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
+	</control>
+	<!-- Skin Name -->
+	<control type="label">	
+	<left>525</left>
+	<top>720</top>
+	<height>38</height>
+	<width>1320</width>
+	<label>$LOCALIZE[31443] by MarcosQui - $VAR[SkinVersion]</label>
+	<font>Font_settings</font>
+	<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+	<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
+	</control>
+	<!-- Consumo da CPU -->
+	<control type="label">	
+	<left>525</left>
+	<top>765</top>
+	<height>38</height>
+	<width>525</width>
+	<font>Font_settings</font>
+	<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+	<label>$LOCALIZE[13271]: $INFO[System.CPUUsage]</label>
+	</control>
+	<!-- Grafico da CPU -->
+	<control type="progress">	
+	<left>525</left>
+	<top>802</top>
+	<height>24</height>
+	<width>525</width>
+	<info>System.CPUUsage</info>
+	</control>
+	<!-- Consumo de memoria -->
+	<control type="label">	
+	<left>525</left>
+	<top>848</top>
+	<width>525</width>
+	<height>38</height>
+	<font>Font_settings</font>
+	<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+	<label>$LOCALIZE[31346]: $INFO[System.Memory(used.percent)]</label>
+	</control>
+	<!-- Grafico de memoria -->
+	<control type="progress">	
+	<left>525</left>
+	<top>885</top>
+	<height>24</height>
+	<width>525</width>
+	<info>System.Memory(used)</info>
+	</control>
+	<!-- Espaco usado -->
+	<control type="label">	
+	<left>525</left>
+	<top>930</top>
+	<width>525</width>
+	<height>38</height>
+	<font>Font_settings</font>
+	<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+	<label>$LOCALIZE[31345]: $INFO[System.UsedSpacePercent]</label>
+	</control>
+	<!-- Grafico de disco -->
+	<control type="progress">	
+	<left>525</left>
+	<top>968</top>
+	<height>24</height>
+	<width>525</width>
+	<info>System.UsedSpace</info>
+	</control>
+	</control>
+	<!-- Skin Logo -->
+	<control type="image">	
+	<left>1515</left>
+	<top>855</top>
+	<width>375</width>
+	<height>150</height>
+	<align>right</align>
+	<aspectratio>keep</aspectratio>
+	<texture>aeonmq7_logo.png</texture>
+	</control>
+	<include>RSS</include>
+	<include>BGBlack</include>
+	</control>
+	</controls>
+</window>

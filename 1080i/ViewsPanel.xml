@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<!-- Aeon MQ 7 -->
+	<!--#############################################################################   VISTA PANEL - ID 62   #############################################################################-->
+	<include name="Panel_Dimmer">
+	<left>0</left>
+	<top>0</top>
+	<texture>darkgrey.png</texture>
+	<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+	<animation effect="fade" start="100" end="45" condition="true">Conditional</animation>
+	<include>Animation_Fade</include>
+	<visible>[String.Contains(skin.string(panel_seconds),1) + System.IdleTime(1) | String.Contains(skin.string(panel_seconds),2) + System.IdleTime(2) | String.Contains(skin.string(panel_seconds),3) + System.IdleTime(3) | String.Contains(skin.string(panel_seconds),4) + System.IdleTime(4) | String.Contains(skin.string(panel_seconds),5) + System.IdleTime(5)] + Control.HasFocus(62)</visible>
+	</include>
+	<include name="Panel_VideoCaseNormal">
+	<left>0</left>
+	<top>-8</top>
+	<width>184</width>
+	<height>267</height>
+	<aspectratio align="center" aligny="bottom">stretch</aspectratio>
+	</include>
+	<include name="Panel_VideoCaseNormalFocus">
+	<left>0</left>
+	<top>-8</top>
+	<width>184</width>
+	<height>267</height>
+	<aspectratio align="center" aligny="bottom">stretch</aspectratio>
+	<animation type="Focus" reversible="false">
+	<effect type="zoom" center="auto" start="80" end="100" time="400" tween="back" easing="out" />
+	<effect type="fade" start="80" end="100" time="400" />
+	</animation>
+	</include>
+	<include name="ViewPanel">
+	<!-- default group -->
+	<control type="group">	
+	<animation effect="fade" time="400">VisibleChange</animation>
+	<include>ViewBack</include>
+	<!-- Fundo -->
+	<visible>Control.IsVisible(62)</visible>
+	<control type="group">
+	<animation effect="slide" time="500" start="-1200,0" end="0,0" tween="cubic" easing="out">WindowOpen</animation>
+	<animation effect="slide" time="500" start="-1200,0" end="0,0" tween="cubic" easing="out">Visible</animation>
+	<animation effect="fade" time="200" start="100" end="0">Hidden</animation>
+	<!-- Movies/TVShows Poster/Programs -->
+	<control type="panel" id="62">
+	<viewtype label="31818">icon</viewtype>
+	<left>758</left>
+	<top>165</top>
+	<width>1080</width>
+	<height>765</height>
+	<scrolltime>200</scrolltime>
+	<orientation>vertical</orientation>
+	<onup>9900</onup>
+	<ondown>9920</ondown>
+	<onleft>9900</onleft>
+	<onright>80</onright>
+	<pagecontrol>80</pagecontrol>
+	<preloaditems>2</preloaditems>
+	<visible>!Container.Content(years)</visible>
+	<itemlayout condition="Window.IsActive(25) + Skin.HasSetting(nopanelvideocase) + Container.Content(movies) + !Skin.HasSetting(noviewpanelposter) | Skin.HasSetting(nopanelvideocase) + [Container.Content(musicvideos) | Container.Content(sets)] | Container.Content(tvshows) + !Skin.HasSetting(noviewpanelposter)  | Container.Content(seasons)  | Container.Content(countries)  | Container.Content(studios)  | Container.Content(genres)" width="180" height="255">
+	<!-- POSTER SEM ESTOJO -->
+	<control type="image">
+	<left>12</left>
+	<top>9</top>
+	<width>150</width>
+	<height>212</height>
+	<texture fallback="DefaultVideoPoster.png" diffuse="thumb_poster_diffuse.png" background="true">$VAR[value_poster]</texture>
+	<aspectratio>keep</aspectratio>
+	<visible>![Window.IsActive(500) | Window.IsActive(502)]</visible>
+	</control>
+	<control type="image">
+	<left>12</left>
+	<top>9</top>
+	<width>150</width>
+	<height>212</height>
+	<texture fallback="DefaultAudioCover.png" diffuse="thumb_poster_diffuse.png" background="true">$VAR[value_poster]</texture>
+	<aspectratio>keep</aspectratio>
+	<visible>Window.IsActive(500) | Window.IsActive(502)</visible>
+	</control>
+	<control type="image">
+	<left>122</left>
+	<top>8</top>
+	<width>38</width>
+	<height>38</height>
+	<texture colordiffuse="$INFO[Skin.String(colorwatched)]">$VAR[value_watchedstyle]</texture>
+	<visible>!Skin.HasSetting(nooverlays) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	<control type="image">
+	<include>Panel_Dimmer</include>
+	<width>180</width>
+	<height>255</height>
+	</control>
+	</itemlayout>
+	<itemlayout condition="Container.Content(episodes)" width="360" height="270">
+	<!-- EPISODIOS -->
+	<control type="image">
+	<left>12</left>
+	<top>9</top>
+	<width>330</width>
+	<height>195</height>
+	<fadetime>FanartCrossFadeTime</fadetime>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<texture fallback="special://skin/backgrounds/default.jpg" background="true">$VAR[value_poster]</texture>
+	<bordertexture border="-2">black.png</bordertexture>
+	</control>
+	<control type="image">
+	<left>309</left>
+	<top>170</top>
+	<width>38</width>
+	<height>38</height>
+	<texture colordiffuse="$INFO[Skin.String(colorwatched)]">$VAR[value_watchedstyle]</texture>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<visible>![Skin.HasSetting(nooverlays) | String.Contains(skin.string(stylewatched),2) | String.Contains(skin.string(stylewatched),3)] + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	<control type="image">
+	<left>309</left>
+	<top>170</top>
+	<width>38</width>
+	<height>38</height>
+	<texture colordiffuse="$INFO[Skin.String(colorwatched)]" flipy="true">$VAR[value_watchedstyle]</texture>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<visible>[!Skin.HasSetting(nooverlays) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)] + [String.Contains(skin.string(stylewatched),2) | String.Contains(skin.string(stylewatched),3)]</visible>
+	</control>
+	<control type="image">
+	<include>Panel_Dimmer</include>
+	<width>360</width>
+	<height>270</height>
+	</control>
+	</itemlayout>
+	<itemlayout condition="Window.IsActive(25) + Container.Content(movies) + !Skin.HasSetting(noviewpanelposter) + !Skin.HasSetting(nopanelvideocase)  | !Skin.HasSetting(nopanelvideocase) + [Container.Content(musicvideos) | Container.Content(sets)]" width="180" height="258">
+	<!-- ESTOJO -->
+	<!-- Poster com estojo -->
+	<control type="image">	
+	<left>14</left>
+	<top>27</top>
+	<width>148</width>
+	<height>212</height>
+	<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
+	<colordiffuse>FF909090</colordiffuse>
+	<aspectratio>stretch</aspectratio>
+	</control>
+	<!-- Estojo -->
+	<!-- Bluray -->
+	<control type="image">	
+	<include>Panel_VideoCaseNormal</include>
+	<texture colordiffuse="$INFO[Skin.String(colorcasebluray)]">$VAR[value_stylevideocase]</texture>
+	<visible>[String.Contains(ListItem.Filenameandpath,bluray) | String.Contains(ListItem.Filenameandpath,blu-ray) | String.Contains(ListItem.Filenameandpath,bdrip)] + ![String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.) | String.Contains(ListItem.Filenameandpath,4k)]</visible>
+	</control>
+	<!-- Webtv -->
+	<control type="image">	
+	<include>Panel_VideoCaseNormal</include>
+	<texture colordiffuse="$INFO[Skin.String(colorcasewebtv)]">$VAR[value_stylevideocase]</texture>
+	<visible>String.Contains(ListItem.Filenameandpath,web)</visible>	
+	</control>	
+	<!-- Hdtv -->
+	<control type="image">	
+	<include>Panel_VideoCaseNormal</include>
+	<texture colordiffuse="$INFO[Skin.String(colorcasehdtv)]">$VAR[value_stylevideocase]</texture>
+	<visible>String.Contains(ListItem.Filenameandpath,hdtv)</visible>
+	</control>
+	<!-- Dvd -->
+	<control type="image">	
+	<include>Panel_VideoCaseNormal</include>
+	<texture colordiffuse="$INFO[Skin.String(colorcasedvd)]">$VAR[value_stylevideocase]</texture>
+	<visible>String.Contains(ListItem.Filenameandpath,dvd) | String.EndsWith(ListItem.Filenameandpath,.ifo) | String.EndsWith(ListItem.Filenameandpath,.iso) + ![String.Contains(ListItem.Filenameandpath,bluray) | String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.)]</visible>	
+	</control>
+	<!-- 3d -->
+	<control type="image">	
+	<include>Panel_VideoCaseNormal</include>
+	<texture colordiffuse="$INFO[Skin.String(colorcase3dbd)]">$VAR[value_stylevideocase]</texture>
+	<visible>String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.)</visible>	
+	</control>
+	<!-- Conjuntos -->
+	<control type="image">	
+	<include>Panel_VideoCaseNormal</include>
+	<texture colordiffuse="$INFO[Skin.String(colorcaseset)]">$VAR[value_stylevideocase]</texture>
+	<visible>String.StartsWith(ListItem.Path,videodb://movies/sets)</visible>	
+	</control>
+	<!-- 4k -->
+	<control type="image">	
+	<include>Panel_VideoCaseNormal</include>
+	<texture colordiffuse="$INFO[Skin.String(colorcase4k)]">$VAR[value_stylevideocase]</texture>
+	<visible>String.Contains(ListItem.Filenameandpath,4k)</visible>	
+	</control>
+	<!-- Por codec -->
+	<control type="image">	
+	<include>Panel_VideoCaseNormal</include>
+	<texture colordiffuse="$INFO[Skin.String(colorcasedefault)]">$VAR[value_stylevideocase]</texture>
+	<visible>![String.Contains(ListItem.Filenameandpath,bluray) | String.Contains(ListItem.Filenameandpath,blu-ray) | String.Contains(ListItem.Filenameandpath,bdrip) | String.Contains(ListItem.Filenameandpath,hdtv) | String.Contains(ListItem.Filenameandpath,web) | String.Contains(ListItem.Filenameandpath,dvd) | String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.) | String.EndsWith(ListItem.Filenameandpath,.iso) | String.EndsWith(ListItem.Filenameandpath,.ifo) | String.StartsWith(ListItem.Path,videodb://movies/sets) | String.Contains(ListItem.Filenameandpath,4k)]</visible>
+	</control>	
+	<!-- Codec -->
+	<control type="image">	
+	<left>70</left>
+	<top>-6</top>
+	<width>45</width>
+	<height>45</height>
+	<aspectratio align="center" aligny="center">keep</aspectratio>	
+	<texture colordiffuse="$INFO[Skin.String(colorcodeccase)]">$VAR[value_videocodec0]</texture>
+	</control>
+	<control type="image">
+	<left>126</left>
+	<top>26</top>
+	<width>38</width>
+	<height>38</height>
+	<texture colordiffuse="$INFO[Skin.String(colorwatched)]">$VAR[value_watchedstyle]</texture>
+	<visible>!Skin.HasSetting(nooverlays) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	<control type="image">
+	<include>Panel_Dimmer</include>
+	<width>180</width>
+	<height>258</height>
+	</control>
+	</itemlayout>
+	<itemlayout condition="Window.IsActive(25) + [Container.Content(movies) | Container.Content(tvshows)] + Skin.HasSetting(noviewpanelposter)" width="180" height="180">
+	<!-- ARTE -->
+	<!-- clearlogo e clearart -->
+	<control type="image">	
+	<left>12</left>
+	<top>9</top>
+	<width>150</width>
+	<height>212</height>
+	<texture fallback="aeon_logo_small.png" background="true">$VAR[value_logoandclearart]</texture>
+	<colordiffuse>FF909090</colordiffuse>
+	<aspectratio>keep</aspectratio>
+	</control>
+	<control type="image">
+	<left>122</left>
+	<top>38</top>
+	<width>38</width>
+	<height>38</height>
+	<texture colordiffuse="$INFO[Skin.String(colorwatched)]">$VAR[value_watchedstyle]</texture>
+	<visible>!Skin.HasSetting(nooverlays) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	</itemlayout>
+	<itemlayout condition="!Window.IsActive(25)" width="180" height="180">
+	<control type="image">
+	<left>9</left>
+	<top>9</top>
+	<width>158</width>
+	<height>158</height>
+	<texture fallback="DefaultAudioCover.png" diffuse="thumb_poster_diffuse.png" background="true">$VAR[value_poster]</texture>
+	<colordiffuse>FF909090</colordiffuse>
+	<aspectratio>keep</aspectratio>
+	</control>
+	<control type="image">
+	<left>122</left>
+	<top>8</top>
+	<width>38</width>
+	<height>38</height>
+	<texture colordiffuse="$INFO[Skin.String(colorwatched)]">$VAR[value_watchedstyle]</texture>
+	<visible>!Skin.HasSetting(nooverlays) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	<control type="image">
+	<include>Panel_Dimmer</include>
+	<width>180</width>
+	<height>180</height>
+	</control>
+	</itemlayout>
+	<focusedlayout condition="Window.IsActive(25) + Skin.HasSetting(nopanelvideocase) + Container.Content(movies) + !Skin.HasSetting(noviewpanelposter) | Skin.HasSetting(nopanelvideocase) + [Container.Content(musicvideos) | Container.Content(sets)] | Container.Content(tvshows) + !Skin.HasSetting(noviewpanelposter)  | Container.Content(seasons)  | Container.Content(countries)  | Container.Content(studios)  | Container.Content(genres)" width="180" height="255">
+	<!-- POSTER SEM ESTOJO -->
+	<control type="image">
+	<left>12</left>
+	<top>9</top>
+	<width>150</width>
+	<height>212</height>
+	<texture fallback="DefaultVideoPoster.png" diffuse="thumb_poster_diffuse.png" background="true">$VAR[value_poster]</texture>
+	<animation type="Focus" reversible="false">
+	<effect type="zoom" center="auto" start="80" end="100" time="400" tween="back" easing="out" />
+	<effect type="fade" start="80" end="100" time="400" />
+	</animation>
+	<aspectratio>keep</aspectratio>
+	<visible>![Window.IsActive(500) | Window.IsActive(502)]</visible>
+	</control>
+	<control type="image">
+	<left>12</left>
+	<top>9</top>
+	<width>150</width>
+	<height>212</height>
+	<texture fallback="DefaultAudioCover.png" diffuse="thumb_poster_diffuse.png" background="true">$VAR[value_poster]</texture>
+	<animation type="Focus" reversible="false">
+	<effect type="zoom" center="auto" start="80" end="100" time="400" tween="back" easing="out" />
+	<effect type="fade" start="80" end="100" time="400" />
+	</animation>
+	<aspectratio>keep</aspectratio>
+	<visible>Window.IsActive(500) | Window.IsActive(502)</visible>
+	</control>
+	<control type="image">
+	<left>122</left>
+	<top>8</top>
+	<width>38</width>
+	<height>38</height>
+	<texture colordiffuse="$INFO[Skin.String(colorwatched)]">$VAR[value_watchedstyle]</texture>
+	<animation type="Focus" reversible="false">
+	<effect type="zoom" center="90,90" start="80" end="100" time="400" tween="back" easing="out" />
+	<effect type="fade" start="80" end="100" time="400" />
+	</animation>
+	<visible>!Skin.HasSetting(nooverlays) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	</focusedlayout>
+	<focusedlayout condition="Container.Content(episodes)" width="360" height="270">
+	<!-- EPISODIOS -->
+	<control type="image">
+	<left>12</left>
+	<top>9</top>
+	<width>330</width>
+	<height>195</height>
+	<fadetime>FanartCrossFadeTime</fadetime>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<texture fallback="special://skin/backgrounds/default.jpg" background="true">$VAR[value_poster]</texture>
+	<bordertexture border="-2">grey.png</bordertexture>
+	<animation type="Focus" reversible="false">
+	<effect type="zoom" center="auto" start="80" end="100" time="400" tween="back" easing="out" />
+	<effect type="fade" start="80" end="100" time="400" />
+	</animation>
+	</control>
+	<control type="image">
+	<left>310</left>
+	<top>171</top>
+	<width>38</width>
+	<height>38</height>
+	<texture colordiffuse="$INFO[Skin.String(colorwatched)]">$VAR[value_watchedstyle]</texture>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<animation type="Focus" reversible="false">
+	<effect type="zoom" center="90,90" start="80" end="100" time="400" tween="back" easing="out" />
+	<effect type="fade" start="80" end="100" time="400" />
+	</animation>
+	<visible>![Skin.HasSetting(nooverlays) | String.Contains(skin.string(stylewatched),2) | String.Contains(skin.string(stylewatched),3)] + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	<control type="image">
+	<left>310</left>
+	<top>171</top>
+	<width>38</width>
+	<height>38</height>
+	<texture colordiffuse="$INFO[Skin.String(colorwatched)]" flipy="true">$VAR[value_watchedstyle]</texture>
+	<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	<animation type="Focus" reversible="false">
+	<effect type="zoom" center="90,90" start="80" end="100" time="400" tween="back" easing="out" />
+	<effect type="fade" start="80" end="100" time="400" />
+	</animation>
+	<visible>[!Skin.HasSetting(nooverlays) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)] + [String.Contains(skin.string(stylewatched),2) | String.Contains(skin.string(stylewatched),3)]</visible>
+	</control>
+	</focusedlayout>
+	<focusedlayout condition="Window.IsActive(25) + Container.Content(movies) + !Skin.HasSetting(noviewpanelposter) + !Skin.HasSetting(nopanelvideocase)  | !Skin.HasSetting(nopanelvideocase) + [Container.Content(musicvideos) | Container.Content(sets)]" width="180" height="258">
+	<!-- ESTOJO -->
+	<control type="image">
+	<left>14</left>
+	<top>27</top>
+	<width>148</width>
+	<height>212</height>
+	<texture fallback="DefaultVideoPoster.png" background="true">$VAR[value_poster]</texture>
+	<animation type="Focus" reversible="false">
+	<effect type="zoom" center="auto" start="80" end="100" time="400" tween="back" easing="out" />
+	<effect type="fade" start="80" end="100" time="400" />
+	</animation>
+	<aspectratio>stretch</aspectratio>
+	</control>
+	<!-- Estojo -->
+	<!-- Bluray -->
+	<control type="image">	
+	<include>Panel_VideoCaseNormalFocus</include>
+	<texture colordiffuse="$INFO[Skin.String(colorcasebluray)]">$VAR[value_stylevideocase]</texture>
+	<visible>[String.Contains(ListItem.Filenameandpath,bluray) | String.Contains(ListItem.Filenameandpath,blu-ray) | String.Contains(ListItem.Filenameandpath,bdrip)] + ![String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.) | String.Contains(ListItem.Filenameandpath,4k)]</visible>
+	</control>
+	<!-- Webtv -->
+	<control type="image">	
+	<include>Panel_VideoCaseNormalFocus</include>
+	<texture colordiffuse="$INFO[Skin.String(colorcasewebtv)]">$VAR[value_stylevideocase]</texture>
+	<visible>String.Contains(ListItem.Filenameandpath,web)</visible>	
+	</control>	
+	<!-- Hdtv -->
+	<control type="image">	
+	<include>Panel_VideoCaseNormalFocus</include>
+	<texture colordiffuse="$INFO[Skin.String(colorcasehdtv)]">$VAR[value_stylevideocase]</texture>
+	<visible>String.Contains(ListItem.Filenameandpath,hdtv)</visible>
+	</control>
+	<!-- Dvd -->
+	<control type="image">	
+	<include>Panel_VideoCaseNormalFocus</include>
+	<texture colordiffuse="$INFO[Skin.String(colorcasedvd)]">$VAR[value_stylevideocase]</texture>
+	<visible>String.Contains(ListItem.Filenameandpath,dvd) | String.EndsWith(ListItem.Filenameandpath,.ifo) | String.EndsWith(ListItem.Filenameandpath,.iso) + ![String.Contains(ListItem.Filenameandpath,bluray) | String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.)]</visible>	
+	</control>
+	<!-- 3d -->
+	<control type="image">	
+	<include>Panel_VideoCaseNormalFocus</include>
+	<texture colordiffuse="$INFO[Skin.String(colorcase3dbd)]">$VAR[value_stylevideocase]</texture>
+	<visible>String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.)</visible>	
+	</control>
+	<!-- Conjuntos -->
+	<control type="image">	
+	<include>Panel_VideoCaseNormalFocus</include>
+	<texture colordiffuse="$INFO[Skin.String(colorcaseset)]">$VAR[value_stylevideocase]</texture>
+	<visible>String.StartsWith(ListItem.Path,videodb://movies/sets)</visible>	
+	</control>
+	<!-- 4k -->
+	<control type="image">	
+	<include>Panel_VideoCaseNormalFocus</include>
+	<texture colordiffuse="$INFO[Skin.String(colorcase4k)]">$VAR[value_stylevideocase]</texture>
+	<visible>String.Contains(ListItem.Filenameandpath,4k)</visible>	
+	</control>
+	<!-- Por codec -->
+	<control type="image">	
+	<include>Panel_VideoCaseNormalFocus</include>
+	<texture colordiffuse="$INFO[Skin.String(colorcasedefault)]">$VAR[value_stylevideocase]</texture>
+	<visible>![String.Contains(ListItem.Filenameandpath,bluray) | String.Contains(ListItem.Filenameandpath,blu-ray) | String.Contains(ListItem.Filenameandpath,bdrip) | String.Contains(ListItem.Filenameandpath,hdtv) | String.Contains(ListItem.Filenameandpath,web) | String.Contains(ListItem.Filenameandpath,dvd) | String.Contains(ListItem.Filenameandpath,.3dbd.) | String.Contains(ListItem.Filenameandpath,.3d.) | String.EndsWith(ListItem.Filenameandpath,.iso) | String.EndsWith(ListItem.Filenameandpath,.ifo) | String.StartsWith(ListItem.Path,videodb://movies/sets) | String.Contains(ListItem.Filenameandpath,4k)]</visible>
+	</control>
+	<!-- Codec -->
+	<control type="image">	
+	<left>70</left>
+	<top>-6</top>
+	<width>45</width>
+	<height>45</height>
+	<aspectratio align="center" aligny="center">keep</aspectratio>
+	<texture>$VAR[value_videocodec0]</texture>
+	<animation type="Focus" reversible="false">
+	<effect type="zoom" center="90,90" start="80" end="100" time="400" tween="back" easing="out" />
+	<effect type="fade" start="80" end="100" time="400" />
+	</animation>
+	</control>
+	<control type="image">
+	<left>126</left>
+	<top>26</top>
+	<width>38</width>
+	<height>38</height>
+	<texture colordiffuse="$INFO[Skin.String(colorwatched)]">$VAR[value_watchedstyle]</texture>
+	<animation type="Focus" reversible="false">
+	<effect type="zoom" center="90,90" start="80" end="100" time="400" tween="back" easing="out" />
+	<effect type="fade" start="80" end="100" time="400" />
+	</animation>
+	<visible>!Skin.HasSetting(nooverlays) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	</focusedlayout>
+	<focusedlayout condition="Window.IsActive(25) + [Container.Content(movies) | Container.Content(tvshows)] + Skin.HasSetting(noviewpanelposter)" width="180" height="180">
+	<!-- clearlogo e clearart -->
+	<control type="image">	
+	<left>12</left>
+	<top>9</top>
+	<width>150</width>
+	<height>212</height>
+	<texture fallback="aeon_logo_small.png" background="true">$VAR[value_logoandclearart]</texture>
+	<aspectratio>keep</aspectratio>
+	<animation type="Focus" reversible="false">
+	<effect type="zoom" center="auto" start="80" end="100" time="400" tween="back" easing="out" />
+	<effect type="fade" start="80" end="100" time="400" />
+	</animation>
+	</control>
+	<control type="image">
+	<left>122</left>
+	<top>38</top>
+	<width>38</width>
+	<height>38</height>
+	<texture colordiffuse="$INFO[Skin.String(colorwatched)]">$VAR[value_watchedstyle]</texture>
+	<animation type="Focus" reversible="false">
+	<effect type="zoom" center="90,90" start="80" end="100" time="400" tween="back" easing="out" />
+	<effect type="fade" start="80" end="100" time="400" />
+	</animation>
+	<visible>!Skin.HasSetting(nooverlays) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	</focusedlayout>
+	<focusedlayout condition="!Window.IsActive(25)" width="180" height="180">
+	<control type="image">
+	<left>9</left>
+	<top>9</top>
+	<width>158</width>
+	<height>158</height>
+	<texture fallback="DefaultVideoPoster.png" diffuse="thumb_poster_diffuse.png" background="true">$VAR[value_poster]</texture>
+	<animation type="Focus" reversible="false">
+	<effect type="zoom" center="auto" start="80" end="100" time="400" tween="back" easing="out" />
+	<effect type="fade" start="80" end="100" time="400" />
+	</animation>
+	<aspectratio>keep</aspectratio>
+	</control>
+	<control type="image">
+	<left>122</left>
+	<top>8</top>
+	<width>38</width>
+	<height>38</height>
+	<texture colordiffuse="$INFO[Skin.String(colorwatched)]">$VAR[value_watchedstyle]</texture>
+	<animation type="Focus" reversible="false">
+	<effect type="zoom" center="90,90" start="80" end="100" time="400" tween="back" easing="out" />
+	<effect type="fade" start="80" end="100" time="400" />
+	</animation>
+	<visible>!Skin.HasSetting(nooverlays) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)</visible>
+	</control>
+	</focusedlayout>
+	</control>
+	</control>
+	<!-- Info Panel -->
+	<control type="group">
+	<animation effect="slide" time="700" start="-1200,0" end="0,0" tween="cubic" easing="out">WindowOpen</animation>
+	<animation effect="slide" time="700" start="0,0" end="-1200,0" tween="cubic" easing="out">WindowClose</animation>
+	<animation effect="slide" time="700" start="-1200,0" end="0,0" tween="cubic" easing="out">Visible</animation>
+	<animation effect="fade" time="200" start="100" end="0">Hidden</animation>
+	<visible>Control.IsVisible(62) + !Container.Content(genres)</visible>
+	<left>90</left>
+	<top>120</top>
+	<control type="image">
+	<left>-8</left>
+	<top>40</top>
+	<width>626</width>
+	<height>360</height>
+	<texture>fanartframe.png</texture>
+	</control>
+	<control type="image">
+	<left>15</left>
+	<top>63</top>
+	<width>580</width>
+	<height>315</height>
+	<texture fallback="DefaultExtraThumbs.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
+	<aspectratio>stretch</aspectratio>
+	<fadetime>FanartCrossFadeTime</fadetime>
+	</control>
+	<control type="label">
+	<left>15</left>
+	<top>393</top>
+	<width>580</width>
+	<height>22</height>
+	<textcolor>FFFFFAF0</textcolor>
+	<label>$VAR[value_glasslistinfofocus]</label>
+	<font>Font_plot</font>
+	<scroll>true</scroll>
+	<visible>!String.IsEqual(ListItem.Label,..)</visible>
+	</control>
+	<control type="image">
+	<left>15</left>
+	<top>434</top>
+	<width>580</width>
+	<height>3</height>
+	<align>left</align>
+	<texture flipx="true">divider.png</texture>
+	</control>
+	<control type="textbox">
+	<left>15</left>
+	<top>447</top>
+	<width>580</width>
+	<height>394</height>
+	<label>$VAR[value_plot]</label>
+	<font>Font_plot</font>
+	<autoscroll delay="8000" time="2000" repeat="8000">!Skin.HasSetting(noallowscroll)</autoscroll>
+	</control>
+	</control>
+	<!-- Scroll Bar -->
+	<control type="scrollbar" id="80">
+	<include>ScrollBar_Vertical</include>
+	<left>1845</left>
+	<top>166</top>
+	<height>706</height>
+	<onleft>62</onleft>
+	<onright>62</onright>
+	<include>Animation_Fade</include>
+	<visible allowhiddenfocus="true">Control.IsVisible(62) + Control.HasFocus(80)</visible>
+	</control>
+	</control>
+	</include>
+</includes>
