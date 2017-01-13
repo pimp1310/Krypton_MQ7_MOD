@@ -1295,21 +1295,18 @@
 	<visible>!Control.IsVisible(51)</visible>
 	</control>
 	<!--##############################################################################################  Custom top menu buttons  ############################################################################################## -->
-	<control type="button" id="93151">
+				<control type="button" id="93151">
 					<include>TopMenuButton</include>
 					<label>$LOCALIZE[31239]</label>
 					<label2>$VAR[DialogueTopArt]</label2>
-					<onclick condition="Skin.String(dialogue_top_art,banner) | String.IsEmpty(skin.string(dialogue_top_art))">Skin.SetString(dialogue_top_art,logo)</onclick>
-					<onclick condition="Skin.String(dialogue_top_art,logo)">Skin.SetString(dialogue_top_art,clearart)</onclick>
-					<onclick condition="Skin.String(dialogue_top_art,clearart)">Skin.SetString(dialogue_top_art,banner)</onclick>
+					<onclick>$VAR[select_top_art]</onclick>
 					<visible>!Container.Content(musicvideos)</visible>
 				</control>
 				<control type="button" id="93152">
 					<include>TopMenuButton</include>
 					<label>$LOCALIZE[31240]</label>
 					<label2>$VAR[DialogueMiddleArtLables]</label2>
-					<onclick condition="Skin.String(dialogue_middle_art_vars,logo) | String.IsEmpty(skin.string(dialogue_middle_art_vars))">Skin.SetString(dialogue_middle_art_vars,clearart)</onclick>
-					<onclick condition="Skin.String(dialogue_middle_art_vars,clearart)">Skin.SetString(dialogue_middle_art_vars,logo)</onclick>
+					<onclick>$VAR[select_middle_art]</onclick>
 					<visible>Container.Content(movies)</visible>
 				</control>
 				<control type="button" id="93153">
@@ -1334,7 +1331,7 @@
 					<enabled>Skin.HasSetting(mpaa_detailed_icon)</enabled>
 					<onclick>Skin.ToggleSetting(mpaa_detailed_icon)</onclick>
 					<visible>!Container.Content(musicvideos)</visible>
-				</control>
+				</control>			
     <!--####################################################################################################################################################################################################################### -->
 	<control type="radiobutton" id="9315">
 	<include>TopMenuRadioButton</include>

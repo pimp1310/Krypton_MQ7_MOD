@@ -4,7 +4,6 @@
 	<variable name="SkinVersion">
     <value>0.0.1 - 10/01/2017</value>
     </variable>
-
 	<variable name="fanart_serienplaner">
 			<value condition="!IsEmpty(Container(200).ListItem.Property(Fanart)) + Control.hasfocus(200)">$INFO[Container(200).ListItem.Property(Fanart)]</value>
 			<value condition="!IsEmpty(Container(201).ListItem.Property(Fanart)) + Control.hasfocus(201)">$INFO[Container(201).ListItem.Property(Fanart)]</value>
@@ -15,69 +14,68 @@
 			<value condition="!IsEmpty(Container(206).ListItem.Property(Fanart)) + Control.hasfocus(206)">$INFO[Container(206).ListItem.Property(Fanart)]</value>
 			<value condition="!IsEmpty(Container(207).ListItem.Property(Fanart)) + Control.hasfocus(207)">$INFO[Container(207).ListItem.Property(Fanart)]</value>
 	</variable>
-	
 	<variable name="plot_muscalbums_offline_online">
 			<value condition="IsEmpty(Window(songinformation).Property(Album_strDescription))">offline[CR]$INFO[ListItem.Property(Album_Description)]</value>
 			<value condition="!IsEmpty(Window(songinformation).Property(Album_strDescription))">online[CR]$INFO[Window(songinformation).Property(Album_strDescription)]</value>
 	</variable>
-	
 	<variable name="poster_musicvideos">
 			<value condition="!IsEmpty(Window(songinformation).Property(Track_strTrackThumb))">$INFO[Window(songinformation).Property(Track_strTrackThumb)]</value>
 			<value condition="IsEmpty(Window(songinformation).Property(Track_strTrackThumb))">$INFO[Listitem.icon]</value>
 	</variable>
-	
 	<variable name="plot_musicvideos">
 			<value condition="Container.Content(musicvideos) + !Isempty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
 			<value condition="Container.Content(musicvideos) + Isempty(ListItem.Plot) + String.Contains(skin.string(music_infos_type),8080)">$INFO[Window(songinformation).Property(strDescriptionEN)]</value>
 	</variable>
-		<variable name="thumbs_all_lists">
-					<value condition="Control.hasfocus(6010)">$INFO[Container(6010).Listitem.Property(strAlbumThumb)]</value>
-					<value condition="Control.hasfocus(7010)">$INFO[Container(7010).Listitem.Property(strTrackThumb)]</value>
-					<value condition="Control.hasfocus(10010)">$INFO[Container(10010).Listitem.Property(strTrackThumb)]</value>
-				    <value condition="Control.hasfocus(5010)">$INFO[Container(5010).ListItem.Property(imageurl_xl)]</value>
+	<variable name="thumbs_all_lists">
+			<value condition="Control.hasfocus(6010)">$INFO[Container(6010).Listitem.Property(strAlbumThumb)]</value>
+			<value condition="Control.hasfocus(7010)">$INFO[Container(7010).Listitem.Property(strTrackThumb)]</value>
+			<value condition="Control.hasfocus(10010)">$INFO[Container(10010).Listitem.Property(strTrackThumb)]</value>
+			<value condition="Control.hasfocus(5010)">$INFO[Container(5010).ListItem.Property(imageurl_xl)]</value>
 	</variable>
-
-		<variable name="labels_all_lists">
-					<value condition="Control.hasfocus(6010)">$INFO[Container(6010).Listitem.Property(strAlbum)]</value>
-					<value condition="Control.hasfocus(7010)">$INFO[Container(7010).Listitem.Property(strAlbum)]</value>
-					<value condition="Control.hasfocus(10010)">$INFO[Container(10010).Listitem.Property(strTrack)]</value>
-			       <value condition="Control.hasfocus(5010)">$INFO[Container(5010).ListItem.Property(artistname)]</value>
-
-		</variable>
-	
-	
-		<variable name="plot_all_lists">
-					<value condition="Control.hasfocus(6010)">$INFO[Container(6010).Listitem.Property(strDescription)]</value>
-					<value condition="Control.hasfocus(7010)">$INFO[Container(7010).Listitem.Property(strDescriptionEN)]</value>
-		        	<value condition="Control.hasfocus(10010)">$INFO[Container(10010).Listitem.Property(strDescriptionEN)]</value>
+	<variable name="labels_all_lists">
+			<value condition="Control.hasfocus(6010)">$INFO[Container(6010).Listitem.Property(strAlbum)]</value>
+			<value condition="Control.hasfocus(7010)">$INFO[Container(7010).Listitem.Property(strAlbum)]</value>
+			<value condition="Control.hasfocus(10010)">$INFO[Container(10010).Listitem.Property(strTrack)]</value>
+			 <value condition="Control.hasfocus(5010)">$INFO[Container(5010).ListItem.Property(artistname)]</value>
 	</variable>
-	
-		<variable name="genre_all_lists">
-					<value condition="Control.hasfocus(6010)">$INFO[Container(6010).Listitem.Property(strGenre)]</value>
-					<value condition="Control.hasfocus(7010)">$INFO[Container(7010).Listitem.Property(strGenre)]</value>
-					<value>$INFO[ListItem.Genre]</value>
-		</variable>
-	
-	   <variable name="style_all_lists">
-					<value condition="Control.hasfocus(6010)">$INFO[Container(6010).Listitem.Property(strStyle)]</value>
-					<value condition="Control.hasfocus(7010)">$INFO[Container(7010).Listitem.Property(strStyle)]</value>
-		           <value>$INFO[ListItem.Property(Artist_Style)]$INFO[ListItem.Property(Album_Style)]</value>
+	<variable name="plot_all_lists">
+			<value condition="Control.hasfocus(6010)">$INFO[Container(6010).Listitem.Property(strDescription)]</value>
+			<value condition="Control.hasfocus(7010)">$INFO[Container(7010).Listitem.Property(strDescriptionEN)]</value>
+		    <value condition="Control.hasfocus(10010)">$INFO[Container(10010).Listitem.Property(strDescriptionEN)]</value>
 	</variable>
-	   
-	   <variable name="mood_all_lists">
+	<variable name="genre_all_lists">
+			<value condition="Control.hasfocus(6010)">$INFO[Container(6010).Listitem.Property(strGenre)]</value>
+			<value condition="Control.hasfocus(7010)">$INFO[Container(7010).Listitem.Property(strGenre)]</value>
+			<value>$INFO[ListItem.Genre]</value>
+	</variable>
+	<variable name="style_all_lists">
+			<value condition="Control.hasfocus(6010)">$INFO[Container(6010).Listitem.Property(strStyle)]</value>
+			<value condition="Control.hasfocus(7010)">$INFO[Container(7010).Listitem.Property(strStyle)]</value>
+		    <value>$INFO[ListItem.Property(Artist_Style)]$INFO[ListItem.Property(Album_Style)]</value>
+	</variable>
+	<variable name="mood_all_lists">
 			<value condition="Control.hasfocus(6010)">$INFO[Container(6010).Listitem.Property(strMood)]</value>
 			<value condition="Control.hasfocus(7010)">$INFO[Container(7010).Listitem.Property(strMood)]</value>
-		   <value>$INFO[ListItem.Property(Artist_Mood)]$INFO[ListItem.Property(Album_Mood)]</value>
+		    <value>$INFO[ListItem.Property(Artist_Mood)]$INFO[ListItem.Property(Album_Mood)]</value>
 	</variable>
-	
-					<variable name="select_animation_discart">
-					<value condition="Skin.String(discanimation,leftspinning) | String.IsEmpty(skin.string(discanimation))">Skin.SetString(discanimation,rightspinning)</value>
-					<value condition="Skin.String(discanimation,rightspinning)">Skin.SetString(discanimation,spinning)</value>
-					<value condition="Skin.String(discanimation,spinning)">Skin.SetString(discanimation,noanimation)</value>
-					<value condition="Skin.String(discanimation,noanimation)">Skin.SetString(discanimation,leftspinning)</value>
-					<value>Skin.SetString(discanimation,noanimation)</value>
- 					</variable>
-
+		<variable name="select_middle_art">
+			<value condition="Skin.String(dialogue_middle_art_vars,logo)">Skin.SetString(dialogue_middle_art_vars,clearart)</value>
+			<value condition="String.IsEmpty(skin.string(dialogue_middle_art_vars))">Skin.SetString(dialogue_middle_art_vars,clearart)</value>
+			<value condition="Skin.String(dialogue_middle_art_vars,clearart)">Skin.SetString(dialogue_middle_art_vars,logo)</value>
+	</variable>
+	<variable name="select_animation_discart">
+			<value condition="Skin.String(discanimation,leftspinning)">Skin.SetString(discanimation,rightspinning)</value>
+			<value condition="Skin.String(discanimation,rightspinning)">Skin.SetString(discanimation,spinning)</value>
+			<value condition="Skin.String(discanimation,spinning)">Skin.SetString(discanimation,noanimation)</value>
+			<value condition="Skin.String(discanimation,noanimation)">Skin.SetString(discanimation,leftspinning)</value>
+			<value condition="String.IsEmpty(skin.string(discanimation))">Skin.SetString(discanimation,rightspinning)</value>
+	</variable>
+	<variable name="select_top_art">
+			<value condition="Skin.String(dialogue_top_art,banner)">Skin.SetString(dialogue_top_art,logo)</value>
+			<value condition="String.IsEmpty(skin.string(dialogue_top_art))">Skin.SetString(dialogue_top_art,logo)</value>
+			<value condition="Skin.String(dialogue_top_art,logo)">Skin.SetString(dialogue_top_art,clearart)</value>
+			<value condition="Skin.String(dialogue_top_art,clearart)">Skin.SetString(dialogue_top_art,banner)</value>
+	</variable>
 	<!-- ############################################################## MOD.SPIN ############################################################## -->
 	<variable name="Durat_min">
     <value condition="[SubString(ListItem.Duration,1,Right)]">1 [LOWERCASE]$LOCALIZE[12391][/LOWERCASE]</value>
