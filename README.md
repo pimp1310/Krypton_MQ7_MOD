@@ -2,7 +2,7 @@
 
 ### Dies wird benötigt
 
-Textures.xbt
+Textures.xbt (kopieren nach aeonmq7/media/)
 ```
 https://drive.google.com/open?id=0B5w5jyUZD4ChRTc0OGRCckxDTHc
 ```
@@ -15,6 +15,11 @@ https://github.com/pimp1310/script.getInfo_lastFm
 script_getInfo_audioDB
 ```
 https://github.com/pimp1310/script_getInfo_audioDB
+```
+
+Script SkinHelper (die Beta Version)
+```
+https://github.com/marcelveldt/script.skin.helper.service
 ```
 
 ### Änderungen in dieser Version
