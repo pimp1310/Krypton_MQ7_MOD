@@ -2,8 +2,13 @@
 <window>
 	<!-- Aeon MQ 7 -->
 	<defaultcontrol always="true">149</defaultcontrol>
+	
+	
+	
 	<onload condition="Skin.HasSetting(ontvtunes) + System.HasAddon(script.tvtunes)">RunScript(script.tvtunes,backend=True)</onload>
 	<onload condition="System.HasAddon(script.videoextras)">RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
+	
+	
 	
 	<onload condition="Container.Content(musicvideos)">RunScript(script.getInfo_AudioDB, request=getTrackDetails&#038;artistname=$INFO[ListItem.Artist]&#038;trackname=$INFO[ListItem.title])</onload>
 	<onload condition="Container.Content(musicvideos)">Skin.SetString(sextendalbum_list,6010)</onload>
@@ -15,7 +20,8 @@
 	
 	<onunload condition="Container.Content(musicvideos)">Skin.Reset(button_active,0000)</onunload>
 	<onunload condition="Container.Content(musicvideos)">CancelAlarm(Albumdetails,silent)</onunload>
-	<onunload condition="Container.Content(musicvideos)">Skin.Reset(albumsfromartists,active)</onunload>	
+	<onunload condition="Container.Content(musicvideos)">Skin.Reset(albumsfromartists,active)</onunload>
+
 	<controls>
 		<!-- default group -->
 		<control type="group">	
@@ -1046,8 +1052,9 @@
 			<!-- MUSIC VIDEOS INFOS ENDE-->
 			<control type="list" id="47">
 				<!-- Lista de botoes/info no characterart -->
-				<visible>!Container.Content(movies) | IsEmpty(ListItem.Art(characterart))</visible>
-				<visible>!Container.Content(musicvideos)</visible>
+				<!--visible>!Container.Content(musicvideos) | IsEmpty(ListItem.Art(characterart))</visible>
+				<visible>!Container.Content(movies)</visible-->
+				<visible>false</visible>
 				<left>30</left>
 				<top>218</top>
 				<width>1110</width>
