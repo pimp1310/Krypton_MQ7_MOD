@@ -2,7 +2,7 @@
 <includes>
 	<!-- Aeon MQ 7 -->	
 	<variable name="SkinVersion">
-    <value>1.7.0 - 30/12/2016</value>
+    <value>0.0.1 - 10/01/2017</value>
     </variable>
 
 	<variable name="fanart_serienplaner">
