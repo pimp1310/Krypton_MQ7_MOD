@@ -499,7 +499,7 @@
 							<posx>210</posx>
 							<posy>87</posy>
 							<height>27</height>
-							<width>470</width>
+							<width>150</width>
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Font_headersmall</font>
@@ -1077,14 +1077,14 @@
 			<!--L O G O -->
 			<control type="group">
 				<!--Logo z biblioteki-->
-				<control type="image">
+				<control type="image" id="1245678">
 					<left>1490</left>
 					<top>565</top>
 					<width>425</width>
 					<height>165</height>
 					<aspectratio>keep</aspectratio>
-					<texture>$INFO[Window(home).Property(Logo)]</texture>
-					<visible>!String.IsEmpty(Window(home).Property(Logo)) + isEmpty(control.GetLabel(880102))</visible>
+					<texture>$INFO[Window(songinformation).Property(Artist_strArtistLogo)]</texture>
+					<visible>!String.IsEmpty(Window(songinformation).Property(Artist_strArtistLogo))</visible>
 				</control>
 				<!--Logo e path-->
 				<control type="image" id="880102">
@@ -1094,7 +1094,7 @@
 					<height>165</height>
 					<aspectratio>keep</aspectratio>
 					<texture background="true">$INFO[Skin.String(CustomMusicLogoPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
-					<visible>!String.Contains(skin.string(pathMultiLogo),exist)</visible>
+					<visible>!String.Contains(skin.string(pathMultiLogo),exist) + isEmpty(control.GetLabel(1245678))</visible>
 				</control>
 				<!---->
 				<control type="multiimage">
