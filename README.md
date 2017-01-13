@@ -40,6 +40,8 @@ Skin
 - Info für aktuell laufende PVR Aufnahmen eingebaut
 - diverse Fehler behoben
 - Musik InfoBereich komplett erweitert (Alle infos in einer Ansicht)
+- DialogFullscreen erweitert (um Infos für die Wiedergabe von LivetV) (SKinhelper benötigt)
+
 
 
 ###MusicVideos
