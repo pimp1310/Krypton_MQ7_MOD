@@ -11,4 +11,4 @@ https://drive.google.com/open?id=0B5w5jyUZD4ChRTc0OGRCckxDTHc
 
 ### Änderungen in dieser Version
 
-- 'script.getInfo_lastFm' hinzugefügt 
+- script.getInfo_lastFm hinzugefügt 
