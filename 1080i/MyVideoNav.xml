@@ -9,6 +9,11 @@
 	<onunload condition="Skin.HasSetting(kioskcode)">Skin.Reset(codestep)</onunload>
 	<onunload condition="Skin.HasSetting(trailers)">Skin.Reset(trailers)</onunload>
 	<onunload condition="Skin.HasSetting(playlists)">Skin.Reset(playlists)</onunload>
+	<!-- Wenn keine Position / Animation fuer Logo,Disc,cleart gewaehlt sind setzt er diese Standards -->
+	<onload condition="String.IsEmpty(skin.string(dialogue_top_art))">Skin.SetString(dialogue_top_art,logo)</onload>
+	<onload condition="String.IsEmpty(skin.string(discanimation))">Skin.SetString(discanimation,rightspinning)</onload>
+	<onload condition="String.IsEmpty(skin.string(dialogue_middle_art_vars))">Skin.SetString(dialogue_middle_art_vars,clearart)</onload>
+	
 	<views>51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,79</views>
 	<controls>
 	<!-- Multi Fanart -->
