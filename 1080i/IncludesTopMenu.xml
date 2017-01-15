@@ -2506,7 +2506,7 @@
 	<control type="button" id="9505">
 	<include>TopMenuButton</include>
 	<label>31873</label>
-	<onclick>ActivateWindow(weathersettings)</onclick>
+	<onclick>ActivateWindow(servicesettings)</onclick>
 	</control>
 	</control>
 	
