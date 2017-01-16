@@ -178,7 +178,7 @@
 	<aligny>center</aligny>
 	<font>Font_18A</font>
 	<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
-	<label>INFORMATIONEN</label>
+	<label>$LOCALIZE[19033]</label>
 	</control>
 	
 	<control type="label">	
@@ -190,7 +190,7 @@
 	<aligny>center</aligny>
 	<font>Font_18A</font>
 	<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
-	<label>DANACH</label>
+	<label>$LOCALIZE[32198]</label>
 	</control>
 	<control type="label">	
 	<left>190</left>
@@ -297,11 +297,11 @@
 					<item>
 						<label>$LOCALIZE[180]</label>
 						<!-- Duration -->
-						<label2>$INFO[Listitem.duration,, Minuten]</label2>
+						<label2>$INFO[Listitem.duration,, $LOCALIZE[31961]]</label2>
 						<onclick>noop</onclick>
 					</item>
 					<item>
-						<label>Bewertung</label>
+						<label>$LOCALIZE[563]</label>
 						<label2>$INFO[Window(Home).Property(SkinHelper.Listitem.Rating)]</label2>
 						<onclick>noop</onclick>
 					</item>
