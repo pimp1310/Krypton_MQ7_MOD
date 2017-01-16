@@ -1,7 +1,11 @@
 [B][COLOR=FFFF8C00]BUILD 0.0.2 - RELEASE DATE 16/01/2017[/COLOR][/B]
 
+Added: New Livetv View
 Added: Nextup "Postplayscreen" 
 Fixed: Weather settings link
+Fixed: liveTv Fanart
+Fixed: dialogpvrinfo Fanart
+Fixed: dialogpvrinfo Duration Label
 
 
 [B][COLOR=FFFF8C00]BUILD 0.0.1 - FIRST RELEASE DATE 10/01/2017[/COLOR][/B]
