@@ -260,6 +260,7 @@
 	<label>31410</label>
 	<onclick>ReplaceWindow(Home)</onclick>
 	</control>
+	
 	<!-- Videos -->
 	<control type="button" id="9104">	
 	<include>TopMenuButton</include>
@@ -268,6 +269,7 @@
 	<onclick>Skin.Reset(windowbg)</onclick>
 	<visible>Container.Content(Movies) | Container.Content(MusicVideos) | Container.Content(TvShows) | Container.Content(Seasons) | Container.Content(Episodes)</visible>
 	</control>
+	
 	<!-- Movies -->
 	<control type="button" id="9105">	
 	<include>TopMenuButton</include>
@@ -300,6 +302,7 @@
 	<onclick>Skin.Reset(windowbg)</onclick>
 	<visible>!Container.Content(LiveTV) + System.GetBool(pvrmanager.enabled)</visible>
 	</control>
+			
 	<!-- Music Videos -->
 	<control type="button" id="9109">	
 	<include>TopMenuButton</include>
@@ -1182,11 +1185,13 @@
 	<itemgap>0</itemgap>
 	<focusposition>1</focusposition>
 	<scrolltime>450</scrolltime>
+
 	<control type="button" id="3">
 	<!-- Sort by -->
 	<include>TopMenuButton</include>
 	<label>103</label>
 	</control>
+
 	<control type="togglebutton" id="4">
 	<!-- Sort asc -->
 	<include>TopMenuButton</include>
@@ -1734,6 +1739,8 @@
 	<onright>9200</onright>
 	<label>31436</label>
 	</control>
+
+
 	<!-- Opcoes da vista -->
 	<control type="button" id="9200">
 	<include>TopMenuTopButton</include>
@@ -1777,6 +1784,7 @@
 	<label>$LOCALIZE[31407]/$LOCALIZE[31135]</label>
 	<enable>![Skin.HasSetting(kiosksmart) + !String.Contains(skin.string(codestep),step3)]</enable>
 	</control>
+
 	<control type="group">
 	<left>982</left>
 	<animation effect="fade" start="20" end="100" time="700" condition="true" pulse="true">Conditional</animation>
@@ -3908,6 +3916,7 @@
 					<onclick condition="String.Contains(skin.string(codestep),step3) + Control.HasFocus(9102)">Skin.Reset($INFO[skin.string(custom_code)])</onclick>
 					<visible>Skin.HasSetting(kioskcode)</visible>
 				</control>
+				
 				<control type="button" id="9103">
 					<!-- Home -->
 					<include>TopMenuButton</include>
@@ -4038,6 +4047,12 @@
 					<selected>Skin.HasSetting(view_wall_tv)</selected>
 					<ondown>SetFocus(50)</ondown>
 				</control>
+					<control type="button" id="77129">
+					<include>TopMenuButton</include>
+					<label>ANSICHT WECHSELN</label>
+					<onclick>Container.NextViewMode</onclick>
+					<ondown>SetFocus(50)</ondown>
+				</control>
 				<control type="button" id="37">
 					<!-- Fullscreen -->
 					<include>TopMenuButton</include>
@@ -4102,6 +4117,7 @@
 			<!--###############################################################################  Botoes do topo  ################################################################################# -->
 			<include>TopMenu_Bar</include>
 			<!-- Smart Menu -->
+			
 			<control type="button" id="9100">	
 				<include>TopMenuTopButton</include>
 				<left>0</left>
@@ -4111,6 +4127,7 @@
 				<onright>9200</onright>
 				<label>31436</label>
 			</control>
+		
 			<!-- Guia de TV -->
 			<control type="button" id="9200">	
 				<include>TopMenuTopButton</include>
@@ -4136,7 +4153,7 @@
 				<ondown>9301</ondown>
 				<onleft>9200</onleft>
 				<onright>9400</onright>
-				<label>19019</label>
+				<label>$LOCALIZE[19019] / ANSICHT </label>
 			</control>
 			<!-- Gravacao/Timer -->
 			<control type="button" id="9400">
