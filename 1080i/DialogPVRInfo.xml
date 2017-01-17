@@ -88,9 +88,10 @@
 						<textcolor>90FFFFFF</textcolor>
 						<scroll>true</scroll>
 						<scrollout>false</scrollout>
-						
 					</control>
-				
+					
+			
+				 
 				</control>
 			</control>
 
@@ -305,14 +306,14 @@
 						<label>Bewertung</label>
 						<label2>$INFO[Window(Home).Property(SkinHelper.Listitem.Rating)]</label2>
 						<onclick>noop</onclick>
-						<visible>!Container.Content(musicvideos)</visible>
+						<visible>!String.Isempty(Window(Home).Property(SkinHelper.Listitem.Rating))</visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[574]</label>
 						<!-- Country -->
 						<label2>$INFO[Window(Home).Property(SkinHelper.Listitem.Country)]</label2>
 						<onclick>noop</onclick>
-						
+						<visible>!String.Isempty(Window(Home).Property(SkinHelper.Listitem.Country))</visible>
 					</item>
 					
 					<item>
@@ -320,42 +321,41 @@
 						<!-- Director/Written -->
 						<label2>$INFO[Window(Home).Property(SkinHelper.Listitem.Writer)]</label2>
 						<onclick>noop</onclick>
-						
+						<visible>!String.Isempty(Window(Home).Property(SkinHelper.Listitem.Writer))</visible>
 					</item>
 					<item>
-						<label>$LOCALIZE[20339]</label>
+						<label>$LOCALIZE[142]</label>
 						<!-- Director for MV -->
-						<label2>$INFO[Window(Home).Property(SkinHelper.Listitem.Director)]</label2>
+						<label2>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime,, Uhr]</label2>
 						<onclick>noop</onclick>
-						
-					</item>
-					<item>
-						<label>$LOCALIZE[572]</label>
-						<!-- Studios -->
-						<label2>$INFO[Window(Home).Property(SkinHelper.Listitem.Studio)]</label2>
-						<onclick>noop</onclick>
-						
+						<visible>!String.Isempty(ListItem.StartTime) + !String.Isempty(ListItem.EndTime)</visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[180]</label>
 						<!-- Duration -->
 						<label2>$INFO[Listitem.duration,, Minuten]</label2>
 						<onclick>noop</onclick>
-						
+						<visible>!String.Isempty(Listitem.duration)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[572]</label>
+						<!-- Studios -->
+						<label2>$INFO[Window(Home).Property(SkinHelper.Listitem.Studio)]</label2>
+						<onclick>noop</onclick>
+						<visible>!String.Isempty(Window(Home).Property(SkinHelper.Listitem.Studio))</visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[573]</label>
 						<!-- Path -->
 						<label2>$INFO[ListItem.FilenameAndPath]</label2>
 						<onclick>noop</onclick>
-						<visible>!String.IsEmpty(ListItem.FilenameAndPath)</visible>
+						<visible>!String.Isempty(ListItem.FilenameAndPath)</visible>
 					</item>
 				</content>
 			</control>
 
 
-
-
+	
 
 
 			<control type="list" id="52">
@@ -1005,6 +1005,37 @@
 				<animation effect="slide" end="-399,0" time="0" condition="Container.Content(episodes)">Conditional</animation>
 				
 			</control>
+			
+	<control type="image" id="22">
+	<left>1083</left>
+	<top>190</top>
+	<width>790</width>
+	<height>440</height>
+	<texture background="true">$INFO[Listitem.Icon]</texture>
+	<bordertexture border="-12">musicframe.png</bordertexture>
+	<aspectratio scalediffuse="false" align="left" aligny="top">stretch</aspectratio>
+	<fadetime>FanartCrossFadeTime</fadetime>
+	<visible>String.Isempty(Window(Home).Property(SkinHelper.ListItem.Art.Poster))</visible>
+	<bordertexture border="-2">black.png</bordertexture>
+	</control>
+	<control type="image">
+	<left>1083</left>
+	<top>190</top>
+	<width>790</width>
+	<height>440</height>
+	<texture fallback="DefaultVideoCover.png" background="true">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Thumb)]</texture>
+	<bordertexture border="-12">musicframe.png</bordertexture>
+	<aspectratio scalediffuse="false" align="left" aligny="top">stretch</aspectratio>
+	<fadetime>FanartCrossFadeTime</fadetime>
+	<bordertexture border="-2">black.png</bordertexture>
+	<visible>String.Isempty(Listitem.Icon) + String.Isempty(Window(Home).Property(SkinHelper.ListItem.Art.Poster))</visible>	
+	</control>
+			
+			
+			
+			
+			
+			
 			<control type="image">
 				<left>1479</left>
 				<top>120</top>
@@ -1012,7 +1043,7 @@
 				<height>576</height>
 				<texture>separator_v.png</texture>
 				<animation effect="slide" end="-399,0" time="0" condition="Container.Content(episodes)">Conditional</animation>
-				<visible>!Container.Content(musicvideos)</visible>
+				<visible>!String.Isempty(Window(Home).Property(SkinHelper.ListItem.Art.Poster))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>

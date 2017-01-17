@@ -178,7 +178,7 @@
 	<aligny>center</aligny>
 	<font>Font_18A</font>
 	<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
-	<label>$LOCALIZE[19033]</label>
+	<label>[UPPERCASE]$LOCALIZE[19033][/UPPERCASE]</label>
 	</control>
 	
 	<control type="label">	
@@ -291,35 +291,60 @@
 				<content>	
 					<item>
 						<label>$LOCALIZE[142]</label>
-						<label2>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime]</label2>
+						<label2>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime,, Uhr]</label2>
 						<onclick>noop</onclick>
+						<visible>!String.Isempty(ListItem.StartTime) + !String.Isempty(ListItem.EndTime)</visible>
+					</item>
+						<item>
+						<label>Fortschritt</label>
+						<label2></label2>
+						<onclick>noop</onclick>
+						<visible></visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[180]</label>
 						<!-- Duration -->
 						<label2>$INFO[Listitem.duration,, $LOCALIZE[31961]]</label2>
 						<onclick>noop</onclick>
+						<visible>!String.Isempty(Listitem.duration)</visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[563]</label>
 						<label2>$INFO[Window(Home).Property(SkinHelper.Listitem.Rating)]</label2>
 						<onclick>noop</onclick>
+						<visible>!String.Isempty(Window(Home).Property(SkinHelper.Listitem.Rating))</visible>
 					</item>
 					<item>
 						<label>Genre</label>
 						<!-- Country -->
 						<label2>$INFO[Listitem.Genre]</label2>
 						<onclick>noop</onclick>
+						<visible>!String.Isempty(Listitem.Genre)</visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[574]</label>
 						<!-- Country -->
 						<label2>$INFO[Window(Home).Property(SkinHelper.Listitem.Country)]</label2>
 						<onclick>noop</onclick>
+						<visible>!String.Isempty(Window(Home).Property(SkinHelper.Listitem.Country))</visible>
 					</item>
 				</content>
 			</control>
 		
+		
+	<control type="progress">
+	<left>230</left>
+	<top>305</top>
+	<width>160</width>
+	<height>10</height>
+	<info>ListItem.Progress</info>
+	
+	<midtexture colordiffuse="$INFO[Skin.String(colortexture)">progress_mid0.png</midtexture>
+	<texturebg colordiffuse="FFD0D0D0">progress_back.png</texturebg>
+	</control>
+	
+	
+	
     <!-- Miniaturas -->
 	<control type="group">	
 	<left>45</left>
@@ -347,7 +372,7 @@
 	<visible>Isempty(Window(Home).Property(SkinHelper.ListItem.Art.Landscape))</visible>	
 	</control>
 
-
+	
 
 
 
@@ -425,18 +450,9 @@
 	<aspectratio align="left" aligny="bottom">stretch</aspectratio>
 	<texture fallback="DefaultTV.png" background="true">$INFO[ListItem.Icon]</texture>
 	<bordertexture border="-2">grey.png</bordertexture>
-	<colordiffuse>FF909090</colordiffuse>
+	
 	</control>
-	<control type="progress">
-	<left>22</left>
-	<top>162</top>
-	<width>147</width>
-	<height>6</height>
-	<info>ListItem.Progress</info>
-	<visible>!String.IsEqual(ListItem.Title,)</visible>
-	<midtexture colordiffuse="$INFO[Skin.String(colortexture)">progress_mid0.png</midtexture>
-	<texturebg colordiffuse="FFD0D0D0">progress_back.png</texturebg>
-	</control>
+
 </control>
 </focusedlayout>
 	
