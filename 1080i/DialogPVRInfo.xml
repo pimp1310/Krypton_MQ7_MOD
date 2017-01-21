@@ -63,6 +63,18 @@
 				<orientation>vertical</orientation>
 				<itemgap>.75</itemgap>
 			
+				<control type="image" id="987">
+					<!-- TopLogo e Clearart -->
+					<left>0</left>
+					<top>0</top>
+					<width>600</width>
+					<height>71</height>
+					<aspectratio aligny="center" align="left">keep</aspectratio>
+					<texture background="true">$VAR[value_pvr_artwork]</texture>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))</visible>
+				</control>
+			
+			
 				<control type="label">
 					<!-- Title If No logo -->
 					<left>0</left>
@@ -74,7 +86,7 @@
 					<textcolor>FFFFFAF0</textcolor>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
-					
+					<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))</visible>
 				</control>
 				<control type="group"> 
 					<control type="label">

@@ -95,7 +95,7 @@
     <top>381</top>
     <visible>!ListItem.IsCollection</visible>
     <include>Shelf3DLabel_Fanart</include>
-    <label>dsewrwer$VAR[value_ground16_label]: [COLOR=FFFFFAF0]$VAR[Durat_mov][/COLOR]</label>
+    <label>$VAR[value_ground16_label]: [COLOR=FFFFFAF0]$VAR[Durat_mov][/COLOR]</label>
     </control>
     <control type="label">
     <left>45</left>

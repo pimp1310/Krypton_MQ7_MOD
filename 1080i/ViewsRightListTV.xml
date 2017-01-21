@@ -232,15 +232,7 @@
 
 
 	<!-- Reflexo -->
-	<control type="image">	
-	<left>2</left>
-	<top>715</top>
-	<width>350</width>
-	<height>525</height>
-	<fadetime>FanartCrossFadeTime</fadetime>
-	<aspectratio align="center" aligny="top">keep</aspectratio>
-	<texture flipy="true" diffuse="thumb_reflect.png" fallback="DefaultTV.png" background="true">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Thumb 	)]</texture>
-	</control>
+	
 
 
 

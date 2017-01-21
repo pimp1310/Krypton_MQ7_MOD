@@ -2,7 +2,7 @@
 <includes>
 	<!-- Aeon MQ 7 -->	
 	<variable name="SkinVersion">
-    <value>0.0.1 - 10/01/2017</value>
+    <value>0.0.4 - 21/01/2017</value>
     </variable>
 	<variable name="fanart_serienplaner">
 			<value condition="!IsEmpty(Container(200).ListItem.Property(Fanart)) + Control.hasfocus(200)">$INFO[Container(200).ListItem.Property(Fanart)]</value>
@@ -2574,20 +2574,12 @@
 	
 	
 	<variable name="value_librarystatus">
-		<value condition="String.Contains(Container(9000).ListItem.Property(id),movie)">Filme [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Movies.Count)][/COLOR] - $LOCALIZE[16101] [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Movies.UnWatched)][/COLOR]</value>
-		
-		
-		
-		<value condition="String.Contains(Container(9000).ListItem.Property(id),tvshow)">Serien [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(TVShows.Count)][/COLOR] - $LOCALIZE[20360] [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Episodes.Count)][/COLOR] - $LOCALIZE[16101]  [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Episodes.UnWatched)][/COLOR]</value>
-		
-		
-		
-		<value condition="String.Contains(Container(9000).ListItem.Property(id),concert)">[COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(MusicVideos.Count)][/COLOR]$INFO[Window(0).Property(MusicVideos.UnWatched), - $LOCALIZE[16101] ]</value>
-		<value condition="String.Contains(Container(9000).ListItem.Property(id),music)">$LOCALIZE[133] - [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Music.ArtistsCount)][/COLOR] $LOCALIZE[132] - [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Music.AlbumsCount)][/COLOR] $LOCALIZE[182] - [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Music.SongsCount)][/COLOR]</value>
-		
-	<value condition="SubString(Container(9000).ListItem.Property(id),live)">$LOCALIZE[313339] - [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Pvr.BackendChannels][/COLOR]</value>
-		
-		
+		<value condition="String.Contains(Container(9000).ListItem.Property(id),movie)">$LOCALIZE[20342] [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Movies.Count)][/COLOR] - $LOCALIZE[16101] [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Movies.UnWatched)][/COLOR]</value>
+		<value condition="String.Contains(Container(9000).ListItem.Property(id),tvshow)">$LOCALIZE[36903] [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(TVShows.Count)][/COLOR] - $LOCALIZE[20360] [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Episodes.Count)][/COLOR] - $LOCALIZE[16101]  [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Episodes.UnWatched)][/COLOR]</value>
+		<value condition="String.Contains(Container(9000).ListItem.Property(id),concert)">$LOCALIZE[31086] [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(MusicVideos.Count)][/COLOR] - $LOCALIZE[16101] [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(MusicVideos.UnWatched)][/COLOR]</value>
+		<value condition="String.Contains(Container(9000).ListItem.Property(id),music)">$LOCALIZE[133] [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Music.ArtistsCount)][/COLOR] - $LOCALIZE[132] [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Music.AlbumsCount)][/COLOR] - $LOCALIZE[182] [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Music.SongsCount)][/COLOR]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(id),live)">$LOCALIZE[32199] [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Pvr.BackendChannels][/COLOR]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(id),serienplaner)">$LOCALIZE[36903] [COLOR=$INFO[Skin.String(colorheader)]]$INFO[Container(510).NumItems][/COLOR]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(id),vpl1)">[COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Widget1.Count)][/COLOR]$INFO[Window(0).Property(Widget1.UnWatched), - $LOCALIZE[16101] ]</value>	
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(id),vpl2)">[COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Widget2.Count)][/COLOR]$INFO[Window(0).Property(Widget2.UnWatched), - $LOCALIZE[16101] ]</value>		
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(id),vpl3)">[COLOR=$INFO[Skin.String(colorheader)]]$INFO[Window(0).Property(Widget3.Count)][/COLOR]$INFO[Window(0).Property(Widget3.UnWatched), - $LOCALIZE[16101] ]</value>	
@@ -2827,6 +2819,11 @@
 		<value condition="VideoPlayer.Content(episodes) + String.IsEmpty(Player.Art(tvshow.clearlogo))">$INFO[Player.Art(tvshow.clearart)]</value>
 	</variable>
 	<!--##############################################################################################  Custom Variables  #################################################################################################### -->
+		<variable name="value_pvr_artwork">
+		<value condition="String.IsEqual(skin.string(dialogue_top_art),logo)">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</value>
+		<value condition="String.IsEqual(skin.string(dialogue_top_art),clearart)">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearart)]</value>
+		<value condition="String.IsEqual(skin.string(dialogue_top_art),banner)">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Banner)]</value>
+		</variable>
 	<!-- Variables -->
 	<variable name="value_dialoguetopart">
 		<value condition="String.IsEqual(skin.string(dialogue_top_art),logo) + !Container.Content(episodes) + !String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>

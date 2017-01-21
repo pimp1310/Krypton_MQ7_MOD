@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!--  Aeon MQ 7 -->
 	<defaultcontrol always="true">149</defaultcontrol>
@@ -1391,7 +1391,7 @@
 				<height>740</height>
 				<width>740</width>
 				<aspectratio aligny="top">scale</aspectratio>
-				<texture fallback="DefaultAudio.png"background="true">$VAR[thumbs_all_lists]</texture>
+				<texture fallback="DefaultAudio.png" background="true">$VAR[thumbs_all_lists]</texture>
 				<animation effect="slide" start="0,0" end="740,0" time="700" condition="Control.hasfocus(6010) | Control.hasfocus(7010) | Control.hasfocus(10010)  | Control.hasfocus(5010)" tween="cubic" easing="out" delay="200">Conditional</animation>			<animation effect="fade" start="0" end="100" time="600" condition="Control.hasfocus(6010) | Control.hasfocus(7010) |  | Control.hasfocus(10010)  | Control.hasfocus(5010)" tween="cubic" easing="out" delay="0">Conditional</animation>	
 				<fadetime>500</fadetime>
 			</control>
@@ -1542,7 +1542,7 @@
 							<animation type="conditional" condition="[Control.hasfocus(6010) + !Isempty(Container(6010).ListItem.Property(strAlbumThumbBack))] + System.IdleTime(2)" reversible="false">
 							<effect type="rotatey" center="115,0" start="0" end="-180" time="800" tween="quadratic" easing="out" />
 							</animation>
-							<animation type="conditional" condition="[Container(6010).OnNext | Container(6010).OnPrevious]"reversible="false">
+							<animation type="conditional" condition="[Container(6010).OnNext | Container(6010).OnPrevious]" reversible="false">
 							<effect type="fade" start="100" end="0" delay="0" time="0" />
 							</animation>						
 						</control>
@@ -1558,7 +1558,7 @@
 							<bordertexture border="-2">grey.png</bordertexture>
 							<include>Animation_Fade</include>
 							<visible>Control.HasFocus(6010)</visible>
-							<animation type="conditional" condition="[Control.hasfocus(6010) + !Isempty(Container(6010).ListItem.Property(strAlbumThumbBack))] + System.IdleTime(2)"reversible="false">
+							<animation type="conditional" condition="[Control.hasfocus(6010) + !Isempty(Container(6010).ListItem.Property(strAlbumThumbBack))] + System.IdleTime(2)" reversible="false">
 							<effect type="fade" start="100" end="0" delay="0" time="400" />
 							</animation>
 						</control>

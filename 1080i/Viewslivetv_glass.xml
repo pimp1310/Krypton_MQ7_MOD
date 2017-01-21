@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<!-- Aeon MQ 7 -->
+	<!--########################################################################   VISTA MY GLASS LIST - ID 998   ########################################################################-->
+	
+	<include name="Viewslivetv_glass">
+		<control type="group">	
+		<visible>Control.IsVisible(998)</visible>
+	
+		<control type="group">
+			<top>-45</top>
+		
+			<animation effect="fade" time="50" start="0" end="100" tween="cubic" easing="out">WindowOpen</animation>
+			<animation effect="fade" time="50" start="0" end="100" tween="cubic" easing="out">Visible</animation>
+			<animation effect="fade" time="200" start="100" end="0">Hidden</animation>
+			
+					<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>1920</width>
+				<height>1080</height>
+				<texture>$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Fanart)]</texture>
+				<fadetime>FanartCrossFadeTime</fadetime>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>500</width>
+				<height>1080</height>
+				<texture flipx="true" diffuse="shadow_mask_v.png">darkgrey.png</texture>
+				<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+				<animation effect="fade" end="85" condition="true">Conditional</animation>
+		</control>
+				<control type="image">
+				<left>500</left>
+				<top>0</top>
+				<height>1080</height>
+				<width>3</width>
+				<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+				<texture>darkgrey.png</texture>
+			</control>
+				<control type="image">
+				<left>500</left>
+				<top>0</top>
+				<width>1920</width>
+				<height>140</height>
+				<texture>black.png</texture>
+				<colordiffuse>A5FFFFFF</colordiffuse>
+				<include>Animation_Fade</include>
+			</control>
+				<control type="image">
+				<left>500</left>
+				<top>140</top>
+				<width>1920</width>
+				<height>500</height>
+				<texture>black.png</texture>
+				<colordiffuse>A5FFFFFF</colordiffuse>
+				<include>Animation_Fade</include>
+				<animation effect="fade" end="85" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<left>500</left>
+				<top>1005</top>
+				<width>1920</width>
+				<height>75</height>
+				<texture>black.png</texture>
+				<colordiffuse>A5FFFFFF</colordiffuse>
+				<include>Animation_Fade</include>
+				<animation effect="fade" end="85" condition="true">Conditional</animation>
+			</control>
+			<control type="list" id="998">
+			<animation effect="slide" start="0,0" end="30,0" time="200" tween="sine" easing="in" condition="Control.hasfocus(60)">Conditional</animation>
+				<viewtype label="Viewslivetv_glass">List</viewtype>
+				<left>0</left>
+				<top>8</top>
+				<width>500</width>
+				<height>1070</height>
+				<onleft>60</onleft>
+				<onright>9900</onright>
+			
+				<orientation>vertical</orientation>
+				<scrolltime>450</scrolltime>
+				<preloaditems>2</preloaditems>
+				<focusposition>0</focusposition>
+				<pagecontrol>60</pagecontrol>
+					
+				<itemlayout width="950" height="75">
+				
+					<control type="image">
+						<left>10</left>
+						<top>15</top>
+						<width>40</width>
+						<height>40</height>
+						<texture>$INFO[Listitem.icon]</texture>
+						<bordertexture border="-2">black.png</bordertexture>
+						<colordiffuse>FF909090</colordiffuse>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>950</width>
+						<height>4</height>
+						<texture flipx="true">divider.png</texture>
+						<colordiffuse>90FFFFFF</colordiffuse>
+					</control>
+					<control type="label">
+						<left>60</left>
+						<top>-1</top>
+						<width>890</width>
+						<height>60</height>
+						<font>Font_list</font>
+						<label>$INFO[listitem.label]</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>FFFFFAF0</textcolor>
+						<selectedcolor>$INFO[Skin.String(colorheader)]</selectedcolor>
+					</control>
+			<control type="label">
+						<left>60</left>
+						<top>39</top>
+						<width>890</width>
+						<height>30</height>
+						<font>Font_plot_pvr</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>FFFFFAF0</textcolor>
+						<selectedcolor>$INFO[Skin.String(colorheader)]</selectedcolor>
+						<label>$INFO[Listitem.title]</label>
+						
+					
+					</control>
+				
+				</itemlayout>
+			
+				<focusedlayout width="950" height="90">
+					
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>950</width>
+						<height>90</height>
+						<texture>grey.png</texture>
+								<animation effect="fade" start="100" end="0" time="200" tween="sine" easing="in" condition="Control.hasfocus(60)">Conditional</animation>
+					</control>
+						<control type="image">
+						<left>10</left>
+						<top>25</top>
+						<width>40</width>
+						<height>40</height>
+						<texture>$INFO[Listitem.icon]</texture>
+						<bordertexture border="-2">black.png</bordertexture>
+						
+					</control>
+					<control type="label">
+						<left>60</left>
+						<top>0</top>
+						<width>890</width>
+						<height>90</height>
+						<font>Font_list</font>
+						<label>$INFO[Listitem.label]</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>FF101010</textcolor>
+						<selectedcolor>$INFO[Skin.String(colorheader)]</selectedcolor>
+						<animation effect="fade" start="100" end="90" time="0" condition="!Control.Hasfocus(998)">conditional</animation>
+						<visible>Control.Hasfocus(998)</visible>
+					</control>
+					
+						<control type="label">
+						<left>60</left>
+						<top>0</top>
+						<width>890</width>
+						<height>90</height>
+						<font>Font_list</font>
+						<label>$INFO[Listitem.label]</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>FFFFFAF0</textcolor>
+						<selectedcolor>$INFO[Skin.String(colorheader)]</selectedcolor>
+						<animation effect="fade" start="100" end="90" time="0" condition="!Control.Hasfocus(998)">conditional</animation>
+						<visible>!Control.Hasfocus(998)</visible>
+					</control>
+		
+
+			
+				
+				</focusedlayout>
+			
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>525</width>
+				<height>1080</height>
+				<texture>menu_glass.png</texture>
+				<colordiffuse>70FFFAF0</colordiffuse>
+			</control>
+			<!-- Tag control -->
+			<control type="label" id="198">	
+				<include>InvisibleButton</include>
+				<label>$VAR[value_listinfofocus]</label>
+			</control>
+		</control>	
+
+
+		<!--#######################################################################   MENU DA DIREITA   #######################################################################-->
+		<control type="group">
+				<left>502</left>
+				<top>0</top>
+
+			<!-- Fundo -->
+			<control type="image">
+				<left>0</left>
+				<top>610</top>
+				<width>1920</width>
+				<height>350</height>
+				<texture>darkgrey.png</texture>
+				<colordiffuse>$INFO[Skin.String(colortexture)]</colordiffuse>
+				<animation effect="fade" end="85" condition="true">Conditional</animation>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>550</top>
+				<width>1920</width>
+				<height>60</height>
+				<texture>black.png</texture>
+				
+			</control>
+			<control type="label">	
+				<left>350</left>
+				<top>550</top>
+				<width>1050</width>
+				<height>75</height>
+				<align>right</align>
+				<font>Font_timesmall</font>
+				<label>[B][UPPERCASE]$INFO[Listitem.title][/UPPERCASE][/B]</label>
+				<textcolor>FFFFFFFF</textcolor>
+			</control>
+		<control type="image">	
+				<left>20</left>
+				<top>570</top>
+				<width>300</width>
+				<height>30</height>			
+				<texture fallback="$VAR[value_styleratingstars,,0.png]">$VAR[value_styleratingstars]$INFO[Window(Home).Property(SkinHelper.ListItem.Rating),,.png]</texture>
+				<aspectratio align="left" aligny="center">keep</aspectratio>
+				<colordiffuse>$VAR[value_colorratingstars]</colordiffuse>
+				<fadetime>FanartCrossFadeTime</fadetime>
+			</control>
+		
+
+		<!-- Nota -->
+	<control type="scrollbar" id="60">
+	<include>ScrollBar_Vertical</include>
+	<left>-515</left>
+	<top>-40</top>
+	<onleft>998</onleft>
+	<onright>998</onright>
+	<height>1075</height>
+	<onleft>999</onleft>
+	<include>Animation_Fade</include>
+	<visible allowhiddenfocus="true">Control.Hasfocus(60)</visible>
+	</control>
+
+		<control type="list" id="47">
+				<!-- Lista de botoes/info no characterart -->
+				<visible>Skin.HasSetting(detail_info)</visible>
+				<left>440</left>
+				<top>650</top>
+				<width>1110</width>
+				<height>495</height>
+				<onleft>149</onleft>
+				<onright>149</onright>
+				<onup>149</onup>
+				<ondown>149</ondown>
+				<itemgap>0</itemgap>
+				<pagecontrol>-</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<itemlayout height="30">
+					<control type="label">
+						<left>0</left>
+						<top>0</top>
+						<width>300</width>
+						<height>30</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Font_18A</font>
+						<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+						<selectedcolor>$INFO[Skin.String(colorheader)]</selectedcolor>
+						<label>$INFO[ListItem.Label]:</label>
+						<scroll>true</scroll>
+					</control>
+					<control type="label">
+						<left>130</left>
+						<top>0</top>
+						<width>420</width>
+						<height>30</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Font_18A</font>
+						<textcolor>FFFFFAF0</textcolor>
+						<selectedcolor>E4101010</selectedcolor>
+						<label>$INFO[ListItem.Label2]</label>
+						<scroll>true</scroll>
+					</control>
+				</itemlayout>
+				<focusedlayout height="30">
+					
+					<control type="label">
+						<left>0</left>
+						<top>0</top>
+						<width>300</width>
+						<height>30</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Font_18A</font>
+						<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+						<selectedcolor>$INFO[Skin.String(colorheader)]</selectedcolor>
+						<label>$INFO[ListItem.Label]:</label>
+					</control>
+					<control type="label">
+						<left>130</left>
+						<top>0</top>
+						<width>420</width>
+						<height>30</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Font_18A</font>
+						<textcolor>FFFFFAF0</textcolor>
+						<selectedcolor>$INFO[Skin.String(colorheader)]</selectedcolor>
+						<label>$INFO[ListItem.Label2]</label>
+						<visible>!Control.HasFocus(47)</visible>
+					</control>
+					<control type="label">
+						<left>130</left>
+						<top>0</top>
+						<width>420</width>
+						<height>30</height>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Font_18A</font>
+						<textcolor>FFFFFAF0</textcolor>
+						<selectedcolor>$INFO[Skin.String(colorheader)]</selectedcolor>
+						<label>$INFO[ListItem.Label2]</label>
+						<visible>Control.HasFocus(47)</visible>
+					</control>
+				</focusedlayout>
+				<content>
+					<item>
+						<label>$LOCALIZE[180]</label>
+						<!-- Duration -->
+						<label2>$INFO[Listitem.duration]</label2>
+						<onclick>noop</onclick>
+						<visible>!String.Isempty(Listitem.duration)</visible>
+					</item>				
+					<item>
+						<label>Genre</label>
+						<!-- Country -->
+						<label2>$INFO[Listitem.Genre]</label2>
+						<onclick>noop</onclick>
+						<visible>!String.Isempty(Listitem.Genre)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[142]</label>
+						<label2>$INFO[ListItem.StartTime] - $INFO[ListItem.EndTime,, Uhr]</label2>
+						<onclick>noop</onclick>
+						<visible>!String.Isempty(ListItem.StartTime) + !String.Isempty(ListItem.EndTime)</visible>
+					</item>
+				</content>
+			</control>
+	
+	
+	
+	
+	
+				<control type="group">	
+				
+				<animation effect="slide" start="0,0" end="160,0" time="400" tween="circle" easing="in" condition="String.IsEmpty(Control.GetLabel(229)) + String.IsEmpty(Control.GetLabel(228))">Conditional</animation>
+					<control type="label">
+						<left>830</left>
+						<top>680</top>
+						<width>400</width>
+						<height>30</height>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>Font_18A</font>
+						<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+						<selectedcolor>$INFO[Skin.String(colorheader)]</selectedcolor>
+						<label>$LOCALIZE[32198]:</label>
+					</control>
+					<control type="label">
+						<left>830</left>
+						<top>710</top>
+						<width>400</width>
+						<height>30</height>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>Font_18A</font>
+						<textcolor>FFFFFAF0</textcolor>
+						<label>$INFO[Listitem.Nexttitle]</label>
+					</control>
+				</control>
+
+				
+	<control type="image" id="228">
+	<left>1240</left>
+	<top>640</top>
+	<width>150</width>
+	<height>100</height>	 
+	<texture background="true">http://localhost:52307/getpvrthumb&amp;title=$INFO[Listitem.nexttitle]&amp;channel=$INFO[Listitem.title]&amp;type=thumb</texture> 
+	<bordertexture border="-2">black.png</bordertexture>
+	<aspectratio scalediffuse="false" align="left" aligny="top">stretch</aspectratio>
+	<!--visible>String.IsEmpty(Control.GetLabel(229))</visible-->
+	</control>				
+	<!--control type="image" id="229">
+	<left>1240</left>
+	<top>940</top>
+	<width>150</width>
+	<height>100</height>
+	<texture background="true">http://localhost:52307/getpvrthumb&amp;title=$INFO[Listitem.nexttitle]&amp;channel=$INFO[Listitem.title]&amp;type=Landscape</texture> 
+	<bordertexture border="-2">black.png</bordertexture>
+	<aspectratio scalediffuse="false" align="left" aligny="top">stretch</aspectratio>
+	</control-->
+	
+	
+	
+	
+<control type="group">	
+	<left>50</left>
+	<top>640</top>
+	
+	<control type="image" id="22">
+	<left>0</left>
+	<top>0</top>
+	<width>350</width>
+	<height>250</height>
+	<texture background="true">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Landscape)]</texture>
+	<bordertexture border="-12">musicframe.png</bordertexture>
+	<aspectratio scalediffuse="false" align="left" aligny="top">stretch</aspectratio>
+	<fadetime>FanartCrossFadeTime</fadetime>
+	</control>
+	<control type="image">
+	<left>0</left>
+	<top>0</top>
+	<width>350</width>
+	<height>250</height>
+	<texture fallback="DefaultVideoCover.png" background="true">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Thumb)]</texture>
+	<bordertexture border="-12">musicframe.png</bordertexture>
+	<aspectratio scalediffuse="false" align="left" aligny="top">stretch</aspectratio>
+	<fadetime>FanartCrossFadeTime</fadetime>
+	<visible>Isempty(Window(Home).Property(SkinHelper.ListItem.Art.Landscape))</visible>	
+	</control>
+</control>	
+
+
+	
+	
+	<control type="progress">
+	<left>440</left>
+	<top>750</top>
+	<width>950</width>
+	<height>5</height>
+	<info>ListItem.Progress</info>
+	<midtexture colordiffuse="$INFO[Skin.String(colortexture)">progress_mid0.png</midtexture>
+	<texturebg colordiffuse="FFD0D0D0">progress_back.png</texturebg>
+	</control>
+	
+	<control type="image">
+				<!-- Logo -->
+				<left>1110</left>
+				<top>-90</top>
+				<height>218</height>
+				<width>285</width>
+				<aspectratio>keep</aspectratio>
+				<texture background="true">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</texture>
+				<include>Animation_VisibleChange200</include>				
+			</control>
+
+			<!-- Plot -->
+			<control type="textbox">	
+				<left>440</left>
+				<top>760</top>
+				<width>950</width>
+				<height>130</height>
+				<font>Font_18A</font>
+				<label>$INFO[Window(Home).Property(SkinHelper.ListItem.plot)]</label>
+				<textcolor>FFFFFAF0</textcolor>
+				<autoscroll delay="10000" time="4000" repeat="10000">!Skin.HasSetting(noinfoplotscroll)</autoscroll>
+			</control>
+				<control type="textbox">	
+				<left>440</left>
+				<top>760</top>
+				<width>950</width>
+				<height>130</height>
+				<font>Font_18A</font>
+				<label>$INFO[ListItem.plot)]</label>
+				<textcolor>FFFFFAF0</textcolor>
+				<autoscroll delay="10000" time="4000" repeat="10000">!Skin.HasSetting(noinfoplotscroll)</autoscroll>
+				<visible>String.Isempty(Window(Home).Property(SkinHelper.ListItem.plot))</visible>
+			</control>
+		</control>
+		</control>
+	</include>
+</includes>

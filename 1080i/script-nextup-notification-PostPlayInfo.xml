@@ -13,13 +13,11 @@
 							<include>HiddenObject</include>
                         </control>
 					
-						<control type="label">
-							<include>HiddenObject</include>
-							<label>$INFO[Window.Property(previous.season)]$INFO[Window.Property(previous.episode),[COLOR =FFEC407A]x[/COLOR],]</label>
-						</control>
 							
 								
 					<control type="label">
+					<posx>0</posx>
+					<posy>-1000</posy>
 						<width max="500">auto</width>
 						<height>40</height>
 						<font>font12</font>
@@ -61,7 +59,17 @@
 				<texture>black.png</texture>
 				<colordiffuse>A5FFFFFF</colordiffuse>
 				<include>Animation_Fade</include>
-			</control>	
+			</control>
+	<control type="image">
+				<left>0</left>
+				<top>740</top>
+				<top>800</top>
+				<width>1920</width>
+				<height>340</height>
+				<texture>black.png</texture>
+				<colordiffuse>A5FFFFFF</colordiffuse>
+				<include>Animation_Fade</include>
+			</control>				
 			
 			<control type="image">
 				<left>0</left>
@@ -225,8 +233,8 @@
 							</control>
 							<control type="label">
 								<scroll>false</scroll>
-								<posx>60</posx>
-								<posy>50</posy>
+								<posx>90</posx>
+								<posy>60</posy>
 								<width>1900</width>
 								<height>40</height>
 								<font>Font_header</font>
@@ -234,12 +242,25 @@
 								<aligny>center</aligny>
 								<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
 								<label>"$INFO[Window.Property(next.tvshowtitle)]" Weiterschauen?</label>
-								<visible>!IsEmpty(Window.Property(stillwatching)) + !Control.hasfocus(400)</visible>
+								<visible>!IsEmpty(Window.Property(stillwatching)) + !Control.hasfocus(400) + !Control.hasfocus(101)</visible>
 							</control>
 							<control type="label">
 								<scroll>false</scroll>
-								<posx>60</posx>
-								<posy>50</posy>
+								<posx>90</posx>
+								<posy>60</posy>
+								<width>1900</width>
+								<height>40</height>
+								<font>Font_header</font>
+								<align>left</align>
+								<aligny>center</aligny>
+								<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+								<label>"$INFO[Window.Property(previous.tvshowtitle)]" Weiterschauen?</label>
+								<visible>!IsEmpty(Window.Property(stillwatching)) + !Control.hasfocus(400) + Control.hasfocus(101)</visible>
+							</control>
+							<control type="label">
+								<scroll>false</scroll>
+								<posx>90</posx>
+								<posy>60</posy>
 								<width>1900</width>
 								<height>40</height>
 								<font>Font_header</font>
@@ -250,49 +271,61 @@
 								<visible>!IsEmpty(Window.Property(stillwatching)) + Control.hasfocus(400)</visible>
 							</control>
 							<control type="group">
-								<posx>50</posx>
+								<posx>60</posx>
 								<posy>115</posy>
 								<control type="group">
-										<posx>0</posx>
+										<posx>30</posx>
 										<posy>0</posy>
+								
 										<control type="image">
 											<posx>0</posx>
 											<posy>0</posy>
-											<width>537</width>
+											<width>480</width>
 											<height>308</height>
 											<texture background="true">$INFO[Window.Property(next.thumb)]</texture>
 											<aspectratio>stretch</aspectratio>
                                             <fadetime>FanartCrossFadeTime</fadetime>
-											<visible>!Control.hasfocus(400)</visible>
+											<visible>!Control.hasfocus(400) + !Control.hasfocus(101)</visible>
+										</control>
+											<control type="image">
+											<posx>0</posx>
+											<posy>0</posy>
+											<width>480</width>
+											<height>308</height>
+											<texture background="true">$INFO[Window.Property(previous.thumb)]</texture>
+											<aspectratio>stretch</aspectratio>
+                                            <fadetime>FanartCrossFadeTime</fadetime>
+											<visible>!Control.hasfocus(400) + Control.hasfocus(101)</visible>
 										</control>
 										<control type="image">
 											<posx>0</posx>
 											<posy>0</posy>
-											<width>537</width>
+											<width>480</width>
 											<height>308</height>
 											<texture background="true">$INFO[Container(400).ListItem.Thumb]</texture>
 											<aspectratio>stretch</aspectratio>
                                             <fadetime>FanartCrossFadeTime</fadetime>
 											<visible>Control.hasfocus(400)</visible>
 										</control>
+									
                                         <control type="image">
                                             <posx>0</posx>
                                             <posy>0</posy>
-                                            <width>537</width>
+                                            <width>480</width>
                                             <height>308</height>
                                             <texture background="true">$INFO[Window.Property(next.landscape)]</texture>
                                             <aspectratio>stretch</aspectratio>
                                             <visible>IsEmpty(Window.Property(next.thumb)) + !IsEmpty(Window.Property(next.landscape))</visible>
                                         </control>
-                                        <control type="image">
+                                        <!--control type="image">
                                             <posx>0</posx>
                                             <posy>0</posy>
-                                            <width>537</width>
+                                            <width>480</width>
                                             <height>308</height>
                                             <texture background="true">$INFO[Window.Property(background)]</texture>
                                             <aspectratio>stretch</aspectratio>
                                             <visible>IsEmpty(Window.Property(next.thumb)) + IsEmpty(Window.Property(next.landscape))</visible>
-                                        </control>
+                                        </control-->
 										
 									
 									</control>
@@ -316,8 +349,21 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
-							<label>[B]$INFO[Window.Property(next.title)][/B]</label>
-							<visible>!Control.hasfocus(400)</visible>
+							<label>[UPPERCASE][B]$INFO[Window.Property(next.title)][/B][/UPPERCASE]</label>
+							<visible>!Control.hasfocus(400) + !Control.hasfocus(101)</visible>
+						</control>
+							<control type="label">
+							<scroll>false</scroll>
+							<posx>1177</posx>
+							<posy>120</posy>
+							<width>683</width>
+							<height>43</height>
+							<font>Font_18A</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
+							<label>[UPPERCASE][B]$INFO[Window.Property(previous.title)][/B][/UPPERCASE]</label>
+							<visible>!Control.hasfocus(400) + Control.hasfocus(101)</visible>
 						</control>
 						<control type="label">
 							<scroll>false</scroll>
@@ -329,7 +375,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<textcolor>$INFO[Skin.String(colorheader)]</textcolor>
-							<label>[B]$INFO[Container(400).ListItem.Title][/B]</label>
+							<label>[UPPERCASE][B]$INFO[Container(400).ListItem.Title][/B][/UPPERCASE]</label>
 							<visible>Control.hasfocus(400)</visible>
 						</control>
 						<control type="label">
@@ -338,11 +384,11 @@
 							<posy>160</posy>
 							<width>683</width>
 							<height>32</height>
-							<font>Font_plot_pvr</font>
+							<font>Font_plot_pvr_big</font>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[B]$INFO[Window.Property(next.duration),, Minuten] | [B]$INFO[Window.Property(next.season),Staffel ]$INFO[Window.Property(next.episode), - Episode ][/B]</label>
-							<visible>!Control.hasfocus(400)</visible>
+							<visible>!Control.hasfocus(400) + !Control.hasfocus(101)</visible>
 						</control>
 						<control type="label">
 							<scroll>false</scroll>
@@ -350,7 +396,19 @@
 							<posy>160</posy>
 							<width>683</width>
 							<height>32</height>
-							<font>Font_plot_pvr</font>
+							<font>Font_plot_pvr_big</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>[B]$INFO[Window.Property(previous.duration),, Minuten] | [B]$INFO[Window.Property(previous.season),Staffel ]$INFO[Window.Property(previous.episode), - Episode ][/B]</label>
+							<visible>!Control.hasfocus(400) + Control.hasfocus(101)</visible>
+						</control>
+						<control type="label">
+							<scroll>false</scroll>
+							<posx>1177</posx>
+							<posy>160</posy>
+							<width>683</width>
+							<height>32</height>
+							<font>Font_plot_pvr_big</font>
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>[B]$INFO[Container(400).ListItem.Duration,, Minuten] | $INFO[Container(400).ListItem.Season,Staffel ]$INFO[Container(400).ListItem.Episode, - Episode ][/B]</label>
@@ -371,7 +429,7 @@
 					<width>200</width>
 					<height>100</height>
 					<aspectratio align="left" aligny="bottom">keep</aspectratio>
-					<texture background="true">$INFO[Container(400).ListItem.Art(clearlogo)]</texture>
+					<texture background="true">$INFO[Container(400).ListItem.Art(logo)]</texture>
 					<visible>Control.hasfocus(400)</visible>
 					</control>
 						<control type="textbox">
@@ -384,7 +442,19 @@
 							<align>left</align>
 							<textcolor>FFFFFAF0</textcolor>
 							<label>$INFO[Window.Property(next.plot)]</label>
-                            <visible>!Control.hasfocus(400)</visible>
+                            <visible>!Control.hasfocus(400) + !Control.hasfocus(101)</visible>
+						</control>
+						<control type="textbox">
+							<scroll>false</scroll>
+							<posx>1177</posx>
+							<posy>195</posy>
+							<width>1100</width>
+							<height>156</height>
+							<font>Font_18A</font>
+							<align>left</align>
+							<textcolor>FFFFFAF0</textcolor>
+							<label>$INFO[Window.Property(previous.plot)]</label>
+                            	<visible>!Control.hasfocus(400) + Control.hasfocus(101)</visible>
 						</control>
 						<control type="textbox">
 							<scroll>false</scroll>
@@ -433,19 +503,7 @@
 							<textcolor>FFFFFFFF</textcolor>
 							<label>[B]$INFO[Window.Property(previous.title)][/B]</label>
 						</control>
-						<control type="label">
-							<scroll>false</scroll>
-							<posx>1177</posx>
-							<posy>180</posy>
-							<width>683</width>
-							<height>32</height>
-							<font>font12</font>
-							<align>left</align>
-							<aligny>center</aligny>
-							<textcolor>A0FFFFFF</textcolor>
-							<label>$INFO[Window.Property(previous.duration),, Mcinuten]</label>
-							<visible>!Control.hasfocus(400)</visible>
-						</control>
+					
 						<control type="label">
 							<scroll>false</scroll>
 							<posx>1177</posx>
@@ -475,7 +533,7 @@
 				</control>
 
 				<control type="group">	
-				<left>610</left>
+				<left>630</left>
 				<top>375</top>
 				<control type="image">
 					<left>0</left>
@@ -508,7 +566,7 @@
 						
 						
 				<control type="group">
-					<posx>20</posx>
+					<posx>40</posx>
 					<posy>-2</posy>
 					<width>1140</width>
 						<control type="button" id="101">
@@ -602,8 +660,8 @@
 						<height>580</height>
 						<width>1920</width>
 						<control type="label">
-							<posx>60</posx>
-							<posy>20</posy>
+							<posx>90</posx>
+							<posy>100</posy>
 							<width>1900</width>
 							<height>80</height>
 							<font>Font_header</font>
@@ -612,8 +670,8 @@
 							<label>"Andere Serie" Weiterschauen?</label>
 						</control>
 				<control type="list" id="400">
-						<left>55</left>
-						<top>70</top>
+						<left>85</left>
+						<top>120</top>
 						<width>1890</width>
 						<height>400</height>
 						<onup>102</onup>
@@ -622,15 +680,15 @@
 						<focusposition>0</focusposition>
 						<orientation>horizontal</orientation>
 						<scrolltime easing="inout" tween="sine">300</scrolltime>
-						<itemlayout height="305" width="288">
+						<itemlayout height="260" width="280">
 						
 						
 							
 								<control type="image">
 									<left>2</left>
 									<top>48</top>
-									<width>240</width>
-									<height>300</height>
+									<width>200</width>
+									<height>250</height>
 									<aspectratio align="top">stretch</aspectratio>
 									<texture background="true" fallback="DefaultVideoPoster.png">$INFO[ListItem.Art(tvshow.poster)]</texture>
 									<bordertexture border="-2">black.png</bordertexture>
@@ -641,14 +699,14 @@
 							
 							
 						</itemlayout>
-						<focusedlayout height="305" width="288">
+						<focusedlayout height="260" width="280">
 							
 											
 								<control type="image">
 									<left>2</left>
 									<top>48</top>
-									<width>240</width>
-									<height>300</height>
+									<width>200</width>
+									<height>250</height>
 									<aspectratio align="top">stretch</aspectratio>
 									<texture background="true" fallback="DefaultVideoPoster.png">$INFO[ListItem.Art(tvshow.poster)]</texture>
 									<bordertexture border="-2">grey.png</bordertexture>
@@ -658,8 +716,8 @@
 									<control type="image">
 									<left>2</left>
 									<top>48</top>
-									<width>240</width>
-									<height>300</height>
+									<width>200</width>
+									<height>250</height>
 									<aspectratio align="top">stretch</aspectratio>
 									<texture background="true" fallback="DefaultVideoPoster.png">$INFO[ListItem.Art(tvshow.poster)]</texture>
 									<bordertexture border="-2">black.png</bordertexture>

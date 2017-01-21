@@ -315,5 +315,6 @@
     <visible>Skin.HasSetting(starwars)</visible>
     <include>StarWars</include>
     </control>
+
 	</controls>
 </window>

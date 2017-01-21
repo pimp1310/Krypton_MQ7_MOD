@@ -3,7 +3,7 @@
 	<!-- Aeon MQ 7 -->
 	<defaultcontrol>50</defaultcontrol>
 	<onunload condition="Skin.HasSetting(kioskcode)">Skin.Reset($INFO[skin.string(custom_code)])</onunload>
-	<views>50,999</views>
+	<views>50,999,998</views>
 	<controls>
 	<!-- Fanart -->
 	<control type="multiimage">	
@@ -109,6 +109,7 @@
 	<!-- 50 -->
 	<include>Viewslivetv_panel</include>
 	<include>ViewRightListTV</include>
+	<include>Viewslivetv_glass</include>
 	</control>
 	<include>ScrollLabel</include>
 	<include condition="Skin.HasSetting(videoinfobar)">MultiData</include>

@@ -14,6 +14,8 @@
 	<include file="IncludesWeather.xml" />
 	<include file="IncludesTopMenu.xml" />
 	<include file="IncludesLyrics.xml" />
+	<!-- 998 -->
+	<include file="Viewslivetv_glass.xml" />
 	<!-- 999 -->
 	<include file="Viewslivetv_panel.xml" />
 	<!-- 50 -->
@@ -1055,7 +1057,7 @@
 	<label>$INFO[ListItem.Year] - $VAR[Durat_mov]</label>
 	</control>
 	<control type="label">
-	<visible>!Container.HasFiles</visible>
+	<visible>!Container.HasFiles + !Container.content(tvshows)</visible>
 	<left>159</left>
 	<top>43</top>
 	<width>810</width>

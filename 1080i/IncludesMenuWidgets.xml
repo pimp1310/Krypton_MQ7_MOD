@@ -2940,6 +2940,7 @@
 	<animation effect="slide" start="0,450" end="0,0" time="400" delay="500" tween="sine" easing="out">Visible</animation>
 	<animation effect="slide" start="0,0" end="0,450" time="300" tween="sine" easing="out">Hidden</animation>
 	<visible>SubString(Container(9000).ListItem.Property(id),live) + [Control.HasFocus(500) | Control.HasFocus(510) | ControlGroup(512).HasFocus] + !Skin.HasSetting(nodetailspanel)</visible>
+	<visible>!SubString(Container(9000).ListItem.Property(id),concert)</visible>
 	<!--control type="image">
 	<left>0</left>
 	<top>750</top>
@@ -3153,9 +3154,11 @@
 	<font>Font_button</font>
 	<label>31703</label>
 	<textcolor>FFFFFAF0</textcolor>
+	<visible>!SubString(Container(9000).ListItem.Property(id),concert)</visible>
 	</control>
 	<control type="fixedlist" id="500">
 	<viewtype label="list">List Info</viewtype>
+		<visible>!SubString(Container(9000).ListItem.Property(id),concert)</visible>
 	<left>1240</left>
 	<top>865</top>
 	<width>615</width>

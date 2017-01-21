@@ -57,6 +57,11 @@
 	<colordiffuse>50808000</colordiffuse>
 	<visible>String.IsEqual(ListItem.Property(id),tvshows)</visible>
 	</control>
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>50808000</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),Serienplaner)</visible>
+	</control>
 	<!-- bege -->
 	<control type="image">	
 	<include>Widgets_SelectorButton</include>
@@ -74,6 +79,21 @@
 	<include>Widgets_SelectorButton</include>
 	<colordiffuse>505F9EA0</colordiffuse>
 	<visible>String.IsEqual(ListItem.Property(id),pvr)</visible>
+	</control>
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>505F9EA0</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),TVChannels)</visible>
+	</control>
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>505F9EA0</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),TVChannelsRecordsKodi)</visible>
+	</control>
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>505F9EA0</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),Tvrecordings)</visible>
 	</control>
 	<!-- ciano -->
 	<control type="image">	
@@ -110,6 +130,11 @@
 	<include>Widgets_SelectorButton</include>
 	<colordiffuse>50C71585</colordiffuse>
 	<visible>String.IsEqual(ListItem.Property(id),node)</visible>
+	</control>
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>red</colordiffuse>
+	<visible>String.IsEqual(ListItem.Property(id),live)</visible>
 	</control>
 	<control type="label">
 	<left>0</left>
@@ -159,6 +184,12 @@
 	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
 	<visible>String.IsEqual(ListItem.Property(id),tvshows)</visible>
 	</control>
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FF808000</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),Serienplaner)</visible>
+	</control>
 	<!-- bege -->
 	<control type="image">	
 	<include>Widgets_SelectorButton</include>
@@ -179,6 +210,24 @@
 	<colordiffuse>FF5F9EA0</colordiffuse>
 	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
 	<visible>String.IsEqual(ListItem.Property(id),pvr)</visible>
+	</control>
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FF5F9EA0</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),TVChannels)</visible>
+	</control>
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FF5F9EA0</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),TVChannelsRecordsKodi)</visible>
+	</control>
+	<control type="image">	
+	<include>Widgets_SelectorButton</include>
+	<colordiffuse>FF5F9EA0</colordiffuse>
+	<animation effect="fade" start="100" end="80" time="0" condition="!Control.Hasfocus(5100)">conditional</animation>
+	<visible>String.IsEqual(ListItem.Property(id),Tvrecordings)</visible>
 	</control>
 	<!-- ciano -->
 	<control type="image">	
@@ -382,6 +431,15 @@
 	<visible>Library.HasContent(Movies) + Library.HasContent(TVShows)</visible>
 	</item>
 	<item>
+	<!-- Serienplaner widget -->
+	<icon>-</icon>
+	<label>Tvshow - SerienPlaner</label>
+	<property name="id">serienplaner</property>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plus)</onclick>
+	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,plus.serienplaner)</onclick>
+	<visible>PVR.HasTVChannels</visible>
+	</item>
+	<item>
 	<!-- Seriados recentes -->
 	<icon>-</icon>
 	<label>$LOCALIZE[31005] - $LOCALIZE[31583]</label>
@@ -579,15 +637,7 @@
 	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,plus.recordings)</onclick>
 	<visible>PVR.HasTVChannels</visible>
 	</item>
-	<item>
-	<!-- Serienplaner widget -->
-	<icon>-</icon>
-	<label>Tvshow - SerienPlaner</label>
-	<property name="id">serienplaner</property>
-	<onclick>Skin.SetString($INFO[skin.string(menulabel)].target,plus)</onclick>
-	<onclick>Skin.SetString($INFO[skin.string(menulabel)].widgets,plus.serienplaner)</onclick>
-	<visible>PVR.HasTVChannels</visible>
-	</item>
+
 	<item>
 	<!-- Canais de radio -->
 	<icon>-</icon>
